@@ -1,0 +1,90 @@
+{
+  "upcoming": [
+    {
+      "title": "Introduction to Ruby on Rails",
+      "date": "2024-06-01",
+      "time": "19:00",
+      "description": "Learn the basics of Ruby on Rails and build your first web application.",
+      "location": "Buenos Aires, Argentina"
+    },
+    {
+      "title": "Intermediate Ruby on Rails",
+      "date": "2024-07-06",
+      "time": "19:00",
+      "description": "Dive deeper into Ruby on Rails and explore more advanced concepts and techniques.",
+      "location": "Córdoba, Argentina"
+    },
+    {
+      "title": "Deploying Ruby on Rails Apps",
+      "date": "2024-08-03",
+      "time": "19:00",
+      "description": "Learn how to deploy your Ruby on Rails applications to production environments.",
+      "location": "Rosario, Argentina"
+    },
+    {
+      "title": "Ruby on Rails Best Practices",
+      "date": "2024-09-05",
+      "time": "19:00",
+      "description": "Discover best practices and techniques for building maintainable and scalable Ruby on Rails applications.",
+      "location": "Mendoza, Argentina"
+    },
+    {
+      "title": "Ruby on Rails and React Integration",
+      "date": "2024-10-2",
+      "time": "19:00",
+      "description": "Learn how to integrate Ruby on Rails with React to build powerful and dynamic web applications.",
+      "location": "Tucumán, Argentina"
+    },
+    {
+      "title": "Ruby on Rails and GraphQL",
+      "date": "2024-06-01",
+      "time": "19:00",
+      "description": "Explore how to use GraphQL with Ruby on Rails to build efficient and flexible APIs.",
+      "location": "Mar del Plata, Argentina"
+    }
+  ],
+  "past": [
+    {
+      "title": "Introduction to Ruby on Rails",
+      "date": "2024-06-01",
+      "time": "19:00",
+      "description": "Learn the basics of Ruby on Rails and build your first web application.",
+      "location": "Buenos Aires, Argentina"
+    },
+    {
+      "title": "Intermediate Ruby on Rails",
+      "date": "2024-07-06",
+      "time": "19:00",
+      "description": "Dive deeper into Ruby on Rails and explore more advanced concepts and techniques.",
+      "location": "Córdoba, Argentina"
+    },
+    {
+      "title": "Deploying Ruby on Rails Apps",
+      "date": "2024-08-03",
+      "time": "19:00",
+      "description": "Learn how to deploy your Ruby on Rails applications to production environments.",
+      "location": "Rosario, Argentina"
+    },
+    {
+      "title": "Ruby on Rails Best Practices",
+      "date": "2024-09-05",
+      "time": "19:00",
+      "description": "Discover best practices and techniques for building maintainable and scalable Ruby on Rails applications.",
+      "location": "Mendoza, Argentina"
+    },
+    {
+      "title": "Ruby on Rails and React Integration",
+      "date": "2024-10-2",
+      "time": "19:00",
+      "description": "Learn how to integrate Ruby on Rails with React to build powerful and dynamic web applications.",
+      "location": "Tucumán, Argentina"
+    },
+    {
+      "title": "Ruby on Rails and GraphQL",
+      "date": "2024-06-01",
+      "time": "19:00",
+      "description": "Explore how to use GraphQL with Ruby on Rails to build efficient and flexible APIs.",
+      "location": "Mar del Plata, Argentina"
+    }
+  ]
+}

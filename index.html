@@ -1,0 +1,122 @@
+---
+# front matter tells Jekyll to process Liquid
+---
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>RubySur - Argentina</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Ruby on Rails Meetups in Argentina</h1>
+      <img src="/images/logo.jpeg" alt="Logo de RubySur" />
+      <p>
+        Join our community of Ruby on Rails enthusiasts and learn from
+        experienced developers.
+      </p>
+      <a href="#upcoming" class="button">Explore Meetups</a>
+    </header>
+
+    <main>
+      <section class="upcoming" id="upcoming">
+        <h2>Upcoming Meetups</h2>
+        <ul>
+          {% for meetup in site.data.meetups.upcoming %}
+          <li>
+            <h3>{{ meetup.title }}</h3>
+            <time>{{ meetup.date }} - {{ meetup.time }}</time>
+            <p>{{ meetup.description }}</p>
+            <address>{{ meetup.location }}</address>
+          </li>
+          {% endfor %}
+        </ul>
+      </section>
+
+      <section class="past">
+        <h2>Past Meetups</h2>
+        <ul>
+          {% for meetup in site.data.meetups.past %}
+          <li>
+            <h3>{{ meetup.title }}</h3>
+            <time>{{ meetup.date }} - {{ meetup.time }}</time>
+            <p>{{ meetup.description }}</p>
+            <address>{{ meetup.location }}</address>
+          </li>
+          {% endfor %}
+        </ul>
+      </section>
+
+      <section class="sponsors">
+        <h2>Sponsors</h2>
+        <ul>
+          {% for sponsor in site.data.sponsors %}
+          <li>
+            <a href="{{ sponsor.url }}" target="_blank">{{ sponsor.name }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <h2>Contact Us</h2>
+      <ul>
+        <li>
+          <i><img src="/images/slack.svg" alt="Logo de Slack" /></i>
+          <h3>Slack</h3>
+          <p>
+            Join our Slack community to connect with other Ruby on Rails
+            enthusiasts.
+          </p>
+          <a href="" target="_blank">Join Now</a>
+        </li>
+        <li>
+          <i><img src="/images/linkedin-in.svg" alt="Logo de LinkedIn" /></i>
+          <h3>LinkedIn</h3>
+          <p>
+            Follow us on LinkedIn for the latest updates and job opportunities.
+          </p>
+          <a
+            href="https://www.linkedin.com/company/ruby-sur/posts/?feedView=all"
+            target="_blank"
+            >Follow Us</a
+          >
+        </li>
+        <li>
+          <i><img src="/images/x-twitter.svg" alt="Logo de X" /></i>
+          <h3>X / Twitter</h3>
+          <p>
+            Stay connected with us on Twitter for community discussions and
+            event updates.
+          </p>
+          <a href="https://x.com/rubyargentina" target="_blank">Follow Us</a>
+        </li>
+        <li>
+          <i><img src="/images/youtube.svg" alt="Logo de YouTube" /></i>
+          <h3>YouTube</h3>
+          <p>Watch talks...</p>
+          <a href="https://www.youtube.com/@rubysur" target="_blank">Watch</a>
+        </li>
+      </ul>
+    </footer>
+
+    <div class="copyright">
+      <span>© 2024 RubySur - Argentina</span>
+      <a>About</a>
+      <a href="mailto://test@mail.com" target="_blank">Contact</a>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
