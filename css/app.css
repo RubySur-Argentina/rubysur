@@ -175,6 +175,13 @@ button,
   text-decoration: none;
 }
 
+i img {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* END OF BASE */
+
 body {
   display: grid;
   min-height: 100vh;
@@ -290,11 +297,6 @@ footer {
     @media screen and (max-width: 600px) {
       grid-template-columns: 1fr;
     }
-  }
-
-  & i img {
-    width: 1rem;
-    height: 1rem;
   }
 
   & p {

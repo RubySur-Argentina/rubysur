@@ -33,12 +33,7 @@
         <h2>Upcoming Meetups</h2>
         <ul>
           {% for meetup in site.data.meetups.upcoming %}
-          <li>
-            <h3>{{ meetup.title }}</h3>
-            <time>{{ meetup.date }} - {{ meetup.time }}</time>
-            <p>{{ meetup.description }}</p>
-            <address>{{ meetup.location }}</address>
-          </li>
+            {% include meetup_partial.html meetup=meetup %}
           {% endfor %}
         </ul>
       </section>
@@ -47,12 +42,7 @@
         <h2>Past Meetups</h2>
         <ul>
           {% for meetup in site.data.meetups.past %}
-          <li>
-            <h3>{{ meetup.title }}</h3>
-            <time>{{ meetup.date }} - {{ meetup.time }}</time>
-            <p>{{ meetup.description }}</p>
-            <address>{{ meetup.location }}</address>
-          </li>
+            {% include meetup_partial.html meetup=meetup %}
           {% endfor %}
         </ul>
       </section>

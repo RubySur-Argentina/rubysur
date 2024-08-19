@@ -1,0 +1,9 @@
+<li>
+  <h3>{{ include.meetup.title }}</h3>
+  <time>{{ include.meetup.date }} - {{ include.meetup.time }}</time>
+  <p>{{ include.meetup.description }}</p>
+  <address>
+    <i><img src="images/location-dot.svg" alt="Marcador de ubicación" /></i>
+    {{ include.meetup.location }}
+  </address>
+</li>
