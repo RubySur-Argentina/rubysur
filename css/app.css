@@ -132,7 +132,7 @@ table {
 
 /* Base */
 :root {
-  --font-size-h1: clamp(34px, 4vw, 3rem);
+  --font-size-h1: clamp(34px, 5vw, 3rem);
   --line-height-h1: 1.2;
   --font-size-h2: 2.25rem;
   --line-height-h2: 1.2;
@@ -190,32 +190,72 @@ body {
 }
 
 header {
-  background: black;
+  background: linear-gradient(110deg, #580d2e, #fe4141);
   color: white;
   display: grid;
-  grid-template-areas: "title image" "subtitle image" "cta image";
+  grid-template-areas: "title image" "subtitle image" "social image";
   grid-template-rows: max-content 1fr min-content;
-  grid-gap: 1rem;
+  column-gap: 3rem;
+  row-gap: 1.5rem;
   padding: 3rem var(--inline-padding-layout);
 
-  & h1 {
+  & > h1 {
     grid-area: title;
   }
 
-  & p {
+  & > p {
     grid-area: subtitle;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
   }
 
-  & a {
-    grid-area: cta;
+  & > ul {
+    grid-area: social;
     justify-self: flex-start;
   }
 
-  & img {
+  & > img {
     grid-area: image;
-    background: gray;
     aspect-ratio: 1;
     max-width: min(30vw, 200px);
+  }
+
+  .follow {
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+
+    & img {
+      height: 2rem;
+      width: 2rem;
+      background: transparent;
+      filter: invert() drop-shadow(2px 4px 6px black);
+      transition: scale 100ms linear;
+
+      &:hover {
+        scale: 1.1;
+      }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    & {
+      grid-template-areas: "title image" "subtitle subtitle" "social social";
+      grid-template-columns: 1fr min-content;
+    }
+
+    & > h1 {
+      --font-size-h1: 2.5rem;
+    }
+
+    & > ul {
+      justify-self: center;
+    }
+
+    & > img {
+      width: 6rem;
+      height: 6rem;
+    }
   }
 }
 

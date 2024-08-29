@@ -19,31 +19,57 @@
   </head>
   <body>
     <header>
-      <h1>Ruby on Rails Meetups in Argentina</h1>
+      <h1>Ruby Sur Argentina</h1>
       <img src="images/logo.jpeg" alt="Logo de RubySur" />
       <p>
-        Join our community of Ruby on Rails enthusiasts and learn from
-        experienced developers.
+        Somos un grupo de +500 Devs en Ruby y Ruby on Rails based en Buenos
+        Aires, Argentina 🇦🇷.
+        <br />
+        Nos reunimos una vez al mes para compartir charlas, experiencias, y
+        mantener discusiones técnicas relacionadas con Ruby.
       </p>
-      <a href="#upcoming" class="button">Explore Meetups</a>
+      <ul class="follow">
+        <li>&gt;&gt;</li>
+        <li>
+          <a href="" target="_blank"
+            ><img src="images/slack.svg" alt="Logo de Slack"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/company/ruby-sur/posts/?feedView=all"
+            target="_blank"
+            ><img src="images/linkedin-in.svg" alt="Logo de LinkedIn"
+          /></a>
+        </li>
+        <li>
+          <a href="https://x.com/rubyargentina" target="_blank"
+            ><img src="images/x-twitter.svg" alt="Logo de X"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@rubysur" target="_blank"
+            ><img src="images/youtube.svg" alt="Logo de YouTube"
+          /></a>
+        </li>
+        <li>&lt;&lt;</li>
+      </ul>
     </header>
 
     <main>
       <section class="upcoming" id="upcoming">
         <h2>Upcoming Meetups</h2>
         <ul>
-          {% for meetup in site.data.meetups.upcoming %}
-            {% include meetup_partial.html meetup=meetup %}
-          {% endfor %}
+          {% for meetup in site.data.meetups.upcoming %} {% include
+          meetup_partial.html meetup=meetup %} {% endfor %}
         </ul>
       </section>
 
       <section class="past">
         <h2>Past Meetups</h2>
         <ul>
-          {% for meetup in site.data.meetups.past %}
-            {% include meetup_partial.html meetup=meetup %}
-          {% endfor %}
+          {% for meetup in site.data.meetups.past %} {% include
+          meetup_partial.html meetup=meetup %} {% endfor %}
         </ul>
       </section>
 
