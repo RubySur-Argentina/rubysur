@@ -22,7 +22,7 @@ Requisitos:
 - Ruby 3.3.4
 - bundler 2.5.17
 
-> Si se actualiza esto, actualizar los valores en `Dockerfile` también
+> Si se actualiza esto, actualizar los valores en `Dockerfile` y `.github/jekyll.yml` también
 
 Setup:
 
