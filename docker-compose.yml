@@ -1,0 +1,10 @@
+services:
+  web:
+    build:
+      context: .
+    command: "bundle exec jekyll serve --livereload --host 0.0.0.0"
+    ports:
+      - "4000:4000"
+      - "35729:35729"
+    volumes:
+      - ".:/code:delegated"
