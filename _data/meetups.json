@@ -1,4 +1,18 @@
 {
+  "highlighted": {
+    "title": "Actualizando con Dual Booting",
+    "date": "2024-09-12",
+    "time": "19:00",
+    "description": "Cómo usar la técnica de Dual Booting para actualizar Ruby, Rails, y cualquier otra gema.",
+    "location": "Joy Cowork - Av. Dorrego 864 · Buenos Aires",
+    "location_link": "https://maps.app.goo.gl/y87XyK9iyhZR2SGMA",
+    "youtube_link": "https://www.youtube.com",
+    "meetup_link": "meetup.com/es/rubyba/",
+    "speaker": {
+      "name": "Ariel Juodziukynas",
+      "image_filename": "ariel-juodziukynas.webp"
+    }
+  },
   "upcoming": [
     {
       "title": "Introduction to Ruby on Rails",

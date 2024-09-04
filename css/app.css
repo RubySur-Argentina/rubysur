@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -180,6 +180,14 @@ i img {
   height: 1rem;
 }
 
+a {
+  color: #7d0f0f;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 /* END OF BASE */
 
 body {
@@ -255,6 +263,78 @@ header {
     & > img {
       width: 6rem;
       height: 6rem;
+    }
+  }
+}
+
+section.highlighted {
+  padding: 5rem calc(var(--inline-padding-layout) + 10vw);
+  background: #f4f4f6;
+  color: black;
+  position: relative;
+  font-size: 1.3rem;
+  line-height: 2rem;
+
+  @media screen and (max-width: 600px) {
+    padding-inline: var(--inline-padding-layout);
+  }
+
+  & > h2 {
+    margin-bottom: 1rem;
+    font-size: clamp(30px, 4vw, var(--font-size-h2));
+  }
+
+  & a {
+    font-size: 1.2rem;
+  }
+
+  & > p {
+    margin-block: 1rem;
+    max-width: 45ch;
+  }
+
+  .speaker {
+    float: right;
+    margin-inline-start: 2rem;
+
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
+
+    & img {
+      width: 30vw;
+      max-width: 250px;
+      display: block;
+      filter: drop-shadow(1px 4px 5px #580d2e);
+    }
+
+    & figcaption {
+      font-size: 1rem;
+      text-align: center;
+      padding-right: 2rem;
+      font-weight: bold;
+    }
+  }
+
+  .countdown {
+    position: absolute;
+    top: 0px;
+    right: calc(var(--inline-padding-layout) + 2vw);
+    rotate: 20deg;
+    background: #fbdc56;
+    padding: 0.5rem;
+    max-width: 250px;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    font-weight: bold;
+    box-shadow: 7px 6px 5px 0px rgba(0, 0, 0, 0.45);
+    -webkit-box-shadow: 7px 6px 5px 0px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 7px 6px 5px 0px rgba(0, 0, 0, 0.45);
+
+    @media screen and (max-width: 600px) {
+      font-size: 1rem;
+      line-height: 1rem;
+      max-width: 150px;
     }
   }
 }

@@ -1,0 +1,37 @@
+{% assign meetup = site.data.meetups.highlighted %}
+<section class="highlighted">
+  <figure class="speaker">
+    <img
+      src="/images/speakers/{{ meetup.speaker.image_filename }}"
+      alt="{{ meetup.speaker.name }}"
+    />
+    <figcaption>{{ meetup.speaker.name }}</figcaption>
+  </figure>
+  <h2>📣¡Próxima Meetup!</h2>
+  <h3>{{ meetup.title }}</h3>
+  <time datetime="{{ meetup.date}}T{{ meetup.time}}"
+    >{{ meetup.date }} - {{ meetup.time }}</time
+  >
+  <p>{{ meetup.description }}</p>
+  <address>
+    <a href="{{ meetup.location_link }}" target="_blank">
+      <i
+        ><img src="images/icons/location-dot.svg" alt="Marcador de ubicación"
+      /></i>
+      {{ meetup.location }}
+    </a>
+  </address>
+  <a
+    target="_blank"
+    href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Ruby+Sur+Meetup:+{{ meetup.title | replace: ' ', '+' }}&details={{ meetup.description | replace: ' ', '+' }}&dates={{ meetup.date | replace: '-', '' }}T{{ meetup.time | replace: ':', '' }}00/{{ meetup.date | replace: '-', '' }}T210000&location={{ meetup.location | replace: ' ', '+' }}&ctz=America/Buenos_Aires"
+  >
+    <i><img src="images/icons/calendar.svg" alt="Calendario" /></i>
+    Agregar evento a Google Calendar</a
+  >
+  <br />
+  <a target="_blank" href="{{ meetup.meetup_link }}">
+    <i><img src="images/icons/meetup.svg" alt="Meetup.com" /></i>
+    Ver en Meetup.com</a
+  >
+  <div class="countdown"></div>
+</section>
