@@ -59,28 +59,14 @@
 
     <main>
       {% include highlighted_meetup.html %}
-      <section class="upcoming" id="upcoming">
-        <h2>Upcoming Meetups</h2>
-        <ul>
-          {% for meetup in site.data.meetups.upcoming %} {% include
-          meetup_partial.html meetup=meetup %} {% endfor %}
-        </ul>
-      </section>
-
-      <section class="past">
-        <h2>Past Meetups</h2>
-        <ul>
-          {% for meetup in site.data.meetups.past %} {% include
-          meetup_partial.html meetup=meetup %} {% endfor %}
-        </ul>
-      </section>
-
+      {% include about_us.html %}
+      {% include past_meetups.html %}
       {% include sponsors.html %}
     </main>
 
     <div class="copyright">
       <span>© 2024 RubySur - Argentina</span>
-      <a>About</a>
+      <a href="#about_us">About Us</a>
       <a href="mailto://test@mail.com" target="_blank">Contact</a>
     </div>
 

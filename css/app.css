@@ -267,8 +267,16 @@ header {
   }
 }
 
+main > section {
+  padding: 5rem var(--inline-padding-layout);
+
+  &:nth-child(2n + 1) {
+    background: #f4f4f6;
+  }
+}
+
 section.highlighted {
-  padding: 5rem calc(var(--inline-padding-layout) + 10vw);
+  padding-inline: calc(var(--inline-padding-layout) + 10vw);
   background: #f4f4f6;
   color: black;
   position: relative;
@@ -340,7 +348,6 @@ section.highlighted {
 }
 
 section:is(.upcoming, .past) {
-  padding: 5rem var(--inline-padding-layout);
   & h2 {
     margin-block-end: 2rem;
   }
@@ -389,7 +396,7 @@ section.past {
 }
 
 section.sponsors {
-  padding: 5rem var(--inline-padding-layout) 3rem;
+  padding-block: 5rem 3rem;
 
   & ul {
     display: grid;
