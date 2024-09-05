@@ -1,12 +1,17 @@
 [
   {
-    "name": "Sponsor 1",
-    "logo-filename": "sponsor-1.jpg",
-    "urk": ""
+    "name": "Rootstrap",
+    "logo_filename": "rootstrap.svg",
+    "url": "https://www.rootstrap.com"
   },
   {
-    "name": "Sponsor 2",
-    "logo-filename": "sponsor-2.jpg",
-    "urk": ""
+    "name": "Le Wagon",
+    "logo_filename": "le_wagon.svg",
+    "url": "https://www.lewagon.com/es/buenos-aires"
+  },
+  {
+    "name": "OmbuLabs.com",
+    "logo_filename": "ombulabs.svg",
+    "url": "https://www.ombulabs.com"
   }
 ]

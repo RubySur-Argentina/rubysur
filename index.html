@@ -75,61 +75,8 @@
         </ul>
       </section>
 
-      <section class="sponsors">
-        <h2>Sponsors</h2>
-        <ul>
-          {% for sponsor in site.data.sponsors %}
-          <li>
-            <a href="{{ sponsor.url }}" target="_blank">{{ sponsor.name }}</a>
-          </li>
-          {% endfor %}
-        </ul>
-      </section>
+      {% include sponsors.html %}
     </main>
-
-    <footer>
-      <h2>Contact Us</h2>
-      <ul>
-        <li>
-          <i><img src="images/icons/slack.svg" alt="Logo de Slack" /></i>
-          <h3>Slack</h3>
-          <p>
-            Join our Slack community to connect with other Ruby on Rails
-            enthusiasts.
-          </p>
-          <a href="" target="_blank">Join Now</a>
-        </li>
-        <li>
-          <i
-            ><img src="images/icons/linkedin-in.svg" alt="Logo de LinkedIn"
-          /></i>
-          <h3>LinkedIn</h3>
-          <p>
-            Follow us on LinkedIn for the latest updates and job opportunities.
-          </p>
-          <a
-            href="https://www.linkedin.com/company/ruby-sur/posts/?feedView=all"
-            target="_blank"
-            >Follow Us</a
-          >
-        </li>
-        <li>
-          <i><img src="images/icons/x-twitter.svg" alt="Logo de X" /></i>
-          <h3>X / Twitter</h3>
-          <p>
-            Stay connected with us on Twitter for community discussions and
-            event updates.
-          </p>
-          <a href="https://x.com/rubyargentina" target="_blank">Follow Us</a>
-        </li>
-        <li>
-          <i><img src="images/icons/youtube.svg" alt="Logo de YouTube" /></i>
-          <h3>YouTube</h3>
-          <p>Watch talks...</p>
-          <a href="https://www.youtube.com/@rubysur" target="_blank">Watch</a>
-        </li>
-      </ul>
-    </footer>
 
     <div class="copyright">
       <span>© 2024 RubySur - Argentina</span>
