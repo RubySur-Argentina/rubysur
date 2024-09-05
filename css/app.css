@@ -331,13 +331,15 @@ section.highlighted {
     rotate: 20deg;
     background: #fbdc56;
     padding: 0.5rem;
-    max-width: 250px;
+    max-width: 200px;
     font-size: 1.2rem;
     line-height: 1.2rem;
     font-weight: bold;
     box-shadow: 7px 6px 5px 0px rgba(0, 0, 0, 0.45);
     -webkit-box-shadow: 7px 6px 5px 0px rgba(0, 0, 0, 0.45);
     -moz-box-shadow: 7px 6px 5px 0px rgba(0, 0, 0, 0.45);
+    text-wrap: balance;
+    text-align: center;
 
     @media screen and (max-width: 600px) {
       font-size: 1rem;
