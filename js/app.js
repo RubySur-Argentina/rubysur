@@ -71,6 +71,32 @@ const bindMeetupDialogButton = () => {
         // ajusta el scroll cuando se cierra el modal
         document.body.style.position = "static";
         window.scrollTo(0, scroll);
+        dialog.querySelectorAll("iframe").forEach((iframe) => iframe.remove());
+      });
+
+      dialog.querySelectorAll(".talk").forEach((talkDiv) => {
+        let iframe = talkDiv.querySelector("iframe");
+        if (iframe) return;
+
+        const youtubeEmbedURL = talkDiv.dataset.youtubeUrl;
+        if (youtubeEmbedURL) {
+          const iframe = document.createElement("IFRAME");
+          iframe.setAttribute("width", "560");
+          iframe.setAttribute("title", "YouTube Video Player");
+          iframe.setAttribute("src", youtubeEmbedURL);
+          iframe.setAttribute("frameborder", "0");
+          iframe.setAttribute(
+            "allow",
+            "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          );
+          iframe.setAttribute(
+            "referrerpolicy",
+            "strict-origin-when-cross-origin"
+          );
+          iframe.setAttribute("allowfullscreen", true);
+
+          talkDiv.insertAdjacentElement("beforeend", iframe);
+        }
       });
 
       dialog.showModal();
