@@ -1,11 +1,16 @@
 <li>
-  <h3>{{ include.meetup.title }}</h3>
-  <time>{{ include.meetup.date }} - {{ include.meetup.time }}</time>
-  <p>{{ include.meetup.description }}</p>
-  <address>
-    <i
-      ><img src="images/icons/location-dot.svg" alt="Marcador de ubicación"
-    /></i>
-    {{ include.meetup.location }}
-  </address>
+  <h3>{{ include.meetup.meetup }}</h3>
+  <time>{{ include.meetup.date }}</time>
+  <ul>
+    {% for talk in include.meetup.talks %}
+      <li>{{ talk.title }}</li>
+    {% endfor %}
+  </ul>
+  <button class="details">Ver detalles</button>
+  <dialog class="meetupDetails">
+    <div class="closeDialog"><button class="">X</button></div>
+    {% for talk in include.meetup.talks %}
+      {% include talk_partial.html talk=talk %}
+    {% endfor %}
+  </dialog>
 </li>

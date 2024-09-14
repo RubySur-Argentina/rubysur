@@ -1,104 +1,157 @@
 {
-  "highlighted": {
-    "title": "Actualizando tu app con Dual Booting",
-    "date": "2024-09-12",
-    "time": "19:00",
-    "description": "Vamos a ver cómo actualizar Ruby, Rails, o cualquier otra gema, usando la técnica de Dual Booting para actualizar nuestras aplicaciones gradualmente y ayudarnos a prepara la app para futuras versiones. Vamos a ver ejemplos y conceptos para luego poder adaptar la técnica a diferentes aplicaciones.",
-    "location": "Humboldt 1967, Piso 1 Le Wagon, Palermo",
-    "location_link": "https://maps.app.goo.gl/RhA9yVnY9JcCTq2U6",
-    "youtube_link": "https://www.youtube.com/watch?v=F-CnVCJQLKI",
-    "meetup_link": "https://www.meetup.com/rubyba/events/303276300/",
-    "speaker": {
-      "name": "Ariel Juodziukynas",
-      "image_filename": "ariel-juodziukynas.webp"
-    }
-  },
-  "upcoming": [
-    {
-      "title": "Introduction to Ruby on Rails",
-      "date": "2024-06-01",
-      "time": "19:00",
-      "description": "Learn the basics of Ruby on Rails and build your first web application.",
-      "location": "Buenos Aires, Argentina"
-    },
-    {
-      "title": "Intermediate Ruby on Rails",
-      "date": "2024-07-06",
-      "time": "19:00",
-      "description": "Dive deeper into Ruby on Rails and explore more advanced concepts and techniques.",
-      "location": "Córdoba, Argentina"
-    },
-    {
-      "title": "Deploying Ruby on Rails Apps",
-      "date": "2024-08-03",
-      "time": "19:00",
-      "description": "Learn how to deploy your Ruby on Rails applications to production environments.",
-      "location": "Rosario, Argentina"
-    },
-    {
-      "title": "Ruby on Rails Best Practices",
-      "date": "2024-09-05",
-      "time": "19:00",
-      "description": "Discover best practices and techniques for building maintainable and scalable Ruby on Rails applications.",
-      "location": "Mendoza, Argentina"
-    },
-    {
-      "title": "Ruby on Rails and React Integration",
-      "date": "2024-10-2",
-      "time": "19:00",
-      "description": "Learn how to integrate Ruby on Rails with React to build powerful and dynamic web applications.",
-      "location": "Tucumán, Argentina"
-    },
-    {
-      "title": "Ruby on Rails and GraphQL",
-      "date": "2024-06-01",
-      "time": "19:00",
-      "description": "Explore how to use GraphQL with Ruby on Rails to build efficient and flexible APIs.",
-      "location": "Mar del Plata, Argentina"
-    }
-  ],
+  "highlighted": null,
   "past": [
     {
-      "title": "Introduction to Ruby on Rails",
-      "date": "2024-06-01",
-      "time": "19:00",
-      "description": "Learn the basics of Ruby on Rails and build your first web application.",
-      "location": "Buenos Aires, Argentina"
+      "meetup": "Septiembre 2024",
+      "date": "12/09/2024",
+      "meetup_link": "https://www.meetup.com/rubyba/events/303276300/",
+      "talks": [
+        {
+          "title": "Actualizando tu app con Dual Booting",
+          "speaker": "Ariel Juodziukynas",
+          "description": "Ariel Juodziukynas es nuestro speaker de la fecha y va a estar contando como Actualizar tu aplicación con Dual Booting.\n\nVamos a ver cómo actualizar Ruby, Rails, o cualquier otra gema, usando la técnica de Dual Booting para actualizar nuestras aplicaciones gradualmente y ayudarnos a prepara la app para futuras versiones. Vamos a ver ejemplos y conceptos para luego poder adaptar la técnica a diferentes aplicaciones.",
+          "youtube_link": "https://www.youtube.com/watch?v=F-CnVCJQLKI"
+        }
+      ]
     },
     {
-      "title": "Intermediate Ruby on Rails",
-      "date": "2024-07-06",
-      "time": "19:00",
-      "description": "Dive deeper into Ruby on Rails and explore more advanced concepts and techniques.",
-      "location": "Córdoba, Argentina"
+      "meetup": "Agosto 2024",
+      "date": "14/08/2024",
+      "meetup_link": "https://www.meetup.com/rubyba/events/302656192/",
+      "talks": [
+        {
+          "title": "Refactoring en Ruby: Elevating Code Quality Through Community And Practice",
+          "speaker": "Julio Lucero",
+          "description": "Julio Agustin Lucero es nuestro speaker de la fecha y va a estar abordando:\nRefactoring en Ruby: Elevating Code Quality Through Community And Practice\nUnite a nosotros en esta charla donde exploraremos cómo la programación va más allá de simples líneas de código, convirtiéndose en un proceso colaborativo y creativo. Inspirados por figuras como Kent Beck y DHH, discutiremos la importancia de producir código limpio, mantenible y eficiente.\nNos centraremos en el libro \"Refactoring: Ruby Edition\" de Jay Fields, Shane Harvie y Martin Fowler, y cómo ha guiado el desarrollo de muchos programadores junior. Descubre valiosas estrategias y consejos para mejorar tu práctica de programación y llevar tu código al siguiente nivel.\n¡No te pierdas esta oportunidad de aprender y mantenerte al día con las últimas innovaciones en Ruby on Rails!",
+          "youtube_link": "https://www.youtube.com/watch?v=xU7LBW8tmKI"
+        }
+      ]
     },
     {
-      "title": "Deploying Ruby on Rails Apps",
-      "date": "2024-08-03",
-      "time": "19:00",
-      "description": "Learn how to deploy your Ruby on Rails applications to production environments.",
-      "location": "Rosario, Argentina"
+      "meetup": "Julio 2024",
+      "date": "18/07/2024",
+      "meetup_link": "https://www.meetup.com/rubyba/events/302163493/",
+      "talks": [
+        {
+          "title": "Rails - Lo que hay y lo que viene",
+          "speaker": "Fernando E. Silva Jacquier",
+          "description": "Descubre las últimas novedades de Rails y Turbo en nuestra próxima meetup, de la mano de Fernando E. Silva Jacquier.\n¿Alguna vez has escuchado sobre la nueva versión de Turbo y sus increíbles características de morphing e instant click? Si no es así, ¡no te preocupes! Esta meetup es para vos.\n¿Qué puedes esperar de esta charla?\nUna demostración en vivo (live coding) de la característica de Turbo que más me fascina: el morphing.\nUn vistazo a las próximas novedades en Rails 8.\nMás live coding, enfocándonos en una de las características que más expectativas genera: PWA.\nMantenerse actualizado es crucial. Rails está en constante evolución, con nuevas funcionalidades y mejoras añadidas regularmente.\nSeguir el menú omakase de Rails tiene mucho valor. Está diseñado para ser fácil de usar y permitirte lograr mucho con poco.\n¡No te pierdas esta oportunidad de aprender y mantenerte al día con las últimas innovaciones en Ruby on Rails!",
+          "youtube_link": "https://www.youtube.com/watch?v=svst2V6kVVA"
+        }
+      ]
     },
     {
-      "title": "Ruby on Rails Best Practices",
-      "date": "2024-09-05",
-      "time": "19:00",
-      "description": "Discover best practices and techniques for building maintainable and scalable Ruby on Rails applications.",
-      "location": "Mendoza, Argentina"
+      "meetup": "Junio 2024",
+      "date": "13/06/2024",
+      "meetup_link": "https://www.meetup.com/rubyba/events/301367143/",
+      "talks": [
+        {
+          "title": "Tech Talk: La evolución del asset pipeline",
+          "speaker": "Ariel Juodziukynas",
+          "description": "Este 13 de junio Ariel Juodziukynas nos contará sobre el presente, pasado y futuro del Asset Pipeline de Rails. Hará un recorrido sobre la historia de cómo Rails manejó los assets en sus orígenes, con que herramientas contamos hoy y hacia donde nos dirigimos con Rails 8.\nHablará también de los patrones y gemas que se fueron usando, con sus pros y los contras, y cuales fueron las razones que motivaron los distintos cambios de cada etapa.",
+          "youtube_link": "https://www.youtube.com/watch?v=IroDPuj_b8o"
+        }
+      ]
     },
     {
-      "title": "Ruby on Rails and React Integration",
-      "date": "2024-10-2",
-      "time": "19:00",
-      "description": "Learn how to integrate Ruby on Rails with React to build powerful and dynamic web applications.",
-      "location": "Tucumán, Argentina"
+      "meetup": "Mayo 2024",
+      "date": "14/05/2024",
+      "meetup_link": "https://www.meetup.com/rubyba/events/300864089/",
+      "talks": [
+        {
+          "title": "Unveiling the power of Hotwire",
+          "speaker": "Filipe Mendes",
+          "description": "Estamos contentos de anunciar un nuevo evento de Rubysur, para el 14 de mayo. Vamos a charlar sobre uno de los puntos más atractivos y que que genera discusión en el desarrollo de aplicaciones con Ruby on Rails: Hotwire.\nFilipe Mendes va a presentar su charla, titulada “Unveiling the power of Hotwire” donde nos va a mostrar como se está aplicando y cómo sacarle provecho a esta metodología con casos reales.",
+          "youtube_link": "https://www.youtube.com/watch?v=zbp_2VqAxDQ&t=69s"
+        }
+      ]
     },
     {
-      "title": "Ruby on Rails and GraphQL",
-      "date": "2024-06-01",
-      "time": "19:00",
-      "description": "Explore how to use GraphQL with Ruby on Rails to build efficient and flexible APIs.",
-      "location": "Mar del Plata, Argentina"
+      "meetup": "Abril 2024",
+      "date": "16/04/2024",
+      "meetup_link": "https://www.meetup.com/rubyba/events/300307806/",
+      "talks": [
+        {
+          "title": "Speed up CI in your Ruby applications",
+          "speaker": "Enzo Fabbiani",
+          "description": "¿Te gustaría acelerar tus procesos de Integración Continua (CI) en tus aplicaciones Ruby? En esta charla, Enzo Fabbiani, experto en desarrollo de software, compartirá estrategias y mejores prácticas para optimizar tus flujos de CI y mejorar la eficiencia en el desarrollo de tus aplicaciones Ruby. Descubre cómo implementar técnicas efectivas para reducir los tiempos de construcción y despliegue, y aumenta la productividad de tu equipo de desarrollo.",
+          "youtube_link": "https://www.youtube.com/watch?v=vRVeNSejGKA"
+        },
+        {
+          "title": "How to Prepare Your First Meetup Talk",
+          "speaker": "Santiago Merlo",
+          "description": "¿Te gustaría compartir tus conocimientos y experiencias en un meetup pero no sabes por dónde empezar? En esta charla, Santiago Merlo, experimentado orador en eventos técnicos, te guiará a través de los pasos claves para preparar y presentar tu primera charla en un meetup. Desde la elección del tema hasta la entrega efectiva, aprenderás técnicas prácticas para cautivar a tu audiencia y dejar una impresión duradera en tu comunidad.",
+          "youtube_link": "https://www.youtube.com/watch?v=vRVeNSejGKA?t=1176s"
+        }
+      ]
+    },
+    {
+      "meetup": "Marzo 2024",
+      "date": "14/03/2024",
+      "meetup_link": "https://www.meetup.com/rubyba/events/299590862/",
+      "talks": [
+        {
+          "title": "Iluminando el Camino: Perspectivas sobre Debugging de un Recién Llegado",
+          "speaker": "Fernando E. Silva Jacquier",
+          "description": "Estamos contentos de anunciar el primer evento del 2024 de Rubysur, que hemos programado para el 14 de marzo. En esta ocasión, vamos a explorar un tema fundamental en el desarrollo de software: el debugging.\nEn la primera charla, \"Iluminando el Camino: Perspectivas sobre Debugging de un Recién Llegado\", nuestro orador, Fernando E. Silva Jacquier, inspirado por el libro \"Are your lights on?\", nos ofrecerá una perspectiva única sobre cómo abordar el debugging como un problema más, brindando herramientas simples pero efectivas para diagnosticar y resolver errores.\nLa charla abarcará desde fundamentos teóricos y estrategias prácticas para reducir el alcance de los problemas, a alternativas, que nos ayuden a mejorar el proceso de debugging.",
+          "youtube_link": "https://www.youtube.com/watch?v=3qyTOEVSeog"
+        }
+      ]
+    },
+    {
+      "meetup": "Octubre 2023",
+      "date": "05/10/2023",
+      "meetup_link": "https://www.meetup.com/rubyba/events/296381930/",
+      "talks": [
+        {
+          "title": "Setting up VS Code for Ruby on Rails development",
+          "speaker": "Viktor Fonic",
+          "description": "Viktor Fonic viene trabajando hace más de 15 años desarrollando software y a lo largo de su carrera ha usado diferentes IDEs y editores de texto. En los últimos 5 años ha estado usado VS Code.\nEn su charla nos va a describir su experiencia customizando el editor para trabajar de manera más eficiente. Nos contará sobre algunas de las extensiones más populares y otras no tan conocidas (como Bust a gem, Custom CSS and JS loader), como hacer macros y configurar los keybindings para realizar acciones con pocos tecleos.",
+          "youtube_link": "https://www.youtube.com/watch?v=uKzAT3EtG5s"
+        },
+        {
+          "title": "IoT con Ruby ¿Es posible?",
+          "speaker": "Santiago Merlo",
+          "description": "En la segunda charla, junto a Santiago Merlo vamos a explorar cómo se lleva Ruby con IoT en la Raspberry Pi. Veremos algunos ejemplos básicos y charlaremos sobre lo bueno, lo malo y lo no tan bonito de usar Ruby para el Internet de las Cosas. ¿Es realmente práctico o solo es para entusiastas del lenguaje?",
+          "youtube_link": "https://www.youtube.com/watch?v=8bZ0Br9Sz1c"
+        }
+      ]
+    },
+    {
+      "meetup": "Agosto 2023",
+      "date": "31/08/2023",
+      "meetup_link": "https://www.meetup.com/rubyba/events/295491257/",
+      "talks": [
+        {
+          "title": "Formularios con Rails y uso de features nativos de HTML",
+          "speaker": "Ariel Juodziukynas",
+          "description": "Contaremos con Ariel Juodziukynas que estará dando una charla sobre Rails y el uso de features \"\"mágicas\"\" relacionadas a formularios que no mucha gente usa/conoce.",
+          "youtube_link": "https://www.youtube.com/watch?v=cVysEUIxYMc"
+        }
+      ]
+    },
+    {
+      "meetup": "Mayo 2023",
+      "date": "18/05/2023",
+      "meetup_link": "https://www.meetup.com/rubyba/events/293412778/",
+      "talks": [
+        {
+          "title": "Design Patterns",
+          "speaker": "Claudio Kerekes",
+          "description": "Directo desde Bogotá, Claudio Kerekes nos brindará una charla sobre Design Patterns. Luego de la presentación, habrá un espacio para seguir hablando del tema y hacer networking 😉"
+        }
+      ]
+    },
+    {
+      "meetup": "Abril 2023",
+      "date": "13/04/2023",
+      "meetup_link": "https://www.meetup.com/rubyba/events/292367068/",
+      "talks": [
+        {
+          "title": "Pizza n' Rails",
+          "description": "Nos juntamos a hablar de rails y a comer Pizza."
+        }
+      ]
     }
   ]
 }

@@ -232,6 +232,7 @@ header {
     display: flex;
     column-gap: 1rem;
     align-items: center;
+    font-size: 1.5rem;
 
     & img {
       height: 2rem;
@@ -349,22 +350,23 @@ section.highlighted {
   }
 }
 
-section:is(.upcoming, .past) {
+section.past {
   & h2 {
     margin-block-end: 2rem;
   }
 
-  & ul {
+  & > ul {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1rem;
     padding: 1rem 0;
 
-    & li {
+    & > li {
       display: grid;
-      grid-template-areas: "title" "date" "description" "location";
+      grid-template-areas: "title" "date" "talks" "details";
       grid-template-rows: min-content min-content 1fr min-content;
-      height: 12rem;
+      row-gap: 0.3rem;
+      height: 10rem;
       border-radius: 0.5rem;
       border: 1px solid #e4e4e7;
       padding: 1rem 1.5rem 1.5rem;
@@ -381,13 +383,17 @@ section:is(.upcoming, .past) {
         color: #6e6e77;
       }
 
-      & p {
-        grid-area: description;
+      & ul {
+        grid-area: talks;
         align-self: center;
+        & > li + li {
+          padding-top: 1rem;
+        }
       }
 
-      & address {
-        grid-area: location;
+      & .details {
+        grid-area: details;
+        font-weight: bold;
       }
     }
   }
@@ -395,6 +401,72 @@ section:is(.upcoming, .past) {
 
 section.past {
   background: #f4f4f6;
+
+  .meetupDetails {
+    position: relative;
+    max-height: 92vh;
+    max-width: 92vw;
+    .closeDialog {
+      position: sticky;
+      top: 0px;
+      float: right;
+      height: 0px;
+      overflow: visible;
+      button {
+        border: 2px solid black;
+        border-radius: 50%;
+        display: flex;
+        padding: 0.5rem;
+        align-items: center;
+        justify-content: center;
+        opacity: 0.6;
+        &:hover,
+        &:focus {
+          opacity: 1;
+        }
+      }
+    }
+
+    .talk {
+      display: grid;
+
+      grid-template-areas: "title" "video" "description" "speaker";
+      grid-template-columns: 1fr;
+
+      row-gap: 1rem;
+      column-gap: 2rem;
+
+      h3 {
+        grid-area: title;
+      }
+      span {
+        grid-area: speaker;
+      }
+      p {
+        grid-area: description;
+        width: 100%;
+      }
+      iframe {
+        grid-area: video;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        max-height: 315px;
+      }
+    }
+
+    .talk + .talk {
+      border-block-start: 1px solid black;
+      margin-block-start: 1rem;
+      padding-block-start: 1rem;
+    }
+
+    @media screen and (min-width: 800px) {
+      .talk:has(iframe) {
+        grid-template-areas: "title title" "video description" "video speaker";
+        grid-template-columns: 1fr 0.5fr;
+      }
+    }
+  }
 }
 
 section.sponsors {

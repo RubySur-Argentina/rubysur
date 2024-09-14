@@ -24,6 +24,8 @@ const intToTime = (int) => {
 
 const countdown = () => {
   const highlighted = document.querySelector("section.highlighted");
+  if (!highlighted) return;
+
   const dateTime = highlighted.querySelector("time").getAttribute("datetime");
   const parsedDate = Date.parse(dateTime);
   const countdownDiv = highlighted.querySelector("div.countdown");
@@ -51,6 +53,32 @@ const countdown = () => {
   updateCountdown();
 };
 
+const bindMeetupDialogButton = () => {
+  window.addEventListener("click", (e) => {
+    const target = e.target;
+    if (target.classList.contains("details")) {
+      // previene scroll chando el modal está abierto
+      const scroll = window.scrollY;
+      document.body.style.top = `-${scroll}px`;
+      document.body.style.position = "fixed";
+
+      const dialog = target.nextElementSibling;
+      dialog.querySelector(".closeDialog").addEventListener("click", () => {
+        dialog.close();
+      });
+
+      dialog.addEventListener("close", () => {
+        // ajusta el scroll cuando se cierra el modal
+        document.body.style.position = "static";
+        window.scrollTo(0, scroll);
+      });
+
+      dialog.showModal();
+    }
+  });
+};
+
 document.addEventListener("DOMContentLoaded", () => {
   countdown();
+  bindMeetupDialogButton();
 });
