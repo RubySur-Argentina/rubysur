@@ -140,6 +140,8 @@ table {
   --line-height-h3: 1.2;
 
   --inline-padding-layout: 1rem;
+
+  --red-1: #7d0f0f;
 }
 
 @media screen and (min-width: 1200px) {
@@ -157,6 +159,18 @@ h2 {
   font-size: var(--font-size-h2);
   line-height: var(--line-height-h3);
   font-weight: bold;
+  position: relative;
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 35px;
+    bottom: -2px;
+    width: 100px;
+    height: 2px;
+    background-color: var(--red-1);
+  }
 }
 h3 {
   font-size: var(--font-size-h3);
@@ -181,7 +195,7 @@ i img {
 }
 
 a {
-  color: #7d0f0f;
+  color: var(--red-1);
   text-decoration: none;
   &:hover {
     text-decoration: underline;
@@ -349,6 +363,55 @@ section.highlighted {
       font-size: 1rem;
       line-height: 1rem;
       max-width: 150px;
+    }
+  }
+}
+
+section.about_us {
+  display: grid;
+  grid-template-areas: "title" "text" "image" "team";
+  column-gap: 3rem;
+  row-gap: 2rem;
+
+  @media screen and (min-width: 700px) {
+    grid-template-areas: "image title" "image text" "image team";
+    grid-template-rows: 1fr min-content 1fr;
+  }
+
+  & > h2 {
+    grid-area: title;
+    align-self: flex-end;
+  }
+
+  & > img {
+    grid-area: image;
+    max-width: min(500px, 90vw);
+    justify-self: center;
+    box-shadow: 2px 2px 5px 1px black;
+
+    @media screen and (min-width: 700px) {
+      width: 40vw;
+    }
+  }
+
+  & > p {
+    grid-area: text;
+    font-size: var(--font-size-h3);
+  }
+
+  & > div {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: team;
+    align-self: flex-start;
+    justify-content: center;
+
+    button {
+      font-size: 18px;
+      font-weight: bold;
+      &:focus {
+        background-color: rgb(205, 205, 205);
+      }
     }
   }
 }

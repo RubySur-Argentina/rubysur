@@ -104,7 +104,52 @@ const bindMeetupDialogButton = () => {
   });
 };
 
+const bindAboutUsImages = () => {
+  const section = document.querySelector("#about_us");
+  const image = section.querySelector("img");
+  const originalSrc = image.src;
+  const originalAlt = image.alt;
+
+  const resetImage = () => {
+    image.src = originalSrc;
+    image.alt = originalAlt;
+  };
+
+  const members = [...section.querySelectorAll("button")];
+
+  // preload después de un rato para que no flasheen al cambiar de imagen
+  const altURLs = [
+    image.dataset.altUrl,
+    ...members.map((button) => button.dataset.imageUrl),
+  ];
+
+  setTimeout(() => {
+    altURLs.forEach((url) => {
+      const preload = new Image();
+      preload.src = url;
+    });
+  }, 5000);
+
+  // cambio main on hover
+  image.addEventListener("mouseenter", () => {
+    image.src = image.dataset.altUrl;
+  });
+  image.addEventListener("mouseleave", resetImage);
+
+  // cambio cada foto al hacer click en los nombres
+  members.forEach((el) => {
+    const setMember = () => {
+      image.src = el.dataset.imageUrl;
+      image.alt = el.dataset.imageAlt;
+    };
+
+    el.addEventListener("focus", setMember);
+    el.addEventListener("blur", resetImage);
+  });
+};
+
 document.addEventListener("DOMContentLoaded", () => {
   countdown();
   bindMeetupDialogButton();
+  bindAboutUsImages();
 });
