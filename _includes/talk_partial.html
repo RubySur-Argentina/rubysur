@@ -1,4 +1,7 @@
-<div class="talk" data-youtube-url="{{ include.talk.youtube_link | replace: 'watch?v=', 'embed/' }}">
+<div
+  class="talk"
+  data-youtube-url="https://www.youtube.com/embed/{{ include.talk.youtube_id }}?start={{ include.talk.youtube_timestamp}}"
+>
   <h3>{{ include.talk.title }}</h3>
   <p>{{ include.talk.description }}</p>
   {% if include.talk.speaker %}
