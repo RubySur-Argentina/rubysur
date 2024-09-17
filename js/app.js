@@ -78,8 +78,14 @@ const bindMeetupDialogButton = () => {
         let iframe = talkDiv.querySelector("iframe");
         if (iframe) return;
 
-        const youtubeEmbedURL = talkDiv.dataset.youtubeUrl;
-        if (youtubeEmbedURL) {
+        const youtubeEmbedId = talkDiv.dataset.youtubeId;
+        const youtubeEmbedTimestamp = talkDiv.dataset.youtubeTimestamp;
+        if (youtubeEmbedId) {
+          let youtubeEmbedURL = `https://www.youtube.com/embed/${youtubeEmbedId}`;
+          if (youtubeEmbedTimestamp) {
+            youtubeEmbedURL = `${youtubeEmbedURL}?start=${youtubeEmbedTimestamp}`;
+          }
+
           const iframe = document.createElement("IFRAME");
           iframe.setAttribute("width", "560");
           iframe.setAttribute("title", "YouTube Video Player");
