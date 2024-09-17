@@ -151,6 +151,14 @@ const bindAboutUsImages = () => {
 
     el.addEventListener("focus", setMember);
     el.addEventListener("blur", resetImage);
+
+    // esto no tiene nada que ver con la imagen, pero bueno lo agrego acá porque es fácil
+    // agrega un delay randon a la animación de los nombres para que no se muevan todos
+    // los nombres igual
+    el.style.setProperty(
+      "--animation-delay",
+      `${Math.floor(Math.random() * 10)}s`
+    );
   });
 };
 

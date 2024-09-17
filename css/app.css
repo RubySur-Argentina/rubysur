@@ -409,10 +409,53 @@ section.about_us {
     button {
       font-size: 18px;
       font-weight: bold;
-      &:focus {
-        background-color: rgb(205, 205, 205);
+      cursor: pointer;
+      position: relative;
+      animation: idle-button infinite linear 5s;
+      animation-delay: var(--animation-delay, 0s);
+
+      &::after {
+        display: block;
+        position: absolute;
+        content: "";
+        height: 1px;
+        background-color: var(--red-1);
+        left: 50%;
+        right: 50%;
+        bottom: 0px;
+        transition: all linear 150ms;
+      }
+
+      &:focus,
+      &:hover {
+        animation: none;
+        /* background-color: rgb(205, 205, 205); */
+        &::after {
+          left: 50px;
+          right: 20px;
+        }
       }
     }
+  }
+}
+
+/* los nombres se mueven un poco para llamar la atención */
+@keyframes idle-button {
+  0% {
+    scale: 1;
+    rotate: 0deg;
+  }
+  90% {
+    scale: 1;
+    rotate: 1deg;
+  }
+  95% {
+    scale: 1.1;
+    rotate: 0deg;
+  }
+  100% {
+    scale: 1;
+    rotate: 1deg;
   }
 }
 
