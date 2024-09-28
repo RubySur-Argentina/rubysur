@@ -112,12 +112,21 @@ const bindMeetupDialogButton = () => {
 
 const bindAboutUsImages = () => {
   const section = document.querySelector("#about_us");
+  const picture = section.querySelector("picture");
+  const sources = picture.querySelectorAll("source");
   const image = section.querySelector("img");
-  const originalSrc = image.src;
-  const originalAlt = image.alt;
+  const originalSrc = picture.dataset.originalSrc;
+  const originalAlt = picture.dataset.originalAlt;
+
+  // obtiene `jpg` o `webp` para saber qué imagenes hacer preload
+  const extensionToUse = picture
+    .querySelector("img")
+    .currentSrc.replace(/.*\.(jpg|webp)/, "$1");
 
   const resetImage = () => {
-    image.src = originalSrc;
+    sources[0].srcset = `${originalSrc}.webp`;
+    sources[1].srcset = `${originalSrc}.jpg`;
+    image.src = `${originalSrc}.${extensionToUse}`;
     image.alt = originalAlt;
   };
 
@@ -125,27 +134,31 @@ const bindAboutUsImages = () => {
 
   // preload después de un rato para que no flasheen al cambiar de imagen
   const altURLs = [
-    image.dataset.altUrl,
+    picture.dataset.hoverSrc,
     ...members.map((button) => button.dataset.imageUrl),
   ];
 
   setTimeout(() => {
     altURLs.forEach((url) => {
       const preload = new Image();
-      preload.src = url;
+      preload.src = `${url}.${extensionToUse}`;
     });
   }, 5000);
 
   // cambio main on hover
-  image.addEventListener("mouseenter", () => {
-    image.src = image.dataset.altUrl;
+  picture.addEventListener("mouseenter", () => {
+    sources[0].srcset = `${picture.dataset.hoverSrc}.webp`;
+    sources[1].srcset = `${picture.dataset.hoverSrc}.jpg`;
+    image.src = `${picture.dataset.hoverSrc}.${extensionToUse}`;
   });
-  image.addEventListener("mouseleave", resetImage);
+  picture.addEventListener("mouseleave", resetImage);
 
   // cambio cada foto al hacer click en los nombres
   members.forEach((el) => {
     const setMember = () => {
-      image.src = el.dataset.imageUrl;
+      sources[0].srcset = `${el.dataset.imageUrl}.webp`;
+      sources[1].srcset = `${el.dataset.imageUrl}.jpg`;
+      image.src = `${el.dataset.imageUrl}.${extensionToUse}`;
       image.alt = el.dataset.imageAlt;
     };
 

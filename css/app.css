@@ -407,11 +407,15 @@ section.about_us {
     align-self: flex-end;
   }
 
-  & > img {
+  & > picture {
     grid-area: image;
     max-width: min(500px, 90vw);
     justify-self: center;
     box-shadow: 2px 2px 5px 1px black;
+
+    & > img {
+      width: 100%;
+    }
 
     @media screen and (min-width: 700px) {
       width: 40vw;
