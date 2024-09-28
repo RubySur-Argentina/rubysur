@@ -4,10 +4,20 @@
     {% for sponsor in site.data.sponsors %}
     <li>
       <a href="{{ sponsor.url }}" target="_blank">
-        <img
-          src="images/sponsors/{{ sponsor.logo_filename }}"
-          alt="Logo de {{ sponsor.name }}"
-        />
+        <picture>
+          <source
+            media="(prefers-color-scheme:dark)"
+            srcset="images/sponsors/{{ sponsor.logo_filename_dark_mode }}"
+          />
+          <source
+            media="(prefers-color-scheme:light)"
+            srcset="images/sponsors/{{ sponsor.logo_filename }}"
+          />
+          <img
+            src="images/sponsors/{{ sponsor.logo_filename }}"
+            alt="Logo de {{ sponsor.name }}"
+          />
+        </picture>
       </a>
     </li>
     {% endfor %}

@@ -2,16 +2,19 @@
   {
     "name": "Rootstrap",
     "logo_filename": "rootstrap.svg",
+    "logo_filename_dark_mode": "rootstrap-dark-mode.svg",
     "url": "https://www.rootstrap.com"
   },
   {
     "name": "Le Wagon",
     "logo_filename": "le_wagon.svg",
+    "logo_filename_dark_mode": "le_wagon-dark-mode.svg",
     "url": "https://www.lewagon.com/es/buenos-aires"
   },
   {
     "name": "OmbuLabs.com",
     "logo_filename": "ombulabs.svg",
+    "logo_filename_dark_mode": "ombulabs-dark-mode.svg",
     "url": "https://www.ombulabs.com"
   }
 ]
