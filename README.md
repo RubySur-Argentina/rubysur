@@ -1,6 +1,6 @@
 # rubysur
 
-Sitio de RubySur Argentina
+Sitio de Rubysur Argentina
 
 ## Setup
 
