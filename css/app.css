@@ -637,9 +637,13 @@ section.sponsors {
       justify-self: center;
       align-self: center;
 
-      & img {
+      & picture {
+        display: block;
         width: 100%;
         max-width: 50vw;
+        & img {
+          width: 100%;
+        }
       }
     }
   }
