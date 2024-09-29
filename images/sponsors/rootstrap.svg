@@ -6,33 +6,10 @@
    fill="none"
    version="1.1"
    id="svg4"
-   sodipodi:docname="rootstrap.svg"
-   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
      id="defs8" />
-  <sodipodi:namedview
-     id="namedview6"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     showgrid="false"
-     width="58px"
-     inkscape:zoom="2.9188597"
-     inkscape:cx="133.78512"
-     inkscape:cy="3.2546957"
-     inkscape:window-width="1920"
-     inkscape:window-height="1021"
-     inkscape:window-x="1920"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg4" />
   <path
      d="m 53.030757,1.1675443 -15.4487,15.3308997 c -1.5353,-4.0476 -4.442,-7.4389697 -8.2216,-9.5922197 -3.7795,-2.15324 -8.1963,-2.93419 -12.4927,-2.20886 -4.2964,0.72533 -8.2045603,2.91172 -11.0540203,6.1840897 -2.84946,3.27239 -4.4626349,7.42679 -4.5627799,11.75049 h 6.5600199 c 0.11901,-3.0641 1.40323,-5.9698 3.5941803,-8.1322 2.1909,-2.1623 5.1259,-3.4208 8.2143,-3.52211 3.0883,-0.1013 6.1006,0.96211 8.4307,2.97611 2.33,2.0141 3.8048,4.8293 4.1274,7.8789 l -0.0642,0.0753 h 0.0817 c 0,0.2491 0.0409,0.6951 0.0467,0.6951 h 8.3051 l 17.0829,-16.9005197 z"
      fill="currentColor"
