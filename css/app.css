@@ -197,10 +197,21 @@ button,
   border: 0;
   line-height: 1;
   text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
 
   @media (prefers-color-scheme: dark) {
     background: black;
     color: #d3d3d3;
+  }
+
+  &.alt {
+    background: black;
+    color: white;
+    @media (prefers-color-scheme: dark) {
+      background: var(--red-1);
+      color: black;
+    }
   }
 }
 
@@ -258,6 +269,7 @@ header {
     grid-area: image;
     aspect-ratio: 1;
     max-width: min(30vw, 200px);
+    border-radius: 50%;
   }
 
   .follow {
@@ -411,10 +423,11 @@ section.about_us {
     grid-area: image;
     max-width: min(500px, 90vw);
     justify-self: center;
-    box-shadow: 2px 2px 5px 1px black;
 
     & > img {
       width: 100%;
+      border-radius: 10px;
+      box-shadow: 2px 2px 5px 1px black;
     }
 
     @media screen and (min-width: 700px) {
@@ -487,6 +500,16 @@ section.about_us {
   }
 }
 
+@keyframes flip {
+  0% {
+    transform: rotateY(0deg);
+  }
+
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
 section.past {
   background: #f4f4f6;
 
@@ -499,6 +522,7 @@ section.past {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1rem;
     padding: 1rem 0;
+    margin-bottom: 1.5rem;
 
     & > li {
       display: grid;
@@ -632,10 +656,12 @@ section.sponsors {
     padding: 3rem 2rem;
     column-gap: 3rem;
     row-gap: 2rem;
+    margin-bottom: 1.5rem;
 
     & li {
       justify-self: center;
       align-self: center;
+      width: 100%;
 
       & picture {
         display: block;

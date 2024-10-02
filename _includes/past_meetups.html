@@ -1,11 +1,14 @@
 <section class="past">
   <h2>Meetups Pasadas</h2>
   <ul>
-    {% for meetup in site.data.meetups.past %}
-      {% include meetup_partial.html meetup=meetup %}
-    {% endfor %}
+    {% for meetup in site.data.meetups.past %} {% include meetup_partial.html
+    meetup=meetup %} {% endfor %}
   </ul>
-  <a href="https://forms.gle/SgLJmfsawaBjNUAm6" target="_blank">
+  <a
+    href="https://forms.gle/SgLJmfsawaBjNUAm6"
+    target="_blank"
+    class="button alt"
+  >
     Querés ser speaker?
   </a>
 </section>

@@ -175,8 +175,26 @@ const bindAboutUsImages = () => {
   });
 };
 
+const bindLogoFlip = () => {
+  const logo = document.querySelector("[alt='Logo de Rubysur']");
+
+  let logoFlipping = false;
+  logo.addEventListener("mouseenter", () => {
+    if (logoFlipping) return;
+
+    logoFlipping = true;
+    logo.style.setProperty("animation", "flip 500ms ease-in-out");
+  });
+
+  logo.addEventListener("animationend", () => {
+    logoFlipping = false;
+    logo.style.setProperty("animation", "");
+  });
+};
+
 document.addEventListener("DOMContentLoaded", () => {
   countdown();
   bindMeetupDialogButton();
   bindAboutUsImages();
+  bindLogoFlip();
 });

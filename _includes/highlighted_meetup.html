@@ -1,5 +1,4 @@
-{% assign meetup = site.data.meetups.highlighted %}
-{% if meetup %}
+{% assign meetup = site.data.meetups.highlighted %} {% if meetup %}
 <section class="highlighted">
   <figure class="speaker">
     <img
@@ -37,5 +36,9 @@
   <div class="countdown"></div>
 </section>
 {% else %}
-<section><p>Pronto vamos a anunciar la próxima meetup</p></section>
+<section>
+  <p style="font-size: 2rem; font-weight: bold; text-align: center">
+    Pronto vamos a anunciar la próxima meetup
+  </p>
+</section>
 {% endif %}
