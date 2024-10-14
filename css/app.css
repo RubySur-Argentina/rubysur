@@ -434,11 +434,34 @@ section.about_us {
     grid-area: image;
     max-width: min(500px, 90vw);
     justify-self: center;
+    --offset: calc(100% / 6);
 
     & > img {
       width: 100%;
+      aspect-ratio: 500 / 389;
       border-radius: 10px;
       box-shadow: 2px 2px 5px 1px black;
+      object-fit: cover;
+      object-position: 0px 0px;
+    }
+
+    &.alt img {
+      object-position: 0px 16.64%;
+    }
+    &.ariel img {
+      object-position: 0px 33.314%;
+    }
+    &.enzo img {
+      object-position: 0px 50%;
+    }
+    &.gemma img {
+      object-position: 0px 66.64%;
+    }
+    &.santi img {
+      object-position: 0px 83.314%;
+    }
+    &.wacko img {
+      object-position: 0px 100%;
     }
 
     @media screen and (min-width: 700px) {
