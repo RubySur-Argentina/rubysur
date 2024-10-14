@@ -7,7 +7,7 @@
     />
     <figcaption>{{ meetup.speaker.name }}</figcaption>
   </figure>
-  <h2>📣¡Próxima Meetup!</h2>
+  <h2>¡Próxima Meetup! 📣</h2>
   <h3>{{ meetup.title }}</h3>
   <time datetime="{{ meetup.date}}T{{ meetup.time}}"
     >{{ meetup.date }} - {{ meetup.time }}</time
@@ -23,7 +23,7 @@
   </address>
   <a
     target="_blank"
-    href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Ruby+Sur+Meetup:+{{ meetup.title | replace: ' ', '+' }}&details={{ meetup.description | replace: ' ', '+' }}&dates={{ meetup.date | replace: '-', '' }}T{{ meetup.time | replace: ':', '' }}00/{{ meetup.date | replace: '-', '' }}T210000&location={{ meetup.location | replace: ' ', '+' }}&ctz=America/Buenos_Aires"
+    href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Ruby+Sur+Meetup:+{{ meetup.title | replace: ' ', '+' }}&details={{ meetup.description | replace: ' ', '+' | replace: '\n', '%0A' }}+%0A%0A+{{ meetup.youtube_link }}&dates={{ meetup.date | replace: '-', '' }}T{{ meetup.time | replace: ':', '' }}00/{{ meetup.date | replace: '-', '' }}T210000&location={{ meetup.location | replace: ' ', '+' }}&ctz=America/Buenos_Aires"
   >
     <i><img src="images/icons/calendar.svg" alt="Calendario" /></i>
     Agregar evento a Google Calendar</a

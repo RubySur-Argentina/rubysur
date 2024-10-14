@@ -384,6 +384,7 @@ section.highlighted {
     right: calc(var(--inline-padding-layout) + 2vw);
     rotate: 20deg;
     background: #fbdc56;
+    color: black;
     padding: 0.5rem;
     max-width: 200px;
     font-size: 1.2rem;
@@ -399,6 +400,16 @@ section.highlighted {
       font-size: 1rem;
       line-height: 1rem;
       max-width: 150px;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    & {
+      color: white;
+
+      & i img {
+        filter: contrast(0);
+      }
     }
   }
 }
