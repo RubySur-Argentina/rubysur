@@ -16,5 +16,11 @@
     "logo_filename": "ombulabs.svg",
     "logo_filename_dark_mode": "ombulabs-dark-mode.svg",
     "url": "https://www.ombulabs.com"
+  },
+  {
+    "name": "eagerworks",
+    "logo_filename": "eagerworks.svg",
+    "logo_filename_dark_mode": "eagerworks-dark-mode.svg",
+    "url": "https://eagerworks.com"
   }
 ]
