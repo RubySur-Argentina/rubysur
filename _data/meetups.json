@@ -1,19 +1,20 @@
 {
-  "highlighted": {
-    "title": "View Components the right way",
-    "date": "2024-10-16",
-    "time": "19:00",
-    "description": "Hablará sobre la gema view_component, y dará recomendaciones sobre el uso correcto para conseguir componentes altamente reusables.",
-    "location": "Online",
-    "location_link": "https://www.youtube.com/watch?v=2nZsZ4_lx7w",
-    "youtube_link": "https://www.youtube.com/watch?v=2nZsZ4_lx7w",
-    "meetup_link": "https://www.meetup.com/rubyba/events/304012554/",
-    "speaker": {
-      "name": "Jorge Leites",
-      "image_filename": "jorge-leites.png"
-    }
-  },
+  "highlighted": null,
   "past": [
+    {
+      "meetup": "Octubre 2024",
+      "date": "16/10/2024",
+      "meetup_link": "https://www.meetup.com/rubyba/events/304012554/",
+      "talks": [
+        {
+          "title": "View Components the right way",
+          "speaker": "Jorge Leites",
+          "description": "Hablará sobre la gema view_component, y dará recomendaciones sobre el uso correcto para conseguir componentes altamente reusables.",
+          "youtube_link": "https://www.youtube.com/watch?v=2nZsZ4_lx7w",
+          "youtube_id": "2nZsZ4_lx7w"
+        }
+      ]
+    },
     {
       "meetup": "Septiembre 2024",
       "date": "12/09/2024",
