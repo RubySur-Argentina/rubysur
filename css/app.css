@@ -651,8 +651,39 @@ section.past {
       h3 {
         grid-area: title;
       }
-      span {
+      .speaker {
         grid-area: speaker;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        & ul {
+          grid-area: social;
+          gap: 0.3rem;
+          vertical-align: text-top;
+          display: flex;
+          &::before {
+            content: "(";
+          }
+          &::after {
+            content: ")";
+          }
+          & li {
+            padding-top: 0px;
+            & a {
+              vertical-align: middle;
+              & svg {
+                width: 1rem;
+                height: 1rem;
+
+                @media (prefers-color-scheme: dark) {
+                  & path {
+                    fill: white;
+                  }
+                }
+              }
+            }
+          }
+        }
       }
       p {
         grid-area: description;

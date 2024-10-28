@@ -8,7 +8,7 @@
       "talks": [
         {
           "title": "View Components the right way",
-          "speaker": "Jorge Leites",
+          "speaker": "jorge_leites",
           "description": "Hablará sobre la gema view_component, y dará recomendaciones sobre el uso correcto para conseguir componentes altamente reusables.",
           "youtube_link": "https://www.youtube.com/watch?v=2nZsZ4_lx7w",
           "youtube_id": "2nZsZ4_lx7w"
@@ -22,8 +22,8 @@
       "talks": [
         {
           "title": "Actualizando tu app con Dual Booting",
-          "speaker": "Ariel Juodziukynas",
-          "description": "Ariel Juodziukynas es nuestro speaker de la fecha y va a estar contando como Actualizar tu aplicación con Dual Booting.\n\nVamos a ver cómo actualizar Ruby, Rails, o cualquier otra gema, usando la técnica de Dual Booting para actualizar nuestras aplicaciones gradualmente y ayudarnos a prepara la app para futuras versiones. Vamos a ver ejemplos y conceptos para luego poder adaptar la técnica a diferentes aplicaciones.",
+          "speaker": "ariel_juodziukynas",
+          "description": "Ariel Juodziukynas es nuestro speaker de la fecha y va a estar contando cómo Actualizar tu aplicación con Dual Booting.\n\nVamos a ver cómo actualizar Ruby, Rails, o cualquier otra gema, usando la técnica de Dual Booting para actualizar nuestras aplicaciones gradualmente y ayudarnos a prepara la app para futuras versiones. Vamos a ver ejemplos y conceptos para luego poder adaptar la técnica a diferentes situaciones.",
           "youtube_link": "https://www.youtube.com/watch?v=F-CnVCJQLKI",
           "youtube_id": "F-CnVCJQLKI"
         }
@@ -36,8 +36,8 @@
       "talks": [
         {
           "title": "Refactoring en Ruby: Elevating Code Quality Through Community And Practice",
-          "speaker": "Julio Lucero",
-          "description": "Julio Agustin Lucero es nuestro speaker de la fecha y va a estar abordando:\nRefactoring en Ruby: Elevating Code Quality Through Community And Practice\nUnite a nosotros en esta charla donde exploraremos cómo la programación va más allá de simples líneas de código, convirtiéndose en un proceso colaborativo y creativo. Inspirados por figuras como Kent Beck y DHH, discutiremos la importancia de producir código limpio, mantenible y eficiente.\nNos centraremos en el libro \"Refactoring: Ruby Edition\" de Jay Fields, Shane Harvie y Martin Fowler, y cómo ha guiado el desarrollo de muchos programadores junior. Descubre valiosas estrategias y consejos para mejorar tu práctica de programación y llevar tu código al siguiente nivel.\n¡No te pierdas esta oportunidad de aprender y mantenerte al día con las últimas innovaciones en Ruby on Rails!",
+          "speaker": "julio_lucero",
+          "description": "Julio Agustin Lucero es nuestro speaker de la fecha y va a estar abordando:\n\nRefactoring en Ruby: Elevating Code Quality Through Community And Practice\n\nUnite a nosotros en esta charla donde exploraremos cómo la programación va más allá de simples líneas de código, convirtiéndose en un proceso colaborativo y creativo. Inspirados por figuras como Kent Beck y DHH, discutiremos la importancia de producir código limpio, mantenible y eficiente.\n\nNos centraremos en el libro \"Refactoring: Ruby Edition\" de Jay Fields, Shane Harvie y Martin Fowler, y cómo ha guiado el desarrollo de muchos programadores junior. Descubre valiosas estrategias y consejos para mejorar tu práctica de programación y llevar tu código al siguiente nivel.",
           "youtube_link": "https://www.youtube.com/watch?v=xU7LBW8tmKI",
           "youtube_id": "xU7LBW8tmKI"
         }
@@ -50,8 +50,8 @@
       "talks": [
         {
           "title": "Rails - Lo que hay y lo que viene",
-          "speaker": "Fernando E. Silva Jacquier",
-          "description": "Descubre las últimas novedades de Rails y Turbo en nuestra próxima meetup, de la mano de Fernando E. Silva Jacquier.\n¿Alguna vez has escuchado sobre la nueva versión de Turbo y sus increíbles características de morphing e instant click? Si no es así, ¡no te preocupes! Esta meetup es para vos.\n¿Qué puedes esperar de esta charla?\nUna demostración en vivo (live coding) de la característica de Turbo que más me fascina: el morphing.\nUn vistazo a las próximas novedades en Rails 8.\nMás live coding, enfocándonos en una de las características que más expectativas genera: PWA.\nMantenerse actualizado es crucial. Rails está en constante evolución, con nuevas funcionalidades y mejoras añadidas regularmente.\nSeguir el menú omakase de Rails tiene mucho valor. Está diseñado para ser fácil de usar y permitirte lograr mucho con poco.\n¡No te pierdas esta oportunidad de aprender y mantenerte al día con las últimas innovaciones en Ruby on Rails!",
+          "speaker": "fernando_silva_jacquier",
+          "description": "¿Alguna vez has escuchado sobre la nueva versión de Turbo y sus increíbles características de morphing e instant click? Si no es así, ¡no te preocupes! Esta meetup es para vos.\n\n¿Qué puedes esperar de esta charla?\n\nUna demostración en vivo (live coding) de la característica de Turbo que más me fascina: el morphing.\n\nUn vistazo a las próximas novedades en Rails 8.\n\nMás live coding, enfocándonos en una de las características que más expectativas genera: PWA.\n\nMantenerse actualizado es crucial. Rails está en constante evolución, con nuevas funcionalidades y mejoras añadidas regularmente.\n\nSeguir el menú omakase de Rails tiene mucho valor. Está diseñado para ser fácil de usar y permitirte lograr mucho con poco.",
           "youtube_link": "https://www.youtube.com/watch?v=svst2V6kVVA",
           "youtube_id": "svst2V6kVVA"
         }
@@ -64,8 +64,8 @@
       "talks": [
         {
           "title": "Tech Talk: La evolución del asset pipeline",
-          "speaker": "Ariel Juodziukynas",
-          "description": "Este 13 de junio Ariel Juodziukynas nos contará sobre el presente, pasado y futuro del Asset Pipeline de Rails. Hará un recorrido sobre la historia de cómo Rails manejó los assets en sus orígenes, con que herramientas contamos hoy y hacia donde nos dirigimos con Rails 8.\nHablará también de los patrones y gemas que se fueron usando, con sus pros y los contras, y cuales fueron las razones que motivaron los distintos cambios de cada etapa.",
+          "speaker": "ariel_juodziukynas",
+          "description": "Este 13 de junio Ariel Juodziukynas nos contará sobre el presente, pasado y futuro del Asset Pipeline de Rails. Hará un recorrido sobre la historia de cómo Rails manejó los assets en sus orígenes, con que herramientas contamos hoy y hacia donde nos dirigimos con Rails 8.\n\nHablará también de los patrones y gemas que se fueron usando, con sus pros y los contras, y cuales fueron las razones que motivaron los distintos cambios de cada etapa.",
           "youtube_link": "https://www.youtube.com/watch?v=IroDPuj_b8o",
           "youtube_id": "IroDPuj_b8o"
         }
@@ -78,8 +78,8 @@
       "talks": [
         {
           "title": "Unveiling the power of Hotwire",
-          "speaker": "Filipe Mendes",
-          "description": "Estamos contentos de anunciar un nuevo evento de Rubysur, para el 14 de mayo. Vamos a charlar sobre uno de los puntos más atractivos y que que genera discusión en el desarrollo de aplicaciones con Ruby on Rails: Hotwire.\nFilipe Mendes va a presentar su charla, titulada “Unveiling the power of Hotwire” donde nos va a mostrar como se está aplicando y cómo sacarle provecho a esta metodología con casos reales.",
+          "speaker": "felipe_mendes",
+          "description": "Vamos a charlar sobre uno de los puntos más atractivos y que que genera discusión en el desarrollo de aplicaciones con Ruby on Rails: Hotwire.\n\nFilipe Mendes va a presentar su charla, titulada “Unveiling the power of Hotwire” donde nos va a mostrar como se está aplicando y cómo sacarle provecho a esta metodología con casos reales.",
           "youtube_link": "https://www.youtube.com/watch?v=zbp_2VqAxDQ&t=69s",
           "youtube_id": "zbp_2VqAxDQ",
           "youtube_timestamp": 69
@@ -93,14 +93,14 @@
       "talks": [
         {
           "title": "Speed up CI in your Ruby applications",
-          "speaker": "Enzo Fabbiani",
+          "speaker": "enzo_fabbiani",
           "description": "¿Te gustaría acelerar tus procesos de Integración Continua (CI) en tus aplicaciones Ruby? En esta charla, Enzo Fabbiani, experto en desarrollo de software, compartirá estrategias y mejores prácticas para optimizar tus flujos de CI y mejorar la eficiencia en el desarrollo de tus aplicaciones Ruby. Descubre cómo implementar técnicas efectivas para reducir los tiempos de construcción y despliegue, y aumenta la productividad de tu equipo de desarrollo.",
           "youtube_link": "https://www.youtube.com/watch?v=vRVeNSejGKA",
           "youtube_id": "vRVeNSejGKA"
         },
         {
           "title": "How to Prepare Your First Meetup Talk",
-          "speaker": "Santiago Merlo",
+          "speaker": "santiago_merlo",
           "description": "¿Te gustaría compartir tus conocimientos y experiencias en un meetup pero no sabes por dónde empezar? En esta charla, Santiago Merlo, experimentado orador en eventos técnicos, te guiará a través de los pasos claves para preparar y presentar tu primera charla en un meetup. Desde la elección del tema hasta la entrega efectiva, aprenderás técnicas prácticas para cautivar a tu audiencia y dejar una impresión duradera en tu comunidad.",
           "youtube_link": "https://www.youtube.com/watch?v=vRVeNSejGKA&t=1176s",
           "youtube_id": "vRVeNSejGKA",
@@ -115,8 +115,8 @@
       "talks": [
         {
           "title": "Iluminando el Camino: Perspectivas sobre Debugging de un Recién Llegado",
-          "speaker": "Fernando E. Silva Jacquier",
-          "description": "Estamos contentos de anunciar el primer evento del 2024 de Rubysur, que hemos programado para el 14 de marzo. En esta ocasión, vamos a explorar un tema fundamental en el desarrollo de software: el debugging.\nEn la primera charla, \"Iluminando el Camino: Perspectivas sobre Debugging de un Recién Llegado\", nuestro orador, Fernando E. Silva Jacquier, inspirado por el libro \"Are your lights on?\", nos ofrecerá una perspectiva única sobre cómo abordar el debugging como un problema más, brindando herramientas simples pero efectivas para diagnosticar y resolver errores.\nLa charla abarcará desde fundamentos teóricos y estrategias prácticas para reducir el alcance de los problemas, a alternativas, que nos ayuden a mejorar el proceso de debugging.",
+          "speaker": "fernando_silva_jacquier",
+          "description": "En esta ocasión, vamos a explorar un tema fundamental en el desarrollo de software: el debugging.\n\nEn la charla \"Iluminando el Camino: Perspectivas sobre Debugging de un Recién Llegado\", nuestro orador, Fernando E. Silva Jacquier, inspirado por el libro \"Are your lights on?\", nos ofrecerá una perspectiva única sobre cómo abordar el debugging como un problema más, brindando herramientas simples pero efectivas para diagnosticar y resolver errores.\n\nLa charla abarcará desde fundamentos teóricos y estrategias prácticas para reducir el alcance de los problemas, a alternativas, que nos ayuden a mejorar el proceso de debugging.",
           "youtube_link": "https://www.youtube.com/watch?v=3qyTOEVSeog",
           "youtube_id": "3qyTOEVSeog"
         }
@@ -129,14 +129,14 @@
       "talks": [
         {
           "title": "Setting up VS Code for Ruby on Rails development",
-          "speaker": "Viktor Fonic",
-          "description": "Viktor Fonic viene trabajando hace más de 15 años desarrollando software y a lo largo de su carrera ha usado diferentes IDEs y editores de texto. En los últimos 5 años ha estado usado VS Code.\nEn su charla nos va a describir su experiencia customizando el editor para trabajar de manera más eficiente. Nos contará sobre algunas de las extensiones más populares y otras no tan conocidas (como Bust a gem, Custom CSS and JS loader), como hacer macros y configurar los keybindings para realizar acciones con pocos tecleos.",
+          "speaker": "viktor_fonic",
+          "description": "Viktor Fonic viene trabajando hace más de 15 años desarrollando software y a lo largo de su carrera ha usado diferentes IDEs y editores de texto. En los últimos 5 años ha estado usado VS Code.\n\nEn su charla nos va a describir su experiencia customizando el editor para trabajar de manera más eficiente. Nos contará sobre algunas de las extensiones más populares y otras no tan conocidas (como Bust a gem, Custom CSS and JS loader), como hacer macros y configurar los keybindings para realizar acciones con pocos tecleos.",
           "youtube_link": "https://www.youtube.com/watch?v=uKzAT3EtG5s",
           "youtube_id": "uKzAT3EtG5s"
         },
         {
           "title": "IoT con Ruby ¿Es posible?",
-          "speaker": "Santiago Merlo",
+          "speaker": "santiago_merlo",
           "description": "En la segunda charla, junto a Santiago Merlo vamos a explorar cómo se lleva Ruby con IoT en la Raspberry Pi. Veremos algunos ejemplos básicos y charlaremos sobre lo bueno, lo malo y lo no tan bonito de usar Ruby para el Internet de las Cosas. ¿Es realmente práctico o solo es para entusiastas del lenguaje?",
           "youtube_link": "https://www.youtube.com/watch?v=8bZ0Br9Sz1c",
           "youtube_id": "8bZ0Br9Sz1c"
@@ -150,7 +150,7 @@
       "talks": [
         {
           "title": "Formularios con Rails y uso de features nativos de HTML",
-          "speaker": "Ariel Juodziukynas",
+          "speaker": "ariel_juodziukynas",
           "description": "Contaremos con Ariel Juodziukynas que estará dando una charla sobre Rails y el uso de features \"\"mágicas\"\" relacionadas a formularios que no mucha gente usa/conoce.",
           "youtube_link": "https://www.youtube.com/watch?v=cVysEUIxYMc",
           "youtube_id": "cVysEUIxYMc"
@@ -164,7 +164,7 @@
       "talks": [
         {
           "title": "Design Patterns",
-          "speaker": "Claudio Kerekes",
+          "speaker": "claudio_kerekes",
           "description": "Directo desde Bogotá, Claudio Kerekes nos brindará una charla sobre Design Patterns. Luego de la presentación, habrá un espacio para seguir hablando del tema y hacer networking 😉"
         }
       ]

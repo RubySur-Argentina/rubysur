@@ -1,0 +1,104 @@
+{
+  "ariel_juodziukynas": {
+    "first_name": "Ariel",
+    "last_name": "Juodziukynas",
+    "image_filename": "ariel-juodziukynas.webp",
+    "social": [
+      {
+        "icon": "svg/linkedin-in.svg",
+        "url": "https://www.linkedin.com/in/ariel-juodziukynas-a3316064/"
+      },
+      {
+        "icon": "svg/x-twitter.svg",
+        "url": "https://x.com/arieljuod"
+      }
+    ]
+  },
+  "claudio_kerekes": {
+    "first_name": "Claudio",
+    "last_name": "Kerekes",
+    "image_filename": "",
+    "social": [
+      {
+        "icon": "svg/linkedin-in.svg",
+        "url": "https://www.linkedin.com/in/santiago-merlo-380b9711a/"
+      }
+    ]
+  },
+  "enzo_fabbiani": {
+    "first_name": "Enzo",
+    "last_name": "Fabbiani",
+    "image_filename": "",
+    "social": [
+      {
+        "icon": "svg/linkedin-in.svg",
+        "url": "https://www.linkedin.com/in/enzo-fabbiani-perez-585850b3/"
+      }
+    ]
+  },
+  "felipe_mendes": {
+    "first_name": "Felipe",
+    "last_name": "Mendes",
+    "image_filename": "",
+    "social": [
+      {
+        "icon": "svg/linkedin-in.svg",
+        "url": "https://www.linkedin.com/in/filipemendespi/"
+      }
+    ]
+  },
+  "fernando_silva_jacquier": {
+    "first_name": "Fernando E.",
+    "last_name": "Silva Jacquier",
+    "image_filename": "",
+    "social": [
+      {
+        "icon": "svg/linkedin-in.svg",
+        "url": "https://www.linkedin.com/in/fesilvajacquier/"
+      },
+      {
+        "icon": "svg/x-twitter.svg",
+        "url": "https://x.com/fesilvajacquier"
+      }
+    ]
+  },
+  "jorge_leites": {
+    "first_name": "Jorge",
+    "last_name": "Leites",
+    "image_filename": "jorge-leites.png",
+    "social": [
+      {
+        "icon": "svg/linkedin-in.svg",
+        "url": "https://www.linkedin.com/in/jorge-leites/"
+      }
+    ]
+  },
+  "julio_lucero": {
+    "first_name": "Julio",
+    "last_name": "Lucero",
+    "image_filename": "",
+    "social": [
+      {
+        "icon": "svg/linkedin-in.svg",
+        "url": "https://linkedin.com/in/julioalucero"
+      }
+    ]
+  },
+  "santiago_merlo": {
+    "first_name": "Santiago",
+    "last_name": "Merlo",
+    "image_filename": "",
+    "social": [
+      {
+        "icon": "svg/linkedin-in.svg",
+        "url": "https://www.linkedin.com/in/santiago-merlo-380b9711a/"
+      }
+    ]
+  },
+  "viktor_fonic": {
+    "first_name": "Viktor",
+    "last_name": "Fonic",
+    "image_filename": "",
+    "social": null
+  }
+}
