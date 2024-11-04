@@ -1,5 +1,28 @@
 {
-  "highlighted": null,
+  "highlighted": {
+    "meetup": "Noviembre 2024",
+    "title": "\"Ruby + IA\" y \"Testing\"",
+    "date": "2024-11-12",
+    "time": "19:00",
+    "location": "Joy Cowork (Auditorio, Piso 2) - Av. Dorrego 864 · Buenos Aires",
+    "location_link": "https://maps.app.goo.gl/y87XyK9iyhZR2SGMA",
+    "youtube_link": "https://www.youtube.com/watch?v=fZIhFXQb2Sw",
+    "meetup_link": "https://www.meetup.com/rubyba/events/304387497/",
+    "talks": [
+      {
+        "title": "Ruby + IA: de la teoría a la práctica",
+        "speaker": "juan_pablo_balarini",
+        "description_highlighted": "En la primera charla exploraremos el potencial de la inteligencia artificial, desde los conceptos clave hasta ejemplos prácticos en una aplicación de Ruby on Rails. ",
+        "description": "Exploraremos el potencial de la inteligencia artificial, desde los conceptos clave hasta ejemplos prácticos en una aplicación de Ruby on Rails."
+      },
+      {
+        "title": "Testing: Buenas prácticas y performance",
+        "speaker": "joaquin_vicente",
+        "description_highlighted": "En la segunda charla hablaremos sobre cómo escribir y organizar tests eficientes, equilibrando la calidad del código, la practicidad, y la performance.",
+        "description": "Una charla sobre cómo escribir y organizar tests eficientes, equilibrando la calidad del código, la practicidad y la performance. Joaquín compartirá estrategias para optimizar tiempos de ejecución y reducir la complejidad de las pruebas, asegurando una suite de testing confiable para el desarrollo de aplicaciones."
+      }
+    ]
+  },
   "past": [
     {
       "meetup": "Octubre 2024",

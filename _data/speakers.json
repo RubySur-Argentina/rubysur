@@ -62,6 +62,17 @@
       }
     ]
   },
+  "joaquin_vicente": {
+    "first_name": "Joaquín",
+    "last_name": "Vicente",
+    "image_filename": "joaquin-vicente.png",
+    "social": [
+      {
+        "icon": "svg/linkedin-in.svg",
+        "url": "https://www.linkedin.com/in/joaquinvicente/"
+      }
+    ]
+  },
   "jorge_leites": {
     "first_name": "Jorge",
     "last_name": "Leites",
@@ -70,6 +81,18 @@
       {
         "icon": "svg/linkedin-in.svg",
         "url": "https://www.linkedin.com/in/jorge-leites/"
+      }
+    ]
+  },
+  "juan_pablo_balarini": {
+    "first_name": "Juan Pablo",
+    "last_name": "Balarini",
+    "title": "Co-founder & CTO at eagerworks",
+    "image_filename": "juan-pablo-balarini.png",
+    "social": [
+      {
+        "icon": "svg/linkedin-in.svg",
+        "url": "https://www.linkedin.com/in/juan-pablo-balarini/"
       }
     ]
   },

@@ -355,26 +355,31 @@ section.highlighted {
     max-width: 45ch;
   }
 
-  .speaker {
+  .speakers {
     float: right;
-    margin-inline-start: 2rem;
+    margin-inline: 2rem 3rem;
 
     @media screen and (max-width: 600px) {
       display: none;
     }
 
-    & img {
-      width: 30vw;
-      max-width: 250px;
-      display: block;
-      filter: drop-shadow(1px 4px 5px #580d2e);
-    }
+    figure {
+      & img {
+        width: 25vw;
+        max-width: 150px;
+        max-height: 200px;
+        object-fit: scale-down;
+        display: block;
+        filter: drop-shadow(1px 4px 5px #580d2e);
+        height: 100%;
+      }
 
-    & figcaption {
-      font-size: 1rem;
-      text-align: center;
-      padding-right: 2rem;
-      font-weight: bold;
+      & figcaption {
+        font-size: 1rem;
+        text-align: center;
+        padding-right: 2rem;
+        font-weight: bold;
+      }
     }
   }
 
