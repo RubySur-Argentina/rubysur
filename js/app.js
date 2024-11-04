@@ -10,10 +10,10 @@ const intToTime = (int) => {
   const parts = [];
   if (days > 0) {
     parts.push(`${days} días`);
-    parts.push(`${hours} hora${hours === 1 ? "" : "s"}`);
+    if (hours > 0) parts.push(`${hours} hora${hours === 1 ? "" : "s"}`);
   } else if (hours > 0) {
     parts.push(`${hours} hora${hours === 1 ? "" : "s"}`);
-    parts.push(`${minutes} minuto${minutes === 1 ? "" : "s"}`);
+    if (minutes > 0) parts.push(`${minutes} minuto${minutes === 1 ? "" : "s"}`);
   } else {
     if (minutes > 0) parts.push(`${minutes} minuto${minutes === 1 ? "" : "s"}`);
     parts.push(`${seconds} segundo${seconds === 1 ? "" : "s"}`);
