@@ -150,7 +150,7 @@ const bindAboutUsImages = () => {
 };
 
 const bindLogoFlip = () => {
-  const logo = document.querySelector("[alt='Logo de Rubysur']");
+  const logo = document.querySelector("[alt='Logo de RubySur']");
 
   let logoFlipping = false;
   logo.addEventListener("mouseenter", () => {
