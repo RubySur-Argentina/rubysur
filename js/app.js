@@ -127,6 +127,9 @@ const bindAboutUsImages = () => {
   picture.addEventListener("mouseenter", () => {
     picture.classList = "alt";
   });
+  picture.addEventListener("click", () => {
+    picture.classList = "alt";
+  });
   picture.addEventListener("mouseleave", resetImage);
 
   // cambio cada foto al hacer click en los nombres
@@ -136,6 +139,7 @@ const bindAboutUsImages = () => {
       image.alt = el.dataset.imageAlt;
     };
 
+    el.addEventListener("click", () => el.focus());
     el.addEventListener("focus", setMember);
     el.addEventListener("blur", resetImage);
 
