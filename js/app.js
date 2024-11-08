@@ -170,9 +170,38 @@ const bindLogoFlip = () => {
   });
 };
 
+const altTitles = [
+  "Hey! volvé!!",
+  "Este es el tab que estás buscando",
+  "Acá están las meetups",
+  "Helado gratis",
+  "ɿuƧyduЯ",
+  "👀👀👀👀👀👀👀",
+  "La pagina más importante",
+  "esto no es una página",
+  "Y TUUUUU TE VAAAAS ASI COMO SI NADAA (y tu te vaaaas)",
+  "VUELVE! que sin ti la vida se me vaaaa!",
+  "💎🇦🇷",
+  "No te vayas chavo...",
+  "💩",
+];
+
+const bindTabTitle = () => {
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) {
+      document.title = `RubySur - ${
+        altTitles[Math.floor(Math.random() * altTitles.length)]
+      }`;
+    } else {
+      document.title = "RubySur - Argentina";
+    }
+  });
+};
+
 document.addEventListener("DOMContentLoaded", () => {
   countdown();
   bindMeetupDialogButton();
   bindAboutUsImages();
   bindLogoFlip();
+  bindTabTitle();
 });
