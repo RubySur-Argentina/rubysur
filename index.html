@@ -2,7 +2,7 @@
 # front matter tells Jekyll to process Liquid
 ---
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -93,9 +93,26 @@
 
     <div class="copyright">
       <span>© 2024 RubySur - Argentina</span>
+      <button class="snake">💎🐍</button>
       <a href="#about_us">About Us</a>
     </div>
 
+    <dialog class="snakeBoard">
+      <div class="hud">
+        <h3>Ruvyborita!</h3>
+        <h3 class="score">Puntaje: 0</h3>
+        <button class="close">X</button>
+      </div>
+      <div class="board"></div>
+      <div class="controls">
+        <button class="up" data-new-direction="Up">⬆️</button>
+        <button class="right" data-new-direction="Right">➡️</button>
+        <button class="down" data-new-direction="Down">⬇️</button>
+        <button class="left" data-new-direction="Left">⬅️</button>
+        <small>o usá el teclado</small>
+      </div>
+    </dialog>
     <script src="js/app.js{{ cacheBust }}"></script>
+    <script src="js/snake.js{{ cacheBust }}"></script>
   </body>
 </html>

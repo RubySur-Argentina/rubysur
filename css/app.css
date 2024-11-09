@@ -775,14 +775,108 @@ footer {
   background: black;
   color: white;
   display: flex;
+  justify-content: space-between;
   padding: 1rem var(--inline-padding-layout);
   font-size: clamp(14px, 2vw, 1rem);
   gap: 0.75rem;
 
-  & span {
-    margin-inline-end: auto;
-  }
   & a {
     color: white;
+  }
+  & button {
+    padding: 0;
+  }
+}
+
+.snakeBoard[open] {
+  padding: 0;
+  min-height: 80vmin;
+  min-width: 80vmin;
+
+  .hud {
+    grid-area: hud;
+    padding: 0.5rem;
+    gap: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    border-bottom: 1px solid var(--red-1);
+    @media (prefers-color-scheme: dark) {
+      color: white;
+    }
+  }
+
+  .board {
+    grid-area: board;
+    --board-size: 15;
+    display: grid;
+    grid-template-columns: repeat(var(--board-size), 1fr);
+    grid-template-rows: repeat(var(--board-size), 1fr);
+    font-size: 0rem;
+    aspect-ratio: 1;
+
+    & span,
+    & img {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+    }
+    & span {
+      background: black;
+      @media (prefers-color-scheme: dark) {
+        background: white;
+      }
+    }
+
+    & p {
+      grid-column: 1 / -1;
+      grid-row: 1 / -1;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+      justify-content: center;
+      @media (prefers-color-scheme: dark) {
+        color: white;
+        font-size: 3rem;
+      }
+    }
+  }
+
+  .controls {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    display: grid;
+    margin: auto auto;
+    row-gap: 1rem;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    .up {
+      grid-column: 2 / 3;
+      grid-row: 1 / 3;
+    }
+    .right {
+      grid-column: 3 / 4;
+      grid-row: 2 / 4;
+    }
+    .left {
+      grid-column: 1 / 2;
+      grid-row: 2 / 4;
+    }
+    .down {
+      grid-column: 2 / 3;
+      grid-row: 3 / 5;
+    }
+
+    & small {
+      grid-row: 5 /6;
+      grid-column: 1 / 4;
+      text-align: center;
+      color: white;
+    }
   }
 }

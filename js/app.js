@@ -204,4 +204,5 @@ document.addEventListener("DOMContentLoaded", () => {
   bindAboutUsImages();
   bindLogoFlip();
   bindTabTitle();
+  snake();
 });
