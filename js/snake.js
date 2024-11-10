@@ -275,4 +275,48 @@ const snake = () => {
 
     printBoard();
   }, 500);
+
+  // animación de la serpiente que pasa por la página de vez en cuando
+  const snakeGif = document.querySelector(".snakeGif");
+  snakeGif.addEventListener("click", () => openGameModal());
+
+  let snakeGifDirection = null;
+  const animateSnake = () => {
+    snakeGifDirection = snakeGifDirection === "right" ? "left" : "right";
+    // altura inicial y final random
+    const initialY = Math.floor(Math.random() * window.innerHeight);
+    const finalY = Math.floor(Math.random() * window.innerHeight);
+
+    // se mueve de derecha a izquierda o de izquierda a derecha
+    const [initialX, finalX] =
+      snakeGifDirection === "right"
+        ? [-30, window.innerWidth + 30]
+        : [window.innerWidth + 30, -30];
+
+    const scale = snakeGifDirection === "right" ? "-1, 1" : "1, 1";
+
+    snakeGif.animate(
+      [
+        {
+          transform: `translateY(${initialY}px) translateX(${initialX}px) scale(${scale})`,
+        },
+        {
+          transform: `translateY(${finalY}px) translateX(${finalX}px) scale(${scale})`,
+        },
+      ],
+      {
+        fill: "forwards",
+        duration: 20000,
+      }
+    );
+  };
+
+  // más o menos una vez por minuto pasa la serpiente de un lado al otro
+  const snakeGifLoop = () => {
+    setTimeout(() => {
+      animateSnake();
+      snakeGifLoop();
+    }, Math.floor(Math.random() * 25000) + 45000);
+  };
+  snakeGifLoop();
 };
