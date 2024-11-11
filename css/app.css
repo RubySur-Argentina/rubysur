@@ -208,9 +208,15 @@ button,
   &.alt {
     background: black;
     color: white;
+    & i img {
+      filter: invert(1);
+    }
     @media (prefers-color-scheme: dark) {
       background: var(--red-1);
       color: black;
+      & i img {
+        filter: none;
+      }
     }
   }
 }
@@ -413,7 +419,7 @@ section.highlighted {
       color: white;
 
       & i img {
-        filter: contrast(0);
+        filter: invert(0.9);
       }
     }
   }
