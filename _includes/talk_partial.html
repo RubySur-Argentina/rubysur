@@ -4,6 +4,11 @@
   data-youtube-timestamp="{{ include.talk.youtube_timestamp}}"
 >
   <h3>{{ include.talk.title }}</h3>
+  {% if include.talk.slides_link %}
+    <a href="{{ include.talk.slides_link }}" target="_blank">
+      📽️ Descargar/Ver slides de la charla
+    </a>
+  {% endif %}
   <p>{{ include.talk.description | newline_to_br }}</p>
   {% if include.talk.speaker %}
     {% assign speaker = site.data.speakers[include.talk.speaker] %}
@@ -13,7 +18,7 @@
         <ul>
           {% for social in speaker.social %}
             <li>
-              <a href="{{ social.url }}" target="_blank">
+              <a href="{{ social.url }}" target="_blank" title="{{ social.title }}">
                 {% include {{ social.icon }} %}
               </a>
             </li>

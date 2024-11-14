@@ -653,7 +653,7 @@ section.past {
     .talk {
       display: grid;
 
-      grid-template-areas: "title" "video" "description" "speaker";
+      grid-template-areas: "title" "slides" "video" "description" "speaker";
       grid-template-columns: 1fr;
 
       row-gap: 1rem;
@@ -661,6 +661,10 @@ section.past {
 
       h3 {
         grid-area: title;
+      }
+      & > a {
+        grid-area: slides;
+        justify-self: start;
       }
       .speaker {
         grid-area: speaker;
@@ -716,7 +720,7 @@ section.past {
 
     @media screen and (min-width: 800px) {
       .talk:has(iframe) {
-        grid-template-areas: "title title" "video description" "video speaker";
+        grid-template-areas: "title title" "slides slides" "video description" "video speaker";
         grid-template-columns: 1fr 0.5fr;
       }
     }

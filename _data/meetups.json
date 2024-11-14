@@ -1,29 +1,31 @@
 {
-  "highlighted": {
-    "meetup": "Noviembre 2024",
-    "title": "\"Ruby + IA\" y \"Testing\"",
-    "date": "2024-11-12",
-    "time": "19:00",
-    "location": "Joy Cowork (Auditorio, Piso 2) - Av. Dorrego 864 · Buenos Aires",
-    "location_link": "https://maps.app.goo.gl/y87XyK9iyhZR2SGMA",
-    "youtube_link": "https://www.youtube.com/watch?v=fZIhFXQb2Sw",
-    "meetup_link": "https://www.meetup.com/rubyba/events/304387497/",
-    "talks": [
-      {
-        "title": "Ruby + IA: de la teoría a la práctica",
-        "speaker": "juan_pablo_balarini",
-        "description_highlighted": "En la primera charla exploraremos el potencial de la inteligencia artificial, desde los conceptos clave hasta ejemplos prácticos en una aplicación de Ruby on Rails. ",
-        "description": "Exploraremos el potencial de la inteligencia artificial, desde los conceptos clave hasta ejemplos prácticos en una aplicación de Ruby on Rails."
-      },
-      {
-        "title": "Testing: Buenas prácticas y performance",
-        "speaker": "joaquin_vicente",
-        "description_highlighted": "En la segunda charla hablaremos sobre cómo escribir y organizar tests eficientes, equilibrando la calidad del código, la practicidad, y la performance.",
-        "description": "Una charla sobre cómo escribir y organizar tests eficientes, equilibrando la calidad del código, la practicidad y la performance. Joaquín compartirá estrategias para optimizar tiempos de ejecución y reducir la complejidad de las pruebas, asegurando una suite de testing confiable para el desarrollo de aplicaciones."
-      }
-    ]
-  },
+  "highlighted": null,
   "past": [
+    {
+      "meetup": "Noviembre 2024",
+      "date": "12/11/2024",
+      "meetup_link": "https://www.meetup.com/rubyba/events/304387497/",
+      "talks": [
+        {
+          "title": "Testing: Buenas prácticas y performance",
+          "speaker": "joaquin_vicente",
+          "description_highlighted": "En la segunda charla hablaremos sobre cómo escribir y organizar tests eficientes, equilibrando la calidad del código, la practicidad, y la performance.",
+          "description": "Una charla sobre cómo escribir y organizar tests eficientes, equilibrando la calidad del código, la practicidad y la performance. Joaquín compartirá estrategias para optimizar tiempos de ejecución y reducir la complejidad de las pruebas, asegurando una suite de testing confiable para el desarrollo de aplicaciones.",
+          "youtube_link": "https://www.youtube.com/watch?v=fZIhFXQb2Sw",
+          "youtube_id": "fZIhFXQb2Sw",
+          "slides_link": "https://docs.google.com/presentation/d/1fjEoBp32cLD1l8bYkIfGXusaoJDnkkmeRKVN48XNleU/edit?usp=sharing"
+        },
+        {
+          "title": "Ruby + IA: de la teoría a la práctica",
+          "speaker": "juan_pablo_balarini",
+          "description_highlighted": "En la primera charla exploraremos el potencial de la inteligencia artificial, desde los conceptos clave hasta ejemplos prácticos en una aplicación de Ruby on Rails. ",
+          "description": "Exploraremos el potencial de la inteligencia artificial, desde los conceptos clave hasta ejemplos prácticos en una aplicación de Ruby on Rails.",
+          "youtube_link": "https://www.youtube.com/watch?v=4IkPjUdssNI",
+          "youtube_id": "4IkPjUdssNI",
+          "youtube_timestamp": 4731
+        }
+      ]
+    },
     {
       "meetup": "Octubre 2024",
       "date": "16/10/2024",
@@ -48,7 +50,8 @@
           "speaker": "ariel_juodziukynas",
           "description": "Ariel Juodziukynas es nuestro speaker de la fecha y va a estar contando cómo Actualizar tu aplicación con Dual Booting.\n\nVamos a ver cómo actualizar Ruby, Rails, o cualquier otra gema, usando la técnica de Dual Booting para actualizar nuestras aplicaciones gradualmente y ayudarnos a prepara la app para futuras versiones. Vamos a ver ejemplos y conceptos para luego poder adaptar la técnica a diferentes situaciones.",
           "youtube_link": "https://www.youtube.com/watch?v=F-CnVCJQLKI",
-          "youtube_id": "F-CnVCJQLKI"
+          "youtube_id": "F-CnVCJQLKI",
+          "slides_link": "https://arielj.github.io/actualizar_dual_booting/"
         }
       ]
     },
@@ -90,7 +93,8 @@
           "speaker": "ariel_juodziukynas",
           "description": "Este 13 de junio Ariel Juodziukynas nos contará sobre el presente, pasado y futuro del Asset Pipeline de Rails. Hará un recorrido sobre la historia de cómo Rails manejó los assets en sus orígenes, con que herramientas contamos hoy y hacia donde nos dirigimos con Rails 8.\n\nHablará también de los patrones y gemas que se fueron usando, con sus pros y los contras, y cuales fueron las razones que motivaron los distintos cambios de cada etapa.",
           "youtube_link": "https://www.youtube.com/watch?v=IroDPuj_b8o",
-          "youtube_id": "IroDPuj_b8o"
+          "youtube_id": "IroDPuj_b8o",
+          "slides_link": "https://arielj.github.io/assets-pipeline-history"
         }
       ]
     },
@@ -101,7 +105,7 @@
       "talks": [
         {
           "title": "Unveiling the power of Hotwire",
-          "speaker": "felipe_mendes",
+          "speaker": "filipe_mendes",
           "description": "Vamos a charlar sobre uno de los puntos más atractivos y que que genera discusión en el desarrollo de aplicaciones con Ruby on Rails: Hotwire.\n\nFilipe Mendes va a presentar su charla, titulada “Unveiling the power of Hotwire” donde nos va a mostrar como se está aplicando y cómo sacarle provecho a esta metodología con casos reales.",
           "youtube_link": "https://www.youtube.com/watch?v=zbp_2VqAxDQ&t=69s",
           "youtube_id": "zbp_2VqAxDQ",
@@ -119,7 +123,8 @@
           "speaker": "enzo_fabbiani",
           "description": "¿Te gustaría acelerar tus procesos de Integración Continua (CI) en tus aplicaciones Ruby? En esta charla, Enzo Fabbiani, experto en desarrollo de software, compartirá estrategias y mejores prácticas para optimizar tus flujos de CI y mejorar la eficiencia en el desarrollo de tus aplicaciones Ruby. Descubre cómo implementar técnicas efectivas para reducir los tiempos de construcción y despliegue, y aumenta la productividad de tu equipo de desarrollo.",
           "youtube_link": "https://www.youtube.com/watch?v=vRVeNSejGKA",
-          "youtube_id": "vRVeNSejGKA"
+          "youtube_id": "vRVeNSejGKA",
+          "slides_link": "https://docs.google.com/presentation/d/1UeuwW41J2xWRClRok4zuR7plMI-rwgIRupc99m50e24/edit?usp=sharing"
         },
         {
           "title": "How to Prepare Your First Meetup Talk",
@@ -162,7 +167,8 @@
           "speaker": "santiago_merlo",
           "description": "En la segunda charla, junto a Santiago Merlo vamos a explorar cómo se lleva Ruby con IoT en la Raspberry Pi. Veremos algunos ejemplos básicos y charlaremos sobre lo bueno, lo malo y lo no tan bonito de usar Ruby para el Internet de las Cosas. ¿Es realmente práctico o solo es para entusiastas del lenguaje?",
           "youtube_link": "https://www.youtube.com/watch?v=8bZ0Br9Sz1c",
-          "youtube_id": "8bZ0Br9Sz1c"
+          "youtube_id": "8bZ0Br9Sz1c",
+          "slides_link": "https://docs.google.com/presentation/d/1Dgn0xVqZ0SvemssL92Mmi5JpRB6dsCeo3Awxg4E3Z6U/edit?usp=sharing"
         }
       ]
     },
@@ -176,7 +182,8 @@
           "speaker": "ariel_juodziukynas",
           "description": "Contaremos con Ariel Juodziukynas que estará dando una charla sobre Rails y el uso de features \"\"mágicas\"\" relacionadas a formularios que no mucha gente usa/conoce.",
           "youtube_link": "https://www.youtube.com/watch?v=cVysEUIxYMc",
-          "youtube_id": "cVysEUIxYMc"
+          "youtube_id": "cVysEUIxYMc",
+          "slides_link": "https://arielj.github.io/forms-on-rails/"
         }
       ]
     },
