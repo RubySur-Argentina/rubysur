@@ -65,7 +65,8 @@
           "speaker": "julio_lucero",
           "description": "Julio Agustin Lucero es nuestro speaker de la fecha y va a estar abordando:\n\nRefactoring en Ruby: Elevating Code Quality Through Community And Practice\n\nUnite a nosotros en esta charla donde exploraremos cómo la programación va más allá de simples líneas de código, convirtiéndose en un proceso colaborativo y creativo. Inspirados por figuras como Kent Beck y DHH, discutiremos la importancia de producir código limpio, mantenible y eficiente.\n\nNos centraremos en el libro \"Refactoring: Ruby Edition\" de Jay Fields, Shane Harvie y Martin Fowler, y cómo ha guiado el desarrollo de muchos programadores junior. Descubre valiosas estrategias y consejos para mejorar tu práctica de programación y llevar tu código al siguiente nivel.",
           "youtube_link": "https://www.youtube.com/watch?v=xU7LBW8tmKI",
-          "youtube_id": "xU7LBW8tmKI"
+          "youtube_id": "xU7LBW8tmKI",
+          "slides_link": "https://docs.google.com/presentation/d/1POS1Us6h8Qh1qk_wot9dxE3ZRRxr9QKvFUBOJyC_nZk/edit?usp=sharing"
         }
       ]
     },
