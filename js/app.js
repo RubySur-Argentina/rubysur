@@ -112,30 +112,38 @@ const bindMeetupDialogButton = () => {
 
 const bindAboutUsImages = () => {
   const section = document.querySelector("#about_us");
-  const picture = section.querySelector("picture");
-  const image = section.querySelector("img");
+  const pictureWrapper = section.querySelector(".pictureWrapper");
+  const picture = pictureWrapper.querySelector("picture");
+  const image = picture.querySelector("img");
   const originalAlt = picture.dataset.originalAlt;
 
   const resetImage = () => {
-    picture.classList = "";
+    pictureWrapper.classList = "pictureWrapper";
     image.alt = originalAlt;
   };
 
   const members = [...section.querySelectorAll("button")];
 
   // cambio main on hover
-  picture.addEventListener("mouseenter", () => {
-    picture.classList = "alt";
+  pictureWrapper.addEventListener("mouseenter", () => {
+    pictureWrapper.classList = "pictureWrapper alt";
   });
-  picture.addEventListener("click", () => {
-    picture.classList = "alt";
+  pictureWrapper.addEventListener("click", () => {
+    pictureWrapper.classList = "pictureWrapper alt";
   });
-  picture.addEventListener("mouseleave", resetImage);
+  pictureWrapper.addEventListener("mouseleave", resetImage);
 
   // cambio cada foto al hacer click en los nombres
   members.forEach((el) => {
     const setMember = () => {
-      picture.classList = el.dataset.pictureClass;
+      if (el.dataset.pictureClass === "ariel") {
+        const gifImage = document.querySelector(".easterEgg.ariel");
+        const src = gifImage.src;
+        gifImage.src = "";
+        gifImage.src = src;
+      }
+
+      pictureWrapper.classList.add(el.dataset.pictureClass);
       image.alt = el.dataset.imageAlt;
     };
 

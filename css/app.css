@@ -441,38 +441,92 @@ section.about_us {
     align-self: flex-end;
   }
 
-  & > picture {
+  & > .pictureWrapper {
     grid-area: image;
     max-width: min(500px, 90vw);
     justify-self: center;
     --offset: calc(100% / 6);
+    position: relative;
 
-    & > img {
-      width: 100%;
-      aspect-ratio: 500 / 389;
-      border-radius: 10px;
-      box-shadow: 2px 2px 5px 1px black;
-      object-fit: cover;
-      object-position: 0px 0px;
+    & > picture {
+      & > img {
+        width: 100%;
+        aspect-ratio: 500 / 389;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px 1px black;
+        object-fit: cover;
+        object-position: 0px 0px;
+      }
     }
-
-    &.alt img {
+    &.alt picture img {
       object-position: 0px 16.64%;
     }
-    &.ariel img {
+    &.ariel picture img {
       object-position: 0px 33.314%;
     }
-    &.enzo img {
+    &.enzo picture img {
       object-position: 0px 50%;
     }
-    &.gemma img {
+    &.gemma picture img {
       object-position: 0px 66.64%;
     }
-    &.santi img {
+    &.santi picture img {
       object-position: 0px 83.314%;
     }
-    &.wacko img {
+    &.wacko picture img {
       object-position: 0px 100%;
+    }
+
+    & > .easterEgg {
+      display: none;
+      position: absolute;
+    }
+    &.gemma .easterEgg.gemma {
+      display: block;
+      bottom: 10px;
+      left: 0px;
+      animation: butterfly 20s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+      animation-fill-mode: forwards;
+    }
+    &.ariel .easterEgg.ariel {
+      display: block;
+      left: 0px;
+      bottom: 0px;
+      right: 0px;
+      height: 15%;
+      width: 100%;
+      filter: drop-shadow(2px 4px 6px black) invert(1);
+    }
+    &.enzo {
+      overflow: hidden;
+      .easterEgg.enzo {
+        display: block;
+        left: -10%;
+        bottom: 0px;
+        height: 20%;
+        max-height: 70px;
+        animation: megaman 8s linear forwards;
+      }
+    }
+    &.wacko {
+      overflow: hidden;
+      .easterEgg.wacko {
+        display: block;
+        right: -10%;
+        bottom: 0px;
+        height: 20%;
+        max-height: 70px;
+        animation: dice 6s linear forwards;
+      }
+    }
+    &.santi {
+      overflow: hidden;
+      .easterEgg.santi {
+        display: block;
+        right: -10%;
+        bottom: 0px;
+        animation: firecracker 3s linear forwards;
+      }
     }
 
     @media screen and (min-width: 700px) {
@@ -552,6 +606,62 @@ section.about_us {
 
   100% {
     transform: rotateY(360deg);
+  }
+}
+
+@keyframes butterfly {
+  0% {
+    left: 0px;
+    bottom: 10px;
+  }
+  50% {
+    left: 25%;
+    bottom: 55%;
+    rotate: 0deg;
+  }
+  100% {
+    left: 60%;
+    bottom: 100%;
+  }
+}
+
+@keyframes megaman {
+  0% {
+    left: -10%;
+  }
+  100% {
+    left: 110%;
+  }
+}
+
+@keyframes dice {
+  0% {
+    right: -10%;
+  }
+  100% {
+    right: 110%;
+  }
+}
+
+@keyframes firecracker {
+  0% {
+    right: -10%;
+    bottom: 0%;
+    rotate: 0deg;
+  }
+  55% {
+    bottom: 33%;
+  }
+  60% {
+    bottom: 35%;
+  }
+  65% {
+    bottom: 33%;
+  }
+  100% {
+    right: 100%;
+    bottom: 0%;
+    rotate: -2200deg;
   }
 }
 
