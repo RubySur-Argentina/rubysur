@@ -53,26 +53,41 @@ const countdown = () => {
   updateCountdown();
 };
 
+const openDialog = ({ dialog, onClose }) => {
+  // previene scroll chando el modal está abierto
+  const scroll = window.scrollY;
+  document.body.style.top = `-${scroll}px`;
+  document.body.style.position = "fixed";
+
+  dialog.addEventListener(
+    "close",
+    () => {
+      // ajusta el scroll cuando se cierra el modal
+      document.body.style.position = "static";
+      window.scrollTo(0, scroll);
+      onClose();
+    },
+    { once: true }
+  );
+
+  dialog.showModal();
+};
+
+const bindCloseDialogButtons = () => {
+  window.addEventListener("click", (e) => {
+    const closeButton = e.target.closest(".closeDialog");
+    if (!closeButton) return;
+
+    const dialog = closeButton.closest("dialog");
+    dialog?.close();
+  });
+};
+
 const bindMeetupDialogButton = () => {
   window.addEventListener("click", (e) => {
     const target = e.target;
     if (target.classList.contains("details")) {
-      // previene scroll chando el modal está abierto
-      const scroll = window.scrollY;
-      document.body.style.top = `-${scroll}px`;
-      document.body.style.position = "fixed";
-
-      const dialog = target.nextElementSibling;
-      dialog.querySelector(".closeDialog").addEventListener("click", () => {
-        dialog.close();
-      });
-
-      dialog.addEventListener("close", () => {
-        // ajusta el scroll cuando se cierra el modal
-        document.body.style.position = "static";
-        window.scrollTo(0, scroll);
-        dialog.querySelectorAll("iframe").forEach((iframe) => iframe.remove());
-      });
+      const dialog = target.parentElement.querySelector(".meetupDetails");
 
       dialog.querySelectorAll(".talk").forEach((talkDiv) => {
         let iframe = talkDiv.querySelector("iframe");
@@ -105,8 +120,110 @@ const bindMeetupDialogButton = () => {
         }
       });
 
-      dialog.showModal();
+      openDialog({
+        dialog,
+        onClose: () => {
+          dialog
+            .querySelectorAll("iframe")
+            .forEach((iframe) => iframe.remove());
+        },
+      });
     }
+  });
+};
+
+const galleryPreviousArrows = ["ArrowUp", "ArrowLeft"];
+const galleryNextArrows = ["ArrowDown", "ArrowRight"];
+
+const bindMeetupGalleryButton = () => {
+  window.addEventListener("click", (e) => {
+    const target = e.target;
+    if (!target.classList.contains("gallery")) return;
+
+    const dialog = target.parentElement.querySelector(".meetupGallery");
+    const mainElement = dialog.querySelector(".mainElement");
+    const thumbnails = dialog.querySelector(".thumbnails");
+    let currentElement = null;
+
+    const onKeyDown = (e) => {
+      if (!e.code.startsWith("Arrow")) return;
+
+      // sin scroll de las flechas
+      e.stopPropagation();
+      e.preventDefault();
+
+      // si por algún movito no hay currentElement, se muestra el primero
+      if (!currentElement) {
+        thumbnails.querySelector("button").click();
+        return;
+      }
+
+      switch (e.code) {
+        case "ArrowUp":
+        case "ArrowLeft":
+          currentElement.previousElementSibling?.click();
+          break;
+        case "ArrowDown":
+        case "ArrowRight":
+          currentElement.nextElementSibling?.click();
+          break;
+      }
+    };
+    dialog.addEventListener("keydown", onKeyDown);
+
+    const onThumbnailClick = (e) => {
+      const btn = e.target;
+      if (!btn.dataset.filename) return;
+
+      // foco y scroll
+      currentElement = btn;
+      currentElement.focus();
+      currentElement.scrollIntoView({
+        behavior: "smooth",
+        inline: "center",
+        block: "center",
+      });
+
+      // actualizo vista con la nueva imagen/video
+      if (btn.dataset.mediaType === "image") {
+        const path = `/media/meetups/${dialog.dataset.meetupKey}/`;
+        const picture = `<picture>
+          <source media="(max-width: 250px)" srcset="${path}${btn.dataset.filename}_thumbnail.jpg">
+          <source media="(max-width: 500px)" srcset="${path}${btn.dataset.filename}-480.webp">
+          <source media="(max-width: 500px)" srcset="${path}${btn.dataset.filename}-480.jpg">
+          <source media="(max-width: 800px)" srcset="${path}${btn.dataset.filename}-768.webp">
+          <source media="(max-width: 800px)" srcset="${path}${btn.dataset.filename}-768.jpg">
+          <source media="(max-width: 1400px)" srcset="${path}${btn.dataset.filename}-1280.webp">
+          <source media="(max-width: 1400px)" srcset="${path}${btn.dataset.filename}-1280.jpg">
+
+          <img src="${path}${btn.dataset.filename}-1280.webp">
+        </picture>`;
+
+        mainElement.innerHTML = picture;
+      }
+
+      if (btn.dataset.mediaType === "video") {
+        const video = `<video controls>
+          <source src="/media/meetups/${dialog.dataset.meetupKey}/${btn.dataset.filename}.mp4" type="video/mp4" />
+        </video>`;
+
+        mainElement.innerHTML = video;
+      }
+    };
+    thumbnails.addEventListener("click", onThumbnailClick);
+
+    // muestro la primera imagen/video al abrir el dialog
+    thumbnails.querySelector("button").click();
+
+    // abro dialog
+    openDialog({
+      dialog,
+      onClose: () => {
+        dialog.querySelector(".mainElement").innerHTML = "";
+        dialog.removeEventListener("keydown", onKeyDown);
+        thumbnails.removeEventListener("click", onThumbnailClick);
+      },
+    });
   });
 };
 
@@ -208,7 +325,9 @@ const bindTabTitle = () => {
 
 document.addEventListener("DOMContentLoaded", () => {
   countdown();
+  bindCloseDialogButtons();
   bindMeetupDialogButton();
+  bindMeetupGalleryButton();
   bindAboutUsImages();
   bindLogoFlip();
   bindTabTitle();

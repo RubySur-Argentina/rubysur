@@ -1,3 +1,4 @@
+{% assign gallery_items = site.data.gallery[include.meetup.key] %}
 <li>
   <h3>{{ include.meetup.meetup }}</h3>
   <time>{{ include.meetup.date }}</time>
@@ -6,11 +7,34 @@
       <li>{{ talk.title }}</li>
     {% endfor %}
   </ul>
-  <button class="details">Ver detalles</button>
+  <button class="details">Ver charlas</button>
+
+  {% if gallery_items %}
+    <button class="gallery">Galería</button>
+  {% endif %}
+
   <dialog class="meetupDetails">
     <div class="closeDialog"><button class="">X</button></div>
     {% for talk in include.meetup.talks %}
       {% include talk_partial.html talk=talk %}
     {% endfor %}
   </dialog>
+
+  {% if gallery_items %}
+    <dialog class="meetupGallery" data-meetup-key="{{ include.meetup.key }}">
+      <div class="closeDialog"><button class="">X</button></div>
+      <div class="thumbnails">
+        {% for item in gallery_items %}
+          <button data-filename="{{ item.filename }}" data-media-type="{{ item.media_type }}">
+            <img
+              src="/media/meetups/{{ include.meetup.key }}/{{ item.filename }}_thumbnail.jpg"
+              alt="{{ item.alt_type }}"
+              loading="lazy"
+            />
+          </button>
+        {% endfor %}
+      </div>
+      <div class="mainElement"></div>
+    </dialog>
+  {% endif %}
 </li>

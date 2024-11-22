@@ -681,9 +681,9 @@ section.past {
 
     & > li {
       display: grid;
-      grid-template-areas: "title" "date" "talks" "details";
       grid-template-rows: min-content min-content 1fr min-content;
       row-gap: 0.3rem;
+      column-gap: 0.3rem;
       height: 12rem;
       border-radius: 0.5rem;
       border: 1px solid #e4e4e7;
@@ -691,18 +691,21 @@ section.past {
       background: white;
 
       & h3 {
-        grid-area: title;
+        grid-row: 1;
+        grid-column: span 2;
       }
 
       & time {
-        grid-area: date;
+        grid-row: 2;
+        grid-column: span 2;
         font-size: 0.875rem;
         line-height: 1.25rem;
         color: #6e6e77;
       }
 
       & ul {
-        grid-area: talks;
+        grid-row: 3;
+        grid-column: span 2;
         align-self: center;
         & > li {
           line-height: 1.2rem;
@@ -712,11 +715,24 @@ section.past {
         }
       }
 
-      & .details {
-        grid-area: details;
+      & .details,
+      & .gallery {
         font-weight: bold;
         cursor: pointer;
         font-size: 1.2rem;
+      }
+
+      & .details {
+        grid-row: 4;
+        grid-column: 1 / 3;
+        &:has(+ .gallery) {
+          grid-column: 1 / 2;
+        }
+      }
+
+      & .gallery {
+        grid-row: 4;
+        grid-column: 2 / 3;
       }
     }
 
@@ -728,22 +744,15 @@ section.past {
     }
   }
 
-  .meetupDetails {
+  .meetupDetails,
+  .meetupGallery[open] {
     position: relative;
-    max-height: 92vh;
-    max-width: min(900px, 92vw);
-    border: 1px solid black;
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    padding: 1.5rem 1.5rem 2rem;
-    border-radius: 10px;
     .closeDialog {
       position: sticky;
       top: 0px;
       float: right;
-      height: 0px;
       overflow: visible;
+      cursor: pointer;
       button {
         border: 2px solid black;
         border-radius: 50%;
@@ -752,13 +761,24 @@ section.past {
         align-items: center;
         justify-content: center;
         opacity: 0.6;
-        cursor: pointer;
+        pointer-events: none;
         &:hover,
         &:focus {
           opacity: 1;
         }
       }
     }
+  }
+
+  .meetupDetails {
+    max-height: 92vh;
+    max-width: min(900px, 92vw);
+    border: 1px solid black;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    padding: 1.5rem 1.5rem 2rem;
+    border-radius: 10px;
 
     .talk {
       display: grid;
@@ -832,6 +852,66 @@ section.past {
       .talk:has(iframe) {
         grid-template-areas: "title title" "slides slides" "video description" "video speaker";
         grid-template-columns: 1fr 0.5fr;
+      }
+    }
+  }
+
+  .meetupGallery[open] {
+    position: relative;
+    height: 90vh;
+    width: 95vw;
+    max-width: 1500px;
+    max-height: 1500px;
+    display: flex;
+    gap: 1rem;
+    overflow: hidden;
+
+    .mainElement {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      & picture {
+        width: 100%;
+        height: 100%;
+        & img {
+          height: 100%;
+          width: 100%;
+          object-fit: scale-down;
+          object-position: center;
+        }
+      }
+      & video {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .closeDialog {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      z-index: 1;
+    }
+
+    .thumbnails {
+      display: flex;
+      flex-direction: column;
+      overflow-x: auto;
+      flex-shrink: 0;
+      gap: 0.2rem;
+      & img {
+        max-height: 10vh;
+        pointer-events: none;
+      }
+    }
+
+    @media screen and (max-width: 800px) {
+      flex-direction: column-reverse;
+
+      .thumbnails {
+        flex-direction: row;
       }
     }
   }

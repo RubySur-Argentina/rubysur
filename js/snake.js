@@ -162,6 +162,8 @@ const snake = () => {
 
   // event listener de las flechas del teclado
   document.addEventListener("keyup", (e) => {
+    if (!gameContainer.open) return;
+
     if (arrowKeyCodes.includes(e.code)) {
       if (gameState !== "playing") gameState = "playing";
       newDirection = e.code.replace("Arrow", "");
