@@ -8,7 +8,7 @@
 # 3 - En el root del proyecto, ejecutar el script `./images_optimizer.sh`
 
 INPUT_DIR="./temp_images"
-OUTPUT_DIR="../media/meetups/2024_09" # cambiar para guardar fotos de otro mes
+OUTPUT_DIR="../media/meetups/2024_11" # cambiar para guardar fotos de otro mes
 SIZES=(1280 768 480) # Tamaños para generar
 
 mkdir -p "$OUTPUT_DIR"

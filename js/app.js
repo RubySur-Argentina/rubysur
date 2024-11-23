@@ -184,6 +184,8 @@ const bindMeetupGalleryButton = () => {
         block: "center",
       });
 
+      const alt = btn.querySelector("img").alt;
+
       // actualizo vista con la nueva imagen/video
       if (btn.dataset.mediaType === "image") {
         const path = `/media/meetups/${dialog.dataset.meetupKey}/`;
@@ -196,7 +198,7 @@ const bindMeetupGalleryButton = () => {
           <source media="(max-width: 1400px)" srcset="${path}${btn.dataset.filename}-1280.webp">
           <source media="(max-width: 1400px)" srcset="${path}${btn.dataset.filename}-1280.jpg">
 
-          <img src="${path}${btn.dataset.filename}-1280.webp">
+          <img src="${path}${btn.dataset.filename}-1280.webp" alt="${alt}">
         </picture>`;
 
         mainElement.innerHTML = picture;
@@ -204,7 +206,7 @@ const bindMeetupGalleryButton = () => {
 
       if (btn.dataset.mediaType === "video") {
         const video = `<video controls>
-          <source src="/media/meetups/${dialog.dataset.meetupKey}/${btn.dataset.filename}.mp4" type="video/mp4" />
+          <source src="/media/meetups/${dialog.dataset.meetupKey}/${btn.dataset.filename}.mp4" type="video/mp4" alt="${alt}" />
         </video>`;
 
         mainElement.innerHTML = video;
