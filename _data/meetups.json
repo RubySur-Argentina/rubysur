@@ -86,7 +86,8 @@
           "speaker": "fernando_silva_jacquier",
           "description": "¿Alguna vez has escuchado sobre la nueva versión de Turbo y sus increíbles características de morphing e instant click? Si no es así, ¡no te preocupes! Esta meetup es para vos.\n\n¿Qué puedes esperar de esta charla?\n\nUna demostración en vivo (live coding) de la característica de Turbo que más me fascina: el morphing.\n\nUn vistazo a las próximas novedades en Rails 8.\n\nMás live coding, enfocándonos en una de las características que más expectativas genera: PWA.\n\nMantenerse actualizado es crucial. Rails está en constante evolución, con nuevas funcionalidades y mejoras añadidas regularmente.\n\nSeguir el menú omakase de Rails tiene mucho valor. Está diseñado para ser fácil de usar y permitirte lograr mucho con poco.",
           "youtube_link": "https://www.youtube.com/watch?v=svst2V6kVVA",
-          "youtube_id": "svst2V6kVVA"
+          "youtube_id": "svst2V6kVVA",
+          "slides_link": "https://github.com/fesilvajacquier/rails_tnt"
         }
       ]
     },
@@ -157,7 +158,8 @@
           "speaker": "fernando_silva_jacquier",
           "description": "En esta ocasión, vamos a explorar un tema fundamental en el desarrollo de software: el debugging.\n\nEn la charla \"Iluminando el Camino: Perspectivas sobre Debugging de un Recién Llegado\", nuestro orador, Fernando E. Silva Jacquier, inspirado por el libro \"Are your lights on?\", nos ofrecerá una perspectiva única sobre cómo abordar el debugging como un problema más, brindando herramientas simples pero efectivas para diagnosticar y resolver errores.\n\nLa charla abarcará desde fundamentos teóricos y estrategias prácticas para reducir el alcance de los problemas, a alternativas, que nos ayuden a mejorar el proceso de debugging.",
           "youtube_link": "https://www.youtube.com/watch?v=3qyTOEVSeog",
-          "youtube_id": "3qyTOEVSeog"
+          "youtube_id": "3qyTOEVSeog",
+          "slides_link": "https://github.com/fesilvajacquier/debugging"
         }
       ]
     },
