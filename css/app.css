@@ -1086,3 +1086,25 @@ footer {
   position: fixed;
   left: -30px;
 }
+
+body.notFound {
+  background: linear-gradient(110deg, #580d2e, #fe4141);
+  grid-template-rows: 1fr min-content;
+
+  & main {
+    display: grid;
+    max-width: 1280px;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    header {
+      background: none;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      & p {
+        font-size: 4rem;
+        line-height: 4.2rem;
+      }
+    }
+  }
+}
