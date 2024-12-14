@@ -231,6 +231,8 @@ const bindMeetupGalleryButton = () => {
 
 const bindAboutUsImages = () => {
   const section = document.querySelector("#about_us");
+  if (!section) return;
+
   const pictureWrapper = section.querySelector(".pictureWrapper");
   const picture = pictureWrapper.querySelector("picture");
   const image = picture.querySelector("img");
@@ -282,6 +284,7 @@ const bindAboutUsImages = () => {
 
 const bindLogoFlip = () => {
   const logo = document.querySelector("[alt='Logo de RubySur']");
+  if (!logo) return;
 
   let logoFlipping = false;
   logo.addEventListener("mouseenter", () => {
