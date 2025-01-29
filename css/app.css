@@ -945,6 +945,33 @@ section.sponsors {
   }
 }
 
+section.stats {
+  & div {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    max-width: 500px;
+    margin: 0 auto;
+
+    & > p {
+      text-align: center;
+      padding: 2rem;
+      & span {
+        display: block;
+        font-size: min(5rem, 12vw);
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        &:not(:empty) {
+          &::before {
+            content: "+";
+            display: inline;
+            font-size: 3rem;
+          }
+        }
+      }
+    }
+  }
+}
+
 footer {
   background: #f4f4f5;
   padding: 5rem var(--inline-padding-layout);

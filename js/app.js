@@ -328,6 +328,54 @@ const bindTabTitle = () => {
   });
 };
 
+const bindStatsNumbers = () => {
+  const statsSpans = document.querySelectorAll("section.stats span");
+  statsSpans.forEach((span) => {
+    const num = parseInt(span.innerText);
+    span.dataset.originalNum = num;
+    span.innerText = 0;
+  });
+
+  const threshold = 0.1;
+  const options = {
+    rootMargin: "0px",
+    threshold,
+  };
+
+  const duration = 2000;
+  const stepDuration = 50;
+  let timer = null;
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    if (entries[0].intersectionRatio < threshold) {
+      // no se ve, reset a 0
+      if (timer) clearInterval(timer);
+      statsSpans.forEach((span) => (span.innerText = 0));
+    } else {
+      let steps = 0;
+      timer = setInterval(() => {
+        const total = steps * stepDuration;
+
+        if (total > duration) {
+          statsSpans.forEach((span) => {
+            span.innerText = span.dataset.originalNum;
+            if (timer) clearInterval(timer);
+          });
+        } else {
+          statsSpans.forEach((span) => {
+            span.innerText = Math.round(
+              (span.dataset.originalNum * total) / duration
+            );
+          });
+        }
+        steps += 1;
+      }, stepDuration);
+    }
+  }, options);
+
+  observer.observe(document.querySelector("section.stats"));
+};
+
 document.addEventListener("DOMContentLoaded", () => {
   countdown();
   bindCloseDialogButtons();
@@ -336,5 +384,6 @@ document.addEventListener("DOMContentLoaded", () => {
   bindAboutUsImages();
   bindLogoFlip();
   bindTabTitle();
+  bindStatsNumbers();
   snake();
 });
