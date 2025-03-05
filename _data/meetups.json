@@ -1,5 +1,26 @@
 {
-  "highlighted": null,
+  "highlighted": {
+    "meetup": "Marzo 2025",
+    "title": "Primera MeetUp 2025 | Edición Founders On Rails",
+    "date": "2025-03-12",
+    "time": "19:00",
+    "location": "En breve vamos a confirmar la locación",
+    "youtube_link": "https://www.youtube.com/watch?v=tMxMVAQkBZs",
+    "talks": [
+      {
+        "title": "Implementando 11 APIs en Rails sin volverse loco",
+        "speaker": "jaime_zuberbuhler",
+        "description_highlighted": "En la primera charla, <strong>Jaime Zuberbuhler (Co-Founder de MoonyApp)</strong> va a adentrarnos en como implementar adapters y mappers en Rails para interactuar con distintas APIs.",
+        "description": "Jaime Zuberbuhler, Co-Founder de MoonyApp, va a adentrarnos en como implementar adapters y mappers en Rails para interactuar con distintas APIs."
+      },
+      {
+        "title": "El Camino de la Instrumentación",
+        "speaker": "patricio_mac_adden",
+        "description_highlighted": "Luego, <strong>Patricio Mac Adden (Co-Founder de Sinaptia)</strong> nos comparte sobre Instrumentación y Observabilidad. Vamos a aprender conceptos generales y diferentes formas de implementarla en Rails.",
+        "description": "Patricio Mac Adden, Co-Founder de Sinaptia, nos comparte sobre Instrumentación y Observabilidad. Vamos a aprender conceptos generales y diferentes formas de implementarla en Rails."
+      }
+    ]
+  },
   "past": [
     {
       "meetup": "Noviembre 2024",

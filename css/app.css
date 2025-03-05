@@ -343,6 +343,10 @@ section.highlighted {
   font-size: 1.3rem;
   line-height: 2rem;
 
+  & strong {
+    font-weight: bolder;
+  }
+
   @media screen and (max-width: 600px) {
     padding-inline: var(--inline-padding-layout);
   }

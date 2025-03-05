@@ -69,6 +69,11 @@
       }
     ]
   },
+  "jaime_zuberbuhler": {
+    "first_name": "Jaime",
+    "last_name": "Zuberbuhler",
+    "image_filename": "jaime-zuberbuhler.png"
+  },
   "joaquin_vicente": {
     "first_name": "Joaquín",
     "last_name": "Vicente",
@@ -117,6 +122,12 @@
         "title": "LinkedIn de Julio Lucero"
       }
     ]
+  },
+  "patricio_mac_adden": {
+    "first_name": "Patricio",
+    "last_name": "Mac Adden",
+    "image_filename": "patricio-mac-adden.png",
+    "social": []
   },
   "santiago_merlo": {
     "first_name": "Santiago",
