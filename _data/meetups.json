@@ -2,10 +2,9 @@
   "highlighted": {
     "meetup": "Marzo 2025",
     "title": "Primera MeetUp 2025 | Edición Founders On Rails",
-    "date": "2025-03-12",
+    "date": "2025-03 (a definir)",
     "time": "19:00",
     "location": "En breve vamos a confirmar la locación",
-    "youtube_link": "https://www.youtube.com/watch?v=tMxMVAQkBZs",
     "talks": [
       {
         "title": "Implementando 11 APIs en Rails sin volverse loco",
