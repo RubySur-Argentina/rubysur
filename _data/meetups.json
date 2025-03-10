@@ -2,9 +2,12 @@
   "highlighted": {
     "meetup": "Marzo 2025",
     "title": "Primera MeetUp 2025 | Edición Founders On Rails",
-    "date": "2025-03 (a definir)",
+    "date": "2025-03-12",
     "time": "19:00",
-    "location": "En breve vamos a confirmar la locación",
+    "location": "Roxom - Báez 265, CABA",
+    "location_link": "https://maps.app.goo.gl/8NxCqNb5ZqDDtpKL6",
+    "youtube_link": "https://www.youtube.com/watch?v=tMxMVAQkBZs",
+    "meetup_link": "https://www.meetup.com/rubyba/events/306565829",
     "talks": [
       {
         "title": "Implementando 11 APIs en Rails sin volverse loco",
