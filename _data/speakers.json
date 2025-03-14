@@ -72,7 +72,14 @@
   "jaime_zuberbuhler": {
     "first_name": "Jaime",
     "last_name": "Zuberbuhler",
-    "image_filename": "jaime-zuberbuhler.png"
+    "image_filename": "jaime-zuberbuhler.png",
+    "social": [
+      {
+        "icon": "svg/linkedin-in.svg",
+        "url": "https://www.linkedin.com/in/jaime-zuberbuhler-44372b189/",
+        "title": "LinkedIn de Jaime Zuberbuhler"
+      }
+    ]
   },
   "joaquin_vicente": {
     "first_name": "Joaquín",
