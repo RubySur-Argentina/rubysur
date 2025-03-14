@@ -1,29 +1,33 @@
 {
-  "highlighted": {
-    "meetup": "Marzo 2025",
-    "title": "Primera MeetUp 2025 | Edición Founders On Rails",
-    "date": "2025-03-12",
-    "time": "19:00",
-    "location": "Roxom - Báez 265, CABA",
-    "location_link": "https://maps.app.goo.gl/8NxCqNb5ZqDDtpKL6",
-    "youtube_link": "https://www.youtube.com/watch?v=tMxMVAQkBZs",
-    "meetup_link": "https://www.meetup.com/rubyba/events/306565829",
-    "talks": [
-      {
-        "title": "Implementando 11 APIs en Rails sin volverse loco",
-        "speaker": "jaime_zuberbuhler",
-        "description_highlighted": "En la primera charla, <strong>Jaime Zuberbuhler (Co-Founder de MoonyApp)</strong> va a adentrarnos en como implementar adapters y mappers en Rails para interactuar con distintas APIs.",
-        "description": "Jaime Zuberbuhler, Co-Founder de MoonyApp, va a adentrarnos en como implementar adapters y mappers en Rails para interactuar con distintas APIs."
-      },
-      {
-        "title": "El Camino de la Instrumentación",
-        "speaker": "patricio_mac_adden",
-        "description_highlighted": "Luego, <strong>Patricio Mac Adden (Co-Founder de Sinaptia)</strong> nos comparte sobre Instrumentación y Observabilidad. Vamos a aprender conceptos generales y diferentes formas de implementarla en Rails.",
-        "description": "Patricio Mac Adden, Co-Founder de Sinaptia, nos comparte sobre Instrumentación y Observabilidad. Vamos a aprender conceptos generales y diferentes formas de implementarla en Rails."
-      }
-    ]
-  },
+  "highlighted": null,
   "past": [
+    {
+      "meetup": "Marzo 2025",
+      "key": "2025_03",
+      "date": "12/03/2025",
+      "meetup_link": "https://www.meetup.com/rubyba/events/306565829",
+      "talks": [
+        {
+          "title": "Implementando 11 APIs en Rails sin volverse loco",
+          "speaker": "jaime_zuberbuhler",
+          "description_highlighted": "En la primera charla, <strong>Jaime Zuberbuhler (Co-Founder de MoonyApp)</strong> va a adentrarnos en como implementar adapters y mappers en Rails para interactuar con distintas APIs.",
+          "description": "Jaime Zuberbuhler, Co-Founder de MoonyApp, va a adentrarnos en como implementar adapters y mappers en Rails para interactuar con distintas APIs.",
+          "youtube_link": "https://www.youtube.com/watch?v=tMxMVAQkBZs",
+          "youtube_id": "tMxMVAQkBZs",
+          "slides_link": "https://www.ruby.com.ar/media/pdfs/Jaime Zuberbuhler - Adapters y Mappers.pdf"
+        },
+        {
+          "title": "El Camino de la Instrumentación",
+          "speaker": "patricio_mac_adden",
+          "description_highlighted": "Luego, <strong>Patricio Mac Adden (Co-Founder de Sinaptia)</strong> nos comparte sobre Instrumentación y Observabilidad. Vamos a aprender conceptos generales y diferentes formas de implementarla en Rails.",
+          "description": "Patricio Mac Adden, Co-Founder de Sinaptia, nos comparte sobre Instrumentación y Observabilidad. Vamos a aprender conceptos generales y diferentes formas de implementarla en Rails.",
+          "youtube_link": "https://www.youtube.com/watch?v=tMxMVAQkBZs",
+          "youtube_id": "tMxMVAQkBZs",
+          "youtube_timestamp": 3777,
+          "slides_link": "https://www.ruby.com.ar/media/pdfs/Patricio Mac Adden - El camino a la instrumentación.pdf"
+        }
+      ]
+    },
     {
       "meetup": "Noviembre 2024",
       "key": "2024_11",

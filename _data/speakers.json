@@ -127,7 +127,18 @@
     "first_name": "Patricio",
     "last_name": "Mac Adden",
     "image_filename": "patricio-mac-adden.png",
-    "social": []
+    "social": [
+      {
+        "icon": "svg/linkedin-in.svg",
+        "url": "https://www.linkedin.com/in/patriciomacadden/",
+        "title": "LinkedIn de Patricio Mac Adden"
+      },
+      {
+        "icon": "svg/x-twitter.svg",
+        "url": "https://x.com/maxawen",
+        "title": "Twitter/X de Patricio Mac Adden"
+      }
+    ]
   },
   "santiago_merlo": {
     "first_name": "Santiago",
