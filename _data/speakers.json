@@ -69,6 +69,18 @@
       }
     ]
   },
+  "gaston_ginestet": {
+    "first_name": "Gastón",
+    "last_name": "Ginestet",
+    "image_filename": "gaston-ginestet.png",
+    "social": [
+      {
+        "icon": "svg/linkedin-in.svg",
+        "url": "https://www.linkedin.com/in/gastonginestet",
+        "title": "LinkedIn de Gastón Ginestet"
+      }
+    ]
+  },
   "jaime_zuberbuhler": {
     "first_name": "Jaime",
     "last_name": "Zuberbuhler",

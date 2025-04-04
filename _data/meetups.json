@@ -1,5 +1,36 @@
 {
-  "highlighted": null,
+  "highlighted": {
+    "meetup": "Abril 2025",
+    "key": "2025_04",
+    "date": "2025-04-10",
+    "time": "19:00",
+    "title": "Es hora de actualizar",
+    "location": "YouTube",
+    "location_link": "https://www.youtube.com/watch?v=dc9D9NeDJLk",
+    "meetup_link": "https://www.meetup.com/rubyba/events/307093016/",
+    "youtube_link": "https://www.youtube.com/watch?v=dc9D9NeDJLk",
+    "talks": [
+      {
+        "title": "De cero contexto a full upgrade: cómo actualizar una app ajena",
+        "speaker": "gaston_ginestet",
+        "description_highlighted": "Qué pasa si de un día para el otro te piden actualizar una aplicación que no conocés? Qué hacés? Por dónde empezás? Cómo podés hacer para actualizar una aplicación sin romper nada en el camino? <strong>Gastón Ginestet</strong> nos va a contar su experiencia en este arduo trabajo.",
+        "description": "Qué pasa si de un día para el otro te piden actualizar una aplicación que no conocés? Qué hacés? Por dónde empezás? Cómo podés hacer para actualizar una aplicación sin romper nada en el camino? Gastón Ginestet nos va a contar su experiencia en este arduo trabajo.",
+        "youtube_link": "https://www.youtube.com/watch?v=dc9D9NeDJLk",
+        "youtube_id": "dc9D9NeDJLk",
+        "slides_link": ""
+      },
+      {
+        "title": "Zeit-what? Autoloading en ruby",
+        "speaker": "joaquin_vicente",
+        "description_highlighted": "¿Qué es el autoloading y con qué se come? Esta charla nos va a presentar un tema que suele aparecer solo, cada vez se habla de upgrades. <strong>Joaquín Vicente</strong> nos va a contar qué es y como podemos sacar provecho de este feature, tanto dentro, como fuera de Rails, que diferencias hay entre los modos classic y zeitwerk, y cuales son los problemas comunes a la hora de actualizar a Rails 7",
+        "description": "¿Qué es el autoloading y con qué se come? Esta charla nos va a presentar un tema que suele aparecer solo, cada vez se habla de upgrades. Joaquín Vicente nos va a contar qué es y como podemos sacar provecho de este feature, tanto dentro, como fuera de Rails, que diferencias hay entre los modos classic y zeitwerk, y cuales son los problemas comunes a la hora de actualizar a Rails 7",
+        "youtube_link": "https://www.youtube.com/watch?v=dc9D9NeDJLk",
+        "youtube_id": "dc9D9NeDJLk",
+        // "youtube_timestamp": 3777,
+        "slides_link": ""
+      }
+    ]
+  },
   "past": [
     {
       "meetup": "Marzo 2025",
