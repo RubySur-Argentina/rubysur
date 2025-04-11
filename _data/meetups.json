@@ -14,7 +14,7 @@
           "description": "Qué pasa si de un día para el otro te piden actualizar una aplicación que no conocés? Qué hacés? Por dónde empezás? Cómo podés hacer para actualizar una aplicación sin romper nada en el camino? Gastón Ginestet nos va a contar su experiencia en este arduo trabajo.",
           "youtube_link": "https://www.youtube.com/watch?v=dc9D9NeDJLk",
           "youtube_id": "dc9D9NeDJLk",
-          "slides_link": ""
+          "slides_link": "https://docs.google.com/presentation/d/1a0yOpdKEgaFwSpqJl3CCC9lhwveLRUBUVZFWEUbke0M/edit?usp=sharing"
         },
         {
           "title": "Zeit-what? Autoloading en ruby",
