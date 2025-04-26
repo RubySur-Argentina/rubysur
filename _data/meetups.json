@@ -1,5 +1,25 @@
 {
-  "highlighted": null,
+  "highlighted": {
+    "meetup": "Mayo 2025",
+    "title": "Multi-Tenancy y Service Objects",
+    "date": "2025-05-14",
+    "time": "19:00",
+    "location": "Humboldt 1967, Piso 1 Le Wagon, Palermo (Huerta Co-working)",
+    "location_link": "https://maps.app.goo.gl/RhA9yVnY9JcCTq2U6",
+    "youtube_link": "https://www.youtube.com/watch?v=6SNnDvneIMw",
+    "talks": [
+      {
+        "title": "Multi-tenancy en Rails: De 0 a SaaS con acts_as_tenant",
+        "speaker": "santiago_diaz",
+        "description_highlighted": "¿Alguna vez te preguntaste cómo se manejan miles de tiendas en una sola aplicación? En esta charla, exploraremos cómo implementar multi-tenancy en Rails usando acts_as_tenant. Veremos cómo transformar una aplicación monolítica en una plataforma SaaS escalable. Compartiremos experiencias reales y mejores prácticas en la implementación de multi-tenancy en una plataforma de e-commerce."
+      },
+      {
+        "title": "Service Objects en Rails",
+        "speaker": "fernando_silva_jacquier",
+        "description_highlighted": "Fer nos va a contar por qué se critica tanto el patrón de Service Objects en Rails… y por qué, a pesar de las críticas, sigue siendo una herramienta válida para encapsular lógica de negocio. También vamos a ver ejemplos concretos y algunas convenciones útiles para aplicarlo de forma efectiva sin perder la cabeza."
+      }
+    ]
+  },
   "past": [
     {
       "meetup": "Abril 2025",

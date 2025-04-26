@@ -19,6 +19,7 @@
     >{{ meetup.date }} - {{ meetup.time }}</time
   >
   {% for talk in meetup.talks %}
+  <h4>{{ talk.title }}</h4>
   <p>{{ talk.description_highlighted }}</p>
   {% endfor %}
 

@@ -55,7 +55,7 @@
   "fernando_silva_jacquier": {
     "first_name": "Fernando E.",
     "last_name": "Silva Jacquier",
-    "image_filename": "",
+    "image_filename": "fernando-silva-jacquier.png",
     "social": [
       {
         "icon": "svg/linkedin-in.svg",
@@ -156,6 +156,18 @@
         "icon": "svg/x-twitter.svg",
         "url": "https://x.com/maxawen",
         "title": "Twitter/X de Patricio Mac Adden"
+      }
+    ]
+  },
+  "santiago_diaz": {
+    "first_name": "Santiago",
+    "last_name": "Diaz",
+    "image_filename": "santiago-diaz.png",
+    "social": [
+      {
+        "icon": "svg/linkedin-in.svg",
+        "url": "https://www.linkedin.com/in/santiago-díaz-6a99726b/",
+        "title": "LinkedIn de Santiago Diaz"
       }
     ]
   },

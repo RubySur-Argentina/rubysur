@@ -365,6 +365,15 @@ section.highlighted {
     max-width: 45ch;
   }
 
+  & time {
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  & h4 {
+    font-weight: bold;
+  }
+
   .speakers {
     float: right;
     margin-inline: 2rem 3rem;
@@ -376,7 +385,6 @@ section.highlighted {
     figure {
       & img {
         width: 25vw;
-        max-width: 150px;
         max-height: 200px;
         object-fit: scale-down;
         display: block;
@@ -387,7 +395,6 @@ section.highlighted {
       & figcaption {
         font-size: 1rem;
         text-align: center;
-        padding-right: 2rem;
         font-weight: bold;
       }
     }
