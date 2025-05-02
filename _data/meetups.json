@@ -7,6 +7,7 @@
     "location": "Humboldt 1967, Piso 1 Le Wagon, Palermo (Huerta Co-working)",
     "location_link": "https://maps.app.goo.gl/RhA9yVnY9JcCTq2U6",
     "youtube_link": "https://www.youtube.com/watch?v=6SNnDvneIMw",
+    "meetup_link": "https://www.meetup.com/rubyba/events/307533005/",
     "talks": [
       {
         "title": "Multi-tenancy en Rails: De 0 a SaaS con acts_as_tenant",
