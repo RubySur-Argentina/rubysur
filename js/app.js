@@ -239,7 +239,7 @@ const bindAboutUsImages = () => {
   const originalAlt = picture.dataset.originalAlt;
 
   const resetImage = () => {
-    pictureWrapper.classList = "pictureWrapper";
+    pictureWrapper.classList = "pictureWrapper textBox";
     image.alt = originalAlt;
   };
 
@@ -247,10 +247,10 @@ const bindAboutUsImages = () => {
 
   // cambio main on hover
   pictureWrapper.addEventListener("mouseenter", () => {
-    pictureWrapper.classList = "pictureWrapper alt";
+    pictureWrapper.classList = "pictureWrapper textBox alt";
   });
   pictureWrapper.addEventListener("click", () => {
-    pictureWrapper.classList = "pictureWrapper alt";
+    pictureWrapper.classList = "pictureWrapper textBox alt";
   });
   pictureWrapper.addEventListener("mouseleave", resetImage);
 

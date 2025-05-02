@@ -22,5 +22,23 @@
     "logo_filename": "eagerworks.svg",
     "logo_filename_dark_mode": "eagerworks-dark-mode.svg",
     "url": "https://eagerworks.com"
+  },
+  {
+    "name": "Sinaptia",
+    "logo_filename": "sinaptia.svg",
+    "logo_filename_dark_mode": "sinaptia.svg",
+    "url": "https://sinaptia.dev"
+  },
+  {
+    "name": "Moony",
+    "logo_filename": "moony.svg",
+    "logo_filename_dark_mode": "moony.svg",
+    "url": "https://pro.moonyapp.site"
+  },
+  {
+    "name": "Roxom",
+    "logo_filename": "roxom.svg",
+    "logo_filename_dark_mode": "roxom-dark-mode.svg",
+    "url": "https://roxom.com"
   }
 ]
