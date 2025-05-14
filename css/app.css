@@ -335,6 +335,14 @@ main > section {
   }
 }
 
+
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
 section.highlighted {
   padding-inline: calc(var(--inline-padding-layout) + 10vw);
   background: #f4f4f6;

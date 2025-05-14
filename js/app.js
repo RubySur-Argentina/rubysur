@@ -34,6 +34,11 @@ const countdown = () => {
     const now = new Date().getTime();
     const diff = parsedDate - now;
 
+    if (diff < 900000) { // 15 minutos antes del evento
+      highlighted.querySelector(".streaming").classList.remove('hide')
+      highlighted.querySelector(".detalles").classList.add('hide')
+    }
+
     if (diff < 0) {
       countdownDiv.innerText = "AHORA!";
       return;
