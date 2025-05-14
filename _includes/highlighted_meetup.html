@@ -51,6 +51,13 @@
     </address>
   {% endif %}
 
+  {% if meetup.youtube_link %}
+    <br />
+    <a href="{{ meetup.youtube_link }}" target="_blank">
+      <i><img src="images/icons/youtube.svg" alt="Ver en YouTube" /></i>
+      Ver en YouTube
+    </a>
+  {% endif %}
   <br />
   <br />
   {% if meetup.meetup_link %}
