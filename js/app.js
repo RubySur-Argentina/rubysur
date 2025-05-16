@@ -33,10 +33,16 @@ const countdown = () => {
   const updateCountdown = () => {
     const now = new Date().getTime();
     const diff = parsedDate - now;
+    const minuto = 60000;
 
-    if (diff < 900000) { // 15 minutos antes del evento
+    if (diff < 15 * minuto) { // 15 minutos antes del evento
       highlighted.querySelector(".streaming").classList.remove('hide')
       highlighted.querySelector(".detalles").classList.add('hide')
+    }
+
+    if (diff < -180 * minuto) { // 3hs después de que empezó el evento
+      countdownDiv.innerText = "Mirá nuestro último evento";
+      return;
     }
 
     if (diff < 0) {
@@ -47,7 +53,7 @@ const countdown = () => {
     const content = `Faltan: ${intToTime(diff)}!`;
     countdownDiv.innerText = content;
 
-    let wait = 60000; // update cada minuto por defecto
+    let wait = minuto; // update cada minuto por defecto
     if (content.includes("segundo")) {
       wait = 1000; // update cada segundo si mostramos segundos
     }
