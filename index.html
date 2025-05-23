@@ -20,6 +20,7 @@
     <meta property="og:image" content="https://ruby.com.ar/images/logo.png" />
 
     <title>RubySur - Argentina</title>
+    <link rel="icon" href="/images/sol.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,20 +29,31 @@
     />
     {% assign cacheBust = site.time | date:'?v=%s' %}
     <link rel="stylesheet" href="css/app.css{{ cacheBust }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    {% include navbar.html %}
     <header>
-      <h1>RubySur Argentina</h1>
-      <img src="images/logo.png" alt="Logo de RubySur" />
+      <img src="images/logo.svg" alt="Logo de RubySur" />
       <p>
-        Somos un grupo de +500 Devs en Ruby y Ruby on Rails based en Buenos
-        Aires, Argentina 🇦🇷.
+        Somos un grupo de +500 Devs en Ruby y Ruby on Rails
+        <br />
+        based en Buenos Aires, Argentina 🇦🇷
+        <br />
         <br />
         Nos reunimos una vez al mes para compartir charlas, experiencias, y
         mantener discusiones técnicas relacionadas con Ruby.
       </p>
       <ul class="follow">
-        <li>»</li>
         <li>
           <a
             href="https://join.slack.com/t/rubysur/shared_invite/zt-2pz7grbbr-_iQWS0vcYFilz8VKgVub4A"
@@ -82,39 +94,15 @@
             >{% include svg/discord.svg %}</a
           >
         </li>
-        <li>«</li>
       </ul>
     </header>
 
     <main>
       {% include highlighted_meetup.html %} {% include about_us.html %} {%
-      include past_meetups.html %} {% include sponsors.html %} {% include
-      stats.html %}
+      include sponsors.html %} {% include stats.html %} {% include
+      contact_us.html %}
     </main>
 
-    <div class="copyright">
-      <span>© 2024 RubySur - Argentina</span>
-      <button class="snake">💎🐍</button>
-      <a href="#about_us">About Us</a>
-    </div>
-
-    <dialog class="snakeBoard">
-      <div class="hud">
-        <h3>Ruvyborita!</h3>
-        <h3 class="score">Puntaje: 0</h3>
-        <button class="close">X</button>
-      </div>
-      <div class="board"></div>
-      <div class="controls">
-        <button class="up" data-new-direction="Up">⬆️</button>
-        <button class="right" data-new-direction="Right">➡️</button>
-        <button class="down" data-new-direction="Down">⬇️</button>
-        <button class="left" data-new-direction="Left">⬅️</button>
-        <small>o usá el teclado</small>
-      </div>
-    </dialog>
-    <img src="/images/snake.gif" class="snakeGif" />
-    <script src="js/app.js{{ cacheBust }}"></script>
-    <script src="js/snake.js{{ cacheBust }}"></script>
+    {% include footer.html %}
   </body>
 </html>

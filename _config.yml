@@ -1,0 +1,8 @@
+page_gen-dirs: false # uncomment, if you prefer to generate named folders
+
+page_gen:
+  - data: "meetups"
+    template: "meetup"
+    name: "key"
+    dir: "meetup"
+    index_files: false

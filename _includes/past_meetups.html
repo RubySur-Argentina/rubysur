@@ -1,7 +1,6 @@
-<section class="past">
-  <h2>Meetups Pasadas</h2>
+<section class="past" id="pasadas">
   <ul>
-    {% for meetup in site.data.meetups.past %} {% include meetup_partial.html
+    {% for meetup in site.data.meetups %} {% include meetup_partial.html
     meetup=meetup %} {% endfor %}
   </ul>
   <a

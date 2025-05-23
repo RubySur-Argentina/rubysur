@@ -1,82 +1,82 @@
-{% assign meetup = site.data.meetups.highlighted %}
-{% if meetup %}
+{% assign meetup = site.data.highlighted %} {% if meetup %}
 <section class="highlighted">
   <div class="countdown"></div>
 
   <div class="streaming hide">
-    <iframe width="800" height="450" src="{{ meetup.youtube_embed }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe
+      width="800"
+      height="450"
+      src="{{ meetup.youtube_embed }}"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
   </div>
 
   <div class="detalles">
-    <div class="speakers">
-      {% for talk in meetup.talks %} {% assign speaker =
-      site.data.speakers[talk.speaker] %}
+    <h2>¡Próxima MeetUp!</h2>
+    <time datetime="{{ meetup.date}}T{{ meetup.time}}">14 DE MAYO | 19HS</time>
+
+    {% for talk in meetup.talks %} {% assign speaker =
+    site.data.speakers[talk.speaker] %}
+    <div class="highlighted_talk">
+      <h4>{{ talk.title }}</h4>
       <figure>
         <img
           src="images/speakers/{{ speaker.image_filename }}"
           alt="{{ speaker.first_name }} {{ speaker.last_name }}"
         />
-        <figcaption>{{ speaker.first_name }} {{ speaker.last_name }}</figcaption>
       </figure>
-      {% endfor %}
+      <span class="name">
+        {{- speaker.first_name }} {{ speaker.last_name -}}
+      </span>
+      <span class="role">Rubista</span>
+      <div class="description">
+        <button>DESCRIPCIÓN</button>
+      </div>
+      <p class="textBox">{{ talk.description_highlighted }}</p>
     </div>
-    <h2>¡Próxima MeetUp! 📣</h2>
-    <h3>{{ meetup.title }}</h3>
-    <time datetime="{{ meetup.date}}T{{ meetup.time}}-03:00"
-      >{{ meetup.date }} - {{ meetup.time }}</time
-    >
-    {% for talk in meetup.talks %}
-    <h4>{{ talk.title }}</h4>
-    <p>{{ talk.description_highlighted }}</p>
-    {% endfor %}
-
-    {% if meetup.location_link %}
-      <address>
-        <a href="{{ meetup.location_link }}" target="_blank">
-          <i
-            ><img src="images/icons/location-dot.svg" alt="Marcador de ubicación"
-          /></i>
-          {{ meetup.location }}
-        </a>
-      </address>
-
-      {% assign descriptions = meetup.talks | map: "description" | join: "\n" %}
-      <a
-        target="_blank"
-        href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=RubySur+Meetup:+{{ meetup.title | escape_once | replace: '+', '%2b' | replace: ' ', '+' }}&details={{ descriptions | replace: ' ', '+' | replace: '\n', '%0A%0A' }}+%0A%0A+{{ meetup.youtube_link }}&dates={{ meetup.date | replace: '-', '' }}T{{ meetup.time | replace: ':', '' }}00/{{ meetup.date | replace: '-', '' }}T210000&location={{ meetup.location | replace: ' ', '+' }}&ctz=America/Buenos_Aires"
-      >
-        <i><img src="images/icons/calendar.svg" alt="Calendario" /></i>
-        Agregar evento a Google Calendar</a
-      >
-
-    {% else %}
-      <address>
+    {% endfor %} {% if meetup.location_link %}
+    <address>
+      <a href="{{ meetup.location_link }}" target="_blank">
         <i
           ><img src="images/icons/location-dot.svg" alt="Marcador de ubicación"
         /></i>
         {{ meetup.location }}
-      </address>
+      </a>
+    </address>
+
+    {% assign descriptions = meetup.talks | map: 'description' | join: '\n' %}
+    <a
+      target="_blank"
+      href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=RubySur+Meetup:+{{ meetup.title | escape_once | replace: '+', '%2b' | replace: ' ', '+' }}&details={{ descriptions | replace: ' ', '+' | replace: '\n', '%0A%0A' }}+%0A%0A+{{ meetup.youtube_link }}&dates={{ meetup.date | replace: '-', '' }}T{{ meetup.time | replace: ':', '' }}00/{{ meetup.date | replace: '-', '' }}T210000&location={{ meetup.location | replace: ' ', '+' }}&ctz=America/Buenos_Aires"
+    >
+      <i><img src="images/icons/calendar.svg" alt="Calendario" /></i>
+      Agregar evento a Google Calendar</a
+    >
+
+    {% else %}
+    <address>
+      <i
+        ><img src="images/icons/location-dot.svg" alt="Marcador de ubicación"
+      /></i>
+      {{ meetup.location }}
+    </address>
     {% endif %}
 
-    {% if meetup.youtube_link %}
-      <br />
-      <a href="{{ meetup.youtube_link }}" target="_blank">
-        <i><img src="images/icons/youtube.svg" alt="Ver en YouTube" /></i>
-        Ver en YouTube
-      </a>
-    {% endif %}
     <br />
     <br />
     {% if meetup.meetup_link %}
-      <a target="_blank" class="button alt" href="{{ meetup.meetup_link }}">
-        <i><img src="images/icons/meetup.svg" alt="Meetup.com" /></i>
-        Anotate en Meetup.com</a
-      >
+    <a target="_blank" class="button alt" href="{{ meetup.meetup_link }}">
+      Anotate para venir</a
+    >
     {% endif %}
   </div>
 </section>
 {% else %}
-<section>
+<section class="soon">
   <p style="font-size: 2rem; font-weight: bold; text-align: center">
     Pronto vamos a anunciar la próxima meetup
   </p>
