@@ -1,307 +1,282 @@
-{
-  "highlighted": {
-    "meetup": "Mayo 2025",
-    "title": "Multi-Tenancy y Service Objects",
-    "date": "2025-05-14",
-    "time": "19:00",
-    "location": "Humboldt 1967, Piso 1 Le Wagon, Palermo (Huerta Co-working)",
-    "location_link": "https://maps.app.goo.gl/RhA9yVnY9JcCTq2U6",
-    "youtube_link": "https://www.youtube.com/watch?v=6SNnDvneIMw",
-    "youtube_embed": "https://www.youtube.com/embed/6SNnDvneIMw",
-    "meetup_link": "https://www.meetup.com/rubyba/events/307533005/",
+[
+  {
+    "meetup": "Abril 2025",
+    "key": "2025_04",
+    "date": "2025/04/10",
+    "meetup_link": "https://www.meetup.com/rubyba/events/307093016/",
     "talks": [
       {
-        "title": "Multi-tenancy en Rails: De 0 a SaaS con acts_as_tenant",
-        "speaker": "santiago_diaz",
-        "description_highlighted": "¿Alguna vez te preguntaste cómo se manejan miles de tiendas en una sola aplicación? En esta charla, exploraremos cómo implementar multi-tenancy en Rails usando acts_as_tenant. Veremos cómo transformar una aplicación monolítica en una plataforma SaaS escalable. Compartiremos experiencias reales y mejores prácticas en la implementación de multi-tenancy en una plataforma de e-commerce."
+        "title": "De cero contexto a full upgrade: cómo actualizar una app ajena",
+        "speaker": "gaston_ginestet",
+        "description_highlighted": "Qué pasa si de un día para el otro te piden actualizar una aplicación que no conocés? Qué hacés? Por dónde empezás? Cómo podés hacer para actualizar una aplicación sin romper nada en el camino? <strong>Gastón Ginestet</strong> nos va a contar su experiencia en este arduo trabajo.",
+        "description": "Qué pasa si de un día para el otro te piden actualizar una aplicación que no conocés? Qué hacés? Por dónde empezás? Cómo podés hacer para actualizar una aplicación sin romper nada en el camino? Gastón Ginestet nos va a contar su experiencia en este arduo trabajo.",
+        "youtube_link": "https://www.youtube.com/watch?v=dc9D9NeDJLk",
+        "youtube_id": "dc9D9NeDJLk",
+        "slides_link": "https://docs.google.com/presentation/d/1a0yOpdKEgaFwSpqJl3CCC9lhwveLRUBUVZFWEUbke0M/edit?usp=sharing"
       },
       {
-        "title": "Service Objects en Rails",
-        "speaker": "fernando_silva_jacquier",
-        "description_highlighted": "Fer nos va a contar por qué se critica tanto el patrón de Service Objects en Rails… y por qué, a pesar de las críticas, sigue siendo una herramienta válida para encapsular lógica de negocio. También vamos a ver ejemplos concretos y algunas convenciones útiles para aplicarlo de forma efectiva sin perder la cabeza."
+        "title": "Zeit-what? Autoloading en ruby",
+        "speaker": "joaquin_vicente",
+        "description_highlighted": "¿Qué es el autoloading y con qué se come? Esta charla nos va a presentar un tema que suele aparecer solo, cada vez se habla de upgrades. <strong>Joaquín Vicente</strong> nos va a contar qué es y como podemos sacar provecho de este feature, tanto dentro, como fuera de Rails, que diferencias hay entre los modos classic y zeitwerk, y cuales son los problemas comunes a la hora de actualizar a Rails 7",
+        "description": "¿Qué es el autoloading y con qué se come? Esta charla nos va a presentar un tema que suele aparecer solo, cada vez se habla de upgrades. Joaquín Vicente nos va a contar qué es y como podemos sacar provecho de este feature, tanto dentro, como fuera de Rails, que diferencias hay entre los modos classic y zeitwerk, y cuales son los problemas comunes a la hora de actualizar a Rails 7",
+        "youtube_link": "https://www.youtube.com/watch?v=dc9D9NeDJLk",
+        "youtube_id": "dc9D9NeDJLk",
+        "youtube_timestamp": 2066,
+        "slides_link": "https://docs.google.com/presentation/d/1CVVFwoOKQofEQ6J9h9L-K5yC7bfrpv-PYixpUurpQyA/edit?usp=drive_link"
       }
     ]
   },
-  "past": [
-    {
-      "meetup": "Abril 2025",
-      "key": "2025_04",
-      "date": "2025/04/10",
-      "meetup_link": "https://www.meetup.com/rubyba/events/307093016/",
-      "talks": [
-        {
-          "title": "De cero contexto a full upgrade: cómo actualizar una app ajena",
-          "speaker": "gaston_ginestet",
-          "description_highlighted": "Qué pasa si de un día para el otro te piden actualizar una aplicación que no conocés? Qué hacés? Por dónde empezás? Cómo podés hacer para actualizar una aplicación sin romper nada en el camino? <strong>Gastón Ginestet</strong> nos va a contar su experiencia en este arduo trabajo.",
-          "description": "Qué pasa si de un día para el otro te piden actualizar una aplicación que no conocés? Qué hacés? Por dónde empezás? Cómo podés hacer para actualizar una aplicación sin romper nada en el camino? Gastón Ginestet nos va a contar su experiencia en este arduo trabajo.",
-          "youtube_link": "https://www.youtube.com/watch?v=dc9D9NeDJLk",
-          "youtube_id": "dc9D9NeDJLk",
-          "slides_link": "https://docs.google.com/presentation/d/1a0yOpdKEgaFwSpqJl3CCC9lhwveLRUBUVZFWEUbke0M/edit?usp=sharing"
-        },
-        {
-          "title": "Zeit-what? Autoloading en ruby",
-          "speaker": "joaquin_vicente",
-          "description_highlighted": "¿Qué es el autoloading y con qué se come? Esta charla nos va a presentar un tema que suele aparecer solo, cada vez se habla de upgrades. <strong>Joaquín Vicente</strong> nos va a contar qué es y como podemos sacar provecho de este feature, tanto dentro, como fuera de Rails, que diferencias hay entre los modos classic y zeitwerk, y cuales son los problemas comunes a la hora de actualizar a Rails 7",
-          "description": "¿Qué es el autoloading y con qué se come? Esta charla nos va a presentar un tema que suele aparecer solo, cada vez se habla de upgrades. Joaquín Vicente nos va a contar qué es y como podemos sacar provecho de este feature, tanto dentro, como fuera de Rails, que diferencias hay entre los modos classic y zeitwerk, y cuales son los problemas comunes a la hora de actualizar a Rails 7",
-          "youtube_link": "https://www.youtube.com/watch?v=dc9D9NeDJLk",
-          "youtube_id": "dc9D9NeDJLk",
-          "youtube_timestamp": 2066,
-          "slides_link": "https://docs.google.com/presentation/d/1CVVFwoOKQofEQ6J9h9L-K5yC7bfrpv-PYixpUurpQyA/edit?usp=drive_link"
-        }
-      ]
-    },
-    {
-      "meetup": "Marzo 2025",
-      "key": "2025_03",
-      "date": "12/03/2025",
-      "meetup_link": "https://www.meetup.com/rubyba/events/306565829",
-      "talks": [
-        {
-          "title": "Implementando 11 APIs en Rails sin volverse loco",
-          "speaker": "jaime_zuberbuhler",
-          "description_highlighted": "En la primera charla, <strong>Jaime Zuberbuhler (Co-Founder de MoonyApp)</strong> va a adentrarnos en como implementar adapters y mappers en Rails para interactuar con distintas APIs.",
-          "description": "Jaime Zuberbuhler, Co-Founder de MoonyApp, va a adentrarnos en como implementar adapters y mappers en Rails para interactuar con distintas APIs.",
-          "youtube_link": "https://www.youtube.com/watch?v=tMxMVAQkBZs",
-          "youtube_id": "tMxMVAQkBZs",
-          "slides_link": "https://www.ruby.com.ar/media/pdfs/Jaime Zuberbuhler - Adapters y Mappers.pdf"
-        },
-        {
-          "title": "El Camino de la Instrumentación",
-          "speaker": "patricio_mac_adden",
-          "description_highlighted": "Luego, <strong>Patricio Mac Adden (Co-Founder de Sinaptia)</strong> nos comparte sobre Instrumentación y Observabilidad. Vamos a aprender conceptos generales y diferentes formas de implementarla en Rails.",
-          "description": "Patricio Mac Adden, Co-Founder de Sinaptia, nos comparte sobre Instrumentación y Observabilidad. Vamos a aprender conceptos generales y diferentes formas de implementarla en Rails.",
-          "youtube_link": "https://www.youtube.com/watch?v=tMxMVAQkBZs",
-          "youtube_id": "tMxMVAQkBZs",
-          "youtube_timestamp": 3777,
-          "slides_link": "https://www.ruby.com.ar/media/pdfs/Patricio Mac Adden - El camino a la instrumentación.pdf"
-        }
-      ]
-    },
-    {
-      "meetup": "Noviembre 2024",
-      "key": "2024_11",
-      "date": "12/11/2024",
-      "meetup_link": "https://www.meetup.com/rubyba/events/304387497/",
-      "talks": [
-        {
-          "title": "Testing: Buenas prácticas y performance",
-          "speaker": "joaquin_vicente",
-          "description_highlighted": "En la segunda charla hablaremos sobre cómo escribir y organizar tests eficientes, equilibrando la calidad del código, la practicidad, y la performance.",
-          "description": "Una charla sobre cómo escribir y organizar tests eficientes, equilibrando la calidad del código, la practicidad y la performance. Joaquín compartirá estrategias para optimizar tiempos de ejecución y reducir la complejidad de las pruebas, asegurando una suite de testing confiable para el desarrollo de aplicaciones.",
-          "youtube_link": "https://www.youtube.com/watch?v=fZIhFXQb2Sw",
-          "youtube_id": "fZIhFXQb2Sw",
-          "slides_link": "https://docs.google.com/presentation/d/1fjEoBp32cLD1l8bYkIfGXusaoJDnkkmeRKVN48XNleU/edit?usp=sharing"
-        },
-        {
-          "title": "Ruby + IA: de la teoría a la práctica",
-          "speaker": "juan_pablo_balarini",
-          "description_highlighted": "En la primera charla exploraremos el potencial de la inteligencia artificial, desde los conceptos clave hasta ejemplos prácticos en una aplicación de Ruby on Rails. ",
-          "description": "Exploraremos el potencial de la inteligencia artificial, desde los conceptos clave hasta ejemplos prácticos en una aplicación de Ruby on Rails.",
-          "youtube_link": "https://www.youtube.com/watch?v=4IkPjUdssNI",
-          "youtube_id": "4IkPjUdssNI",
-          "youtube_timestamp": 4731,
-          "slides_link": "https://drive.google.com/file/d/1haoMTBHVpHUWHfu6k4ShC8w7fTdys_O0/view"
-        }
-      ]
-    },
-    {
-      "meetup": "Octubre 2024",
-      "key": "2024_10",
-      "date": "16/10/2024",
-      "meetup_link": "https://www.meetup.com/rubyba/events/304012554/",
-      "talks": [
-        {
-          "title": "View Components the right way",
-          "speaker": "jorge_leites",
-          "description": "Hablará sobre la gema view_component, y dará recomendaciones sobre el uso correcto para conseguir componentes altamente reusables.",
-          "youtube_link": "https://www.youtube.com/watch?v=2nZsZ4_lx7w",
-          "youtube_id": "2nZsZ4_lx7w"
-        }
-      ]
-    },
-    {
-      "meetup": "Septiembre 2024",
-      "key": "2024_09",
-      "date": "12/09/2024",
-      "meetup_link": "https://www.meetup.com/rubyba/events/303276300/",
-      "talks": [
-        {
-          "title": "Actualizando tu app con Dual Booting",
-          "speaker": "ariel_juodziukynas",
-          "description": "Ariel Juodziukynas es nuestro speaker de la fecha y va a estar contando cómo Actualizar tu aplicación con Dual Booting.\n\nVamos a ver cómo actualizar Ruby, Rails, o cualquier otra gema, usando la técnica de Dual Booting para actualizar nuestras aplicaciones gradualmente y ayudarnos a prepara la app para futuras versiones. Vamos a ver ejemplos y conceptos para luego poder adaptar la técnica a diferentes situaciones.",
-          "youtube_link": "https://www.youtube.com/watch?v=F-CnVCJQLKI",
-          "youtube_id": "F-CnVCJQLKI",
-          "slides_link": "https://arielj.github.io/actualizar_dual_booting/"
-        }
-      ]
-    },
-    {
-      "meetup": "Agosto 2024",
-      "key": "2024_08",
-      "date": "14/08/2024",
-      "meetup_link": "https://www.meetup.com/rubyba/events/302656192/",
-      "talks": [
-        {
-          "title": "Refactoring en Ruby: Elevating Code Quality Through Community And Practice",
-          "speaker": "julio_lucero",
-          "description": "Julio Agustin Lucero es nuestro speaker de la fecha y va a estar abordando:\n\nRefactoring en Ruby: Elevating Code Quality Through Community And Practice\n\nUnite a nosotros en esta charla donde exploraremos cómo la programación va más allá de simples líneas de código, convirtiéndose en un proceso colaborativo y creativo. Inspirados por figuras como Kent Beck y DHH, discutiremos la importancia de producir código limpio, mantenible y eficiente.\n\nNos centraremos en el libro \"Refactoring: Ruby Edition\" de Jay Fields, Shane Harvie y Martin Fowler, y cómo ha guiado el desarrollo de muchos programadores junior. Descubre valiosas estrategias y consejos para mejorar tu práctica de programación y llevar tu código al siguiente nivel.",
-          "youtube_link": "https://www.youtube.com/watch?v=xU7LBW8tmKI",
-          "youtube_id": "xU7LBW8tmKI",
-          "slides_link": "https://docs.google.com/presentation/d/1POS1Us6h8Qh1qk_wot9dxE3ZRRxr9QKvFUBOJyC_nZk/edit?usp=sharing"
-        }
-      ]
-    },
-    {
-      "meetup": "Julio 2024",
-      "key": "2024_07",
-      "date": "18/07/2024",
-      "meetup_link": "https://www.meetup.com/rubyba/events/302163493/",
-      "talks": [
-        {
-          "title": "Rails - Lo que hay y lo que viene",
-          "speaker": "fernando_silva_jacquier",
-          "description": "¿Alguna vez has escuchado sobre la nueva versión de Turbo y sus increíbles características de morphing e instant click? Si no es así, ¡no te preocupes! Esta meetup es para vos.\n\n¿Qué puedes esperar de esta charla?\n\nUna demostración en vivo (live coding) de la característica de Turbo que más me fascina: el morphing.\n\nUn vistazo a las próximas novedades en Rails 8.\n\nMás live coding, enfocándonos en una de las características que más expectativas genera: PWA.\n\nMantenerse actualizado es crucial. Rails está en constante evolución, con nuevas funcionalidades y mejoras añadidas regularmente.\n\nSeguir el menú omakase de Rails tiene mucho valor. Está diseñado para ser fácil de usar y permitirte lograr mucho con poco.",
-          "youtube_link": "https://www.youtube.com/watch?v=svst2V6kVVA",
-          "youtube_id": "svst2V6kVVA",
-          "slides_link": "https://github.com/fesilvajacquier/rails_tnt"
-        }
-      ]
-    },
-    {
-      "meetup": "Junio 2024",
-      "key": "2024_06",
-      "date": "13/06/2024",
-      "meetup_link": "https://www.meetup.com/rubyba/events/301367143/",
-      "talks": [
-        {
-          "title": "Tech Talk: La evolución del asset pipeline",
-          "speaker": "ariel_juodziukynas",
-          "description": "Este 13 de junio Ariel Juodziukynas nos contará sobre el presente, pasado y futuro del Asset Pipeline de Rails. Hará un recorrido sobre la historia de cómo Rails manejó los assets en sus orígenes, con que herramientas contamos hoy y hacia donde nos dirigimos con Rails 8.\n\nHablará también de los patrones y gemas que se fueron usando, con sus pros y los contras, y cuales fueron las razones que motivaron los distintos cambios de cada etapa.",
-          "youtube_link": "https://www.youtube.com/watch?v=IroDPuj_b8o",
-          "youtube_id": "IroDPuj_b8o",
-          "slides_link": "https://arielj.github.io/assets-pipeline-history"
-        }
-      ]
-    },
-    {
-      "meetup": "Mayo 2024",
-      "key": "2024_05",
-      "date": "14/05/2024",
-      "meetup_link": "https://www.meetup.com/rubyba/events/300864089/",
-      "talks": [
-        {
-          "title": "Unveiling the power of Hotwire",
-          "speaker": "filipe_mendes",
-          "description": "Vamos a charlar sobre uno de los puntos más atractivos y que que genera discusión en el desarrollo de aplicaciones con Ruby on Rails: Hotwire.\n\nFilipe Mendes va a presentar su charla, titulada “Unveiling the power of Hotwire” donde nos va a mostrar como se está aplicando y cómo sacarle provecho a esta metodología con casos reales.",
-          "youtube_link": "https://www.youtube.com/watch?v=zbp_2VqAxDQ&t=69s",
-          "youtube_id": "zbp_2VqAxDQ",
-          "youtube_timestamp": 69
-        }
-      ]
-    },
-    {
-      "meetup": "Abril 2024",
-      "key": "2024_04",
-      "date": "16/04/2024",
-      "meetup_link": "https://www.meetup.com/rubyba/events/300307806/",
-      "talks": [
-        {
-          "title": "Speed up CI in your Ruby applications",
-          "speaker": "enzo_fabbiani",
-          "description": "¿Te gustaría acelerar tus procesos de Integración Continua (CI) en tus aplicaciones Ruby? En esta charla, Enzo Fabbiani, experto en desarrollo de software, compartirá estrategias y mejores prácticas para optimizar tus flujos de CI y mejorar la eficiencia en el desarrollo de tus aplicaciones Ruby. Descubre cómo implementar técnicas efectivas para reducir los tiempos de construcción y despliegue, y aumenta la productividad de tu equipo de desarrollo.",
-          "youtube_link": "https://www.youtube.com/watch?v=vRVeNSejGKA",
-          "youtube_id": "vRVeNSejGKA",
-          "slides_link": "https://docs.google.com/presentation/d/1UeuwW41J2xWRClRok4zuR7plMI-rwgIRupc99m50e24/edit?usp=sharing"
-        },
-        {
-          "title": "How to Prepare Your First Meetup Talk",
-          "speaker": "santiago_merlo",
-          "description": "¿Te gustaría compartir tus conocimientos y experiencias en un meetup pero no sabes por dónde empezar? En esta charla, Santiago Merlo, experimentado orador en eventos técnicos, te guiará a través de los pasos claves para preparar y presentar tu primera charla en un meetup. Desde la elección del tema hasta la entrega efectiva, aprenderás técnicas prácticas para cautivar a tu audiencia y dejar una impresión duradera en tu comunidad.",
-          "youtube_link": "https://www.youtube.com/watch?v=vRVeNSejGKA&t=1176s",
-          "youtube_id": "vRVeNSejGKA",
-          "youtube_timestamp": 1176
-        }
-      ]
-    },
-    {
-      "meetup": "Marzo 2024",
-      "key": "2024_03",
-      "date": "14/03/2024",
-      "meetup_link": "https://www.meetup.com/rubyba/events/299590862/",
-      "talks": [
-        {
-          "title": "Iluminando el Camino: Perspectivas sobre Debugging de un Recién Llegado",
-          "speaker": "fernando_silva_jacquier",
-          "description": "En esta ocasión, vamos a explorar un tema fundamental en el desarrollo de software: el debugging.\n\nEn la charla \"Iluminando el Camino: Perspectivas sobre Debugging de un Recién Llegado\", nuestro orador, Fernando E. Silva Jacquier, inspirado por el libro \"Are your lights on?\", nos ofrecerá una perspectiva única sobre cómo abordar el debugging como un problema más, brindando herramientas simples pero efectivas para diagnosticar y resolver errores.\n\nLa charla abarcará desde fundamentos teóricos y estrategias prácticas para reducir el alcance de los problemas, a alternativas, que nos ayuden a mejorar el proceso de debugging.",
-          "youtube_link": "https://www.youtube.com/watch?v=3qyTOEVSeog",
-          "youtube_id": "3qyTOEVSeog",
-          "slides_link": "https://github.com/fesilvajacquier/debugging"
-        }
-      ]
-    },
-    {
-      "meetup": "Octubre 2023",
-      "key": "2023_10",
-      "date": "05/10/2023",
-      "meetup_link": "https://www.meetup.com/rubyba/events/296381930/",
-      "talks": [
-        {
-          "title": "Setting up VS Code for Ruby on Rails development",
-          "speaker": "viktor_fonic",
-          "description": "Viktor Fonic viene trabajando hace más de 15 años desarrollando software y a lo largo de su carrera ha usado diferentes IDEs y editores de texto. En los últimos 5 años ha estado usado VS Code.\n\nEn su charla nos va a describir su experiencia customizando el editor para trabajar de manera más eficiente. Nos contará sobre algunas de las extensiones más populares y otras no tan conocidas (como Bust a gem, Custom CSS and JS loader), como hacer macros y configurar los keybindings para realizar acciones con pocos tecleos.",
-          "youtube_link": "https://www.youtube.com/watch?v=uKzAT3EtG5s",
-          "youtube_id": "uKzAT3EtG5s"
-        },
-        {
-          "title": "IoT con Ruby ¿Es posible?",
-          "speaker": "santiago_merlo",
-          "description": "En la segunda charla, junto a Santiago Merlo vamos a explorar cómo se lleva Ruby con IoT en la Raspberry Pi. Veremos algunos ejemplos básicos y charlaremos sobre lo bueno, lo malo y lo no tan bonito de usar Ruby para el Internet de las Cosas. ¿Es realmente práctico o solo es para entusiastas del lenguaje?",
-          "youtube_link": "https://www.youtube.com/watch?v=8bZ0Br9Sz1c",
-          "youtube_id": "8bZ0Br9Sz1c",
-          "slides_link": "https://docs.google.com/presentation/d/1Dgn0xVqZ0SvemssL92Mmi5JpRB6dsCeo3Awxg4E3Z6U/edit?usp=sharing"
-        }
-      ]
-    },
-    {
-      "meetup": "Agosto 2023",
-      "key": "2023_08",
-      "date": "31/08/2023",
-      "meetup_link": "https://www.meetup.com/rubyba/events/295491257/",
-      "talks": [
-        {
-          "title": "Formularios con Rails y uso de features nativos de HTML",
-          "speaker": "ariel_juodziukynas",
-          "description": "Contaremos con Ariel Juodziukynas que estará dando una charla sobre Rails y el uso de features \"\"mágicas\"\" relacionadas a formularios que no mucha gente usa/conoce.",
-          "youtube_link": "https://www.youtube.com/watch?v=cVysEUIxYMc",
-          "youtube_id": "cVysEUIxYMc",
-          "slides_link": "https://arielj.github.io/forms-on-rails/"
-        }
-      ]
-    },
-    {
-      "meetup": "Mayo 2023",
-      "key": "2023_05",
-      "date": "18/05/2023",
-      "meetup_link": "https://www.meetup.com/rubyba/events/293412778/",
-      "talks": [
-        {
-          "title": "Design Patterns",
-          "speaker": "claudio_kerekes",
-          "description": "Directo desde Bogotá, Claudio Kerekes nos brindará una charla sobre Design Patterns. Luego de la presentación, habrá un espacio para seguir hablando del tema y hacer networking 😉"
-        }
-      ]
-    },
-    {
-      "meetup": "Abril 2023",
-      "key": "2023_04",
-      "date": "13/04/2023",
-      "meetup_link": "https://www.meetup.com/rubyba/events/292367068/",
-      "talks": [
-        {
-          "title": "Pizza n' Rails",
-          "description": "Nos juntamos a hablar de rails y a comer Pizza."
-        }
-      ]
-    }
-  ]
-}
+  {
+    "meetup": "Marzo 2025",
+    "key": "2025_03",
+    "date": "12/03/2025",
+    "meetup_link": "https://www.meetup.com/rubyba/events/306565829",
+    "talks": [
+      {
+        "title": "Implementando 11 APIs en Rails sin volverse loco",
+        "speaker": "jaime_zuberbuhler",
+        "description_highlighted": "En la primera charla, <strong>Jaime Zuberbuhler (Co-Founder de MoonyApp)</strong> va a adentrarnos en como implementar adapters y mappers en Rails para interactuar con distintas APIs.",
+        "description": "Jaime Zuberbuhler, Co-Founder de MoonyApp, va a adentrarnos en como implementar adapters y mappers en Rails para interactuar con distintas APIs.",
+        "youtube_link": "https://www.youtube.com/watch?v=tMxMVAQkBZs",
+        "youtube_id": "tMxMVAQkBZs",
+        "slides_link": "https://www.ruby.com.ar/media/pdfs/Jaime Zuberbuhler - Adapters y Mappers.pdf"
+      },
+      {
+        "title": "El Camino de la Instrumentación",
+        "speaker": "patricio_mac_adden",
+        "description_highlighted": "Luego, <strong>Patricio Mac Adden (Co-Founder de Sinaptia)</strong> nos comparte sobre Instrumentación y Observabilidad. Vamos a aprender conceptos generales y diferentes formas de implementarla en Rails.",
+        "description": "Patricio Mac Adden, Co-Founder de Sinaptia, nos comparte sobre Instrumentación y Observabilidad. Vamos a aprender conceptos generales y diferentes formas de implementarla en Rails.",
+        "youtube_link": "https://www.youtube.com/watch?v=tMxMVAQkBZs",
+        "youtube_id": "tMxMVAQkBZs",
+        "youtube_timestamp": 3777,
+        "slides_link": "https://www.ruby.com.ar/media/pdfs/Patricio Mac Adden - El camino a la instrumentación.pdf"
+      }
+    ]
+  },
+  {
+    "meetup": "Noviembre 2024",
+    "key": "2024_11",
+    "date": "12/11/2024",
+    "meetup_link": "https://www.meetup.com/rubyba/events/304387497/",
+    "talks": [
+      {
+        "title": "Testing: Buenas prácticas y performance",
+        "speaker": "joaquin_vicente",
+        "description_highlighted": "En la segunda charla hablaremos sobre cómo escribir y organizar tests eficientes, equilibrando la calidad del código, la practicidad, y la performance.",
+        "description": "Una charla sobre cómo escribir y organizar tests eficientes, equilibrando la calidad del código, la practicidad y la performance. Joaquín compartirá estrategias para optimizar tiempos de ejecución y reducir la complejidad de las pruebas, asegurando una suite de testing confiable para el desarrollo de aplicaciones.",
+        "youtube_link": "https://www.youtube.com/watch?v=fZIhFXQb2Sw",
+        "youtube_id": "fZIhFXQb2Sw",
+        "slides_link": "https://docs.google.com/presentation/d/1fjEoBp32cLD1l8bYkIfGXusaoJDnkkmeRKVN48XNleU/edit?usp=sharing"
+      },
+      {
+        "title": "Ruby + IA: de la teoría a la práctica",
+        "speaker": "juan_pablo_balarini",
+        "description_highlighted": "En la primera charla exploraremos el potencial de la inteligencia artificial, desde los conceptos clave hasta ejemplos prácticos en una aplicación de Ruby on Rails. ",
+        "description": "Exploraremos el potencial de la inteligencia artificial, desde los conceptos clave hasta ejemplos prácticos en una aplicación de Ruby on Rails.",
+        "youtube_link": "https://www.youtube.com/watch?v=4IkPjUdssNI",
+        "youtube_id": "4IkPjUdssNI",
+        "youtube_timestamp": 4731,
+        "slides_link": "https://drive.google.com/file/d/1haoMTBHVpHUWHfu6k4ShC8w7fTdys_O0/view"
+      }
+    ]
+  },
+  {
+    "meetup": "Octubre 2024",
+    "key": "2024_10",
+    "date": "16/10/2024",
+    "meetup_link": "https://www.meetup.com/rubyba/events/304012554/",
+    "talks": [
+      {
+        "title": "View Components the right way",
+        "speaker": "jorge_leites",
+        "description": "Hablará sobre la gema view_component, y dará recomendaciones sobre el uso correcto para conseguir componentes altamente reusables.",
+        "youtube_link": "https://www.youtube.com/watch?v=2nZsZ4_lx7w",
+        "youtube_id": "2nZsZ4_lx7w"
+      }
+    ]
+  },
+  {
+    "meetup": "Septiembre 2024",
+    "key": "2024_09",
+    "date": "12/09/2024",
+    "meetup_link": "https://www.meetup.com/rubyba/events/303276300/",
+    "talks": [
+      {
+        "title": "Actualizando tu app con Dual Booting",
+        "speaker": "ariel_juodziukynas",
+        "description": "Ariel Juodziukynas es nuestro speaker de la fecha y va a estar contando cómo Actualizar tu aplicación con Dual Booting.\n\nVamos a ver cómo actualizar Ruby, Rails, o cualquier otra gema, usando la técnica de Dual Booting para actualizar nuestras aplicaciones gradualmente y ayudarnos a prepara la app para futuras versiones. Vamos a ver ejemplos y conceptos para luego poder adaptar la técnica a diferentes situaciones.",
+        "youtube_link": "https://www.youtube.com/watch?v=F-CnVCJQLKI",
+        "youtube_id": "F-CnVCJQLKI",
+        "slides_link": "https://arielj.github.io/actualizar_dual_booting/"
+      }
+    ]
+  },
+  {
+    "meetup": "Agosto 2024",
+    "key": "2024_08",
+    "date": "14/08/2024",
+    "meetup_link": "https://www.meetup.com/rubyba/events/302656192/",
+    "talks": [
+      {
+        "title": "Refactoring en Ruby: Elevating Code Quality Through Community And Practice",
+        "speaker": "julio_lucero",
+        "description": "Julio Agustin Lucero es nuestro speaker de la fecha y va a estar abordando:\n\nRefactoring en Ruby: Elevating Code Quality Through Community And Practice\n\nUnite a nosotros en esta charla donde exploraremos cómo la programación va más allá de simples líneas de código, convirtiéndose en un proceso colaborativo y creativo. Inspirados por figuras como Kent Beck y DHH, discutiremos la importancia de producir código limpio, mantenible y eficiente.\n\nNos centraremos en el libro \"Refactoring: Ruby Edition\" de Jay Fields, Shane Harvie y Martin Fowler, y cómo ha guiado el desarrollo de muchos programadores junior. Descubre valiosas estrategias y consejos para mejorar tu práctica de programación y llevar tu código al siguiente nivel.",
+        "youtube_link": "https://www.youtube.com/watch?v=xU7LBW8tmKI",
+        "youtube_id": "xU7LBW8tmKI",
+        "slides_link": "https://docs.google.com/presentation/d/1POS1Us6h8Qh1qk_wot9dxE3ZRRxr9QKvFUBOJyC_nZk/edit?usp=sharing"
+      }
+    ]
+  },
+  {
+    "meetup": "Julio 2024",
+    "key": "2024_07",
+    "date": "18/07/2024",
+    "meetup_link": "https://www.meetup.com/rubyba/events/302163493/",
+    "talks": [
+      {
+        "title": "Rails - Lo que hay y lo que viene",
+        "speaker": "fernando_silva_jacquier",
+        "description": "¿Alguna vez has escuchado sobre la nueva versión de Turbo y sus increíbles características de morphing e instant click? Si no es así, ¡no te preocupes! Esta meetup es para vos.\n\n¿Qué puedes esperar de esta charla?\n\nUna demostración en vivo (live coding) de la característica de Turbo que más me fascina: el morphing.\n\nUn vistazo a las próximas novedades en Rails 8.\n\nMás live coding, enfocándonos en una de las características que más expectativas genera: PWA.\n\nMantenerse actualizado es crucial. Rails está en constante evolución, con nuevas funcionalidades y mejoras añadidas regularmente.\n\nSeguir el menú omakase de Rails tiene mucho valor. Está diseñado para ser fácil de usar y permitirte lograr mucho con poco.",
+        "youtube_link": "https://www.youtube.com/watch?v=svst2V6kVVA",
+        "youtube_id": "svst2V6kVVA",
+        "slides_link": "https://github.com/fesilvajacquier/rails_tnt"
+      }
+    ]
+  },
+  {
+    "meetup": "Junio 2024",
+    "key": "2024_06",
+    "date": "13/06/2024",
+    "meetup_link": "https://www.meetup.com/rubyba/events/301367143/",
+    "talks": [
+      {
+        "title": "Tech Talk: La evolución del asset pipeline",
+        "speaker": "ariel_juodziukynas",
+        "description": "Este 13 de junio Ariel Juodziukynas nos contará sobre el presente, pasado y futuro del Asset Pipeline de Rails. Hará un recorrido sobre la historia de cómo Rails manejó los assets en sus orígenes, con que herramientas contamos hoy y hacia donde nos dirigimos con Rails 8.\n\nHablará también de los patrones y gemas que se fueron usando, con sus pros y los contras, y cuales fueron las razones que motivaron los distintos cambios de cada etapa.",
+        "youtube_link": "https://www.youtube.com/watch?v=IroDPuj_b8o",
+        "youtube_id": "IroDPuj_b8o",
+        "slides_link": "https://arielj.github.io/assets-pipeline-history"
+      }
+    ]
+  },
+  {
+    "meetup": "Mayo 2024",
+    "key": "2024_05",
+    "date": "14/05/2024",
+    "meetup_link": "https://www.meetup.com/rubyba/events/300864089/",
+    "talks": [
+      {
+        "title": "Unveiling the power of Hotwire",
+        "speaker": "filipe_mendes",
+        "description": "Vamos a charlar sobre uno de los puntos más atractivos y que que genera discusión en el desarrollo de aplicaciones con Ruby on Rails: Hotwire.\n\nFilipe Mendes va a presentar su charla, titulada “Unveiling the power of Hotwire” donde nos va a mostrar como se está aplicando y cómo sacarle provecho a esta metodología con casos reales.",
+        "youtube_link": "https://www.youtube.com/watch?v=zbp_2VqAxDQ&t=69s",
+        "youtube_id": "zbp_2VqAxDQ",
+        "youtube_timestamp": 69
+      }
+    ]
+  },
+  {
+    "meetup": "Abril 2024",
+    "key": "2024_04",
+    "date": "16/04/2024",
+    "meetup_link": "https://www.meetup.com/rubyba/events/300307806/",
+    "talks": [
+      {
+        "title": "Speed up CI in your Ruby applications",
+        "speaker": "enzo_fabbiani",
+        "description": "¿Te gustaría acelerar tus procesos de Integración Continua (CI) en tus aplicaciones Ruby? En esta charla, Enzo Fabbiani, experto en desarrollo de software, compartirá estrategias y mejores prácticas para optimizar tus flujos de CI y mejorar la eficiencia en el desarrollo de tus aplicaciones Ruby. Descubre cómo implementar técnicas efectivas para reducir los tiempos de construcción y despliegue, y aumenta la productividad de tu equipo de desarrollo.",
+        "youtube_link": "https://www.youtube.com/watch?v=vRVeNSejGKA",
+        "youtube_id": "vRVeNSejGKA",
+        "slides_link": "https://docs.google.com/presentation/d/1UeuwW41J2xWRClRok4zuR7plMI-rwgIRupc99m50e24/edit?usp=sharing"
+      },
+      {
+        "title": "How to Prepare Your First Meetup Talk",
+        "speaker": "santiago_merlo",
+        "description": "¿Te gustaría compartir tus conocimientos y experiencias en un meetup pero no sabes por dónde empezar? En esta charla, Santiago Merlo, experimentado orador en eventos técnicos, te guiará a través de los pasos claves para preparar y presentar tu primera charla en un meetup. Desde la elección del tema hasta la entrega efectiva, aprenderás técnicas prácticas para cautivar a tu audiencia y dejar una impresión duradera en tu comunidad.",
+        "youtube_link": "https://www.youtube.com/watch?v=vRVeNSejGKA&t=1176s",
+        "youtube_id": "vRVeNSejGKA",
+        "youtube_timestamp": 1176
+      }
+    ]
+  },
+  {
+    "meetup": "Marzo 2024",
+    "key": "2024_03",
+    "date": "14/03/2024",
+    "meetup_link": "https://www.meetup.com/rubyba/events/299590862/",
+    "talks": [
+      {
+        "title": "Iluminando el Camino: Perspectivas sobre Debugging de un Recién Llegado",
+        "speaker": "fernando_silva_jacquier",
+        "description": "En esta ocasión, vamos a explorar un tema fundamental en el desarrollo de software: el debugging.\n\nEn la charla \"Iluminando el Camino: Perspectivas sobre Debugging de un Recién Llegado\", nuestro orador, Fernando E. Silva Jacquier, inspirado por el libro \"Are your lights on?\", nos ofrecerá una perspectiva única sobre cómo abordar el debugging como un problema más, brindando herramientas simples pero efectivas para diagnosticar y resolver errores.\n\nLa charla abarcará desde fundamentos teóricos y estrategias prácticas para reducir el alcance de los problemas, a alternativas, que nos ayuden a mejorar el proceso de debugging.",
+        "youtube_link": "https://www.youtube.com/watch?v=3qyTOEVSeog",
+        "youtube_id": "3qyTOEVSeog",
+        "slides_link": "https://github.com/fesilvajacquier/debugging"
+      }
+    ]
+  },
+  {
+    "meetup": "Octubre 2023",
+    "key": "2023_10",
+    "date": "05/10/2023",
+    "meetup_link": "https://www.meetup.com/rubyba/events/296381930/",
+    "talks": [
+      {
+        "title": "Setting up VS Code for Ruby on Rails development",
+        "speaker": "viktor_fonic",
+        "description": "Viktor Fonic viene trabajando hace más de 15 años desarrollando software y a lo largo de su carrera ha usado diferentes IDEs y editores de texto. En los últimos 5 años ha estado usado VS Code.\n\nEn su charla nos va a describir su experiencia customizando el editor para trabajar de manera más eficiente. Nos contará sobre algunas de las extensiones más populares y otras no tan conocidas (como Bust a gem, Custom CSS and JS loader), como hacer macros y configurar los keybindings para realizar acciones con pocos tecleos.",
+        "youtube_link": "https://www.youtube.com/watch?v=uKzAT3EtG5s",
+        "youtube_id": "uKzAT3EtG5s"
+      },
+      {
+        "title": "IoT con Ruby ¿Es posible?",
+        "speaker": "santiago_merlo",
+        "description": "En la segunda charla, junto a Santiago Merlo vamos a explorar cómo se lleva Ruby con IoT en la Raspberry Pi. Veremos algunos ejemplos básicos y charlaremos sobre lo bueno, lo malo y lo no tan bonito de usar Ruby para el Internet de las Cosas. ¿Es realmente práctico o solo es para entusiastas del lenguaje?",
+        "youtube_link": "https://www.youtube.com/watch?v=8bZ0Br9Sz1c",
+        "youtube_id": "8bZ0Br9Sz1c",
+        "slides_link": "https://docs.google.com/presentation/d/1Dgn0xVqZ0SvemssL92Mmi5JpRB6dsCeo3Awxg4E3Z6U/edit?usp=sharing"
+      }
+    ]
+  },
+  {
+    "meetup": "Agosto 2023",
+    "key": "2023_08",
+    "date": "31/08/2023",
+    "meetup_link": "https://www.meetup.com/rubyba/events/295491257/",
+    "talks": [
+      {
+        "title": "Formularios con Rails y uso de features nativos de HTML",
+        "speaker": "ariel_juodziukynas",
+        "description": "Contaremos con Ariel Juodziukynas que estará dando una charla sobre Rails y el uso de features \"\"mágicas\"\" relacionadas a formularios que no mucha gente usa/conoce.",
+        "youtube_link": "https://www.youtube.com/watch?v=cVysEUIxYMc",
+        "youtube_id": "cVysEUIxYMc",
+        "slides_link": "https://arielj.github.io/forms-on-rails/"
+      }
+    ]
+  },
+  {
+    "meetup": "Mayo 2023",
+    "key": "2023_05",
+    "date": "18/05/2023",
+    "meetup_link": "https://www.meetup.com/rubyba/events/293412778/",
+    "talks": [
+      {
+        "title": "Design Patterns",
+        "speaker": "claudio_kerekes",
+        "description": "Directo desde Bogotá, Claudio Kerekes nos brindará una charla sobre Design Patterns. Luego de la presentación, habrá un espacio para seguir hablando del tema y hacer networking 😉"
+      }
+    ]
+  },
+  {
+    "meetup": "Abril 2023",
+    "key": "2023_04",
+    "date": "13/04/2023",
+    "meetup_link": "https://www.meetup.com/rubyba/events/292367068/",
+    "talks": [
+      {
+        "title": "Pizza n' Rails",
+        "description": "Nos juntamos a hablar de rails y a comer Pizza."
+      }
+    ]
+  }
+]

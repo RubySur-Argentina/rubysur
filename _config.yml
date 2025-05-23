@@ -6,4 +6,3 @@ page_gen:
     name: "key"
     dir: "meetup"
     index_files: false
-    debug: true
