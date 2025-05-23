@@ -9,14 +9,14 @@ const intToTime = (int) => {
 
   const parts = [];
   if (days > 0) {
-    parts.push(`${days} días`);
-    if (hours > 0) parts.push(`${hours} hora${hours === 1 ? "" : "s"}`);
+    parts.push(`${days} DÍAS`);
+    if (hours > 0) parts.push(`${hours} HORA${hours === 1 ? "" : "S"}`);
   } else if (hours > 0) {
-    parts.push(`${hours} hora${hours === 1 ? "" : "s"}`);
-    if (minutes > 0) parts.push(`${minutes} minuto${minutes === 1 ? "" : "s"}`);
+    parts.push(`${hours} HORA${hours === 1 ? "" : "S"}`);
+    if (minutes > 0) parts.push(`${minutes} MINUTO${minutes === 1 ? "" : "S"}`);
   } else {
-    if (minutes > 0) parts.push(`${minutes} minuto${minutes === 1 ? "" : "s"}`);
-    parts.push(`${seconds} segundo${seconds === 1 ? "" : "s"}`);
+    if (minutes > 0) parts.push(`${minutes} MINUTO${minutes === 1 ? "" : "S"}`);
+    parts.push(`${seconds} SEGUNDO${seconds === 1 ? "" : "S"}`);
   }
 
   return parts.join(" y ");
@@ -50,7 +50,7 @@ const countdown = () => {
       return;
     }
 
-    const content = `Faltan: ${intToTime(diff)}!`;
+    const content = `FALTAN ${intToTime(diff)}!`;
     countdownDiv.innerText = content;
 
     let wait = minuto; // update cada minuto por defecto
@@ -341,6 +341,8 @@ const bindTabTitle = () => {
 
 const bindStatsNumbers = () => {
   const statsSpans = document.querySelectorAll("section.stats span");
+  if (!statsSpans.length) return;
+
   statsSpans.forEach((span) => {
     const num = parseInt(span.innerText);
     span.dataset.originalNum = num;
@@ -387,6 +389,52 @@ const bindStatsNumbers = () => {
   observer.observe(document.querySelector("section.stats"));
 };
 
+const bindBackToTop = () => {
+  const threshold = 0.1;
+  const options = {
+    rootMargin: "400px", // muestro botón cuando se scrollea un poco más
+    threshold,
+  };
+
+  const backToTop = document.querySelector("#back-to-top");
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    if (entries[0].intersectionRatio < threshold) {
+      // navbar no visible, muestro botón
+      backToTop.classList.add("visible");
+    } else {
+      // visible, oculto botón
+      backToTop.classList.remove("visible");
+    }
+  }, options);
+
+  observer.observe(document.querySelector("#top"));
+};
+
+const bindSponsors = () => {
+  const pictures = document.querySelectorAll("section.sponsors picture");
+  if (!pictures.length) return;
+
+  const threshold = 1;
+  const options = {
+    rootMargin: "0px",
+    threshold,
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    if (entries[0].intersectionRatio < threshold) {
+      // no se ve, nada
+    } else {
+      pictures.forEach((picture) => {
+        picture.style.animationDelay = `${Math.random() * 300}ms`;
+        picture.classList.add("animate");
+      });
+    }
+  }, options);
+
+  observer.observe(document.querySelector("section.sponsors"));
+};
+
 document.addEventListener("DOMContentLoaded", () => {
   countdown();
   bindCloseDialogButtons();
@@ -396,5 +444,7 @@ document.addEventListener("DOMContentLoaded", () => {
   bindLogoFlip();
   bindTabTitle();
   bindStatsNumbers();
+  bindSponsors();
+  bindBackToTop();
   snake();
 });

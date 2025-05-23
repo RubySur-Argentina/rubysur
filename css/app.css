@@ -152,7 +152,7 @@ table {
 
   --inline-padding-layout: 1rem;
 
-  --red-1: #7d0f0f;
+  --red-1: rgb(125, 15, 15);
   --text-base: #291b24;
   --yellow: rgb(229, 176, 68);
   --red: #ed1b24;
@@ -276,6 +276,19 @@ a {
   &:hover {
     text-decoration: underline;
   }
+  &:has(svg) {
+    vertical-align: middle;
+    & svg {
+      width: 1rem;
+      height: 1rem;
+
+      /* @media (prefers-color-scheme: dark) {
+        & path {
+          fill: white;
+        }
+      } */
+    }
+  }
 }
 
 /* END OF BASE */
@@ -292,10 +305,11 @@ body {
 nav {
   font-family: var(--header-font);
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: clamp(12px, 2vw, 1.5rem);
   display: flex;
   justify-content: space-between;
   margin: 1rem;
+  position: relative;
   a {
     flex-basis: 10%;
     text-align: center;
@@ -307,6 +321,10 @@ nav {
       text-decoration: none;
       background-color: rgba(229, 176, 68, 0.8);
     }
+  }
+  & #top {
+    position: absolute;
+    top: -30px;
   }
 }
 
@@ -344,6 +362,13 @@ header {
     height: 70px;
     z-index: -1;
     animation: rotate 50s infinite linear;
+  }
+
+  @media screen and (max-width: 800px) {
+    &::after {
+      left: -30px;
+      bottom: -15px;
+    }
   }
 
   & > h1 {
@@ -405,6 +430,10 @@ header {
       height: 6rem;
     }
   }
+}
+
+section:nth-child(2n + 1) {
+  background-color: rgba(0, 0, 0, 0.03);
 }
 
 section.soon {
@@ -508,12 +537,18 @@ section.highlighted {
   }
 
   & > h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
     font-size: clamp(30px, 4vw, var(--font-size-h2));
   }
 
   & a {
     font-size: 1.2rem;
+    text-transform: uppercase;
+    & img {
+      width: 1.3rem;
+      height: 1.3rem;
+      vertical-align: text-top;
+    }
   }
 
   & > p {
@@ -522,33 +557,51 @@ section.highlighted {
   }
 
   & time {
-    margin-bottom: 1rem;
     display: block;
+    margin-bottom: 2rem;
+    font-family: var(--text-font);
+    padding-inline-start: 8px;
   }
 
-  & h4 {
-    font-weight: bold;
-  }
-
-  .speakers {
-    float: right;
-    margin-inline: 2rem 3rem;
-
-    @media screen and (max-width: 600px) {
-      display: none;
+  .highlighted_talk {
+    display: grid;
+    grid-template-areas: "talk image" "name image" "role image" "desc image";
+    grid-template-columns: 1fr min-content;
+    grid-template-rows: min-content min-content min-content 1fr;
+    margin-bottom: 3rem;
+    --box-shadow-color: var(--box-shadow-blue);
+    position: relative;
+    & > h4 {
+      font-weight: bold;
+      font-family: var(--header-font);
+      font-size: 31px;
+      padding-top: 5px;
+      grid-area: talk;
     }
-
-    figure {
+    & > span.name {
+      grid-area: name;
+      font-size: 25px;
+    }
+    & > span.role {
+      grid-area: role;
+      font-size: 19px;
+      font-family: var(--alt-font);
+    }
+    & > figure {
+      grid-area: image;
+      margin-inline: 2rem 3rem;
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
       & img {
-        width: 25vw;
         max-height: 200px;
+        aspect-ratio: 1;
         object-fit: scale-down;
         object-position: bottom center;
         display: block;
         height: 100%;
         border-radius: 50%;
         background-color: var(--box-shadow-blue);
-        margin-bottom: 2rem;
       }
 
       & figcaption {
@@ -557,9 +610,49 @@ section.highlighted {
         font-weight: bold;
         display: none;
       }
+    }
 
-      &:nth-child(2) img {
-        background-color: var(--box-shadow-yellow);
+    & p {
+      display: none;
+      grid-column: 1;
+      grid-row: 1 / 5;
+      font-size: 1rem;
+      line-height: 1.4rem;
+      padding: 1rem;
+      align-self: flex-start;
+    }
+
+    & .description {
+      grid-area: desc;
+      & button {
+        background: transparent;
+        border-radius: 3px;
+        font-family: var(--text-font);
+        padding: 2px 6px;
+        letter-spacing: 1px;
+        &:hover {
+          background: rgba(214, 40, 40, 0.6);
+        }
+      }
+      &:has(button:focus) + p,
+      &:has(button:active) + p {
+        display: block;
+      }
+    }
+
+    & + .highlighted_talk {
+      grid-template-areas: "image talk" "image name" "image role" "image desc";
+      grid-template-columns: min-content 1fr;
+      margin-bottom: 3rem;
+      --box-shadow-color: var(--box-shadow-yellow);
+      & figure {
+        margin-inline-start: 0px;
+        & img {
+          background-color: var(--box-shadow-yellow);
+        }
+      }
+      & p {
+        grid-column: 2;
       }
     }
   }
@@ -574,13 +667,15 @@ section.highlighted {
     padding: 0.5rem;
     max-width: 200px;
     font-size: 2rem;
-    line-height: 1.2rem;
+    line-height: 1.2;
     font-weight: bold;
     box-shadow: 7px 6px 5px 0px rgba(0, 0, 0, 0.45);
     -webkit-box-shadow: 7px 6px 5px 0px rgba(0, 0, 0, 0.45);
     -moz-box-shadow: 7px 6px 5px 0px rgba(0, 0, 0, 0.45);
     text-wrap: balance;
     text-align: center;
+    font-family: var(--alt-font);
+    letter-spacing: 3px;
 
     @media screen and (max-width: 600px) {
       font-size: 1rem;
@@ -729,6 +824,7 @@ section.about_us {
       position: relative;
       animation: idle-button infinite linear 5s;
       animation-delay: var(--animation-delay, 0s);
+      border: 0px !important;
 
       &::after {
         display: block;
@@ -830,9 +926,21 @@ section.about_us {
   }
 }
 
+.meetups_pasadas {
+  h1 {
+    text-align: center;
+  }
+}
 section.past {
   & h2 {
     margin-block-end: 2rem;
+  }
+
+  & > a {
+    display: block;
+    margin: 3.5rem auto 0px;
+    white-space: nowrap;
+    width: min-content;
   }
 
   & > ul {
@@ -844,10 +952,10 @@ section.past {
 
     & > li {
       display: grid;
-      grid-template-rows: min-content min-content 1fr min-content;
-      row-gap: 0.3rem;
-      column-gap: 0.3rem;
-      height: 12rem;
+      grid-template-rows: min-content min-content 1fr;
+      grid-template-columns: 1fr min-content;
+      row-gap: 1.5rem;
+      column-gap: 0.5rem;
       border-radius: 0.5rem;
       border: 1px solid #e4e4e7;
       padding: 1rem 1.5rem 1.5rem;
@@ -873,42 +981,54 @@ section.past {
         grid-column: span 2;
       }
 
-      & time {
-        grid-row: 2;
-        grid-column: span 2;
-        font-size: 0.875rem;
-        line-height: 1.25rem;
-        color: #6e6e77;
-      }
-
       & ul {
-        grid-row: 3;
+        grid-row: 2;
         grid-column: span 2;
         align-self: center;
         & > li {
           line-height: 1.2rem;
+          & > img {
+            height: 13px;
+            width: 13px;
+            vertical-align: baseline;
+            margin-inline-end: 5px;
+          }
         }
         & > li + li {
           padding-top: 1rem;
         }
       }
 
-      & .details,
-      & .gallery {
-        font-weight: bold;
+      & .gallery,
+      & a {
+        /* font-weight: bold; */
         cursor: pointer;
-      }
-
-      & .details {
-        grid-row: 4;
-        grid-column: 1 / 3;
-        &:has(+ .gallery) {
-          grid-column: 1 / 2;
+        border: 0;
+        background: none;
+        color: black;
+        text-decoration: none;
+        font-family: var(--text-font);
+        font-size: 1rem;
+        text-align: center;
+        align-self: flex-end;
+        justify-self: flex-end;
+        padding: 0.2rem 0.5rem;
+        border-radius: 3px;
+        border: 1px solid black;
+        line-height: 1rem;
+        white-space: nowrap;
+        &:hover {
+          background-color: rgba(214, 40, 40, 0.6);
+          border: 1px solid rgba(214, 40, 40, 0.6);
         }
       }
 
       & .gallery {
-        grid-row: 4;
+        grid-row: 3;
+        grid-column: 1 / 2;
+      }
+      & a {
+        grid-row: 3;
         grid-column: 2 / 3;
       }
     }
@@ -919,183 +1039,197 @@ section.past {
       }
     }
   }
+}
 
-  .meetupDetails,
-  .meetupGallery[open] {
-    position: relative;
-    .closeDialog {
-      position: sticky;
-      top: 0px;
-      float: right;
-      overflow: visible;
-      cursor: pointer;
-      button {
-        border: 2px solid black;
-        border-radius: 50%;
-        display: flex;
-        padding: 0.5rem;
-        align-items: center;
-        justify-content: center;
-        opacity: 0.6;
-        pointer-events: none;
-        &:hover,
-        &:focus {
-          opacity: 1;
-        }
-      }
-    }
+.alt-button {
+  cursor: pointer;
+  border: 0;
+  background: none;
+  color: black;
+  text-decoration: none;
+  font-family: var(--text-font);
+  font-size: 1rem;
+  text-align: center;
+  align-self: flex-end;
+  justify-self: flex-end;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  border: 1px solid black;
+  line-height: 1rem;
+  white-space: nowrap;
+  &:hover {
+    background-color: rgba(214, 40, 40, 0.6);
+    border: 1px solid rgba(214, 40, 40, 0.6);
+    text-decoration: none;
   }
 
-  .meetupDetails {
-    max-height: 92vh;
-    max-width: min(900px, 92vw);
-    border: 1px solid black;
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    padding: 1.5rem 1.5rem 2rem;
-    border-radius: 10px;
-
-    .talk {
-      display: grid;
-
-      grid-template-areas: "title" "slides" "video" "description" "speaker";
-      grid-template-columns: 1fr;
-
-      row-gap: 1rem;
-      column-gap: 2rem;
-
-      h3 {
-        grid-area: title;
-      }
-      & > a {
-        grid-area: slides;
-        justify-self: start;
-      }
-      .speaker {
-        grid-area: speaker;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        & ul {
-          grid-area: social;
-          gap: 0.3rem;
-          vertical-align: text-top;
-          display: flex;
-          &::before {
-            content: "(";
-          }
-          &::after {
-            content: ")";
-          }
-          & li {
-            padding-top: 0px;
-            & a {
-              vertical-align: middle;
-              & svg {
-                width: 1rem;
-                height: 1rem;
-
-                @media (prefers-color-scheme: dark) {
-                  & path {
-                    fill: white;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-      p {
-        grid-area: description;
-        width: 100%;
-      }
-      iframe {
-        grid-area: video;
-        width: 100%;
-        aspect-ratio: 16 / 9;
-        max-height: 315px;
-      }
-    }
-
-    .talk + .talk {
-      border-block-start: 1px solid black;
-      margin-block-start: 2rem;
-      padding-block-start: 1rem;
-    }
-
-    @media screen and (min-width: 800px) {
-      .talk:has(iframe) {
-        grid-template-areas: "title title" "slides slides" "video description" "video speaker";
-        grid-template-columns: 1fr 0.5fr;
-      }
+  &.blue {
+    &:hover {
+      background-color: rgba(40, 92, 214, 0.6);
+      border: 1px solid rgba(40, 92, 214, 0.6);
     }
   }
+}
 
-  .meetupGallery[open] {
-    position: relative;
-    height: 90vh;
-    width: 95vw;
-    max-width: 1500px;
-    max-height: 1500px;
+.talk {
+  display: grid;
+
+  grid-template-areas: "title video" "description video" "speaker video" "social slides";
+  grid-template-columns: 1fr 1fr;
+
+  @media screen and (max-width: 800px) {
+    grid-template-areas: "video" "title" "description" "speaker" "social" "slides";
+    grid-template-columns: 1fr;
+  }
+
+  row-gap: 1rem;
+  column-gap: 4rem;
+
+  h3 {
+    grid-area: title;
+  }
+  .speaker {
+    grid-area: speaker;
     display: flex;
-    gap: 1rem;
-    overflow: hidden;
+    align-items: center;
+    gap: 0.5rem;
+    align-self: flex-end;
+  }
 
-    .mainElement {
-      flex-grow: 1;
+  .social {
+    grid-area: social;
+    gap: 0.3rem;
+    vertical-align: text-top;
+    display: flex;
+    width: 13px;
+    height: 13px;
+    vertical-align: baseline;
+    & li {
+      padding-top: 0px;
+      padding-inline-end: 10px;
+      a {
+        white-space: nowrap;
+        color: black;
+        svg {
+          display: inline-block;
+          margin-inline-end: 5px;
+          vertical-align: top;
+        }
+      }
+    }
+  }
+  p {
+    grid-area: description;
+    width: 100%;
+    font-family: var(--alt-font);
+    line-height: 1.4rem;
+    align-self: flex-start;
+  }
+  iframe {
+    grid-area: video;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+  }
+
+  .slides {
+    justify-self: center;
+    font-size: 13px;
+  }
+}
+
+.talk + .talk {
+  margin-block-start: 3rem;
+  padding-block-start: 2rem;
+}
+
+.talk:last-child {
+  margin-bottom: 3rem;
+}
+
+.meetupGallery[open] {
+  position: relative;
+  height: 90vh;
+  width: 95vw;
+  max-width: 1500px;
+  max-height: 1500px;
+  display: flex;
+  gap: 1rem;
+  overflow: hidden;
+  .closeDialog {
+    position: sticky;
+    top: 0px;
+    float: right;
+    overflow: visible;
+    cursor: pointer;
+    button {
+      border: 2px solid black;
+      border-radius: 50%;
       display: flex;
+      padding: 0.5rem;
       align-items: center;
       justify-content: center;
-      overflow: hidden;
-      & picture {
-        width: 100%;
-        height: 100%;
-        & img {
-          height: 100%;
-          width: 100%;
-          object-fit: scale-down;
-          object-position: center;
-        }
-      }
-      & video {
-        width: 100%;
-        height: 100%;
+      opacity: 0.6;
+      pointer-events: none;
+      &:hover,
+      &:focus {
+        opacity: 1;
       }
     }
+  }
 
-    .closeDialog {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-      z-index: 1;
+  .mainElement {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    & picture {
+      width: 100%;
+      height: 100%;
+      & img {
+        height: 100%;
+        width: 100%;
+        object-fit: scale-down;
+        object-position: center;
+      }
     }
+    & video {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .closeDialog {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1;
+  }
+
+  .thumbnails {
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+    flex-shrink: 0;
+    gap: 0.2rem;
+    & img {
+      max-height: 10vh;
+      pointer-events: none;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column-reverse;
 
     .thumbnails {
-      display: flex;
-      flex-direction: column;
-      overflow-x: auto;
-      flex-shrink: 0;
-      gap: 0.2rem;
-      & img {
-        max-height: 10vh;
-        pointer-events: none;
-      }
-    }
-
-    @media screen and (max-width: 800px) {
-      flex-direction: column-reverse;
-
-      .thumbnails {
-        flex-direction: row;
-      }
+      flex-direction: row;
     }
   }
 }
 
 section.sponsors {
   padding-block: 5rem 3rem;
-  background-color: rgba(0, 0, 0, 0.03);
 
   & ul {
     display: flex;
@@ -1116,6 +1250,11 @@ section.sponsors {
         display: block;
         width: 100%;
         max-width: 50vw;
+        transform: scale(0);
+        &.animate {
+          animation: pop 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+          transform-origin: 50% 50%;
+        }
         & img {
           width: 100%;
         }
@@ -1124,16 +1263,43 @@ section.sponsors {
   }
 }
 
+@keyframes pop {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 section.stats {
   & div {
     display: grid;
     grid-template-columns: 1fr 1.3fr;
-    max-width: 500px;
+    max-width: 700px;
     margin: 0 auto;
 
     & > p {
       text-align: center;
       padding: 2rem;
+      display: grid;
+      grid-template-columns: 1fr min-content;
+      column-gap: 10px;
+      justify-self: center;
+      & img {
+        width: 70px;
+        height: 70px;
+        align-self: center;
+        justify-self: center;
+        &.rubistas {
+          width: 80px;
+          height: 80px;
+        }
+        &.speakers {
+          width: 90px;
+          height: 90px;
+        }
+      }
       & span {
         display: block;
         font-size: min(5rem, 12vw);
@@ -1146,6 +1312,9 @@ section.stats {
             font-size: 3rem;
           }
         }
+      }
+      & em {
+        grid-column: 2;
       }
     }
   }
@@ -1202,8 +1371,8 @@ footer {
   & > div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
-    margin: 2rem 4rem;
+    gap: min(2rem, 2vw);
+    margin: 2rem min(4rem, 5vw);
 
     & > a {
       display: flex;
@@ -1213,7 +1382,7 @@ footer {
       align-items: center;
       aspect-ratio: 1/1;
       gap: 1rem;
-      font-size: 28px;
+      font-size: clamp(14px, 2vw, 28px);
       font-weight: 400;
       border-radius: 1rem;
       img {
@@ -1322,6 +1491,34 @@ footer {
   left: -30px;
   width: 30px;
   height: 30px;
+}
+
+#back-to-top {
+  position: fixed;
+  bottom: 4rem;
+  right: 2rem;
+  background-color: var(--yellow);
+  border-radius: 50%;
+  padding: 0.5rem;
+  aspect-ratio: 1;
+  display: none;
+  font-size: 2rem;
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  &:hover {
+    text-decoration: none;
+    background-color: var(--blue);
+  }
+  &.visible {
+    display: initial;
+  }
+}
+
+body.meetup {
+  & h1 {
+    text-align: center;
+  }
 }
 
 body.notFound {

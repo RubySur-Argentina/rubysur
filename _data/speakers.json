@@ -7,12 +7,14 @@
       {
         "icon": "svg/linkedin-in.svg",
         "url": "https://www.linkedin.com/in/ariel-juodziukynas-a3316064/",
-        "title": "LinkedIn de Ariel Juodziukynas"
+        "title": "LinkedIn de Ariel Juodziukynas",
+        "name": "LinkedIn"
       },
       {
         "icon": "svg/x-twitter.svg",
         "url": "https://x.com/arieljuod",
-        "title": "Twitter/X de Ariel Juodziukynas"
+        "title": "Twitter/X de Ariel Juodziukynas",
+        "name": "Twitter/X"
       }
     ]
   },
@@ -24,7 +26,8 @@
       {
         "icon": "svg/linkedin-in.svg",
         "url": "https://www.linkedin.com/in/santiago-merlo-380b9711a/",
-        "title": "LinkedIn de Claudio Kerekes"
+        "title": "LinkedIn de Claudio Kerekes",
+        "name": "LinkedIn"
       }
     ]
   },
@@ -36,7 +39,8 @@
       {
         "icon": "svg/linkedin-in.svg",
         "url": "https://www.linkedin.com/in/enzo-fabbiani-perez-585850b3/",
-        "title": "LinkedIn de Enzo Fabbiani"
+        "title": "LinkedIn de Enzo Fabbiani",
+        "name": "LinkedIn"
       }
     ]
   },
@@ -48,7 +52,8 @@
       {
         "icon": "svg/linkedin-in.svg",
         "url": "https://www.linkedin.com/in/filipemendespi/",
-        "title": "LinkedIn de Filipe Mendes"
+        "title": "LinkedIn de Filipe Mendes",
+        "name": "LinkedIn"
       }
     ]
   },
@@ -60,12 +65,14 @@
       {
         "icon": "svg/linkedin-in.svg",
         "url": "https://www.linkedin.com/in/fesilvajacquier/",
-        "title": "LinkedIn de Fernando Silva Jacquier"
+        "title": "LinkedIn de Fernando Silva Jacquier",
+        "name": "LinkedIn"
       },
       {
         "icon": "svg/x-twitter.svg",
         "url": "https://x.com/fesilvajacquier",
-        "title": "Twitter/X de Fernando Silva Jacquier"
+        "title": "Twitter/X de Fernando Silva Jacquier",
+        "name": "Twitter/X"
       }
     ]
   },
@@ -77,7 +84,8 @@
       {
         "icon": "svg/linkedin-in.svg",
         "url": "https://www.linkedin.com/in/gastonginestet",
-        "title": "LinkedIn de Gastón Ginestet"
+        "title": "LinkedIn de Gastón Ginestet",
+        "name": "LinkedIn"
       }
     ]
   },
@@ -89,7 +97,8 @@
       {
         "icon": "svg/linkedin-in.svg",
         "url": "https://www.linkedin.com/in/jaime-zuberbuhler-44372b189/",
-        "title": "LinkedIn de Jaime Zuberbuhler"
+        "title": "LinkedIn de Jaime Zuberbuhler",
+        "name": "LinkedIn"
       }
     ]
   },
@@ -101,7 +110,8 @@
       {
         "icon": "svg/linkedin-in.svg",
         "url": "https://www.linkedin.com/in/joaquinvicente/",
-        "title": "LinkedIn de Joaquín Vicente"
+        "title": "LinkedIn de Joaquín Vicente",
+        "name": "LinkedIn"
       }
     ]
   },
@@ -113,7 +123,8 @@
       {
         "icon": "svg/linkedin-in.svg",
         "url": "https://www.linkedin.com/in/jorge-leites/",
-        "title": "LinkedIn de Jorge Leites"
+        "title": "LinkedIn de Jorge Leites",
+        "name": "LinkedIn"
       }
     ]
   },
@@ -126,7 +137,8 @@
       {
         "icon": "svg/linkedin-in.svg",
         "url": "https://www.linkedin.com/in/juan-pablo-balarini/",
-        "title": "LinkedIn de Juan Pablo Balarini"
+        "title": "LinkedIn de Juan Pablo Balarini",
+        "name": "LinkedIn"
       }
     ]
   },
@@ -138,7 +150,8 @@
       {
         "icon": "svg/linkedin-in.svg",
         "url": "https://linkedin.com/in/julioalucero",
-        "title": "LinkedIn de Julio Lucero"
+        "title": "LinkedIn de Julio Lucero",
+        "name": "LinkedIn"
       }
     ]
   },
@@ -150,12 +163,14 @@
       {
         "icon": "svg/linkedin-in.svg",
         "url": "https://www.linkedin.com/in/patriciomacadden/",
-        "title": "LinkedIn de Patricio Mac Adden"
+        "title": "LinkedIn de Patricio Mac Adden",
+        "name": "LinkedIn"
       },
       {
         "icon": "svg/x-twitter.svg",
         "url": "https://x.com/maxawen",
-        "title": "Twitter/X de Patricio Mac Adden"
+        "title": "Twitter/X de Patricio Mac Adden",
+        "name": "Twitter/X"
       }
     ]
   },
@@ -167,7 +182,8 @@
       {
         "icon": "svg/linkedin-in.svg",
         "url": "https://www.linkedin.com/in/santiago-díaz-6a99726b/",
-        "title": "LinkedIn de Santiago Diaz"
+        "title": "LinkedIn de Santiago Diaz",
+        "name": "LinkedIn"
       }
     ]
   },
@@ -179,7 +195,8 @@
       {
         "icon": "svg/linkedin-in.svg",
         "url": "https://www.linkedin.com/in/santiago-merlo-380b9711a/",
-        "title": "LinkedIn de Santiago Merlo"
+        "title": "LinkedIn de Santiago Merlo",
+        "name": "LinkedIn"
       }
     ]
   },

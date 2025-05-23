@@ -1,0 +1,76 @@
+---
+# front matter tells Jekyll to process Liquid
+---
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@rubyargentina" />
+    <meta property="og:url" content="https://ruby.com.ar" />
+    <meta property="og:title" content="RubySur Argentina | {{ page.meetup }}" />
+    <meta property="og:description" content="{{ page.meetup }}" />
+    <meta property="og:image" content="https://ruby.com.ar/images/logo.png" />
+
+    <title>RubySur - Argentina</title>
+    <link rel="icon" href="/images/sol.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    {% assign cacheBust = site.time | date:'?v=%s' %}
+    <link rel="stylesheet" href="/css/app.css{{ cacheBust }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="meetup">
+    {% include navbar.html %}
+    <header>
+      <h1>Edición {{ page.meetup }}</h1>
+    </header>
+
+    <main>
+      <section class="meetup_details" id="meetup_details">
+        {% for talk in page.talks %} {% include talk_partial.html talk=talk %}
+        {% endfor %} {% assign gallery_items = site.data.gallery[page.key] %} {%
+        if gallery_items %}
+        <button class="gallery">Galería</button>
+        <dialog class="meetupGallery" data-meetup-key="{{ page.key }}">
+          <div class="closeDialog"><button class="">X</button></div>
+          <div class="thumbnails">
+            {% for item in gallery_items %}
+            <button
+              data-filename="{{ item.filename }}"
+              data-media-type="{{ item.media_type }}"
+            >
+              <img
+                src="/media/meetups/{{ page.key }}/{{ item.filename }}_thumbnail.jpg"
+                alt="{{ item.alt_text }}"
+                loading="lazy"
+              />
+            </button>
+            {% endfor %}
+          </div>
+          <div class="mainElement"></div>
+        </dialog>
+        {% endif %}
+      </section>
+    </main>
+
+    {% include footer.html %}
+  </body>
+</html>
