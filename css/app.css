@@ -1506,6 +1506,11 @@ footer {
   box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  & img {
+    height: 2rem;
+    width: 2rem;
+    display: block;
+  }
   &:hover {
     text-decoration: none;
     background-color: var(--blue);

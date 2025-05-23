@@ -35,12 +35,14 @@ const countdown = () => {
     const diff = parsedDate - now;
     const minuto = 60000;
 
-    if (diff < 15 * minuto) { // 15 minutos antes del evento
-      highlighted.querySelector(".streaming").classList.remove('hide')
-      highlighted.querySelector(".detalles").classList.add('hide')
+    if (diff < 15 * minuto) {
+      // 15 minutos antes del evento
+      highlighted.querySelector(".streaming").classList.remove("hide");
+      highlighted.querySelector(".detalles").classList.add("hide");
     }
 
-    if (diff < -180 * minuto) { // 3hs después de que empezó el evento
+    if (diff < -180 * minuto) {
+      // 3hs después de que empezó el evento
       countdownDiv.innerText = "Mirá nuestro último evento";
       return;
     }
