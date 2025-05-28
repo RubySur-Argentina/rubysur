@@ -102,6 +102,19 @@
       }
     ]
   },
+  "jason_swett": {
+    "first_name": "Jason",
+    "last_name": "Swett",
+    "image_filename": "jason-swett.png",
+    "social": [
+      {
+        "icon": "svg/browser.png",
+        "url": "https://www.codewithjason.com/",
+        "title": "CodeWithJason.com",
+        "name": "Website"
+      }
+    ]
+  },
   "joaquin_vicente": {
     "first_name": "Joaquín",
     "last_name": "Vicente",
@@ -196,6 +209,19 @@
         "icon": "svg/linkedin-in.svg",
         "url": "https://www.linkedin.com/in/santiago-merlo-380b9711a/",
         "title": "LinkedIn de Santiago Merlo",
+        "name": "LinkedIn"
+      }
+    ]
+  },
+  "sebastian_buffo_sempe": {
+    "first_name": "Sebastián",
+    "last_name": "Buffo Sempé",
+    "image_filename": "sebastian-buffo-sempe.png",
+    "social": [
+      {
+        "icon": "svg/linkedin-in.svg",
+        "url": "https://www.linkedin.com/in/sbuffosempe/",
+        "title": "LinkedIn de Sebastián Buffo Sempé",
         "name": "LinkedIn"
       }
     ]
