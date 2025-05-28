@@ -31,7 +31,7 @@
   {
     "meetup": "Abril 2025",
     "key": "2025_04",
-    "date": "2025/04/10",
+    "date": "2025-04-10",
     "meetup_link": "https://www.meetup.com/rubyba/events/307093016/",
     "talks": [
       {
@@ -59,7 +59,7 @@
   {
     "meetup": "Marzo 2025",
     "key": "2025_03",
-    "date": "12/03/2025",
+    "date": "2025-03-12",
     "meetup_link": "https://www.meetup.com/rubyba/events/306565829",
     "talks": [
       {
@@ -87,7 +87,7 @@
   {
     "meetup": "Noviembre 2024",
     "key": "2024_11",
-    "date": "12/11/2024",
+    "date": "2024-11-12",
     "meetup_link": "https://www.meetup.com/rubyba/events/304387497/",
     "talks": [
       {
@@ -115,7 +115,7 @@
   {
     "meetup": "Octubre 2024",
     "key": "2024_10",
-    "date": "16/10/2024",
+    "date": "2024-10-16",
     "meetup_link": "https://www.meetup.com/rubyba/events/304012554/",
     "talks": [
       {
@@ -131,7 +131,7 @@
   {
     "meetup": "Septiembre 2024",
     "key": "2024_09",
-    "date": "12/09/2024",
+    "date": "2024-09-12",
     "meetup_link": "https://www.meetup.com/rubyba/events/303276300/",
     "talks": [
       {
@@ -148,7 +148,7 @@
   {
     "meetup": "Agosto 2024",
     "key": "2024_08",
-    "date": "14/08/2024",
+    "date": "2024-08-14",
     "meetup_link": "https://www.meetup.com/rubyba/events/302656192/",
     "talks": [
       {
@@ -164,7 +164,7 @@
   {
     "meetup": "Julio 2024",
     "key": "2024_07",
-    "date": "18/07/2024",
+    "date": "2024-07-18",
     "meetup_link": "https://www.meetup.com/rubyba/events/302163493/",
     "talks": [
       {
@@ -180,7 +180,7 @@
   {
     "meetup": "Junio 2024",
     "key": "2024_06",
-    "date": "13/06/2024",
+    "date": "2024-06-13",
     "meetup_link": "https://www.meetup.com/rubyba/events/301367143/",
     "talks": [
       {
@@ -196,7 +196,7 @@
   {
     "meetup": "Mayo 2024",
     "key": "2024_05",
-    "date": "14/05/2024",
+    "date": "2024-05-14",
     "meetup_link": "https://www.meetup.com/rubyba/events/300864089/",
     "talks": [
       {
@@ -212,7 +212,7 @@
   {
     "meetup": "Abril 2024",
     "key": "2024_04",
-    "date": "16/04/2024",
+    "date": "2024-04-16",
     "meetup_link": "https://www.meetup.com/rubyba/events/300307806/",
     "talks": [
       {
@@ -236,7 +236,7 @@
   {
     "meetup": "Marzo 2024",
     "key": "2024_03",
-    "date": "14/03/2024",
+    "date": "2024-03-14",
     "meetup_link": "https://www.meetup.com/rubyba/events/299590862/",
     "talks": [
       {
@@ -252,7 +252,7 @@
   {
     "meetup": "Octubre 2023",
     "key": "2023_10",
-    "date": "05/10/2023",
+    "date": "2023-10-05",
     "meetup_link": "https://www.meetup.com/rubyba/events/296381930/",
     "talks": [
       {
@@ -275,7 +275,7 @@
   {
     "meetup": "Agosto 2023",
     "key": "2023_08",
-    "date": "31/08/2023",
+    "date": "2023-08-31",
     "meetup_link": "https://www.meetup.com/rubyba/events/295491257/",
     "talks": [
       {
@@ -291,7 +291,7 @@
   {
     "meetup": "Mayo 2023",
     "key": "2023_05",
-    "date": "18/05/2023",
+    "date": "2023-05-18",
     "meetup_link": "https://www.meetup.com/rubyba/events/293412778/",
     "talks": [
       {
@@ -304,7 +304,7 @@
   {
     "meetup": "Abril 2023",
     "key": "2023_04",
-    "date": "13/04/2023",
+    "date": "2023-04-13",
     "meetup_link": "https://www.meetup.com/rubyba/events/292367068/",
     "talks": [
       {
