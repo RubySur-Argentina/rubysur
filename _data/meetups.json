@@ -1,5 +1,34 @@
 [
   {
+    "meetup": "Mayo 2025",
+    "key": "2025_05",
+    "title": "Multi-Tenancy y Service Objects",
+    "date": "2025-05-14",
+    "meetup_link": "https://www.meetup.com/rubyba/events/307533005/",
+    "talks": [
+      {
+        "title": "Multi-tenancy en Rails: De 0 a SaaS con acts_as_tenant",
+        "speaker": "santiago_diaz",
+        "description_highlighted": "¿Alguna vez te preguntaste cómo se manejan miles de tiendas en una sola aplicación? En esta charla, exploraremos cómo implementar multi-tenancy en Rails usando acts_as_tenant. Veremos cómo transformar una aplicación monolítica en una plataforma SaaS escalable. Compartiremos experiencias reales y mejores prácticas en la implementación de multi-tenancy en una plataforma de e-commerce.",
+        "description": "¿Alguna vez te preguntaste cómo se manejan miles de tiendas en una sola aplicación? En esta charla, exploraremos cómo implementar multi-tenancy en Rails usando acts_as_tenant. Veremos cómo transformar una aplicación monolítica en una plataforma SaaS escalable. Compartiremos experiencias reales y mejores prácticas en la implementación de multi-tenancy en una plataforma de e-commerce.",
+        "youtube_link": "https://www.youtube.com/watch?v=6SNnDvneIMw",
+        "youtube_id": "6SNnDvneIMw",
+        "youtube_timestamp": 852,
+        "slides_link": "https://docs.google.com/presentation/d/17D5aq8YssIZyyXfFTjlPzuVv4yrsCkXlv_e0P9_FxPw/edit"
+      },
+      {
+        "title": "Service Objects en Rails",
+        "speaker": "fernando_silva_jacquier",
+        "description_highlighted": "Fer nos va a contar por qué se critica tanto el patrón de Service Objects en Rails… y por qué, a pesar de las críticas, sigue siendo una herramienta válida para encapsular lógica de negocio. También vamos a ver ejemplos concretos y algunas convenciones útiles para aplicarlo de forma efectiva sin perder la cabeza.",
+        "description": "Fer nos va a contar por qué se critica tanto el patrón de Service Objects en Rails… y por qué, a pesar de las críticas, sigue siendo una herramienta válida para encapsular lógica de negocio. También vamos a ver ejemplos concretos y algunas convenciones útiles para aplicarlo de forma efectiva sin perder la cabeza.",
+        "youtube_link": "https://www.youtube.com/watch?v=6SNnDvneIMw",
+        "youtube_id": "6SNnDvneIMw",
+        "youtube_timestamp": 3516,
+        "slides_link": "https://fesilvajacquier.github.io/servisis/"
+      }
+    ]
+  },
+  {
     "meetup": "Abril 2025",
     "key": "2025_04",
     "date": "2025/04/10",
