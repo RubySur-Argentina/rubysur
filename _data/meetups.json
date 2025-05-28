@@ -41,6 +41,7 @@
         "description": "Qué pasa si de un día para el otro te piden actualizar una aplicación que no conocés? Qué hacés? Por dónde empezás? Cómo podés hacer para actualizar una aplicación sin romper nada en el camino? Gastón Ginestet nos va a contar su experiencia en este arduo trabajo.",
         "youtube_link": "https://www.youtube.com/watch?v=dc9D9NeDJLk",
         "youtube_id": "dc9D9NeDJLk",
+        "youtube_timestamp": 470,
         "slides_link": "https://docs.google.com/presentation/d/1a0yOpdKEgaFwSpqJl3CCC9lhwveLRUBUVZFWEUbke0M/edit?usp=sharing"
       },
       {
@@ -68,6 +69,7 @@
         "description": "Jaime Zuberbuhler, Co-Founder de MoonyApp, va a adentrarnos en como implementar adapters y mappers en Rails para interactuar con distintas APIs.",
         "youtube_link": "https://www.youtube.com/watch?v=tMxMVAQkBZs",
         "youtube_id": "tMxMVAQkBZs",
+        "youtube_timestamp": 387,
         "slides_link": "https://www.ruby.com.ar/media/pdfs/Jaime Zuberbuhler - Adapters y Mappers.pdf"
       },
       {
@@ -77,7 +79,7 @@
         "description": "Patricio Mac Adden, Co-Founder de Sinaptia, nos comparte sobre Instrumentación y Observabilidad. Vamos a aprender conceptos generales y diferentes formas de implementarla en Rails.",
         "youtube_link": "https://www.youtube.com/watch?v=tMxMVAQkBZs",
         "youtube_id": "tMxMVAQkBZs",
-        "youtube_timestamp": 3777,
+        "youtube_timestamp": 2949,
         "slides_link": "https://www.ruby.com.ar/media/pdfs/Patricio Mac Adden - El camino a la instrumentación.pdf"
       }
     ]
@@ -95,6 +97,7 @@
         "description": "Una charla sobre cómo escribir y organizar tests eficientes, equilibrando la calidad del código, la practicidad y la performance. Joaquín compartirá estrategias para optimizar tiempos de ejecución y reducir la complejidad de las pruebas, asegurando una suite de testing confiable para el desarrollo de aplicaciones.",
         "youtube_link": "https://www.youtube.com/watch?v=fZIhFXQb2Sw",
         "youtube_id": "fZIhFXQb2Sw",
+        "youtube_timestamp": 925,
         "slides_link": "https://docs.google.com/presentation/d/1fjEoBp32cLD1l8bYkIfGXusaoJDnkkmeRKVN48XNleU/edit?usp=sharing"
       },
       {
@@ -104,7 +107,7 @@
         "description": "Exploraremos el potencial de la inteligencia artificial, desde los conceptos clave hasta ejemplos prácticos en una aplicación de Ruby on Rails.",
         "youtube_link": "https://www.youtube.com/watch?v=4IkPjUdssNI",
         "youtube_id": "4IkPjUdssNI",
-        "youtube_timestamp": 4731,
+        "youtube_timestamp": 4727,
         "slides_link": "https://drive.google.com/file/d/1haoMTBHVpHUWHfu6k4ShC8w7fTdys_O0/view"
       }
     ]
@@ -120,7 +123,8 @@
         "speaker": "jorge_leites",
         "description": "Hablará sobre la gema view_component, y dará recomendaciones sobre el uso correcto para conseguir componentes altamente reusables.",
         "youtube_link": "https://www.youtube.com/watch?v=2nZsZ4_lx7w",
-        "youtube_id": "2nZsZ4_lx7w"
+        "youtube_id": "2nZsZ4_lx7w",
+        "youtube_timestamp": 800
       }
     ]
   },
@@ -136,6 +140,7 @@
         "description": "Ariel Juodziukynas es nuestro speaker de la fecha y va a estar contando cómo Actualizar tu aplicación con Dual Booting.\n\nVamos a ver cómo actualizar Ruby, Rails, o cualquier otra gema, usando la técnica de Dual Booting para actualizar nuestras aplicaciones gradualmente y ayudarnos a prepara la app para futuras versiones. Vamos a ver ejemplos y conceptos para luego poder adaptar la técnica a diferentes situaciones.",
         "youtube_link": "https://www.youtube.com/watch?v=F-CnVCJQLKI",
         "youtube_id": "F-CnVCJQLKI",
+        "youtube_timestamp": 1308,
         "slides_link": "https://arielj.github.io/actualizar_dual_booting/"
       }
     ]
