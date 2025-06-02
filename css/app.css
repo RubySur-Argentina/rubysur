@@ -252,15 +252,9 @@ h3 {
   } */
 
   &.alt {
-    color: white;
+    color: black;
     & i img {
       filter: invert(1);
-    }
-    @media (prefers-color-scheme: dark) {
-      color: black;
-      & i img {
-        filter: none;
-      }
     }
   }
 }
