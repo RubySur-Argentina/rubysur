@@ -32,7 +32,7 @@
       <span class="name">
         {{- speaker.first_name }} {{ speaker.last_name -}}
       </span>
-      <span class="role">Rubista</span>
+      <span class="role">{{ speaker.title | default: "Rubista"}}</span>
       <div class="description">
         <button>DESCRIPCIÓN</button>
       </div>

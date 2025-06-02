@@ -93,6 +93,7 @@
     "first_name": "Jaime",
     "last_name": "Zuberbuhler",
     "image_filename": "jaime-zuberbuhler.png",
+    "title": "Co-Founder de MoonyApp",
     "social": [
       {
         "icon": "svg/linkedin-in.svg",
@@ -106,6 +107,7 @@
     "first_name": "Jason",
     "last_name": "Swett",
     "image_filename": "jason-swett.png",
+    "title": "Host of the Code with Jason Podcast",
     "social": [
       {
         "icon": "svg/browser.png",
@@ -172,6 +174,7 @@
     "first_name": "Patricio",
     "last_name": "Mac Adden",
     "image_filename": "patricio-mac-adden.png",
+    "title": "Co-Founder de Synaptia",
     "social": [
       {
         "icon": "svg/linkedin-in.svg",
@@ -217,6 +220,7 @@
     "first_name": "Sebastián",
     "last_name": "Buffo Sempé",
     "image_filename": "sebastian-buffo-sempe.png",
+    "title": "VP de LeWagon en LatAm",
     "social": [
       {
         "icon": "svg/linkedin-in.svg",

@@ -12,7 +12,8 @@
   {% if include.talk.speaker %} {% assign speaker =
   site.data.speakers[include.talk.speaker] %}
   <span class="speaker">
-    {{ speaker.first_name }} {{ speaker.last_name }} | Rubista
+    {{ speaker.first_name }} {{ speaker.last_name }} | {{ speaker.title |
+    default: "Rubista" }}
   </span>
   {% if speaker.social %}
 
