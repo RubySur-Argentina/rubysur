@@ -1,0 +1,21 @@
+{% assign gallery_items = site.data.gallery[include.key] %}
+{% if gallery_items %}
+  <dialog class="meetupGallery" data-meetup-key="{{ include.key }}">
+    <div class="closeDialog"><button class="">X</button></div>
+    <div class="thumbnails">
+      {% for item in gallery_items %}
+      <button
+        data-filename="{{ item.filename }}"
+        data-media-type="{{ item.media_type }}"
+      >
+        <img
+          src="/media/meetups/{{ include.key }}/{{ item.filename }}_thumbnail.jpg"
+          alt="{{ item.alt_text }}"
+          loading="lazy"
+        />
+      </button>
+      {% endfor %}
+    </div>
+    <div class="mainElement"></div>
+  </dialog>
+{% endif %}

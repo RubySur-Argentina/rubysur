@@ -41,33 +41,15 @@
     {% include navbar.html %}
     <header>
       <h1>Edición {{ page.meetup }}</h1>
+      {% include gallery_button.html key=page.key %}
     </header>
 
     <main>
       <section class="meetup_details" id="meetup_details">
-        {% for talk in page.talks %} {% include talk_partial.html talk=talk %}
-        {% endfor %} {% assign gallery_items = site.data.gallery[page.key] %} {%
-        if gallery_items %}
-        <button class="gallery">Galería</button>
-        <dialog class="meetupGallery" data-meetup-key="{{ page.key }}">
-          <div class="closeDialog"><button class="">X</button></div>
-          <div class="thumbnails">
-            {% for item in gallery_items %}
-            <button
-              data-filename="{{ item.filename }}"
-              data-media-type="{{ item.media_type }}"
-            >
-              <img
-                src="/media/meetups/{{ page.key }}/{{ item.filename }}_thumbnail.jpg"
-                alt="{{ item.alt_text }}"
-                loading="lazy"
-              />
-            </button>
-            {% endfor %}
-          </div>
-          <div class="mainElement"></div>
-        </dialog>
-        {% endif %}
+        {% for talk in page.talks %}
+          {% include talk_partial.html talk=talk %}
+        {% endfor %}
+        {% include gallery_modal.html key=page.key %}
       </section>
     </main>
 

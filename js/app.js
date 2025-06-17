@@ -153,7 +153,9 @@ const bindMeetupGalleryButton = () => {
     const target = e.target;
     if (!target.classList.contains("gallery")) return;
 
-    const dialog = target.parentElement.querySelector(".meetupGallery");
+    const dialog = document.querySelector(
+      `dialog[data-meetup-key="${target.dataset.meetupKey}"`
+    );
     const mainElement = dialog.querySelector(".mainElement");
     const thumbnails = dialog.querySelector(".thumbnails");
     let currentElement = null;

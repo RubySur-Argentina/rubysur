@@ -1,0 +1,4 @@
+{% assign gallery_items = site.data.gallery[include.key] %}
+{% if gallery_items %}
+  <button class="gallery alt-button" data-meetup-key="{{ include.key }}">Galería</button>
+{% endif %}

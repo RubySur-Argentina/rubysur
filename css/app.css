@@ -1515,8 +1515,13 @@ footer {
 }
 
 body.meetup {
-  & h1 {
-    text-align: center;
+  header {
+    & > h1 {
+      text-align: center;
+    }
+    & > .alt-button {
+      align-self: center;
+    }
   }
 }
 
