@@ -394,6 +394,9 @@ const bindStatsNumbers = () => {
 };
 
 const bindBackToTop = () => {
+  const backToTopButton = document.querySelector("#top");
+  if (!backToTopButton) return;
+
   const threshold = 0.1;
   const options = {
     rootMargin: "400px", // muestro botón cuando se scrollea un poco más
@@ -412,7 +415,7 @@ const bindBackToTop = () => {
     }
   }, options);
 
-  observer.observe(document.querySelector("#top"));
+  observer.observe(backToTopButton);
 };
 
 const bindSponsors = () => {

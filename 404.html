@@ -32,35 +32,12 @@
   <body class="notFound">
     <main>
       <header>
-        <h1>RubySur Argentina</h1>
-        <p>404 - Esta página no existe</p>
-        <a href="/" class="button alt">Volver</a>
+        <img src="images/logo.svg" alt="Logo de RubySur" />
       </header>
+      <p>404 - Esta página no existe</p>
+      <a href="/" class="button alt">Volver</a>
       <img src="images/travolta.gif" />
     </main>
-    <div class="copyright">
-      <span>© 2024 RubySur - Argentina</span>
-      <button class="snake">💎🐍</button>
-      <a href="/#about_us">About Us</a>
-    </div>
-
-    <dialog class="snakeBoard">
-      <div class="hud">
-        <h3>Ruvyborita!</h3>
-        <h3 class="score">Puntaje: 0</h3>
-        <button class="close">X</button>
-      </div>
-      <div class="board"></div>
-      <div class="controls">
-        <button class="up" data-new-direction="Up">⬆️</button>
-        <button class="right" data-new-direction="Right">➡️</button>
-        <button class="down" data-new-direction="Down">⬇️</button>
-        <button class="left" data-new-direction="Left">⬅️</button>
-        <small>o usá el teclado</small>
-      </div>
-    </dialog>
-    <img src="/images/snake.gif" class="snakeGif" />
-    <script src="js/app.js{{ cacheBust }}"></script>
-    <script src="js/snake.js{{ cacheBust }}"></script>
+    {% include footer.html %}
   </body>
 </html>

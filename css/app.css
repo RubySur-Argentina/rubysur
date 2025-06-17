@@ -1526,23 +1526,59 @@ body.meetup {
 }
 
 body.notFound {
-  background: linear-gradient(110deg, #580d2e, #fe4141);
   grid-template-rows: 1fr min-content;
+  max-height: 100vh;
+  overflow: hidden;
 
   & main {
     display: grid;
+    grid-template-areas: "header header" "image message" "image button";
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: min-content min-content min-content;
+    min-height: 0px;
+    height: 100%;
     max-width: 1280px;
     margin: auto;
-    grid-template-columns: 1fr 1fr;
-    header {
-      background: none;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      & p {
-        font-size: 4rem;
-        line-height: 4.2rem;
+
+    @media screen and (max-width: 700px) {
+      grid-template-areas: "header" "image" "message" "button";
+      grid-template-columns: 1fr;
+      grid-template-rows: min-content;
+    }
+
+    & > header {
+      grid-area: header;
+      padding: min(5vh, 4rem) min(10vw, 4rem);
+      margin: 0px;
+
+      img {
+        width: 70vw;
+        max-width: 800px;
       }
+    }
+
+    & > p {
+      grid-area: message;
+      font-size: clamp(30px, 10vw, 4rem);
+      line-height: 4.2rem;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    & > img {
+      grid-area: image;
+      max-height: 35vh;
+      max-width: 40vw;
+      min-height: 0px;
+      @media screen and (max-width: 700px) {
+        justify-self: center;
+      }
+    }
+
+    & > a {
+      grid-area: button;
+      align-self: center;
+      justify-self: center;
     }
   }
 }
