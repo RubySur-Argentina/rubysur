@@ -1,22 +1,22 @@
 {
-  "meetup": "Junio 2025",
-  "title": "Multi-Tenancy y Service Objects",
-  "date": "2025-06-12",
+  "meetup": "Julio 2025",
+  "title": "Meetup de mitad del año",
+  "date": "2025-07-15",
   "time": "19:00",
-  "location": "Online",
-  "youtube_link": "https://www.youtube.com/watch?v=i0pwQoR1VgM",
-  "youtube_embed": "https://www.youtube.com/embed/i0pwQoR1VgM",
-  "meetup_link": "https://www.meetup.com/rubyba/events/307825488/",
+  "location": "Working & Co - Loyola 501, Oficinas de Crunchloop",
+  "location_link": "https://maps.app.goo.gl/rqT32bHnf4hkdrKv7",
+  "form_link": "https://docs.google.com/forms/d/e/1FAIpQLSc8DvRf2GQZYOWF2iMGn4hsd6tFOGD4spxIjd3blACB9mx4Hg/viewform",
+  "host": "Crunchloop",
   "talks": [
     {
-      "title": "What is Testing?",
-      "speaker": "jason_swett",
-      "description_highlighted": "Jason es el host de uno de los podcast de ruby más populares: Code with Jason"
+      "title": "Arquitectura y Diseño con Rails",
+      "speaker": "ivan_etchart"
     },
     {
-      "title": "When Business meets Technology. The Digital Transformation of a Company",
-      "speaker": "sebastian_buffo_sempe",
-      "description_highlighted": "Vamos a explorar una premisa fundamental (aunque no siempre aplicada): la tecnología debe adaptarse al negocio, y no al revés. Será una conversación honesta y práctica, basada en experiencias reales, uno exitoso y otro no tanto, ideal para quienes toman decisiones tecnológicas, lideran productos o simplemente quieren entender mejor cómo alinear tech y negocio de forma estratégica."
+      "title": "Tree structures in Rails",
+      "speaker": "patricio_mac_adden",
+      "description_highlighted": "En esta charla vamos a analizar diferentes implementaciones de tree structures en Rails y comparar un aspecto muy interesante como es la performance.",
+      "description": "En esta charla vamos a analizar diferentes implementaciones de tree structures en Rails y comparar un aspecto muy interesante como es la performance."
     }
   ]
 }

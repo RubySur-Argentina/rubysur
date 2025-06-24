@@ -1,5 +1,30 @@
 [
   {
+    "meetup": "Junio 2025",
+    "key": "2025_06",
+    "title": "Multi-Tenancy y Service Objects",
+    "date": "2025-06-12",
+    "location": "Online",
+    "youtube_link": "https://www.youtube.com/watch?v=i0pwQoR1VgM",
+    "youtube_embed": "https://www.youtube.com/embed/i0pwQoR1VgM",
+    "talks": [
+      {
+        "title": "What is Testing?",
+        "speaker": "jason_swett",
+        "description_highlighted": "Jason es el host de uno de los podcast de ruby más populares: Code with Jason",
+        "description": "Jason es el host de uno de los podcast de ruby más populares: Code with Jason.\n\nEn esta sesión charlamos sobre testing, qué es, distintas preguntas, ténicas para testear eficientemente, y más.",
+        "youtube_link": "https://www.youtube.com/watch?v=i0pwQoR1VgM",
+        "youtube_id": "i0pwQoR1VgM"
+      },
+      {
+        "title": "When Business meets Technology. The Digital Transformation of a Company",
+        "speaker": "sebastian_buffo_sempe",
+        "description_highlighted": "Vamos a explorar una premisa fundamental (aunque no siempre aplicada): la tecnología debe adaptarse al negocio, y no al revés. Será una conversación honesta y práctica, basada en experiencias reales, uno exitoso y otro no tanto, ideal para quienes toman decisiones tecnológicas, lideran productos o simplemente quieren entender mejor cómo alinear tech y negocio de forma estratégica.",
+        "description": "Vamos a explorar una premisa fundamental (aunque no siempre aplicada): la tecnología debe adaptarse al negocio, y no al revés. Será una conversación honesta y práctica, basada en experiencias reales, uno exitoso y otro no tanto, ideal para quienes toman decisiones tecnológicas, lideran productos o simplemente quieren entender mejor cómo alinear tech y negocio de forma estratégica."
+      }
+    ]
+  },
+  {
     "meetup": "Mayo 2025",
     "key": "2025_05",
     "title": "Multi-Tenancy y Service Objects",

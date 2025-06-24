@@ -1,0 +1,15 @@
+<picture>
+  <source
+    media="(prefers-color-scheme:dark)"
+    data-srcset-temp="images/sponsors/{{ include.sponsor.logo_filename_dark_mode }}"
+    srcset="images/sponsors/{{ include.sponsor.logo_filename }}"
+  />
+  <source
+    media="(prefers-color-scheme:light)"
+    srcset="images/sponsors/{{ include.sponsor.logo_filename }}"
+  />
+  <img
+    src="images/sponsors/{{ include.sponsor.logo_filename }}"
+    alt="Logo de {{ include.sponsor.name }}"
+  />
+</picture>

@@ -89,6 +89,13 @@
       }
     ]
   },
+  "ivan_etchart": {
+    "first_name": "Ivan",
+    "last_name": "Etchart",
+    "image_filename": "ivan_etchart.png",
+    "title": "CTO & Co-Founder de Crunchloop",
+    "social": []
+  },
   "jaime_zuberbuhler": {
     "first_name": "Jaime",
     "last_name": "Zuberbuhler",
@@ -110,7 +117,7 @@
     "title": "Host of the Code with Jason Podcast",
     "social": [
       {
-        "icon": "svg/browser.png",
+        "icon": "svg/browser.svg",
         "url": "https://www.codewithjason.com/",
         "title": "CodeWithJason.com",
         "name": "Website"

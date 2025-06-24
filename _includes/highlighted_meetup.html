@@ -18,9 +18,8 @@
   <div class="detalles">
     <h2>¡Próxima MeetUp!</h2>
     <time datetime="{{ meetup.date}}T{{ meetup.time}}">12 DE JUNIO | 19HS</time>
-
-    {% for talk in meetup.talks %} {% assign speaker =
-    site.data.speakers[talk.speaker] %}
+    
+    {% for talk in meetup.talks %} {% assign speaker = site.data.speakers[talk.speaker] %}
     <div class="highlighted_talk">
       <h4>{{ talk.title }}</h4>
       <figure>
@@ -33,10 +32,12 @@
         {{- speaker.first_name }} {{ speaker.last_name -}}
       </span>
       <span class="role">{{ speaker.title | default: "Rubista"}}</span>
-      <div class="description">
-        <button>DESCRIPCIÓN</button>
-      </div>
-      <p class="textBox">{{ talk.description_highlighted }}</p>
+      {% if talk.description_highlighted %}
+        <div class="description">
+          <button>DESCRIPCIÓN</button>
+        </div>
+        <p class="textBox">{{ talk.description_highlighted }}</p>
+      {% endif %}
     </div>
     {% endfor %} {% if meetup.location_link %}
     <address>
@@ -51,7 +52,7 @@
     {% assign descriptions = meetup.talks | map: 'description' | join: '\n' %}
     <a
       target="_blank"
-      href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=RubySur+Meetup:+{{ meetup.title | escape_once | replace: '+', '%2b' | replace: ' ', '+' }}&details={{ descriptions | replace: ' ', '+' | replace: '\n', '%0A%0A' }}+%0A%0A+{{ meetup.youtube_link }}&dates={{ meetup.date | replace: '-', '' }}T{{ meetup.time | replace: ':', '' }}00/{{ meetup.date | replace: '-', '' }}T210000&location={{ meetup.location | replace: ' ', '+' }}&ctz=America/Buenos_Aires"
+      href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=RubySur+Meetup:+{{ meetup.title | escape_once | replace: '+', '%2b' | replace: ' ', '+' }}&details={{ descriptions | replace: ' ', '+' | replace: '\n', '%0A%0A' }}+%0A%0A+{{ meetup.youtube_link }}&dates={{ meetup.date | replace: '-', '' }}T{{ meetup.time | replace: ':', '' }}00/{{ meetup.date | replace: '-', '' }}T220000&location={{ meetup.location | replace: ' ', '+' }}&ctz=America/Buenos_Aires"
     >
       <i><img src="images/icons/calendar.svg" alt="Calendario" /></i>
       Agregar evento a Google Calendar</a
@@ -68,10 +69,16 @@
 
     <br />
     <br />
-    {% if meetup.meetup_link %}
-    <a target="_blank" class="button alt" href="{{ meetup.meetup_link }}">
-      Anotate para venir</a
-    >
+    {% if meetup.form_link %}
+      <a target="_blank" class="button alt" href="{{ meetup.form_link }}">
+        Anotate para venir</a
+      >
+    {% endif %}
+
+    {% if meetup.host %} {% assign host = site.data.sponsors | where: "name", meetup.host | first %}
+      <p class="host">
+        Invita especialmente {% include logo_sponsor.html sponsor=host %}
+      </p>
     {% endif %}
   </div>
 </section>

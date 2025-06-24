@@ -40,5 +40,11 @@
     "logo_filename": "roxom.svg",
     "logo_filename_dark_mode": "roxom-dark-mode.svg",
     "url": "https://roxom.com"
+  },
+  {
+    "name": "Crunchloop",
+    "logo_filename": "crunchloop.svg",
+    "logo_filename_dark_mode": "crunchloop-dark-mode.svg",
+    "url": "https://www.crunchloop.io"
   }
 ]

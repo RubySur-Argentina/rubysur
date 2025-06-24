@@ -285,6 +285,10 @@ a {
   }
 }
 
+picture img {
+  display: block;
+}
+
 /* END OF BASE */
 
 body {
@@ -533,6 +537,15 @@ section.highlighted {
   & > h2 {
     margin-bottom: 0rem;
     font-size: clamp(30px, 4vw, var(--font-size-h2));
+  }
+
+  & .host {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    justify-content: center;
+    margin-top: 1.5rem;
   }
 
   & a {
