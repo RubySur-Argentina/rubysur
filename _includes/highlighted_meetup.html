@@ -17,7 +17,8 @@
 
   <div class="detalles">
     <h2>¡Próxima MeetUp!</h2>
-    <time datetime="{{ meetup.date}}T{{ meetup.time}}">12 DE JUNIO | 19HS</time>
+    {% assign month = meetup.date | date: "%m" | minus: 1 %}
+    <time datetime="{{ meetup.date }}T{{ meetup.time }}">{{ meetup.date | date: "%d" }} DE {{ site.data.months[month] }} | {{ meetup.time | date: "%H" }}HS</time>
     
     {% for talk in meetup.talks %} {% assign speaker = site.data.speakers[talk.speaker] %}
     <div class="highlighted_talk">
