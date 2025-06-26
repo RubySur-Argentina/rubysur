@@ -10,7 +10,9 @@
   "talks": [
     {
       "title": "Arquitectura y Diseño con Rails",
-      "speaker": "ivan_etchart"
+      "speaker": "ivan_etchart",
+      "description": "Un análisis de la arquitectura típica una aplicación de Rails y cuáles son los  principales desafíos que enfrentamos a medida que evoluciona, en aspectos de modificabilidad y performance.",
+      "description_highlighted": "Un análisis de la arquitectura típica una aplicación de Rails y cuáles son los  principales desafíos que enfrentamos a medida que evoluciona, en aspectos de modificabilidad y performance."
     },
     {
       "title": "Tree structures in Rails",
