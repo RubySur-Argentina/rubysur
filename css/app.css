@@ -617,18 +617,9 @@ section.highlighted {
       }
     }
 
-    & p {
-      display: none;
-      grid-column: 1;
-      grid-row: 1 / 5;
-      font-size: 1rem;
-      line-height: 1.4rem;
-      padding: 1rem;
-      align-self: flex-start;
-    }
-
     & .description {
       grid-area: desc;
+      position: relative;
       & button {
         background: transparent;
         border-radius: 3px;
@@ -639,8 +630,17 @@ section.highlighted {
           background: rgba(214, 40, 40, 0.6);
         }
       }
-      &:has(button:focus) + p,
-      &:has(button:active) + p {
+      & p {
+        display: none;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        font-size: 1rem;
+        line-height: 1.4rem;
+        padding: 1rem;
+      }
+      &:has(button:focus) p,
+      &:has(button:active) p {
         display: block;
       }
     }

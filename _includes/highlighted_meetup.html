@@ -36,8 +36,8 @@
       {% if talk.description_highlighted %}
         <div class="description">
           <button>DESCRIPCIÓN</button>
+          <p class="textBox">{{ talk.description_highlighted }}</p>
         </div>
-        <p class="textBox">{{ talk.description_highlighted }}</p>
       {% endif %}
     </div>
     {% endfor %} {% if meetup.location_link %}
@@ -72,8 +72,8 @@
     <br />
     {% if meetup.form_link %}
       <a target="_blank" class="button alt" href="{{ meetup.form_link }}">
-        Anotate para venir</a
-      >
+        Anotate para venir
+      </a>
     {% endif %}
 
     {% if meetup.host %} {% assign host = site.data.sponsors | where: "name", meetup.host | first %}
