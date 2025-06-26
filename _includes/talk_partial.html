@@ -3,49 +3,55 @@
   data-youtube-id="{{ include.talk.youtube_id }}"
   data-youtube-timestamp="{{ include.talk.youtube_timestamp }}"
 >
-  <h3>{{ include.talk.title }}</h3>
-  <p>
-    {{ include.talk.description || include.talk.highlighted_description |
-    newline_to_br }}
-  </p>
+  <div class="text">
+    <h3>{{ include.talk.title }}</h3>
+    <p>
+      {{ include.talk.description || include.talk.highlighted_description |
+      newline_to_br }}
+    </p>
 
-  {% if include.talk.speaker %} {% assign speaker =
-  site.data.speakers[include.talk.speaker] %}
-  <span class="speaker">
-    {{ speaker.first_name }} {{ speaker.last_name }} | {{ speaker.title |
-    default: "Rubista" }}
-  </span>
-  {% if speaker.social %}
+    {% if include.talk.speaker %} {% assign speaker = site.data.speakers[include.talk.speaker] %}
+      <span class="speaker">
+        {{ speaker.first_name }} {{ speaker.last_name }} | {{ speaker.title | default: "Rubista" }}
+      </span>
+      {% if speaker.social %}
+        <ul class="social">
+          {% for social in speaker.social %}
+            <li>
+              <a href="{{ social.url }}" target="_blank" title="{{ social.title }}">
+                {% include {{ social.icon }} %}{{ social.name }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endif %}
+  </div>
 
-  <ul class="social">
-    {% for social in speaker.social %}
-    <li>
-      <a href="{{ social.url }}" target="_blank" title="{{ social.title }}">
-        {% include {{ social.icon }} %}{{ social.name }}
-      </a>
-    </li>
-    {% endfor %}
-  </ul>
-  {% endif %} {% endif %} {% if include.talk.youtube_id %} {% assign iframe_src
-  = include.talk.youtube_id %} {% assign timestamp = "" %} {% if
-  include.talk.youtube_timestamp %} {% assign timestamp = "?start=" | append:
-  include.talk.youtube_timestamp %} {% endif %}
-  <iframe
-    width="100%"
-    title="{{ include.talk.title }}"
-    src="https://www.youtube.com/embed/{{ iframe_src }}{{ timestamp }}"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen="true"
-  ></iframe>
-  {% endif %} {% if include.talk.slides_link %}
-  <a
-    href="{{ include.talk.slides_link }}"
-    target="_blank"
-    class="alt-button blue slides"
-  >
-    VER SLIDES
-  </a>
+  {% if include.talk.youtube_id %}
+    {% assign iframe_src = include.talk.youtube_id %}
+    {% assign timestamp = "" %}
+    {% if include.talk.youtube_timestamp %}
+      {% assign timestamp = "?start=" | append: include.talk.youtube_timestamp %}
+    {% endif %}
+    <iframe
+      width="100%"
+      title="{{ include.talk.title }}"
+      src="https://www.youtube.com/embed/{{ iframe_src }}{{ timestamp }}"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen="true"
+    ></iframe>
+  {% endif %}
+
+  {% if include.talk.slides_link %}
+    <a
+      href="{{ include.talk.slides_link }}"
+      target="_blank"
+      class="alt-button blue slides"
+    >
+      VER SLIDES
+    </a>
   {% endif %}
 </div>
