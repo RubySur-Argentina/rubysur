@@ -430,10 +430,6 @@ header {
   }
 }
 
-section:nth-child(2n + 1) {
-  background-color: rgba(0, 0, 0, 0.03);
-}
-
 section.soon {
   position: relative;
   &::before {
@@ -1236,6 +1232,7 @@ section.past {
 }
 
 section.sponsors {
+  background-color: rgba(0, 0, 0, 0.03);
   padding-block: 5rem 3rem;
 
   & ul {
@@ -1354,8 +1351,8 @@ footer {
 
 .copyright {
   color: var(--text-base);
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
   padding: 1rem var(--inline-padding-layout);
   font-size: clamp(14px, 2vw, 1rem);
   gap: 0.75rem;
@@ -1367,10 +1364,12 @@ footer {
 
   & a {
     color: var(--text-base);
+    justify-self: flex-end;
   }
   & button {
     padding: 0;
     background: transparent;
+    border-width: 0px;
   }
 }
 
