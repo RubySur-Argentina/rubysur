@@ -1,5 +1,40 @@
 [
   {
+    "meetup": "Julio 2025",
+    "key": "2025_07",
+    "title": "Meetup de mitad del año",
+    "date": "2025-07-15",
+    "time": "19:00",
+    "_location": "Working & Co - Soler 4445, Oficinas de Crunchloop",
+    "_location_link": "https://maps.app.goo.gl/UCsC9obLnBKqPy699",
+    "form_link": "https://docs.google.com/forms/d/e/1FAIpQLSc8DvRf2GQZYOWF2iMGn4hsd6tFOGD4spxIjd3blACB9mx4Hg/viewform",
+    "_youtube_link": "https://www.youtube.com/watch?v=xbMH6Dsg0DI?t=566",
+    "_youtube_embed": "https://www.youtube.com/embed/xbMH6Dsg0DI?start=566",
+    "_host": "Crunchloop",
+    "talks": [
+      {
+        "title": "Arquitectura y Diseño con Rails",
+        "speaker": "ivan_etchart",
+        "description": "Un análisis de la arquitectura típica una aplicación de Rails y cuáles son los  principales desafíos que enfrentamos a medida que evoluciona, en aspectos de modificabilidad y performance.",
+        "description_highlighted": "Un análisis de la arquitectura típica una aplicación de Rails y cuáles son los  principales desafíos que enfrentamos a medida que evoluciona, en aspectos de modificabilidad y performance.",
+        "youtube_link": "https://www.youtube.com/watch?v=xbMH6Dsg0DI",
+        "youtube_id": "xbMH6Dsg0DI",
+        "youtube_timestamp": 796,
+        "_slides_link": "https://drive.google.com/..."
+      },
+      {
+        "title": "Tree structures in Rails",
+        "speaker": "patricio_mac_adden",
+        "description_highlighted": "En esta charla vamos a analizar diferentes implementaciones de tree structures en Rails y comparar un aspecto muy interesante como es la performance.",
+        "description": "En esta charla vamos a analizar diferentes implementaciones de tree structures en Rails y comparar un aspecto muy interesante como es la performance.",
+        "youtube_link": "https://www.youtube.com/watch?v=xbMH6Dsg0DI",
+        "youtube_id": "xbMH6Dsg0DI",
+        "youtube_timestamp": 3226,
+        "slides_link": "https://drive.google.com/file/d/1R96lNHT_8pvK6zg7POzRGgI-pTvF_tJl/view?usp=sharing"
+      }
+    ]
+  },
+  {
     "meetup": "Junio 2025",
     "key": "2025_06",
     "title": "Multi-Tenancy y Service Objects",
