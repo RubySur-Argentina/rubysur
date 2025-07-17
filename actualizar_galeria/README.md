@@ -13,8 +13,8 @@
 4 - El comando anterior va a crear la carpeta configurada (debería ser `/media/meetups/<year>_<month>`), copiar los videos dentro de esa carpeta
 5 - Configurar `process_videos.sh` para apuntar a la nueva carpeta creada por `images_optimizer.sh`
 6 - Ejecutar `./process_videos.sh` para generar las miniaturas de los videos
-7 - Configurar `generate_json.rb` para apuntar a la nueva carpeta creada por `images_optimizer.sh`
-8 - Ejecutar `ruby generate_json.rb` para generar un array JSON con los datos de las imagenes y videos para agregar al sitio
+7 - Configurar `generate_to_json.rb` para apuntar a la nueva carpeta creada por `images_optimizer.sh`
+8 - Ejecutar `ruby generate_to_json.rb` para generar un array JSON con los datos de las imagenes y videos para agregar al sitio
 9 - Actualizar `_data/gallery.json` agregando el nuevo contenido
 10 - Opcional: agregar textos alternativos para las imágenes y videos
 

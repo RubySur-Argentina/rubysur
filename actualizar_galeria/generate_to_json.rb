@@ -1,9 +1,10 @@
+#!/usr/bin/env ruby
 require "json"
 
 IMAGE_EXTENSIONS = [".jpg", ".webp"]
 VIDEO_EXTENSIONS = [".mp4", ".mov"]
 
-INPUT_DIR = "../media/meetups/2024_11/"
+INPUT_DIR = "../media/meetups/2025_07/"
 
 JSON_ARRAY = []
 

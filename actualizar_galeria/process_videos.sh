@@ -9,7 +9,7 @@
 
 # > Los videos tienen que ser mp4, si tenemos videos en otros formatos también tenemos que convertirlos, no sólo los .mov
 
-INPUT_DIR="../media/meetups/2024_09"
+INPUT_DIR="../media/meetups/2025_07"
 
 mov_to_mp4() {
     local input_file="$1"
@@ -19,7 +19,7 @@ mov_to_mp4() {
     ffmpeg -i "$input_file" -c:v libx264 -c:a aac -strict experimental -b:a 192k -movflags +faststart "$INPUT_DIR/${name}.mp4"
 }
 
-for file in "$INPUT_DIR"/*.MOV; do
+for file in $(find $INPUT_DIR -iname "*.MOV"); do
     echo "$file"
     [ -e "$file" ] || continue
     echo "Procesando $file..."

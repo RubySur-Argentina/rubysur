@@ -7,9 +7,24 @@
 # 2 - Editar OUTPUT_DIR para apuntar a la carpeta `<año>_<mes>` donde se van a guardar las variantes
 # 3 - En el root del proyecto, ejecutar el script `./images_optimizer.sh`
 
-INPUT_DIR="./temp_images"
-OUTPUT_DIR="../media/meetups/2024_11" # cambiar para guardar fotos de otro mes
-SIZES=(1280 768 480) # Tamaños para generar
+# <Configuracion>
+# path relativo al directorio del repositorio
+INPUT_DIR="temp_images"
+
+# cambiar para guardar fotos de otro mes
+FECHA_MEETUP="2025_07"
+
+# </Configuracion>
+
+readonly CURRENT_DIR=$(dirname "$0")
+readonly ROOT_FOLDER=$(realpath "${CURRENT_DIR}/..")
+readonly INPUT_DIR="${ROOT_FOLDER}/${INPUT_DIR}"
+readonly OUTPUT_DIR="${ROOT_FOLDER}/media/meetups/${FECHA_MEETUP}"
+
+# Tamaños de las imagenes.
+# Estos tamaños son fijos porque son parte del path de la imagen
+# ver: js/app.js
+readonly SIZES=(1280 768 480)
 
 mkdir -p "$OUTPUT_DIR"
 
