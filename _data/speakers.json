@@ -94,7 +94,14 @@
     "last_name": "Etchart",
     "image_filename": "ivan_etchart.png",
     "title": "CTO & Co-Founder de Crunchloop",
-    "social": []
+    "social": [
+      {
+        "icon": "svg/linkedin-in.svg",
+        "url": "https://www.linkedin.com/in/ivanetchart",
+        "title": "LinkedIn de Ivan Etchart",
+        "name": "LinkedIn"
+      }
+    ]
   },
   "jaime_zuberbuhler": {
     "first_name": "Jaime",
