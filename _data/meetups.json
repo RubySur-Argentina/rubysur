@@ -13,24 +13,24 @@
     "_host": "Crunchloop",
     "talks": [
       {
-        "title": "Arquitectura y Diseño con Rails",
-        "speaker": "ivan_etchart",
-        "description": "Un análisis de la arquitectura típica una aplicación de Rails y cuáles son los  principales desafíos que enfrentamos a medida que evoluciona, en aspectos de modificabilidad y performance.",
-        "description_highlighted": "Un análisis de la arquitectura típica una aplicación de Rails y cuáles son los  principales desafíos que enfrentamos a medida que evoluciona, en aspectos de modificabilidad y performance.",
-        "youtube_link": "https://www.youtube.com/watch?v=xbMH6Dsg0DI",
-        "youtube_id": "xbMH6Dsg0DI",
-        "youtube_timestamp": 796,
-        "slides_link": "https://drive.google.com/file/d/10Z9qd0rlw0Lg4CMgrLCXxfPLGFDhEvAm/view?usp=sharing"
-      },
-      {
         "title": "Tree structures in Rails",
         "speaker": "patricio_mac_adden",
         "description_highlighted": "En esta charla vamos a analizar diferentes implementaciones de tree structures en Rails y comparar un aspecto muy interesante como es la performance.",
         "description": "En esta charla vamos a analizar diferentes implementaciones de tree structures en Rails y comparar un aspecto muy interesante como es la performance.",
         "youtube_link": "https://www.youtube.com/watch?v=xbMH6Dsg0DI",
         "youtube_id": "xbMH6Dsg0DI",
-        "youtube_timestamp": 3226,
+        "youtube_timestamp": 796,
         "slides_link": "https://drive.google.com/file/d/1R96lNHT_8pvK6zg7POzRGgI-pTvF_tJl/view?usp=sharing"
+      },
+      {
+        "title": "Arquitectura y Diseño con Rails",
+        "speaker": "ivan_etchart",
+        "description": "Un análisis de la arquitectura típica una aplicación de Rails y cuáles son los  principales desafíos que enfrentamos a medida que evoluciona, en aspectos de modificabilidad y performance.",
+        "description_highlighted": "Un análisis de la arquitectura típica una aplicación de Rails y cuáles son los  principales desafíos que enfrentamos a medida que evoluciona, en aspectos de modificabilidad y performance.",
+        "youtube_link": "https://www.youtube.com/watch?v=xbMH6Dsg0DI",
+        "youtube_id": "xbMH6Dsg0DI",
+        "youtube_timestamp": 3226,
+        "slides_link": "https://drive.google.com/file/d/10Z9qd0rlw0Lg4CMgrLCXxfPLGFDhEvAm/view?usp=sharing"
       }
     ]
   },
