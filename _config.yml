@@ -6,3 +6,6 @@ page_gen:
     name: "key"
     dir: "meetup"
     index_files: false
+
+plugins:
+  - jekyll-sitemap
