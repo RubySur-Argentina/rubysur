@@ -332,13 +332,17 @@ const altTitles = [
 ];
 
 const bindTabTitle = () => {
+  // no cambio título en página de meetup porque se vuelve muy confuso
+  if (document.body.classList.contains("meetup")) return;
+
+  const originalTitle = document.title;
   document.addEventListener("visibilitychange", () => {
     if (document.hidden) {
       document.title = `RubySur - ${
         altTitles[Math.floor(Math.random() * altTitles.length)]
       }`;
     } else {
-      document.title = "RubySur - Argentina";
+      document.title = originalTitle;
     }
   });
 };

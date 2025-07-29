@@ -13,12 +13,17 @@
     <meta name="twitter:site" content="@rubyargentina" />
     <meta property="og:url" content="https://ruby.com.ar" />
     <meta property="og:title" content="RubySur Argentina | {{ page.meetup }}" />
-    <meta property="og:description" content="{{ page.meetup }}" />
     <meta property="og:image" content="https://ruby.com.ar/images/logo.png" />
+    {% assign titles = page.talks | map: 'title' | join: '" y "' %}
+    <meta
+      property="og:description"
+      content='{{ page.meetup }}: "{{ titles }}"'
+    />
+    <meta name="description" content='{{ page.meetup }}: "{{ titles }}"' />
 
     {% include analytics.html %}
 
-    <title>RubySur - Argentina</title>
+    <title>RubySur - {{ page.meetup }}</title>
     <link rel="icon" href="/images/sol.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -43,15 +48,14 @@
     {% include navbar.html %}
     <header>
       <h1>Edición {{ page.meetup }}</h1>
-      {% include gallery_button.html key=page.key text="¡Mirá las fotos del evento!" %}
+      {% include gallery_button.html key=page.key text="¡Mirá las fotos del
+      evento!" %}
     </header>
 
     <main>
       <section class="meetup_details" id="meetup_details">
-        {% for talk in page.talks %}
-          {% include talk_partial.html talk=talk %}
-        {% endfor %}
-        {% include gallery_modal.html key=page.key %}
+        {% for talk in page.talks %} {% include talk_partial.html talk=talk %}
+        {% endfor %} {% include gallery_modal.html key=page.key %}
       </section>
     </main>
 
