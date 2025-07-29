@@ -7,5 +7,6 @@ page_gen:
     dir: "meetup"
     index_files: false
 
+url: "https://ruby.com.ar"
 plugins:
   - jekyll-sitemap
