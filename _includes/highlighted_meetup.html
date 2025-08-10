@@ -20,7 +20,7 @@
     {% assign month = meetup.date | date: "%m" | minus: 1 %}
     <time datetime="{{ meetup.date }}T{{ meetup.time }}"
       >{{ meetup.date | date: "%d" }} DE {{ site.data.months[month] }} | {{
-      meetup.time | date: "%H" }}HS</time
+      meetup.time | date: "%H" }}HS (🇦🇷 GMT-3)</time
     >
 
     {% for talk in meetup.talks %} {% assign speaker =
