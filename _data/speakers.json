@@ -18,6 +18,19 @@
       }
     ]
   },
+  "aysan_hodson": {
+    "first_name": "Aysan",
+    "last_name": "Hodson",
+    "image_filename": "aysan-hodson.png",
+    "social": [
+      {
+        "icon": "svg/linkedin-in.svg",
+        "url": "https://www.linkedin.com/in/aisayo/",
+        "title": "LinkedIn de Aysan Isayo Hodson",
+        "name": "LinkedIn"
+      }
+    ]
+  },
   "claudio_kerekes": {
     "first_name": "Claudio",
     "last_name": "Kerekes",
@@ -240,6 +253,31 @@
         "icon": "svg/linkedin-in.svg",
         "url": "https://www.linkedin.com/in/sbuffosempe/",
         "title": "LinkedIn de Sebastián Buffo Sempé",
+        "name": "LinkedIn"
+      }
+    ]
+  },
+  "simon_r_murcia": {
+    "first_name": "Simón",
+    "last_name": "R. Murcia",
+    "image_filename": "simon-r-murcia.png",
+    "social": [
+      {
+        "icon": "svg/browser.svg",
+        "url": "https://simonrm.com/",
+        "title": "Sitio web personal de Simón R. Murcia",
+        "name": "Sitio Web"
+      },
+      {
+        "icon": "svg/github.svg",
+        "url": "https://github.com/simon-rm/",
+        "title": "Sitio web personal de Simón R. Murcia",
+        "name": "GitHub"
+      },
+      {
+        "icon": "svg/linkedin-in.svg",
+        "url": "https://www.linkedin.com/in/sbuffosempe/",
+        "title": "LinkedIn de Simón R. Murcia",
         "name": "LinkedIn"
       }
     ]

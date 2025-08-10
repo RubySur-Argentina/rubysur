@@ -18,9 +18,13 @@
   <div class="detalles">
     <h2>¡Próxima MeetUp!</h2>
     {% assign month = meetup.date | date: "%m" | minus: 1 %}
-    <time datetime="{{ meetup.date }}T{{ meetup.time }}">{{ meetup.date | date: "%d" }} DE {{ site.data.months[month] }} | {{ meetup.time | date: "%H" }}HS</time>
-    
-    {% for talk in meetup.talks %} {% assign speaker = site.data.speakers[talk.speaker] %}
+    <time datetime="{{ meetup.date }}T{{ meetup.time }}"
+      >{{ meetup.date | date: "%d" }} DE {{ site.data.months[month] }} | {{
+      meetup.time | date: "%H" }}HS</time
+    >
+
+    {% for talk in meetup.talks %} {% assign speaker =
+    site.data.speakers[talk.speaker] %}
     <div class="highlighted_talk">
       <h4>{{ talk.title }}</h4>
       <figure>
@@ -34,10 +38,10 @@
       </span>
       <span class="role">{{ speaker.title | default: "Rubista"}}</span>
       {% if talk.description_highlighted %}
-        <div class="description">
-          <button>DESCRIPCIÓN</button>
-          <p class="textBox">{{ talk.description_highlighted }}</p>
-        </div>
+      <div class="description">
+        <button>DESCRIPCIÓN</button>
+        <p class="textBox">{{ talk.description_highlighted }}</p>
+      </div>
       {% endif %}
     </div>
     {% endfor %} {% if meetup.location_link %}
@@ -71,15 +75,14 @@
     <br />
     <br />
     {% if meetup.form_link %}
-      <a target="_blank" class="button alt" href="{{ meetup.form_link }}">
-        Anotate para venir
-      </a>
-    {% endif %}
-
-    {% if meetup.host %} {% assign host = site.data.sponsors | where: "name", meetup.host | first %}
-      <p class="host">
-        Invita especialmente {% include logo_sponsor.html sponsor=host %}
-      </p>
+    <a target="_blank" class="button alt" href="{{ meetup.form_link }}">
+      Anotate para venir
+    </a>
+    {% endif %} {% if meetup.host %} {% assign host = site.data.sponsors |
+    where: "name", meetup.host | first %}
+    <p class="host">
+      Invita especialmente {% include logo_sponsor.html sponsor=host %}
+    </p>
     {% endif %}
   </div>
 </section>

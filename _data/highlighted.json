@@ -1,26 +1,26 @@
 {
-  "meetup": "Julio 2025",
-  "title": "Meetup de mitad del año",
-  "date": "2025-07-15",
+  "meetup": "Agosto 2025",
+  "title": "Meetup virtual de invierno",
+  "date": "2025-08-14",
   "time": "19:00",
-  "location": "Working & Co - Soler 4445, Oficinas de Crunchloop",
-  "location_link": "https://maps.app.goo.gl/UCsC9obLnBKqPy699",
-  "form_link": "https://docs.google.com/forms/d/e/1FAIpQLSc8DvRf2GQZYOWF2iMGn4hsd6tFOGD4spxIjd3blACB9mx4Hg/viewform",
-  "youtube_link": "https://www.youtube.com/watch?v=xbMH6Dsg0DI?t=566",
-  "youtube_embed": "https://www.youtube.com/embed/xbMH6Dsg0DI?start=566",
-  "host": "Crunchloop",
+  "location": "Virtual",
+  "location_link": "https://www.youtube.com/watch?v=XmhFSrHY1gc",
+  "form_link": null,
+  "youtube_link": "https://www.youtube.com/watch?v=XmhFSrHY1gc",
+  "youtube_embed": "https://www.youtube.com/embed/XmhFSrHY1gc",
+  "host": null,
   "talks": [
     {
-      "title": "Arquitectura y Diseño con Rails",
-      "speaker": "ivan_etchart",
-      "description": "Un análisis de la arquitectura típica una aplicación de Rails y cuáles son los  principales desafíos que enfrentamos a medida que evoluciona, en aspectos de modificabilidad y performance.",
-      "description_highlighted": "Un análisis de la arquitectura típica una aplicación de Rails y cuáles son los  principales desafíos que enfrentamos a medida que evoluciona, en aspectos de modificabilidad y performance."
+      "title": "Intro to M2M Authentication",
+      "speaker": "aysan_hodson",
+      "description": "Esta charla va a ser en inglés. Aysan nos va a contar sobre cómo configurar autenticación de máquina a máquina usando tokens y auth0 en una aplicación Rails.",
+      "description_highlighted": "Esta charla va a ser en inglés. Aysan nos va a contar sobre cómo configurar autenticación de máquina a máquina usando tokens y auth0 en una aplicación Rails."
     },
     {
-      "title": "Tree structures in Rails",
-      "speaker": "patricio_mac_adden",
-      "description_highlighted": "En esta charla vamos a analizar diferentes implementaciones de tree structures en Rails y comparar un aspecto muy interesante como es la performance.",
-      "description": "En esta charla vamos a analizar diferentes implementaciones de tree structures en Rails y comparar un aspecto muy interesante como es la performance."
+      "title": "Scaling Business Logic in Rails with Interactors",
+      "speaker": "simon_r_murcia",
+      "description_highlighted": "Simón nos va a explicar qué son los interactors, cómo organizar lógica de negocio con ellos, cuándo usarlos, y un ejemplo real de cómo los usó.",
+      "description": "Simón nos va a explicar qué son los interactors, cómo organizar lógica de negocio con ellos, cuándo usarlos, y un ejemplo real de cómo los usó."
     }
   ]
 }
