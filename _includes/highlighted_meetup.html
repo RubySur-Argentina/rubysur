@@ -46,20 +46,18 @@
     </div>
     {% endfor %} {% if meetup.location_link %}
     <address>
+      <i><img src="images/icons/location-dot.svg" alt="Marcador de ubicación" /></i>
       <a href="{{ meetup.location_link }}" target="_blank">
-        <i
-          ><img src="images/icons/location-dot.svg" alt="Marcador de ubicación"
-        /></i>
         {{ meetup.location }}
       </a>
     </address>
 
     {% assign descriptions = meetup.talks | map: 'description' | join: '\n' %}
+    <i><img src="images/icons/calendar.svg" alt="Calendario" /></i>
     <a
       target="_blank"
       href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=RubySur+Meetup:+{{ meetup.title | escape_once | replace: '+', '%2b' | replace: ' ', '+' }}&details={{ descriptions | replace: ' ', '+' | replace: '\n', '%0A%0A' }}+%0A%0A+{{ meetup.youtube_link }}&dates={{ meetup.date | replace: '-', '' }}T{{ meetup.time | replace: ':', '' }}00/{{ meetup.date | replace: '-', '' }}T220000&location={{ meetup.location | replace: ' ', '+' }}&ctz=America/Buenos_Aires"
     >
-      <i><img src="images/icons/calendar.svg" alt="Calendario" /></i>
       Agregar evento a Google Calendar</a
     >
 
