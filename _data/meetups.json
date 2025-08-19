@@ -1,5 +1,41 @@
 [
   {
+    "meetup": "Agosto 2025",
+    "key": "2025_08",
+    "title": "Meetup virtual de invierno",
+    "date": "2025-08-14",
+    "time": "19:00",
+    "_location": "Virtual",
+    "_location_link": "https://www.youtube.com/watch?v=XmhFSrHY1gc",
+    "_form_link": null,
+    "_youtube_link": "https://www.youtube.com/watch?v=XmhFSrHY1gc",
+    "_youtube_embed": "https://www.youtube.com/embed/XmhFSrHY1gc",
+    "host": null,
+    "talks": [
+      {
+        "title": "Intro to M2M Authentication",
+        "speaker": "aysan_hodson",
+        "description": "Esta charla va a ser en inglés. Aysan nos va a contar sobre cómo configurar autenticación de máquina a máquina usando tokens y auth0 en una aplicación Rails.",
+        "description_highlighted": "Esta charla va a ser en inglés. Aysan nos va a contar sobre cómo configurar autenticación de máquina a máquina usando tokens y auth0 en una aplicación Rails.",
+        "youtube_link": "https://www.youtube.com/watch?v=XmhFSrHY1gc",
+        "youtube_id": "XmhFSrHY1gc",
+        "youtube_timestamp": 788,
+        "_slides_link": ""
+      },
+      {
+        "title": "Scaling Business Logic in Rails with Interactors",
+        "speaker": "simon_r_murcia",
+        "description_highlighted": "Simón nos va a explicar qué son los interactors, cómo organizar lógica de negocio con ellos, cuándo usarlos, y un ejemplo real de cómo los usó.",
+        "description": "Simón nos va a explicar qué son los interactors, cómo organizar lógica de negocio con ellos, cuándo usarlos, y un ejemplo real de cómo los usó.",
+        "youtube_link": "https://www.youtube.com/watch?v=XmhFSrHY1gc",
+        "youtube_id": "XmhFSrHY1gc",
+        "youtube_timestamp": 3147,
+        "slides_link": "https://drive.google.com/file/d/1oEdxG_UjNKm_4Ow52zzGyFKv4XKMwPx8/view?usp=drive_link"
+      }
+    ]
+  },
+
+  {
     "meetup": "Julio 2025",
     "key": "2025_07",
     "title": "Meetup de mitad del año",
