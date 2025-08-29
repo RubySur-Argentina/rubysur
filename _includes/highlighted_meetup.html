@@ -52,13 +52,20 @@
       </a>
     </address>
 
+    <address>
+      <i><img src="images/icons/youtube.svg" alt="Link a YouTube" /></i>
+      <a href="{{ meetup.youtube_link }}" target="_blank">
+        Activá el recordatorio en YouTube
+      </a>
+    </address>
+
     {% assign descriptions = meetup.talks | map: 'description' | join: '\n' %}
     <i><img src="images/icons/calendar.svg" alt="Calendario" /></i>
     <a
       target="_blank"
       href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=RubySur+Meetup:+{{ meetup.title | escape_once | replace: '+', '%2b' | replace: ' ', '+' }}&details={{ descriptions | replace: ' ', '+' | replace: '\n', '%0A%0A' }}+%0A%0A+{{ meetup.youtube_link }}&dates={{ meetup.date | replace: '-', '' }}T{{ meetup.time | replace: ':', '' }}00/{{ meetup.date | replace: '-', '' }}T220000&location={{ meetup.location | replace: ' ', '+' }}&ctz=America/Buenos_Aires"
     >
-      Agregar evento a Google Calendar</a
+      Agregá el evento a Google Calendar</a
     >
 
     {% else %}
@@ -76,6 +83,9 @@
     <a target="_blank" class="button alt" href="{{ meetup.form_link }}">
       Anotate para venir
     </a>
+    <br />
+    <br />
+    <span>* Sólo las personas inscriptas podrán entrar al evento</span>
     {% endif %} {% if meetup.host %} {% assign host = site.data.sponsors |
     where: "name", meetup.host | first %}
     <p class="host">

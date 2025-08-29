@@ -70,6 +70,20 @@
       }
     ]
   },
+  "fernando_martinez": {
+    "first_name": "Fernando",
+    "last_name": "Martinez",
+    "image_filename": "fernando-martinez.png",
+    "title": "Co-Founder de Sinaptia",
+    "social": [
+      {
+        "icon": "svg/linkedin-in.svg",
+        "url": "https://www.linkedin.com/in/martifer/",
+        "title": "LinkedIn de Fernando Martinez",
+        "name": "LinkedIn"
+      }
+    ]
+  },
   "fernando_silva_jacquier": {
     "first_name": "Fernando E.",
     "last_name": "Silva Jacquier",
@@ -194,6 +208,26 @@
         "url": "https://linkedin.com/in/julioalucero",
         "title": "LinkedIn de Julio Lucero",
         "name": "LinkedIn"
+      }
+    ]
+  },
+  "nicolas_navarro": {
+    "first_name": "Nicolás",
+    "last_name": "Navarro",
+    "image_filename": "nicolas-navarro.png",
+    "title": "Founder & CEO en Handle IT!",
+    "social": [
+      {
+        "icon": "svg/linkedin-in.svg",
+        "url": "https://www.linkedin.com/in/nicolassnavarro/",
+        "title": "LinkedIn de Nicolás Navarro",
+        "name": "LinkedIn"
+      },
+      {
+        "icon": "svg/instagram.svg",
+        "url": "https://www.instagram.com/nickhandle/",
+        "title": "Instagram de Nicolás Navarro",
+        "name": "Instagram"
       }
     ]
   },

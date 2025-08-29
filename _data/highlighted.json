@@ -1,26 +1,26 @@
 {
-  "meetup": "Agosto 2025",
-  "title": "Meetup virtual de invierno",
-  "date": "2025-08-14",
+  "meetup": "Septiembre 2025",
+  "title": "Meetup y cerveza",
+  "date": "2025-09-10",
   "time": "19:00",
-  "location": "Virtual",
-  "location_link": "https://www.youtube.com/watch?v=XmhFSrHY1gc",
-  "form_link": null,
-  "youtube_link": "https://www.youtube.com/watch?v=XmhFSrHY1gc",
-  "youtube_embed": "https://www.youtube.com/embed/XmhFSrHY1gc",
-  "host": null,
+  "location": "Usina Coworking, Castillo 1366, CABA",
+  "location_link": "https://maps.app.goo.gl/EKt3kakp7bVom4vc6",
+  "form_link": "https://docs.google.com/forms/d/e/1FAIpQLScy_yVJygvVg1MZGV9wrwSNvFLboRBXgFpvmGR5ANGu5MQnSw/viewform",
+  "youtube_link": "https://www.youtube.com/watch?v=-JNN1OL_PWI",
+  "youtube_embed": "https://www.youtube.com/embed/-JNN1OL_PWI",
+  "host": "Rootstrap",
   "talks": [
     {
-      "title": "Intro to M2M Authentication",
-      "speaker": "aysan_hodson",
-      "description": "Esta charla va a ser en inglés. Aysan nos va a contar sobre cómo configurar autenticación de máquina a máquina usando tokens y auth0 en una aplicación Rails.",
-      "description_highlighted": "Esta charla va a ser en inglés. Aysan nos va a contar sobre cómo configurar autenticación de máquina a máquina usando tokens y auth0 en una aplicación Rails."
+      "title": "Rompiendo el monolito: Rails API + Vite || Next.js",
+      "speaker": "nicolas_navarro",
+      "description": "En esta charla vamos a salir del clásico monolito de Rails y ver cómo levantar una API REST desacoplada, conectarla con Vite y entender cuándo conviene usar NextJS. Hablaremos de CSR, SSR, DX y buenas prácticas para elegir el stack correcto según tu proyecto. ¡Todo con ejemplos claros, código real y la menor cantidad de lágrimas posibles!",
+      "description_highlighted": "En esta charla vamos a salir del clásico monolito de Rails y ver cómo levantar una API REST desacoplada, conectarla con Vite y entender cuándo conviene usar NextJS. Hablaremos de CSR, SSR, DX y buenas prácticas para elegir el stack correcto según tu proyecto. ¡Todo con ejemplos claros, código real y la menor cantidad de lágrimas posibles!"
     },
     {
-      "title": "Scaling Business Logic in Rails with Interactors",
-      "speaker": "simon_r_murcia",
-      "description_highlighted": "Simón nos va a explicar qué son los interactors, cómo organizar lógica de negocio con ellos, cuándo usarlos, y un ejemplo real de cómo los usó.",
-      "description": "Simón nos va a explicar qué son los interactors, cómo organizar lógica de negocio con ellos, cuándo usarlos, y un ejemplo real de cómo los usó."
+      "title": "Algo sobre agentes",
+      "speaker": "fernando_martinez",
+      "description_highlighted": "¿Qué es un agente? ¿Cuánta magia se necesita para darle vida a uno? ¿Necesitamos un modelo super inteligente? ¿Lo podremos correr local? ¿Sirve para algo? Vamos a ver si Fernando se las arregla para responder alguna de estas preguntas y otras que se les ocurran a ustedes.",
+      "description": "¿Qué es un agente? ¿Cuánta magia se necesita para darle vida a uno? ¿Necesitamos un modelo super inteligente? ¿Lo podremos correr local? ¿Sirve para algo? Vamos a ver si Fernando se las arregla para responder alguna de estas preguntas y otras que se les ocurran a ustedes."
     }
   ]
 }
