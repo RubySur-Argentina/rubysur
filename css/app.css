@@ -1098,7 +1098,7 @@ section.past {
     justify-content: center;
 
     h3 {
-      align-self: flex-end;
+      align-self: flex-start;
     }
     .speaker {
       display: flex;
