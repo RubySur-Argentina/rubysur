@@ -1,5 +1,40 @@
 [
   {
+    "meetup": "Septiembre 2025",
+    "key": "2025_09",
+    "title": "Meetup y cerveza",
+    "date": "2025-09-10",
+    "time": "19:00",
+    "_location": "Usina Coworking, Castillo 1366, CABA",
+    "_location_link": "https://maps.app.goo.gl/EKt3kakp7bVom4vc6",
+    "_form_link": "https://docs.google.com/forms/d/e/1FAIpQLScy_yVJygvVg1MZGV9wrwSNvFLboRBXgFpvmGR5ANGu5MQnSw/viewform",
+    "_youtube_link": "https://www.youtube.com/watch?v=-JNN1OL_PWI",
+    "_youtube_embed": "https://www.youtube.com/embed/-JNN1OL_PWI",
+    "host": "Rootstrap",
+    "talks": [
+      {
+        "title": "Algo sobre agentes",
+        "speaker": "fernando_martinez",
+        "description_highlighted": "¿Qué es un agente? ¿Cuánta magia se necesita para darle vida a uno? ¿Necesitamos un modelo super inteligente? ¿Lo podremos correr local? ¿Sirve para algo? Vamos a ver si Fernando se las arregla para responder alguna de estas preguntas y otras que se les ocurran a ustedes.",
+        "description": "¿Qué es un agente? ¿Cuánta magia se necesita para darle vida a uno? ¿Necesitamos un modelo super inteligente? ¿Lo podremos correr local? ¿Sirve para algo? Vamos a ver si Fernando se las arregla para responder alguna de estas preguntas y otras que se les ocurran a ustedes.",
+        "youtube_link": "https://www.youtube.com/watch?v=-JNN1OL_PWI",
+        "youtube_id": "-JNN1OL_PWI",
+        "youtube_timestamp": 1657,
+        "slides_link": "https://f-3r.github.io/rubysur-20250910/01.html"
+      },
+      {
+        "title": "Rompiendo el monolito: Rails API + Vite || Next.js",
+        "speaker": "nicolas_navarro",
+        "description": "En esta charla vamos a salir del clásico monolito de Rails y ver cómo levantar una API REST desacoplada, conectarla con Vite y entender cuándo conviene usar NextJS. Hablaremos de CSR, SSR, DX y buenas prácticas para elegir el stack correcto según tu proyecto. ¡Todo con ejemplos claros, código real y la menor cantidad de lágrimas posibles!",
+        "description_highlighted": "En esta charla vamos a salir del clásico monolito de Rails y ver cómo levantar una API REST desacoplada, conectarla con Vite y entender cuándo conviene usar NextJS. Hablaremos de CSR, SSR, DX y buenas prácticas para elegir el stack correcto según tu proyecto. ¡Todo con ejemplos claros, código real y la menor cantidad de lágrimas posibles!",
+        "youtube_link": "https://www.youtube.com/watch?v=-JNN1OL_PWI",
+        "youtube_id": "-JNN1OL_PWI",
+        "youtube_timestamp": 6936,
+        "slides_link": "https://www.canva.com/design/DAGylD0FfjU/fOr0xnXK1IfVeXcswk5x5w/edit"
+      }
+    ]
+  },
+  {
     "meetup": "Agosto 2025",
     "key": "2025_08",
     "title": "Meetup virtual de invierno",
@@ -20,7 +55,7 @@
         "youtube_link": "https://www.youtube.com/watch?v=XmhFSrHY1gc",
         "youtube_id": "XmhFSrHY1gc",
         "youtube_timestamp": 788,
-        "_slides_link": ""
+        "slides_link": "https://docs.google.com/presentation/d/1lrZZCwUq9WmAtMfhUO12pQETaJzs3M3yHnYhMKQXbmE/edit?slide=id.gc6f90357f_0_0#slide=id.gc6f90357f_0_0"
       },
       {
         "title": "Scaling Business Logic in Rails with Interactors",
