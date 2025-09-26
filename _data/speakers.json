@@ -251,6 +251,19 @@
       }
     ]
   },
+  "rosa_gutierrez": {
+    "first_name": "Rosa",
+    "last_name": "Gutierrez",
+    "image_filename": "rosa-gutierrez.png",
+    "social": [
+      {
+        "icon": "svg/linkedin-in.svg",
+        "url": "https://www.linkedin.com/in/rosagutierrezescudero",
+        "title": "LinkedIn de Rosa Gutierrez",
+        "name": "LinkedIn"
+      }
+    ]
+  },
   "santiago_diaz": {
     "first_name": "Santiago",
     "last_name": "Diaz",

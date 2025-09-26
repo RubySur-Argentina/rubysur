@@ -1,26 +1,20 @@
 {
-  "meetup": "Septiembre 2025",
+  "meetup": "Octubre 2025",
   "title": "Meetup y cerveza",
-  "date": "2025-09-10",
-  "time": "19:00",
-  "location": "Usina Coworking, Castillo 1366, CABA",
-  "location_link": "https://maps.app.goo.gl/EKt3kakp7bVom4vc6",
-  "form_link": "https://docs.google.com/forms/d/e/1FAIpQLScy_yVJygvVg1MZGV9wrwSNvFLboRBXgFpvmGR5ANGu5MQnSw/viewform",
+  "date": "2025-10-15",
+  "time": "17:00",
+  "location": "Online",
+  "_location_link": "https://maps.app.goo.gl/EKt3kakp7bVom4vc6",
+  "_form_link": "https://docs.google.com/forms/d/e/1FAIpQLScy_yVJygvVg1MZGV9wrwSNvFLboRBXgFpvmGR5ANGu5MQnSw/viewform",
   "youtube_link": "https://www.youtube.com/watch?v=-JNN1OL_PWI",
   "youtube_embed": "https://www.youtube.com/embed/-JNN1OL_PWI",
-  "host": "Rootstrap",
+  "_host": "Rootstrap",
   "talks": [
     {
-      "title": "Rompiendo el monolito: Rails API + Vite || Next.js",
-      "speaker": "nicolas_navarro",
-      "description": "En esta charla vamos a salir del clásico monolito de Rails y ver cómo levantar una API REST desacoplada, conectarla con Vite y entender cuándo conviene usar NextJS. Hablaremos de CSR, SSR, DX y buenas prácticas para elegir el stack correcto según tu proyecto. ¡Todo con ejemplos claros, código real y la menor cantidad de lágrimas posibles!",
-      "description_highlighted": "En esta charla vamos a salir del clásico monolito de Rails y ver cómo levantar una API REST desacoplada, conectarla con Vite y entender cuándo conviene usar NextJS. Hablaremos de CSR, SSR, DX y buenas prácticas para elegir el stack correcto según tu proyecto. ¡Todo con ejemplos claros, código real y la menor cantidad de lágrimas posibles!"
-    },
-    {
-      "title": "Algo sobre agentes",
-      "speaker": "fernando_martinez",
-      "description_highlighted": "¿Qué es un agente? ¿Cuánta magia se necesita para darle vida a uno? ¿Necesitamos un modelo super inteligente? ¿Lo podremos correr local? ¿Sirve para algo? Vamos a ver si Fernando se las arregla para responder alguna de estas preguntas y otras que se les ocurran a ustedes.",
-      "description": "¿Qué es un agente? ¿Cuánta magia se necesita para darle vida a uno? ¿Necesitamos un modelo super inteligente? ¿Lo podremos correr local? ¿Sirve para algo? Vamos a ver si Fernando se las arregla para responder alguna de estas preguntas y otras que se les ocurran a ustedes."
+      "title": "Invalid byte sequence in UTF-8 😅",
+      "speaker": "rosa_gutierrez",
+      "description": "Si llevas un tiempo picando código en Ruby, casi seguro que te has topado con este error alguna vez, o con otros errores relacionados con string encoding. Y si has hecho código que muestra user input, igual de repente te han salido un montón de ��� donde esperabas texto normal. Según tu experiencia, puede que no tengas muy claro por qué pasan estas cosas o cómo arreglarlas. En esta charla vamos a meternos a fondo en el mundo de las strings, desde ASCII hasta Unicode y cómo se guardan y manejan en Ruby.",
+      "description_highlighted": "Si llevas un tiempo picando código en Ruby, casi seguro que te has topado con este error alguna vez, o con otros errores relacionados con string encoding. Y si has hecho código que muestra user input, igual de repente te han salido un montón de ��� donde esperabas texto normal. Según tu experiencia, puede que no tengas muy claro por qué pasan estas cosas o cómo arreglarlas. En esta charla vamos a meternos a fondo en el mundo de las strings, desde ASCII hasta Unicode y cómo se guardan y manejan en Ruby."
     }
   ]
 }
