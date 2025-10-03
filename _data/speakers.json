@@ -103,6 +103,19 @@
       }
     ]
   },
+  "francisco_de_grandis": {
+    "first_name": "Francisco",
+    "last_name": "De Grandis",
+    "image_filename": "francisco-de-grandis.png",
+    "social": [
+      {
+        "icon": "svg/linkedin-in.svg",
+        "url": "https://www.linkedin.com/in/francisco-de-grandis",
+        "title": "LinkedIn de Francisco De Grandis",
+        "name": "LinkedIn"
+      }
+    ]
+  },
   "gaston_ginestet": {
     "first_name": "Gastón",
     "last_name": "Ginestet",

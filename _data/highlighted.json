@@ -15,6 +15,12 @@
       "speaker": "rosa_gutierrez",
       "description": "Si llevas un tiempo picando código en Ruby, casi seguro que te has topado con este error alguna vez, o con otros errores relacionados con string encoding. Y si has hecho código que muestra user input, igual de repente te han salido un montón de ��� donde esperabas texto normal. Según tu experiencia, puede que no tengas muy claro por qué pasan estas cosas o cómo arreglarlas. En esta charla vamos a meternos a fondo en el mundo de las strings, desde ASCII hasta Unicode y cómo se guardan y manejan en Ruby.",
       "description_highlighted": "Si llevas un tiempo picando código en Ruby, casi seguro que te has topado con este error alguna vez, o con otros errores relacionados con string encoding. Y si has hecho código que muestra user input, igual de repente te han salido un montón de ��� donde esperabas texto normal. Según tu experiencia, puede que no tengas muy claro por qué pasan estas cosas o cómo arreglarlas. En esta charla vamos a meternos a fondo en el mundo de las strings, desde ASCII hasta Unicode y cómo se guardan y manejan en Ruby."
+    },
+    {
+      "title": "De Útiles a Peligrosos: El Lado Oscuro de los Callbacks",
+      "speaker": "francisco_de_grandis",
+      "description": "Los callbacks de Rails son poderosos… hasta que se acumulan durante años. En esta charla voy a compartir las lecciones que aprendí trabajando en un monolito enorme, con mucha historia, donde lo que solían ser operaciones simples se transformaron en transacciones que tardaban varios minutos. Vamos a recorrer cómo identificamos los síntomas, descubrimos los verdaderos cuellos de botella y abordamos el problema paso a paso, sin romper todo en el camino.",
+      "description_highlighted": "Los callbacks de Rails son poderosos… hasta que se acumulan durante años. En esta charla voy a compartir las lecciones que aprendí trabajando en un monolito enorme, con mucha historia, donde lo que solían ser operaciones simples se transformaron en transacciones que tardaban varios minutos. Vamos a recorrer cómo identificamos los síntomas, descubrimos los verdaderos cuellos de botella y abordamos el problema paso a paso, sin romper todo en el camino."
     }
   ]
 }
