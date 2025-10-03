@@ -46,5 +46,11 @@
     "logo_filename": "crunchloop.svg",
     "logo_filename_dark_mode": "crunchloop-dark-mode.svg",
     "url": "https://www.crunchloop.io"
+  },
+  {
+    "name": "Svitla",
+    "logo_filename": "svitla.svg",
+    "logo_filename_dark_mode": "svitla-dark-mode.svg",
+    "url": "https://svitla.com"
   }
 ]

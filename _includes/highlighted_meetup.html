@@ -77,19 +77,19 @@
     </address>
     {% endif %}
 
-    <br />
-    <br />
     {% if meetup.form_link %}
+    <br />
+    <br />
     <a target="_blank" class="button alt" href="{{ meetup.form_link }}">
       Anotate para venir
     </a>
-    <br />
     <br />
     <span>* Sólo las personas inscriptas podrán entrar al evento</span>
     {% endif %} {% if meetup.host %} {% assign host = site.data.sponsors |
     where: "name", meetup.host | first %}
     <p class="host">
-      Invita especialmente {% include logo_sponsor.html sponsor=host %}
+      Invita especialmente
+      <a href="{{ host.url }}" target="_blank">{% include logo_sponsor.html sponsor=host %}</a>
     </p>
     {% endif %}
   </div>

@@ -8,7 +8,7 @@
   "_form_link": "https://docs.google.com/forms/d/e/1FAIpQLScy_yVJygvVg1MZGV9wrwSNvFLboRBXgFpvmGR5ANGu5MQnSw/viewform",
   "youtube_link": "https://www.youtube.com/watch?v=-JNN1OL_PWI",
   "youtube_embed": "https://www.youtube.com/embed/-JNN1OL_PWI",
-  "_host": "Rootstrap",
+  "host": "Svitla",
   "talks": [
     {
       "title": "Invalid byte sequence in UTF-8 😅",
