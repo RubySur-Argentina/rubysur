@@ -107,6 +107,7 @@
     "first_name": "Francisco",
     "last_name": "De Grandis",
     "image_filename": "francisco-de-grandis.png",
+    "title": "Full-stack Dev at Svitla Systems Inc.",
     "social": [
       {
         "icon": "svg/linkedin-in.svg",
@@ -268,6 +269,7 @@
     "first_name": "Rosa",
     "last_name": "Gutierrez",
     "image_filename": "rosa-gutierrez.png",
+    "title": "Principal Programmer at 37Signals",
     "social": [
       {
         "icon": "svg/linkedin-in.svg",
