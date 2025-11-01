@@ -27,7 +27,7 @@ Requisitos:
 Setup:
 
 - `bundle install`
-- `bundle exec jekyll serve --livereload`
+- `bin/start` o `bundle exec jekyll serve --livereload`
 - Abrir `localhost:4000` en el navegador
 
 > Ambos métodos (con y sin Docker) soportan live auto reload al cambiar código
