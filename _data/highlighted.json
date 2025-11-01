@@ -1,26 +1,25 @@
 {
-  "meetup": "Octubre 2025",
-  "title": "Meetup Virtual - Cerveza Virtual",
-  "date": "2025-10-15",
-  "time": "17:00",
-  "location": "Online",
-  "location_link": "https://www.youtube.com/watch?v=7yDIkOMFsYk",
+  "meetup": "Noviembre 2025",
+  "title": "Cierre del año!",
+  "date": "2025-11-13",
+  "time": "19:00",
+  "location": "Humboldt 1967, Piso 1 Le Wagon, Palermo (Huerta Co-working)",
+  "location_link": "https://maps.app.goo.gl/RhA9yVnY9JcCTq2U6",
   "_form_link": "https://docs.google.com/forms/d/e/1FAIpQLScy_yVJygvVg1MZGV9wrwSNvFLboRBXgFpvmGR5ANGu5MQnSw/viewform",
-  "youtube_link": "https://www.youtube.com/watch?v=7yDIkOMFsYk",
-  "youtube_embed": "https://www.youtube.com/embed/7yDIkOMFsYk",
+  "_youtube_link": "https://www.youtube.com/watch?v=7yDIkOMFsYk",
+  "_youtube_embed": "https://www.youtube.com/embed/7yDIkOMFsYk",
   "host": "Svitla",
   "talks": [
     {
-      "title": "Invalid byte sequence in UTF-8 😅",
-      "speaker": "rosa_gutierrez",
-      "description": "Si llevas un tiempo picando código en Ruby, casi seguro que te has topado con este error alguna vez, o con otros errores relacionados con string encoding. Y si has hecho código que muestra user input, igual de repente te han salido un montón de ��� donde esperabas texto normal. Según tu experiencia, puede que no tengas muy claro por qué pasan estas cosas o cómo arreglarlas. En esta charla vamos a meternos a fondo en el mundo de las strings, desde ASCII hasta Unicode y cómo se guardan y manejan en Ruby.",
-      "description_highlighted": "Si llevas un tiempo picando código en Ruby, casi seguro que te has topado con este error alguna vez, o con otros errores relacionados con string encoding. Y si has hecho código que muestra user input, igual de repente te han salido un montón de ��� donde esperabas texto normal. Según tu experiencia, puede que no tengas muy claro por qué pasan estas cosas o cómo arreglarlas. En esta charla vamos a meternos a fondo en el mundo de las strings, desde ASCII hasta Unicode y cómo se guardan y manejan en Ruby."
+      "title": "Código expresivo: el valor de poder decir lo mismo de muchas maneras y la importancia de decirlo de la manera correcta",
+      "speaker": "fernando_silva_jacquier",
+      "description": "Un problema de consumo de memoria en producción es el punto de partida de lo que casi fue una charla sobre performance.\nEn el camino, luego de explorar otros problemas causados por lo idiomático, se convirtió en una charla sobre el valor de la expresividad.\nVamos a ver porque vale la pena escribir código como se nos cante, o incluso de muchas maneras en paralelo.\nTodo esto para cerrar con los recursos que nos permiten elegir la correcta.",
+      "description_highlighted": "Un problema de consumo de memoria en producción es el punto de partida de lo que casi fue una charla sobre performance.\nEn el camino, luego de explorar otros problemas causados por lo idiomático, se convirtió en una charla sobre el valor de la expresividad.\nVamos a ver porque vale la pena escribir código como se nos cante, o incluso de muchas maneras en paralelo.\nTodo esto para cerrar con los recursos que nos permiten elegir la correcta."
     },
     {
-      "title": "De Útiles a Peligrosos: El Lado Oscuro de los Callbacks",
-      "speaker": "francisco_de_grandis",
-      "description": "Los callbacks de Rails son poderosos… hasta que se acumulan durante años. En esta charla voy a compartir las lecciones que aprendí trabajando en un monolito enorme, con mucha historia, donde lo que solían ser operaciones simples se transformaron en transacciones que tardaban varios minutos. Vamos a recorrer cómo identificamos los síntomas, descubrimos los verdaderos cuellos de botella y abordamos el problema paso a paso, sin romper todo en el camino.",
-      "description_highlighted": "Los callbacks de Rails son poderosos… hasta que se acumulan durante años. En esta charla voy a compartir las lecciones que aprendí trabajando en un monolito enorme, con mucha historia, donde lo que solían ser operaciones simples se transformaron en transacciones que tardaban varios minutos. Vamos a recorrer cómo identificamos los síntomas, descubrimos los verdaderos cuellos de botella y abordamos el problema paso a paso, sin romper todo en el camino."
+      "title": "Lightning Talks",
+      "description": "Muchas charlas de 5 minutos para conocernos más. Temas random, abierto para todos los que quieran sumarse.",
+      "description_highlighted": "Muchas charlas de 5 minutos para conocernos más. Temas random, abierto para todos los que quieran sumarse."
     }
   ]
 }

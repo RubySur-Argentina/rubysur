@@ -1,5 +1,40 @@
 [
   {
+    "meetup": "Octubre 2025",
+    "key": "2025_10",
+    "title": "Meetup virtual e internacional",
+    "date": "2025-10-15",
+    "time": "17:00",
+    "_location": "Usina Coworking, Castillo 1366, CABA",
+    "_location_link": "https://maps.app.goo.gl/EKt3kakp7bVom4vc6",
+    "_form_link": "https://docs.google.com/forms/d/e/1FAIpQLScy_yVJygvVg1MZGV9wrwSNvFLboRBXgFpvmGR5ANGu5MQnSw/viewform",
+    "_youtube_link": "https://www.youtube.com/watch?v=-JNN1OL_PWI",
+    "_youtube_embed": "https://www.youtube.com/embed/-JNN1OL_PWI",
+    "host": "Svitla",
+    "talks": [
+      {
+        "title": "Invalid byte sequence in UTF-8 😅",
+        "speaker": "rosa_gutierrez",
+        "description": "Si llevas un tiempo picando código en Ruby, casi seguro que te has topado con este error alguna vez, o con otros errores relacionados con string encoding. Y si has hecho código que muestra user input, igual de repente te han salido un montón de ��� donde esperabas texto normal. Según tu experiencia, puede que no tengas muy claro por qué pasan estas cosas o cómo arreglarlas. En esta charla vamos a meternos a fondo en el mundo de las strings, desde ASCII hasta Unicode y cómo se guardan y manejan en Ruby.",
+        "description_highlighted": "Si llevas un tiempo picando código en Ruby, casi seguro que te has topado con este error alguna vez, o con otros errores relacionados con string encoding. Y si has hecho código que muestra user input, igual de repente te han salido un montón de ��� donde esperabas texto normal. Según tu experiencia, puede que no tengas muy claro por qué pasan estas cosas o cómo arreglarlas. En esta charla vamos a meternos a fondo en el mundo de las strings, desde ASCII hasta Unicode y cómo se guardan y manejan en Ruby.",
+        "youtube_link": "https://www.youtube.com/watch?v=7yDIkOMFsYk",
+        "youtube_id": "7yDIkOMFsYk",
+        "youtube_timestamp": 366,
+        "slides_link": "https://drive.google.com/file/d/1v7OqxBFDV1cIsCJdtXyI4LCpZF1zPa9G/view?usp=drive_link"
+      },
+      {
+        "title": "De Útiles a Peligrosos: El Lado Oscuro de los Callbacks",
+        "speaker": "francisco_de_grandis",
+        "description": "Los callbacks de Rails son poderosos… hasta que se acumulan durante años. En esta charla voy a compartir las lecciones que aprendí trabajando en un monolito enorme, con mucha historia, donde lo que solían ser operaciones simples se transformaron en transacciones que tardaban varios minutos. Vamos a recorrer cómo identificamos los síntomas, descubrimos los verdaderos cuellos de botella y abordamos el problema paso a paso, sin romper todo en el camino.",
+        "description_highlighted": "Los callbacks de Rails son poderosos… hasta que se acumulan durante años. En esta charla voy a compartir las lecciones que aprendí trabajando en un monolito enorme, con mucha historia, donde lo que solían ser operaciones simples se transformaron en transacciones que tardaban varios minutos. Vamos a recorrer cómo identificamos los síntomas, descubrimos los verdaderos cuellos de botella y abordamos el problema paso a paso, sin romper todo en el camino.",
+        "youtube_link": "https://www.youtube.com/watch?v=7yDIkOMFsYk",
+        "youtube_id": "7yDIkOMFsYk",
+        "youtube_timestamp": 3419,
+        "slides_link": "https://docs.google.com/presentation/d/15q0RKye1feq9l5bp2LDB34Oby9aHxAny/edit?usp=drive_link&ouid=117057820629445789028&rtpof=true&sd=true"
+      }
+    ]
+  },
+  {
     "meetup": "Septiembre 2025",
     "key": "2025_09",
     "title": "Meetup y cerveza",

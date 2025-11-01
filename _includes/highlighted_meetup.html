@@ -36,7 +36,7 @@
       <span class="name">
         {{- speaker.first_name }} {{ speaker.last_name -}}
       </span>
-      <span class="role">{{ speaker.title | default: "Rubista"}}</span>
+      <span class="role">{{ speaker.title | default: "Vos y otros rubistas!"}}</span>
       {% if talk.description_highlighted %}
       <div class="description">
         <button>DESCRIPCIÓN</button>
@@ -52,12 +52,14 @@
       </a>
     </address>
 
+    {% if meetup.youtube_link %}
     <address>
       <i><img src="images/icons/youtube.svg" alt="Link a YouTube" /></i>
       <a href="{{ meetup.youtube_link }}" target="_blank">
         Activá el recordatorio en YouTube
       </a>
     </address>
+    {% endif %}
 
     {% assign descriptions = meetup.talks | map: 'description' | join: '\n' %}
     <i><img src="images/icons/calendar.svg" alt="Calendario" /></i>
