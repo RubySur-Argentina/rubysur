@@ -44,7 +44,21 @@
       </div>
       {% endif %}
     </div>
-    {% endfor %} {% if meetup.location_link %}
+    {% endfor %}
+
+    {% if meetup.lightning_talks_form_link %}
+      <div class="highlighted_talk lightning">
+        <h4>Lightning Talks! ⚡⚡</h4>
+        <div class="description">
+          Sumate para dar una lightning talk de 5 minutos de cualquier tema (no necesariamente de programación). Puede ser presencial o virtual.
+        </div>
+        <a target="_blank" class="button alt" href="{{ meetup.lightning_talks_form_link }}">
+          Anotate para dar una lightning talk
+        </a>
+      </div>
+    {% endif %}
+    
+    {% if meetup.location_link %}
     <address>
       <i><img src="images/icons/location-dot.svg" alt="Marcador de ubicación" /></i>
       <a href="{{ meetup.location_link }}" target="_blank">
@@ -83,8 +97,9 @@
     <br />
     <br />
     <a target="_blank" class="button alt" href="{{ meetup.form_link }}">
-      Anotate para venir
+      Anotate para venir de forma presencial!
     </a>
+    <br />
     <br />
     <span>* Sólo las personas inscriptas podrán entrar al evento</span>
     {% endif %} {% if meetup.host %} {% assign host = site.data.sponsors |

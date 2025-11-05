@@ -579,6 +579,7 @@ section.highlighted {
     margin-bottom: 3rem;
     --box-shadow-color: var(--box-shadow-blue);
     position: relative;
+
     & > h4 {
       font-weight: bold;
       font-family: var(--header-font);
@@ -653,6 +654,13 @@ section.highlighted {
       grid-template-columns: min-content 1fr;
       margin-bottom: 3rem;
       --box-shadow-color: var(--box-shadow-yellow);
+
+      &.lightning {
+        grid-template-areas: "talk talk" "desc desc" "button button";
+        grid-template-columns: max-content 1fr;
+        grid-template-rows: min-content;
+      }
+
       & figure {
         margin-inline-start: 0px;
         & img {

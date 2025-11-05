@@ -6,8 +6,9 @@
   "location": "Humboldt 1967, Piso 1 Le Wagon, Palermo (Huerta Co-working)",
   "location_link": "https://maps.app.goo.gl/RhA9yVnY9JcCTq2U6",
   "form_link": "https://docs.google.com/forms/d/e/1FAIpQLScYIYCzWyfecX9bHXZGLISlXakmQ3mkRbvIw8zV_Tldb9G69w/viewform?usp=dialog",
-  "_youtube_link": "https://www.youtube.com/watch?v=7yDIkOMFsYk",
-  "_youtube_embed": "https://www.youtube.com/embed/7yDIkOMFsYk",
+  "youtube_link": "https://www.youtube.com/watch?v=rk4xLTUtNgc",
+  "youtube_embed": "https://www.youtube.com/embed/rk4xLTUtNgc",
+  "lightning_talks_form_link": "https://docs.google.com/forms/d/e/1FAIpQLScrRLmJ8A0_VsEHJb0JEhMgaIedtHDg2qaRaoMzS3DkDJikDw/viewform?usp=publish-editor",
   "host": "Svitla",
   "talks": [
     {
@@ -15,11 +16,6 @@
       "speaker": "fernando_silva_jacquier",
       "description": "Un problema de consumo de memoria en producción es el punto de partida de lo que casi fue una charla sobre performance.\nEn el camino, luego de explorar otros problemas causados por lo idiomático, se convirtió en una charla sobre el valor de la expresividad.\nVamos a ver porque vale la pena escribir código como se nos cante, o incluso de muchas maneras en paralelo.\nTodo esto para cerrar con los recursos que nos permiten elegir la correcta.",
       "description_highlighted": "Un problema de consumo de memoria en producción es el punto de partida de lo que casi fue una charla sobre performance.\nEn el camino, luego de explorar otros problemas causados por lo idiomático, se convirtió en una charla sobre el valor de la expresividad.\nVamos a ver porque vale la pena escribir código como se nos cante, o incluso de muchas maneras en paralelo.\nTodo esto para cerrar con los recursos que nos permiten elegir la correcta."
-    },
-    {
-      "title": "Lightning Talks",
-      "description": "Muchas charlas de 5 minutos para conocernos más. Temas random, abierto para todos los que quieran sumarse.",
-      "description_highlighted": "Muchas charlas de 5 minutos para conocernos más. Temas random, abierto para todos los que quieran sumarse."
     }
   ]
 }
