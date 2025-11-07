@@ -12,7 +12,8 @@
   "host": "Svitla",
   "talks": [
     {
-      "title": "Código expresivo: el valor de poder decir lo mismo de muchas maneras y la importancia de decirlo de la manera correcta",
+      "title": "Código expresivo: el valor de poder decir lo mismo de muchas maneras",
+      "_title": "Código expresivo: el valor de poder decir lo mismo de muchas maneras y la importancia de decirlo de la manera correcta",
       "speaker": "fernando_silva_jacquier",
       "description": "Un problema de consumo de memoria en producción es el punto de partida de lo que casi fue una charla sobre performance.\nEn el camino, luego de explorar otros problemas causados por lo idiomático, se convirtió en una charla sobre el valor de la expresividad.\nVamos a ver porque vale la pena escribir código como se nos cante, o incluso de muchas maneras en paralelo.\nTodo esto para cerrar con los recursos que nos permiten elegir la correcta.",
       "description_highlighted": "Un problema de consumo de memoria en producción es el punto de partida de lo que casi fue una charla sobre performance.\nEn el camino, luego de explorar otros problemas causados por lo idiomático, se convirtió en una charla sobre el valor de la expresividad.\nVamos a ver porque vale la pena escribir código como se nos cante, o incluso de muchas maneras en paralelo.\nTodo esto para cerrar con los recursos que nos permiten elegir la correcta."

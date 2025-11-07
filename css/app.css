@@ -539,11 +539,11 @@ section.highlighted {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     justify-content: center;
     margin-top: 1.5rem;
     & img {
-      width: 170px;
+      height: 2em;
     }
   }
 
@@ -576,7 +576,7 @@ section.highlighted {
     grid-template-areas: "talk image" "name image" "role image" "desc image";
     grid-template-columns: 1fr min-content;
     grid-template-rows: min-content min-content min-content 1fr;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     --box-shadow-color: var(--box-shadow-blue);
     position: relative;
 
@@ -624,6 +624,7 @@ section.highlighted {
     & .description {
       grid-area: desc;
       position: relative;
+      padding-left: 10px;
       & button {
         background: transparent;
         border-radius: 3px;
@@ -649,7 +650,8 @@ section.highlighted {
       }
     }
 
-    & + .highlighted_talk {
+    & + .highlighted_talk,
+    &.lightning {
       grid-template-areas: "image talk" "image name" "image role" "image desc";
       grid-template-columns: min-content 1fr;
       margin-bottom: 3rem;
@@ -659,6 +661,11 @@ section.highlighted {
         grid-template-areas: "talk talk" "desc desc" "button button";
         grid-template-columns: max-content 1fr;
         grid-template-rows: min-content;
+        margin-top: 3rem;
+
+        & h4 img {
+          display: inline;
+        }
       }
 
       & figure {
@@ -667,10 +674,19 @@ section.highlighted {
           background-color: var(--box-shadow-yellow);
         }
       }
-      & p {
-        grid-column: 2;
+      & .description {
+        padding-block: 20px;
+        padding-inline: 0;
+        & b {
+          font-weight: bold;
+        }
       }
     }
+  }
+
+  .disclaimer {
+    display: block;
+    margin-top: 10px;
   }
 
   .countdown {

@@ -16,7 +16,7 @@
   </div>
 
   <div class="detalles">
-    <h2>¡Próxima MeetUp!</h2>
+    <h2>Última meetup del año!</h2>
     {% assign month = meetup.date | date: "%m" | minus: 1 %}
     <time datetime="{{ meetup.date }}T{{ meetup.time }}-03:00"
       >{{ meetup.date | date: "%d" }} DE {{ site.data.months[month] }} | {{
@@ -45,18 +45,6 @@
       {% endif %}
     </div>
     {% endfor %}
-
-    {% if meetup.lightning_talks_form_link %}
-      <div class="highlighted_talk lightning">
-        <h4>Lightning Talks! ⚡⚡</h4>
-        <div class="description">
-          Sumate para dar una lightning talk de 5 minutos de cualquier tema (no necesariamente de programación). Puede ser presencial o virtual.
-        </div>
-        <a target="_blank" class="button alt" href="{{ meetup.lightning_talks_form_link }}">
-          Anotate para dar una lightning talk
-        </a>
-      </div>
-    {% endif %}
     
     {% if meetup.location_link %}
     <address>
@@ -100,10 +88,24 @@
       Anotate para venir de forma presencial!
     </a>
     <br />
-    <br />
-    <span>* Sólo las personas inscriptas podrán entrar al evento</span>
+    <span class="disclaimer">* Sólo las personas inscriptas podrán ingresar al evento</span>
     {% endif %} {% if meetup.host %} {% assign host = site.data.sponsors |
     where: "name", meetup.host | first %}
+
+    {% if meetup.lightning_talks_form_link %}
+      <div class="highlighted_talk lightning">
+        <h4>Lightning Talks!<img src="../images/lightning.png" alt="rayo"><img src="../images/lightning.png" alt="rayo"></h4>
+        <div class="description">
+          Sumate para dar una lightning talk de 5 minutos de cualquier tema (no necesariamente de programación). Puede ser presencial o virtual.
+          <br >
+          <b>¡Queremos escucharte!</b>
+        </div>
+        <a target="_blank" class="button alt" href="{{ meetup.lightning_talks_form_link }}">
+          Anotate para dar una lightning talk
+        </a>
+      </div>
+    {% endif %}
+
     <p class="host">
       Invita especialmente
       <a href="{{ host.url }}" target="_blank">{% include logo_sponsor.html sponsor=host %}</a>
