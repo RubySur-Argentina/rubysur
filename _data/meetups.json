@@ -1,5 +1,50 @@
 [
   {
+    "meetup": "Noviembre 2025",
+    "key": "2025_11",
+    "title": "Cierre del año!",
+    "date": "2025-11-13",
+    "host": "Svitla",
+    "talks": [
+      {
+        "title": "Código expresivo: el valor de poder decir lo mismo de muchas maneras",
+        "speaker": "fernando_silva_jacquier",
+        "description": "Un problema de consumo de memoria en producción es el punto de partida de lo que casi fue una charla sobre performance.\nEn el camino, luego de explorar otros problemas causados por lo idiomático, se convirtió en una charla sobre el valor de la expresividad.\nVamos a ver porque vale la pena escribir código como se nos cante, o incluso de muchas maneras en paralelo.\nTodo esto para cerrar con los recursos que nos permiten elegir la correcta.",
+        "youtube_id": "rk4xLTUtNgc",
+        "youtube_timestamp": 1305,
+        "slides_link": "https://fesilvajacquier.github.io/codigo_expresivo/"
+      },
+      {
+        "title": "Lightning talks",
+        "description": "1) Juan Vazquez: Immich (galería de fotos)\n 2) Santiago Diaz: Leaderboard\n 3) Nazareno Moresco: Calendario Maya\n 4) Gemma Falconi: Tortugas\n 5) Simón Murcia: Aprendizaje con IA\n 6) Joaquín Vicente: Anti-premios\n 7) Pablo Herrero: Pathway",
+        "youtube_id": "rk4xLTUtNgc",
+        "youtube_timestamp": 3772,
+        "slides_link_array": [
+          {
+            "title": "Leaderboard",
+            "url": "https://docs.google.com/presentation/d/1WTOq7gwuBycn1BvyRUGiz0t1es6GwWM7HW0xTLHJ_lQ/edit"
+          },
+          {
+            "title": "Calendario Maya",
+            "url": "https://nazamoresco.github.io/mayan_calendar_presentation/"
+          },
+          {
+            "title": "Tortugas",
+            "url": "https://drive.google.com/file/d/1wp-7yhDy7OUTg8cpCNjGQR_dGn7ld1fm/view"
+          },
+          {
+            "title": "Anti-premios",
+            "url": "https://docs.google.com/presentation/d/1JLRiyjdqvlkF2OY8nBtegPWN-YS7GFtS/edit"
+          },
+          {
+            "title": "Pathway",
+            "url": "https://drive.google.com/file/d/1-xM0wW2gSSkh6Q3IHnISOfWEPo8tIFeu/view"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "meetup": "Octubre 2025",
     "key": "2025_10",
     "title": "Meetup virtual e internacional",

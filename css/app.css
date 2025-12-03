@@ -1235,6 +1235,8 @@ section.past {
     border-radius: 8px;
     font-weight: 600;
     border-color: var(--text-base);
+    display: inline-block;
+    margin-bottom: 0.5em;
   }
 }
 

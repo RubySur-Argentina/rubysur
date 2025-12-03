@@ -54,4 +54,18 @@
       VER SLIDES
     </a>
   {% endif %}
+  {% if include.talk.slides_link_array %}
+    <div class="slides-links slides">
+    {% for link in include.talk.slides_link_array %}
+      <a
+        href="{{ link.url }}"
+        target="_blank"
+        class="alt-button blue slides"
+      >
+        {{ link.title }}
+      </a>
+    {% endfor %}
+    </div>
+  {% endif %}
+
 </div>
