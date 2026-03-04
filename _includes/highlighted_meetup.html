@@ -16,7 +16,7 @@
   </div>
 
   <div class="detalles">
-    <h2>Última meetup del año!</h2>
+    <h2>Volvemos con las meetups!</h2>
     {% assign month = meetup.date | date: "%m" | minus: 1 %}
     <time datetime="{{ meetup.date }}T{{ meetup.time }}-03:00"
       >{{ meetup.date | date: "%d" }} DE {{ site.data.months[month] }} | {{
@@ -31,7 +31,7 @@
         <img
           src="images/speakers/{{ speaker.image_filename }}"
           alt="{{ speaker.first_name }} {{ speaker.last_name }}"
-        />
+>
       </figure>
       <span class="name">
         {{- speaker.first_name }} {{ speaker.last_name -}}
@@ -67,7 +67,7 @@
     <i>{% include svg/calendar.svg %}</i>
     <a
       target="_blank"
-      href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=RubySur+Meetup:+{{ meetup.title | escape_once | replace: '+', '%2b' | replace: ' ', '+' }}&details={{ descriptions | replace: ' ', '+' | replace: '\n', '%0A%0A' }}+%0A%0A+{{ meetup.youtube_link }}&dates={{ meetup.date | replace: '-', '' }}T{{ meetup.time | replace: ':', '' }}00/{{ meetup.date | replace: '-', '' }}T220000&location={{ meetup.location | replace: ' ', '+' }}&ctz=America/Buenos_Aires"
+      href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=RubySur+Meetup:+{{ meetup.title | escape_once | replace: '+', '%2b' | replace: ' ', '+' }}&details={{ descriptions | replace: ' ', '+' | replace: '\n', '%0A%0A' }}+%0A%0A+{{ meetup.youtube_link }}&dates={{ meetup.date | replace: '-', '' }}T{{ meetup.time | replace: ':', '' }}00/{{ meetup.date | replace: '-', '' }}T230000&location={{ meetup.location | replace: ' ', '+' }}&ctz=America/Buenos_Aires"
     >
       Agregá el evento a Google Calendar</a
     >
@@ -80,12 +80,12 @@
     {% endif %}
 
     {% if meetup.form_link %}
-    <br />
-    <br />
+    <br>
+    <br>
     <a target="_blank" class="button alt" href="{{ meetup.form_link }}">
       Anotate para venir de forma presencial!
     </a>
-    <br />
+    <br>
     <span class="disclaimer">* Sólo las personas inscriptas podrán ingresar al evento</span>
     {% endif %} {% if meetup.host %} {% assign host = site.data.sponsors |
     where: "name", meetup.host | first %}
@@ -94,7 +94,7 @@
       <div class="highlighted_talk lightning">
         <h4>Lightning Talks!<img src="../images/lightning.png" alt="rayo"><img src="../images/lightning.png" alt="rayo"></h4>
         <div class="description">
-          Sumate para dar una lightning talk de 5 minutos de cualquier tema (no necesariamente de programación). Puede ser presencial o virtual.
+          Sumate para dar una lightning talk de 5 minutos de cualquier tema (no necesariamente de programación).
           <br >
           <b>¡Queremos escucharte!</b>
         </div>
