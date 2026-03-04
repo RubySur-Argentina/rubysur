@@ -6,16 +6,10 @@
     "url": "https://www.rootstrap.com"
   },
   {
-    "name": "Le Wagon",
-    "logo_filename": "le_wagon.svg",
-    "logo_filename_dark_mode": "le_wagon-dark-mode.svg",
-    "url": "https://www.lewagon.com/es/buenos-aires"
-  },
-  {
-    "name": "OmbuLabs.com",
+    "name": "OmbuLabs.ai",
     "logo_filename": "ombulabs.svg",
     "logo_filename_dark_mode": "ombulabs-dark-mode.svg",
-    "url": "https://www.ombulabs.com"
+    "url": "https://www.ombulabs.ai"
   },
   {
     "name": "eagerworks",
@@ -52,5 +46,11 @@
     "logo_filename": "svitla.svg",
     "logo_filename_dark_mode": "svitla-dark-mode.svg",
     "url": "https://svitla.com"
+  },
+  {
+    "name": "eryx",
+    "logo_filename": "eryx.svg",
+    "logo_filename_dark_mode": "eryx-dark-mode.svg",
+    "url": "https://eryx.co"
   }
 ]

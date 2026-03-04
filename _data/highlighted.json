@@ -1,22 +1,21 @@
 {
-  "meetup": "Noviembre 2025",
-  "title": "Cierre del año!",
-  "date": "2025-11-13",
+  "meetup": "Marzo 2026",
+  "title": "Vuelven las meetups!",
+  "date": "2026-03-18",
   "time": "19:00",
-  "location": "Humboldt 1967, Piso 1 Le Wagon, Palermo (Huerta Co-working)",
-  "location_link": "https://maps.app.goo.gl/RhA9yVnY9JcCTq2U6",
-  "form_link": "https://docs.google.com/forms/d/e/1FAIpQLScYIYCzWyfecX9bHXZGLISlXakmQ3mkRbvIw8zV_Tldb9G69w/viewform?usp=dialog",
-  "youtube_link": "https://www.youtube.com/watch?v=rk4xLTUtNgc",
-  "youtube_embed": "https://www.youtube.com/embed/rk4xLTUtNgc",
-  "lightning_talks_form_link": "https://docs.google.com/forms/d/e/1FAIpQLScrRLmJ8A0_VsEHJb0JEhMgaIedtHDg2qaRaoMzS3DkDJikDw/viewform?usp=publish-editor",
-  "host": "Svitla",
+  "location": "Oficinas de Eryx, Bonpland 1953, CABA",
+  "location_link": "https://maps.app.goo.gl/CaBxyHB8HJSaChGCA",
+  "form_link": "https://docs.google.com/forms/d/e/1FAIpQLSfqcixIYwpLfNBxn1bxgKM0xbsBPhz5LEXmUhpyDNVk3NrpTg/viewform?usp=header",
+  "_youtube_link": "https://www.youtube.com/watch?v=rk4xLTUtNgc",
+  "_youtube_embed": "https://www.youtube.com/embed/rk4xLTUtNgc",
+  "lightning_talks_form_link": "https://docs.google.com/forms/d/e/1FAIpQLScrRLmJ8A0_VsEHJb0JEhMgaIedtHDg2qaRaoMzS3DkDJikDw/viewform?usp=header",
+  "host": "eryx",
   "talks": [
     {
-      "title": "Código expresivo: el valor de poder decir lo mismo de muchas maneras",
-      "_title": "Código expresivo: el valor de poder decir lo mismo de muchas maneras y la importancia de decirlo de la manera correcta",
-      "speaker": "fernando_silva_jacquier",
-      "description": "Un problema de consumo de memoria en producción es el punto de partida de lo que casi fue una charla sobre performance.\nEn el camino, luego de explorar otros problemas causados por lo idiomático, se convirtió en una charla sobre el valor de la expresividad.\nVamos a ver porque vale la pena escribir código como se nos cante, o incluso de muchas maneras en paralelo.\nTodo esto para cerrar con los recursos que nos permiten elegir la correcta.",
-      "description_highlighted": "Un problema de consumo de memoria en producción es el punto de partida de lo que casi fue una charla sobre performance.\nEn el camino, luego de explorar otros problemas causados por lo idiomático, se convirtió en una charla sobre el valor de la expresividad.\nVamos a ver porque vale la pena escribir código como se nos cante, o incluso de muchas maneras en paralelo.\nTodo esto para cerrar con los recursos que nos permiten elegir la correcta."
+      "title": "Warnings en Ruby: NO LOS IGNORES!!!",
+      "speaker": "ariel_juodziukynas",
+      "description": "Los warnings no están para molestar. Vamos a explorar qué nos quiere decir Ruby, cómo configurarlo correctamente y cómo nos ayuda a mejorar el código y a hacer upgrades.",
+      "description_highlighted": "Los warnings no están para molestar. Vamos a explorar qué nos quiere decir Ruby, cómo configurarlo correctamente y cómo nos ayuda a mejorar el código y a hacer upgrades."
     }
   ]
 }
