@@ -1,21 +1,16 @@
 {
-  "meetup": "Marzo 2026",
-  "title": "Vuelven las meetups!",
-  "date": "2026-03-18",
+  "meetup": "Abril 2026",
+  "title": "Abril Virtual!",
+  "date": "2026-04-20",
   "time": "19:00",
-  "location": "Oficinas de Eryx, Bonpland 1953, CABA",
-  "location_link": "https://maps.app.goo.gl/CaBxyHB8HJSaChGCA",
-  "form_link": "https://docs.google.com/forms/d/e/1FAIpQLSfqcixIYwpLfNBxn1bxgKM0xbsBPhz5LEXmUhpyDNVk3NrpTg/viewform?usp=header",
-  "youtube_link": "https://www.youtube.com/watch?v=IJRtU7XlZwM",
-  "youtube_embed": "https://www.youtube.com/embed/IJRtU7XlZwM",
-  "lightning_talks_form_link": "https://docs.google.com/forms/d/e/1FAIpQLScrRLmJ8A0_VsEHJb0JEhMgaIedtHDg2qaRaoMzS3DkDJikDw/viewform?usp=header",
-  "host": "eryx",
+  "youtube_link": "https://www.youtube.com/watch?v=ppxalpIKpGg",
+  "youtube_embed": "https://www.youtube.com/embed/ppxalpIKpGg",
   "talks": [
     {
-      "title": "Warnings en Ruby: NO LOS IGNORES!!!",
-      "speaker": "ariel_juodziukynas",
-      "description": "Los warnings no están para molestar. Vamos a explorar qué nos quiere decir Ruby, cómo configurarlo correctamente y cómo nos ayuda a mejorar el código y a hacer upgrades.",
-      "description_highlighted": "Los warnings no están para molestar. Vamos a explorar qué nos quiere decir Ruby, cómo configurarlo correctamente y cómo nos ayuda a mejorar el código y a hacer upgrades."
+      "title": "PWAs en Rails",
+      "speaker": "juan_vasquez",
+      "description": "Vamos a ver cómo usar el soporte nativo de PWA en Rails (a partir de Rails 7.2) para hacer tu app instalable, con offline y estrategias de caché.",
+      "description_highlighted": "Vamos a ver cómo usar el soporte nativo de PWA en Rails (a partir de Rails 7.2) para hacer tu app instalable, con offline y estrategias de caché."
     }
   ]
 }

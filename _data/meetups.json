@@ -1,5 +1,28 @@
 [
   {
+    "meetup": "Marzo 2026",
+    "key": "2026_03",
+    "title": "Vuelven las meetups!",
+    "date": "2026-03-18",
+    "host": "Eryx",
+    "talks": [
+      {
+        "title": "Warnings en Ruby: NO LOS IGNORES!!!",
+        "speaker": "ariel_juodziukynas",
+        "description": "Los warnings no están para molestar. Vamos a explorar qué nos quiere decir Ruby, cómo configurarlo correctamente y cómo nos ayuda a mejorar el código y a hacer upgrades.",
+        "youtube_id": "IJRtU7XlZwM",
+        "youtube_timestamp": 1250,
+        "slides_link": "https://arielj.github.io/ruby-warnings/#/"
+      },
+      {
+        "title": "Lightning talks",
+        "description": "1) Simón R. Murcia: ¿Rápido + Rápido = ...Lento? Peleando con el planner de SQL\n 2) Viktor Fonic: Tips sobre uso de IA\n 3) Fernando Silva Jaquier: Un bug my HDP\n 4) Enzo Fabbiani: Detalles que hacen historia\n 5) Santiago Merlo: Cómo hacer malabares\n 6) Ariel Juodziukynas: Cómo atarse los cordones",
+        "youtube_id": "IJRtU7XlZwM",
+        "youtube_timestamp": 6442
+      }
+    ]
+  },
+  {
     "meetup": "Noviembre 2025",
     "key": "2025_11",
     "title": "Cierre del año!",
