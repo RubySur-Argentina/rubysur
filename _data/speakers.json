@@ -132,6 +132,26 @@
       }
     ]
   },
+  "german_alberto_gimenez_silva": {
+    "first_name": "Germán Alberto",
+    "last_name": "Gimenez Silva",
+    "image_filename": "german-alberto-gimenez-silva.png",
+    "title": "Desarrollador del Proyecto Map View",
+    "social": [
+      {
+        "icon": "svg/linkedin-in.svg",
+        "url": "https://www.linkedin.com/in/germán-silva-56a12622/",
+        "title": "LinkedIn de Germán Alberto Gimenez Silva",
+        "name": "LinkedIn"
+      },
+      {
+        "icon": "svg/browser.svg",
+        "url": "https://map-view-demo.up.railway.app/",
+        "title": "Proyecto Map View",
+        "name": "Map View"
+      }
+    ]
+  },
   "ivan_etchart": {
     "first_name": "Ivan",
     "last_name": "Etchart",
