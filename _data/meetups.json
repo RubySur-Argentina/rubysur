@@ -1,5 +1,29 @@
 [
   {
+    "meetup": "Abril 2026",
+    "key": "2026_04",
+    "title": "Abril Virtual!",
+    "date": "2026-04-20",
+    "talks": [
+      {
+        "title": "PWAs en Rails",
+        "speaker": "juan_vasquez",
+        "description": "Vamos a ver cómo usar el soporte nativo de PWA en Rails (a partir de Rails 7.2) para hacer tu app instalable, con offline y estrategias de caché.",
+        "youtube_id": "ppxalpIKpGg",
+        "youtube_timestamp": 665,
+        "slides_link": "https://github.com/JuanVqz/talks/blob/main/pwa_en_rails/README.md"
+      },
+      {
+        "title": "Dibujando el mundo con Ruby: mapas, datos y posibilidades",
+        "speaker": "german_alberto_gimenez_silva",
+        "description": "Vamos a aprender sobre la gema ruby-libgd, capas gis y map_view, y sobre desarrollo en general.",
+        "youtube_id": "ppxalpIKpGg",
+        "youtube_timestamp": 3464,
+        "slides_link": "https://www.canva.com/design/DAHHHiAf6Ss/xslsASmOBdK_hATZO6OFqw/view?utm_content=DAHHHiAf6Ss&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h810ccdcab0"
+      }
+    ]
+  },
+  {
     "meetup": "Marzo 2026",
     "key": "2026_03",
     "title": "Vuelven las meetups!",
