@@ -1,22 +1,26 @@
 {
-  "meetup": "Abril 2026",
-  "title": "Abril Virtual!",
-  "date": "2026-04-20",
+  "meetup": "Mayo 2026",
+  "title": "Ruby, Vacas, y Kamal",
+  "date": "2026-05-18",
   "time": "19:00",
-  "youtube_link": "https://www.youtube.com/watch?v=ppxalpIKpGg",
-  "youtube_embed": "https://www.youtube.com/embed/ppxalpIKpGg",
+  "youtube_link": "https://www.youtube.com/watch?v=MKF4ZstPauw",
+  "youtube_embed": "https://www.youtube.com/embed/MKF4ZstPauw",
+  "host": "crunchloop",
+  "location": "Working & Co, Niceto Vega 4601, CABA, Argentina",
+  "location_link": "https://maps.app.goo.gl/ERSZuQ9ofbhQNBTY7",
+  "form_link": "https://docs.google.com/forms/d/e/1FAIpQLSeNheDwFVcsAJ90R41DhbgBlTPQMWXQi5TG1zGa4JxzJZ8VbA/viewform",
   "talks": [
     {
-      "title": "PWAs en Rails",
-      "speaker": "juan_vasquez",
-      "description": "Vamos a ver cómo usar el soporte nativo de PWA en Rails (a partir de Rails 7.2) para hacer tu app instalable, con offline y estrategias de caché.",
-      "description_highlighted": "Vamos a ver cómo usar el soporte nativo de PWA en Rails (a partir de Rails 7.2) para hacer tu app instalable, con offline y estrategias de caché."
+      "title": "Vacas, Rails y Blockchain",
+      "speaker": "ignacio_cesarani",
+      "description": "La charla va a tratar sobre un proyecto final de ingeniería informática desarrollado para firmar certificados de bovinos en blockchain. Principalmente explicando la integración de las tecnologías, la gema eth, y mostrar el proyecto para que el público tenga contexto de a qué se debe el lado técnico.",
+      "description_highlighted": "La charla va a tratar sobre un proyecto final de ingeniería informática desarrollado para firmar certificados de bovinos en blockchain. Principalmente explicando la integración de las tecnologías, la gema eth, y mostrar el proyecto para que el público tenga contexto de a qué se debe el lado técnico."
     },
     {
-      "title": "Dibujando el mundo con Ruby: mapas, datos y posibilidades",
-      "speaker": "german_alberto_gimenez_silva",
-      "description": "Vamos a aprender sobre la gema ruby-libgd, capas gis y map_view, y sobre desarrollo en general.",
-      "description_highlighted": "Vamos a aprender sobre la gema ruby-libgd, capas gis y map_view, y sobre desarrollo en general."
+      "title": "De Heroku a Kamal: crónica de una migración",
+      "speaker": "fernando_silva_jacquier",
+      "description": "Crónica de la migración de una app Rails multi-tenant de Heroku a un VPS con Kamal, asistida por IA.",
+      "description_highlighted": "Crónica de la migración de una app Rails multi-tenant de Heroku a un VPS con Kamal, asistida por IA."
     }
   ]
 }

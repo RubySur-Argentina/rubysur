@@ -152,6 +152,20 @@
       }
     ]
   },
+  "ignacio_cesarani": {
+    "first_name": "Ignacio",
+    "last_name": "Cesarani",
+    "image_filename": "ignacio_cesarani.png",
+    "title": "Full Stack Developer en Crunchloop",
+    "social": [
+      {
+        "icon": "svg/linkedin-in.svg",
+        "url": "https://www.linkedin.com/in/ignaciocesarani/",
+        "title": "LinkedIn de Ignacio Cesarani",
+        "name": "LinkedIn"
+      }
+    ]
+  },
   "ivan_etchart": {
     "first_name": "Ivan",
     "last_name": "Etchart",
