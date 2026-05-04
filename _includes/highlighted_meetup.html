@@ -99,8 +99,7 @@
     </a>
     <br>
     <span class="disclaimer">* Sólo las personas inscriptas podrán ingresar al evento</span>
-    {% endif %} {% if meetup.host %} {% assign host = site.data.sponsors |
-    where: "name", meetup.host | first %}
+    {% endif %}
 
     {% if meetup.lightning_talks_form_link %}
       <div class="highlighted_talk lightning">
@@ -116,6 +115,7 @@
       </div>
     {% endif %}
 
+    {% if meetup.host %} {% assign host = site.data.sponsors | where: "name", meetup.host | first %}
     <p class="host">
       Invita especialmente
       <a href="{{ host.url }}" target="_blank">{% include logo_sponsor.html sponsor=host %}</a>
