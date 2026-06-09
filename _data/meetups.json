@@ -1,5 +1,29 @@
 [
   {
+    "meetup": "Mayo 2026",
+    "key": "2026_05",
+    "title": "Ruby, Vacas, y Kamal",
+    "date": "2026-05-18",
+    "talks": [
+      {
+        "title": "Vacas, Rails y Blockchain",
+        "speaker": "ignacio_cesarani",
+        "description": "La charla va a tratar sobre un proyecto final de ingeniería informática desarrollado para firmar certificados de bovinos en blockchain. Principalmente explicando la integración de las tecnologías, la gema eth, y mostrar el proyecto para que el público tenga contexto de a qué se debe el lado técnico.",
+        "youtube_id": "MKF4ZstPauw",
+        "youtube_timestamp": 1067,
+        "slides_link": "https://docs.google.com/presentation/d/1t0yj1KulrVkiQz3jstCCy2m6PoufvSfAzboKBz3p9g0/edit?usp=sharing"
+      },
+      {
+        "title": "De Heroku a Kamal: crónica de una migración",
+        "speaker": "fernando_silva_jacquier",
+        "description": "Crónica de la migración de una app Rails multi-tenant de Heroku a un VPS con Kamal, asistida por IA.",
+        "youtube_id": "MKF4ZstPauw",
+        "youtube_timestamp": 3822,
+        "slides_link": "https://docs.google.com/presentation/d/1t0yj1KulrVkiQz3jstCCy2m6PoufvSfAzboKBz3p9g0/edit?usp=sharing"
+      }
+    ]
+  },
+  {
     "meetup": "Abril 2026",
     "key": "2026_04",
     "title": "Abril Virtual!",

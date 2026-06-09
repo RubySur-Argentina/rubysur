@@ -1,26 +1,25 @@
 {
-  "meetup": "Mayo 2026",
-  "title": "Ruby, Vacas, y Kamal",
-  "date": "2026-05-18",
+  "meetup": "Junio 2026",
+  "title": "Rails and AI",
+  "date": "2026-06-15",
   "time": "19:00",
-  "youtube_link": "https://www.youtube.com/watch?v=MKF4ZstPauw",
-  "youtube_embed": "https://www.youtube.com/embed/MKF4ZstPauw",
-  "host": "Crunchloop",
-  "location": "Working & Co, Niceto Vega 4601, CABA, Argentina",
-  "location_link": "https://maps.app.goo.gl/ERSZuQ9ofbhQNBTY7",
-  "form_link": "https://docs.google.com/forms/d/e/1FAIpQLSeNheDwFVcsAJ90R41DhbgBlTPQMWXQi5TG1zGa4JxzJZ8VbA/viewform",
+  "_youtube_link": "https://www.youtube.com/watch?v=MKF4ZstPauw",
+  "_youtube_embed": "https://www.youtube.com/embed/MKF4ZstPauw",
+  "_location": "Working & Co, Niceto Vega 4601, CABA, Argentina",
+  "_location_link": "https://maps.app.goo.gl/ERSZuQ9ofbhQNBTY7",
+  "_form_link": "https://docs.google.com/forms/d/e/1FAIpQLSeNheDwFVcsAJ90R41DhbgBlTPQMWXQi5TG1zGa4JxzJZ8VbA/viewform",
   "talks": [
     {
-      "title": "Vacas, Rails y Blockchain",
-      "speaker": "ignacio_cesarani",
-      "description": "La charla va a tratar sobre un proyecto final de ingeniería informática desarrollado para firmar certificados de bovinos en blockchain. Principalmente explicando la integración de las tecnologías, la gema eth, y mostrar el proyecto para que el público tenga contexto de a qué se debe el lado técnico.",
-      "description_highlighted": "La charla va a tratar sobre un proyecto final de ingeniería informática desarrollado para firmar certificados de bovinos en blockchain. Principalmente explicando la integración de las tecnologías, la gema eth, y mostrar el proyecto para que el público tenga contexto de a qué se debe el lado técnico."
+      "title": "Indispensable: What Human Programmers Can Learn from Human Computers",
+      "speaker": "alan-ridlehoover",
+      "description": "Code used to be something we cultivated by hand. Now machines write it for us, and a quarter of a million tech workers have been laid off in less than a year. If you've been quietly grieving your relationship with code, you're not alone. And you're not the first. In 1958, NASA began replacing its human computers with IBM mainframes. Three women from the segregated West Area Computing Unit — Dorothy Vaughan, Mary Jackson, and Katherine Johnson — made themselves indispensable to the mission anyway. Each chose a different strategy: retool, transform, or specify. Now it's our turn as Rubyists. The mission is still here. The role is not. This talk borrows their strategies, with gratitude, for the transition we're living through now — and shows how to stay indispensable.",
+      "description_highlighted": "Code used to be something we cultivated by hand. Now machines write it for us, and a quarter of a million tech workers have been laid off in less than a year. If you've been quietly grieving your relationship with code, you're not alone. And you're not the first. In 1958, NASA began replacing its human computers with IBM mainframes. Three women from the segregated West Area Computing Unit — Dorothy Vaughan, Mary Jackson, and Katherine Johnson — made themselves indispensable to the mission anyway. Each chose a different strategy: retool, transform, or specify. Now it's our turn as Rubyists. The mission is still here. The role is not. This talk borrows their strategies, with gratitude, for the transition we're living through now — and shows how to stay indispensable."
     },
     {
-      "title": "De Heroku a Kamal: crónica de una migración",
-      "speaker": "fernando_silva_jacquier",
-      "description": "Crónica de la migración de una app Rails multi-tenant de Heroku a un VPS con Kamal, asistida por IA.",
-      "description_highlighted": "Crónica de la migración de una app Rails multi-tenant de Heroku a un VPS con Kamal, asistida por IA."
+      "title": "Defying Gravity: Teaching AI to Write Better Ruby",
+      "speaker": "fito-von-zastrow",
+      "description": "Code reviews got slower after we introduced AI into our Ruby on Rails monolith. AI-generated code was making the legacy problems worse, not better. Technical debt, fat controllers, tests coupled to implementation. AI reproduced all of it, faster than ever. It's as if legacy code has gravity. In this talk, you’ll learn the concrete techniques we use in production: how to specify what you want, how to provide architectural guidance to agents, and how to use skills to put guardrails in place so feature work incrementally improves the codebase instead of reinforcing legacy patterns. Leave with everything you need to defy Legacy Gravity.",
+      "description_highlighted": "Code reviews got slower after we introduced AI into our Ruby on Rails monolith. AI-generated code was making the legacy problems worse, not better. Technical debt, fat controllers, tests coupled to implementation. AI reproduced all of it, faster than ever. It's as if legacy code has gravity. In this talk, you’ll learn the concrete techniques we use in production: how to specify what you want, how to provide architectural guidance to agents, and how to use skills to put guardrails in place so feature work incrementally improves the codebase instead of reinforcing legacy patterns. Leave with everything you need to defy Legacy Gravity."
     }
   ]
 }

@@ -1,4 +1,11 @@
 {
+  "alan-ridlehoover": {
+    "first_name": "Alan",
+    "last_name": "Ridlehoover",
+    "image_filename": "alan-ridlehoover.png",
+    "title": "Sr. Engineering Manager @ Cisco",
+    "social": []
+  },
   "ariel_juodziukynas": {
     "first_name": "Ariel",
     "last_name": "Juodziukynas",
@@ -70,6 +77,13 @@
         "name": "LinkedIn"
       }
     ]
+  },
+  "fito-von-zastrow": {
+    "first_name": "Fito",
+    "last_name": "von Zastrow",
+    "image_filename": "fito-von-zastrow.png",
+    "title": "Staff Software Engineer @ Cisco",
+    "social": []
   },
   "fernando_martinez": {
     "first_name": "Fernando",
