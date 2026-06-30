@@ -52,5 +52,11 @@
     "logo_filename": "eryx.svg",
     "logo_filename_dark_mode": "eryx-dark-mode.svg",
     "url": "https://eryx.co"
+  },
+  {
+    "name": "howdy",
+    "logo_filename": "howdy.svg",
+    "logo_filename_dark_mode": "howdy.svg",
+    "url": "https://www.howdy.com/"
   }
 ]

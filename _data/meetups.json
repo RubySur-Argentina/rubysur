@@ -1,5 +1,27 @@
 [
   {
+    "meetup": "Junio 2026",
+    "key": "2026_06",
+    "title": "Rails and AI",
+    "date": "2026-06-15",
+    "talks": [
+      {
+        "title": "Indispensable: What Human Programmers Can Learn from Human Computers",
+        "speaker": "alan-ridlehoover",
+        "description": "Code used to be something we cultivated by hand. Now machines write it for us, and a quarter of a million tech workers have been laid off in less than a year. If you've been quietly grieving your relationship with code, you're not alone. And you're not the first. In 1958, NASA began replacing its human computers with IBM mainframes. Three women from the segregated West Area Computing Unit — Dorothy Vaughan, Mary Jackson, and Katherine Johnson — made themselves indispensable to the mission anyway. Each chose a different strategy: retool, transform, or specify. Now it's our turn as Rubyists. The mission is still here. The role is not. This talk borrows their strategies, with gratitude, for the transition we're living through now — and shows how to stay indispensable.",
+        "youtube_id": "0J_5jfOtUzo",
+        "youtube_timestamp": 445
+      },
+      {
+        "title": "Defying Gravity: Teaching AI to Write Better Ruby",
+        "speaker": "fito-von-zastrow",
+        "description": "Code reviews got slower after we introduced AI into our Ruby on Rails monolith. AI-generated code was making the legacy problems worse, not better. Technical debt, fat controllers, tests coupled to implementation. AI reproduced all of it, faster than ever. It's as if legacy code has gravity. In this talk, you’ll learn the concrete techniques we use in production: how to specify what you want, how to provide architectural guidance to agents, and how to use skills to put guardrails in place so feature work incrementally improves the codebase instead of reinforcing legacy patterns. Leave with everything you need to defy Legacy Gravity.",
+        "youtube_id": "0J_5jfOtUzo",
+        "youtube_timestamp": 2762
+      }
+    ]
+  },
+  {
     "meetup": "Mayo 2026",
     "key": "2026_05",
     "title": "Ruby, Vacas, y Kamal",

@@ -579,10 +579,10 @@ section.highlighted {
     gap: 0.5rem;
     font-size: 1.7rem;
     justify-content: center;
-    margin-top: 1.5rem;
+    margin-block: 1.5rem;
     color: var(--text-base);
     & img {
-      height: 2em;
+      height: 2.5em;
     }
   }
 

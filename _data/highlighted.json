@@ -1,25 +1,26 @@
 {
-  "meetup": "Junio 2026",
-  "title": "Rails and AI",
-  "date": "2026-06-15",
+  "meetup": "Julio 2026",
+  "title": "Meetup Post Mundial",
+  "date": "2026-07-23",
   "time": "19:00",
-  "_youtube_link": "https://www.youtube.com/watch?v=MKF4ZstPauw",
-  "_youtube_embed": "https://www.youtube.com/embed/MKF4ZstPauw",
-  "_location": "Working & Co, Niceto Vega 4601, CABA, Argentina",
-  "_location_link": "https://maps.app.goo.gl/ERSZuQ9ofbhQNBTY7",
-  "_form_link": "https://docs.google.com/forms/d/e/1FAIpQLSeNheDwFVcsAJ90R41DhbgBlTPQMWXQi5TG1zGa4JxzJZ8VbA/viewform",
+  "youtube_link": "https://www.youtube.com/watch?v=nMSQk7ikh7c",
+  "youtube_embed": "https://www.youtube.com/embed/nMSQk7ikh7c",
+  "location": "La Maquinita | Innovation Lab, Cnel. Niceto Vega 4866, CABA, Argentina",
+  "location_link": "https://maps.app.goo.gl/4ZK8ju6TisARt7FE6",
+  "form_link": "https://forms.gle/mKdZXUDtQVrtNtCN9",
+  "host": "howdy",
   "talks": [
     {
-      "title": "Indispensable: What Human Programmers Can Learn from Human Computers",
-      "speaker": "alan-ridlehoover",
-      "description": "Code used to be something we cultivated by hand. Now machines write it for us, and a quarter of a million tech workers have been laid off in less than a year. If you've been quietly grieving your relationship with code, you're not alone. And you're not the first. In 1958, NASA began replacing its human computers with IBM mainframes. Three women from the segregated West Area Computing Unit — Dorothy Vaughan, Mary Jackson, and Katherine Johnson — made themselves indispensable to the mission anyway. Each chose a different strategy: retool, transform, or specify. Now it's our turn as Rubyists. The mission is still here. The role is not. This talk borrows their strategies, with gratitude, for the transition we're living through now — and shows how to stay indispensable.",
-      "description_highlighted": "Code used to be something we cultivated by hand. Now machines write it for us, and a quarter of a million tech workers have been laid off in less than a year. If you've been quietly grieving your relationship with code, you're not alone. And you're not the first. In 1958, NASA began replacing its human computers with IBM mainframes. Three women from the segregated West Area Computing Unit — Dorothy Vaughan, Mary Jackson, and Katherine Johnson — made themselves indispensable to the mission anyway. Each chose a different strategy: retool, transform, or specify. Now it's our turn as Rubyists. The mission is still here. The role is not. This talk borrows their strategies, with gratitude, for the transition we're living through now — and shows how to stay indispensable."
+      "title": "Ay! Ahí hay AI!",
+      "speaker": "patricio_mac_adden",
+      "description": "En el último año explotaron los coding agents y el vibe coding. Que podemos hacer para que mas o menos hagan lo que nosotros queremos? (spoiler: nunca lo van a hacer). Y que tiene que ver con Ruby/Rails? Ya lo vas a entender...",
+      "description_highlighted": "En el último año explotaron los coding agents y el vibe coding. Que podemos hacer para que mas o menos hagan lo que nosotros queremos? (spoiler: nunca lo van a hacer). Y que tiene que ver con Ruby/Rails? Ya lo vas a entender..."
     },
     {
-      "title": "Defying Gravity: Teaching AI to Write Better Ruby",
-      "speaker": "fito-von-zastrow",
-      "description": "Code reviews got slower after we introduced AI into our Ruby on Rails monolith. AI-generated code was making the legacy problems worse, not better. Technical debt, fat controllers, tests coupled to implementation. AI reproduced all of it, faster than ever. It's as if legacy code has gravity. In this talk, you’ll learn the concrete techniques we use in production: how to specify what you want, how to provide architectural guidance to agents, and how to use skills to put guardrails in place so feature work incrementally improves the codebase instead of reinforcing legacy patterns. Leave with everything you need to defy Legacy Gravity.",
-      "description_highlighted": "Code reviews got slower after we introduced AI into our Ruby on Rails monolith. AI-generated code was making the legacy problems worse, not better. Technical debt, fat controllers, tests coupled to implementation. AI reproduced all of it, faster than ever. It's as if legacy code has gravity. In this talk, you’ll learn the concrete techniques we use in production: how to specify what you want, how to provide architectural guidance to agents, and how to use skills to put guardrails in place so feature work incrementally improves the codebase instead of reinforcing legacy patterns. Leave with everything you need to defy Legacy Gravity."
+      "title": "El costo de ser único",
+      "speaker": "santiago_merlo",
+      "description": "Elegir una primary key parece una decisión pequeña, pero puede afectar el rendimiento, el tamaño de los índices, las relaciones entre tablas y la escalabilidad de toda una aplicación. En esta charla vamos a explorar qué diferencias existen entre usar un id numérico, un UUID como primary key o una estrategia híbrida con id interno y uid público en aplicaciones desarrolladas con Ruby on Rails y PostgreSQL. Analizaremos las ventajas, desventajas y costos ocultos de cada alternativa, incluyendo el impacto de UUID v4 y UUID v7 en las inserciones, los índices B-tree, las foreign keys, el almacenamiento y las consultas.",
+      "description_highlighted": "Elegir una primary key parece una decisión pequeña, pero puede afectar el rendimiento, el tamaño de los índices, las relaciones entre tablas y la escalabilidad de toda una aplicación. En esta charla vamos a explorar qué diferencias existen entre usar un id numérico, un UUID como primary key o una estrategia híbrida con id interno y uid público en aplicaciones desarrolladas con Ruby on Rails y PostgreSQL. Analizaremos las ventajas, desventajas y costos ocultos de cada alternativa, incluyendo el impacto de UUID v4 y UUID v7 en las inserciones, los índices B-tree, las foreign keys, el almacenamiento y las consultas."
     }
   ]
 }

@@ -16,12 +16,19 @@
   </div>
 
   <div class="detalles">
-    <h2>Ruby, Vacas, y Kamal</h2>
+    <h2>{{ meetup.title }}</h2>
     {% assign month = meetup.date | date: "%m" | minus: 1 %}
     <time datetime="{{ meetup.date }}T{{ meetup.time }}-03:00"
       >{{ meetup.date | date: "%d" }} DE {{ site.data.months[month] }} | {{
       meetup.time | date: "%H" }}HS (🇦🇷 GMT-3)</time
     >
+
+    {% if meetup.host %} {% assign host = site.data.sponsors | where: "name", meetup.host | first %}
+    <p class="host">
+      Invita especialmente
+      <a href="{{ host.url }}" target="_blank">{% include logo_sponsor.html sponsor=host %}</a>
+    </p>
+    {% endif %}
 
     {% for talk in meetup.talks %} {% assign speaker =
     site.data.speakers[talk.speaker] %}
@@ -113,13 +120,6 @@
           Anotate para dar una lightning talk
         </a>
       </div>
-    {% endif %}
-
-    {% if meetup.host %} {% assign host = site.data.sponsors | where: "name", meetup.host | first %}
-    <p class="host">
-      Invita especialmente
-      <a href="{{ host.url }}" target="_blank">{% include logo_sponsor.html sponsor=host %}</a>
-    </p>
     {% endif %}
   </div>
 </section>
