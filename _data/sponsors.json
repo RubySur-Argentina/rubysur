@@ -56,7 +56,7 @@
   {
     "name": "howdy",
     "logo_filename": "howdy.svg",
-    "logo_filename_dark_mode": "howdy.svg",
+    "logo_filename_dark_mode": "howdy-dark-mode.svg",
     "url": "https://www.howdy.com/"
   }
 ]
