@@ -1,5 +1,29 @@
 [
   {
+    "meetup": "Julio 2026",
+    "key": "2026_07",
+    "title": "Ay!",
+    "date": "2026-07-23",
+    "talks": [
+      {
+        "title": "El costo de ser único",
+        "speaker": "santiago_merlo",
+        "description": "Elegir una primary key parece una decisión pequeña, pero puede afectar el rendimiento, el tamaño de los índices, las relaciones entre tablas y la escalabilidad de toda una aplicación. En esta charla vamos a explorar qué diferencias existen entre usar un id numérico, un UUID como primary key o una estrategia híbrida con id interno y uid público en aplicaciones desarrolladas con Ruby on Rails y PostgreSQL. Analizaremos las ventajas, desventajas y costos ocultos de cada alternativa, incluyendo el impacto de UUID v4 y UUID v7 en las inserciones, los índices B-tree, las foreign keys, el almacenamiento y las consultas.",
+        "youtube_id": "nMSQk7ikh7c",
+        "youtube_timestamp": 2235,
+        "slides_link": "https://docs.google.com/presentation/d/1YlKynih1XSqVTnmHTBKxRmP-YvePczkvJoK9nt4r-2Y/edit?usp=sharing"
+      },
+      {
+        "title": "Ay! Ahí hay AI!",
+        "speaker": "patricio_mac_adden",
+        "description": "En el último año explotaron los coding agents y el vibe coding. Que podemos hacer para que mas o menos hagan lo que nosotros queremos? (spoiler: nunca lo van a hacer). Y que tiene que ver con Ruby/Rails? Ya lo vas a entender...",
+        "youtube_id": "nMSQk7ikh7c",
+        "youtube_timestamp": 5042,
+        "slides_link": "https://patricio.macadden.com/ay-ahi-hay-ai/"
+      }
+    ]
+  },
+  {
     "meetup": "Junio 2026",
     "key": "2026_06",
     "title": "Rails and AI",
