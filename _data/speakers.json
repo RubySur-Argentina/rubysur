@@ -52,6 +52,26 @@
       }
     ]
   },
+  "david_vargas_ruiz": {
+    "first_name": "David",
+    "last_name": "Vargas Ruiz",
+    "image_filename": "david-vargas-ruiz.png",
+    "title": "Profesor FP de Sistemas y Aplicaciones Informáticas",
+    "social": [
+      {
+        "icon": "svg/github.svg",
+        "url": "https://github.com/dvarrui",
+        "title": "GitHub de David Vargas Ruiz",
+        "name": "GitHub"
+      },
+      {
+        "icon": "svg/github.svg",
+        "url": "https://ruby.social/@dvarrui",
+        "title": "Mastodon de David Vargas Ruiz",
+        "name": "Mastodon"
+      }
+    ]
+  },
   "enzo_fabbiani": {
     "first_name": "Enzo",
     "last_name": "Fabbiani",
@@ -298,6 +318,38 @@
         "url": "https://linkedin.com/in/julioalucero",
         "title": "LinkedIn de Julio Lucero",
         "name": "LinkedIn"
+      }
+    ]
+  },
+  "miles_georgi": {
+    "first_name": "Miles",
+    "last_name": "Georgi",
+    "image_filename": "miles-georgi.png",
+    "title": "Creador de Foobara",
+    "social": [
+      {
+        "icon": "svg/mastodon.svg",
+        "url": "https://ruby.social/@milesgeorgi",
+        "title": "Mastodon de Miles Georgi",
+        "name": "Mastodon"
+      },
+      {
+        "icon": "svg/linkedin-in.svg",
+        "url": "https://linkedin.com/in/miles-georgi",
+        "title": "LinkedIn de Miles Georgi",
+        "name": "LinkedIn"
+      },
+      {
+        "icon": "svg/github.svg",
+        "url": "https://github.com/azimux",
+        "title": "GitHub de Miles Georgi",
+        "name": "GitHub"
+      },
+      {
+        "icon": "svg/browser.svg",
+        "url": "https://miles.georgi.foo",
+        "title": "Sitio personal de Miles Georgi",
+        "name": "Sitio Personal"
       }
     ]
   },

@@ -615,7 +615,6 @@ section.highlighted {
     display: grid;
     grid-template-areas: "talk image" "name image" "role image" "desc image";
     grid-template-columns: 1fr min-content;
-    grid-template-rows: min-content min-content min-content 1fr;
     margin-bottom: 2rem;
     --box-shadow-color: var(--box-shadow-blue);
     position: relative;
@@ -639,6 +638,7 @@ section.highlighted {
     & > figure {
       grid-area: image;
       margin-inline: 2rem 3rem;
+      width: 200px;
       @media screen and (max-width: 600px) {
         display: none;
       }
