@@ -1,5 +1,34 @@
 [
   {
+    "meetup": "Agosto 2026",
+    "key": "2026_08",
+    "title": "Internashonal",
+    "date": "2026-08-19",
+    "talks": [
+      {
+        "title": "Teuton: Test de Infraestructura",
+        "speaker": "david_vargas_ruiz",
+        "description": [
+          "Teuton es una gema Ruby que se empezó a desarrollar hace más de 10 años para solucionar el problema de automatizar la evaluación de los trabajos realizados por los alumnos en sus dispositivos.",
+          "Empezamos con un pequeño script y poco a poco el proyecto fue creciendo y evolucionando mientras mejorábamos nuestro conocimiento del lenguaje. Al final, creamos una gema \"Test de infraestructura\".",
+          "Sólo muestramos las posibilidades de la herramienta y cómo se usa.",
+          "La gema está generando un pequeño ecosistema a su alrededor: gema \"teuton-get\" (descargar tests), \"teuton-panel\" (en desarrollo)"
+        ],
+        "youtube_id": "JW4T3cTyG5A",
+        "youtube_timestamp": 917,
+        "slides_link": "https://github.com/dvarrui/charlas/tree/main/teuton/rubysur.2608"
+      },
+      {
+        "title": "Lo que Aprendí por Construir un Servidor de Videojuegos con Ractors!",
+        "speaker": "miles_georgi",
+        "description": "Miles va a hablar de ractors y concurrencia en Ruby! Compartiendo las cosas interesantes que aprendió y las epifanías que llegaron por las malas al hacer un servidor de videojuegos con mucho uso de ractors. Vamos a hablar sobre las restricciones, deseos para el futuro de ractos, y preguntas para decidir si ractors tienen sentido para tu proyecto y equipo.",
+        "youtube_id": "JW4T3cTyG5A",
+        "youtube_timestamp": 3940,
+        "slides_link": "https://docs.google.com/presentation/d/1VRiN0QXSEbXkkjuwWQl2iFhzWlRyifFIBPGY0leyQZA/edit?usp=sharing"
+      }
+    ]
+  },
+  {
     "meetup": "Julio 2026",
     "key": "2026_07",
     "title": "Ay!",

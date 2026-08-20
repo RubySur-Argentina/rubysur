@@ -7,7 +7,7 @@
     <h3>{{ include.talk.title }}</h3>
     <p>
       {{ include.talk.description || include.talk.highlighted_description |
-      newline_to_br }}
+      description_with_br }}
     </p>
 
     {% if include.talk.speaker %} {% assign speaker = site.data.speakers[include.talk.speaker] %}
