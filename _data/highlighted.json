@@ -1,36 +1,40 @@
 {
-  "meetup": "Agosto 2026",
+  "meetup": "Septiembre 2026",
   "title": "Meetup Internashonal",
-  "date": "2026-08-19",
+  "date": "2026-09-24",
   "time": "19:00",
-  "youtube_link": "https://www.youtube.com/watch?v=JW4T3cTyG5A",
-  "youtube_embed": "https://www.youtube.com/embed/JW4T3cTyG5A",
-  "_location": "",
-  "_location_link": "",
-  "_form_link": "",
-  "_host": "howdy",
+  "youtube_link": "https://www.youtube.com/watch?v=gHX1ry5WF-Q",
+  "youtube_embed": "https://www.youtube.com/embed/gHX1ry5WF-Q",
+  "location": "Usina Coworking, Castillo 1366, CABA",
+  "location_link": "https://maps.app.goo.gl/EKt3kakp7bVom4vc6",
+  "form_link": "https://forms.gle/Jy7P4BZrPLpPXgRt6",
+  "host": "Rootstrap",
   "talks": [
     {
-      "title": "Teuton: Test de Infraestructura",
-      "speaker": "david_vargas_ruiz",
+      "title": "Mutation Testing en Ruby: ¿vale la pena?",
+      "speaker": "nazareno_moresco",
       "description": [
-        "Teuton es una gema Ruby que se empezó a desarrollar hace más de 10 años para solucionar el problema de automatizar la evaluación de los trabajos realizados por los alumnos en sus dispositivos.",
-        "Empezamos con un pequeño script y poco a poco el proyecto fue creciendo y evolucionando mientras mejorábamos nuestro conocimiento del lenguaje. Al final, creamos una gema \"Test de infraestructura\".",
-        "Sólo muestramos las posibilidades de la herramienta y cómo se usa.",
-        "La gema está generando un pequeño ecosistema a su alrededor: gema \"teuton-get\" (descargar tests), \"teuton-panel\" (en desarrollo)"
+        "Una suite de tests en verde no siempre significa que el comportamiento importante esté especificado. En esta charla veremos qué es mutation testing, cómo funciona en Ruby con herramientas como Mutant y, sobre todo, cuándo vale la pena incorporarlo.",
+        "Vamos a explorar el mecanismo por dentro —desde los cambios sobre el AST hasta la ejecución de la suite— y sus trade-offs: calidad, casos límite, reglas de seguridad, tiempo de ejecución y complejidad operativa. Cerraremos con una reflexión: si la IA va a escribir cada vez más código, el espacio interesante no estará solo en generar más “skills”, sino en construir herramientas de metacódigo que verifiquen, restrinjan y expliquen ese código."
       ],
       "description_highlighted": [
-        "Teuton es una gema Ruby que se empezó a desarrollar hace más de 10 años para solucionar el problema de automatizar la evaluación de los trabajos realizados por los alumnos en sus dispositivos.",
-        "Empezamos con un pequeño script y poco a poco el proyecto fue creciendo y evolucionando mientras mejorábamos nuestro conocimiento del lenguaje. Al final, creamos una gema \"Test de infraestructura\".",
-        "Sólo muestramos las posibilidades de la herramienta y cómo se usa.",
-        "La gema está generando un pequeño ecosistema a su alrededor: gema \"teuton-get\" (descargar tests), \"teuton-panel\" (en desarrollo)"
+        "Una suite de tests en verde no siempre significa que el comportamiento importante esté especificado. En esta charla veremos qué es mutation testing, cómo funciona en Ruby con herramientas como Mutant y, sobre todo, cuándo vale la pena incorporarlo.",
+        "Vamos a explorar el mecanismo por dentro —desde los cambios sobre el AST hasta la ejecución de la suite— y sus trade-offs: calidad, casos límite, reglas de seguridad, tiempo de ejecución y complejidad operativa. Cerraremos con una reflexión: si la IA va a escribir cada vez más código, el espacio interesante no estará solo en generar más “skills”, sino en construir herramientas de metacódigo que verifiquen, restrinjan y expliquen ese código."
       ]
     },
     {
-      "title": "Lo que Aprendí por Construir un Servidor de Videojuegos con Ractors!",
-      "speaker": "miles_georgi",
-      "description": "Miles va a hablar de ractors y concurrencia en Ruby! Compartiendo las cosas interesantes que aprendió y las epifanías que llegaron por las malas al hacer un servidor de videojuegos con mucho uso de ractors. Vamos a hablar sobre las restricciones, deseos para el futuro de ractos, y preguntas para decidir si ractors tienen sentido para tu proyecto y equipo.",
-      "description_highlighted": "Miles va a hablar de ractors y concurrencia en Ruby! Compartiendo las cosas interesantes que aprendió y las epifanías que llegaron por las malas al hacer un servidor de videojuegos con mucho uso de ractors. Vamos a hablar sobre las restricciones, deseos para el futuro de ractos, y preguntas para decidir si ractors tienen sentido para tu proyecto y equipo."
+      "title": "¿La IA viene por nosotros? Del pánico a la era de la orquestación y el nuevo ingenio",
+      "speaker": "ignacio_flores",
+      "description": [
+        "¿El uso masivo de la inteligencia artificial nos está haciendo menos ingeniosos al resolver problemas en segundos, o simplemente cambió el lugar donde ponemos nuestro esfuerzo intelectual?",
+        "Lejos de posturas apocalípticas o soluciones mágicas, en esta charla analizaremos con datos empíricos la paradoja de la velocidad, el impacto dispar entre perfiles junior y senior, y el nacimiento de los repositorios gobernados por agentes (AGENTS.md). Además, exploraremos cómo esta transformación derriba barreras y democratiza el pensamiento computacional para perfiles de producto, diseño y negocio.",
+        "La idea principal es llegar a devs y no devs y generar un debate constructivo para todos de como nos vemos trabajando con la IA"
+      ],
+      "description_highlighted": [
+        "¿El uso masivo de la inteligencia artificial nos está haciendo menos ingeniosos al resolver problemas en segundos, o simplemente cambió el lugar donde ponemos nuestro esfuerzo intelectual?",
+        "Lejos de posturas apocalípticas o soluciones mágicas, en esta charla analizaremos con datos empíricos la paradoja de la velocidad, el impacto dispar entre perfiles junior y senior, y el nacimiento de los repositorios gobernados por agentes (AGENTS.md). Además, exploraremos cómo esta transformación derriba barreras y democratiza el pensamiento computacional para perfiles de producto, diseño y negocio.",
+        "La idea principal es llegar a devs y no devs y generar un debate constructivo para todos de como nos vemos trabajando con la IA"
+      ]
     }
   ]
 }

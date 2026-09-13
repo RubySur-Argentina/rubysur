@@ -200,6 +200,13 @@
       }
     ]
   },
+  "ignacio_flores": {
+    "first_name": "Ignacio",
+    "last_name": "Flores",
+    "image_filename": "ignacio-flores.png",
+    "title": "Ruby Developer SSR en Rootstrap",
+    "social": []
+  },
   "ivan_etchart": {
     "first_name": "Ivan",
     "last_name": "Etchart",
@@ -350,6 +357,20 @@
         "url": "https://miles.georgi.foo",
         "title": "Sitio personal de Miles Georgi",
         "name": "Sitio Personal"
+      }
+    ]
+  },
+  "nazareno_moresco": {
+    "first_name": "Nazareno",
+    "last_name": "Moresco",
+    "image_filename": "nazareno-moresco.png",
+    "title": "Developer en Sinaptia",
+    "social": [
+      {
+        "icon": "svg/linkedin-in.svg",
+        "url": "https://www.linkedin.com/in/nazareno-moresco-659049205/",
+        "title": "LinkedIn de Nazareno Moresco",
+        "name": "LinkedIn"
       }
     ]
   },
