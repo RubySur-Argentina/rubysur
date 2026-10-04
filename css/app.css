@@ -1464,7 +1464,7 @@ footer {
 .copyright {
   color: var(--text-base);
   display: grid;
-  grid-template-columns: 1fr min-content 1fr;
+  grid-template-columns: 1fr min-content min-content 1fr;
   padding: 1rem var(--inline-padding-layout);
   font-size: clamp(14px, 2vw, 1rem);
   gap: 0.75rem;
@@ -1713,4 +1713,79 @@ body.notFound {
       justify-self: center;
     }
   }
+}
+
+dialog.buscarubies[open] {
+  padding: 0;
+  min-height: 80vmin;
+  min-width: 80vmin;
+  @media (prefers-color-scheme: dark) {
+    background: black;
+  }
+
+  .hud {
+    grid-area: hud;
+    padding: 0.5rem;
+    gap: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-base);
+    border-bottom: 1px solid var(--red-1);
+  }
+
+  .boardWrapper {
+    position: relative;
+    .result {
+      display: none;
+    }
+  }
+  .boardWrapper:has(.board.won),
+  .boardWrapper:has(.board.lost) {
+    .result {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      top: 0px;
+      bottom: 0px;
+      background: rgba(0, 0, 0, 0.7);
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 2rem;
+    }
+  }
+  .board.won + .result {
+    &:before {
+      content: "Ganaste! 🎉";
+      display: block;
+    }
+  }
+
+  .board.lost + .result {
+    &:before {
+      content: "Perdiste! 💩";
+      display: block;
+    }
+  }
+
+  .board {
+    display: grid;
+    width: 100%;
+    box-sizing: border-box;
+    .cell {
+      aspect-ratio: 1;
+      font-weight: bold;
+      &.ruby {
+        background: url(/images/ruby-full.svg);
+        background-size: 50%;
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
 }

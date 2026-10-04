@@ -458,4 +458,5 @@ document.addEventListener("DOMContentLoaded", () => {
   bindSponsors();
   bindBackToTop();
   snake();
+  buscarubies();
 });

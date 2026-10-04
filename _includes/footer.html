@@ -5,6 +5,7 @@
 <div class="copyright">
   <span>© 2025 RubySur - Argentina</span>
   <button class="snake"><img src="/images/vivorita.svg" /></button>
+  <button class="buscarubies"><img src="/images/ruby-full.svg" /></button>
   <a href="#about_us">About Us</a>
 </div>
 
@@ -23,6 +24,19 @@
     <small>o usá el teclado</small>
   </div>
 </dialog>
+<dialog class="buscarubies">
+  <div class="hud">
+    <h3>BuscaRubies!</h3>
+    <h3 class="timer">Timer: 0</h3>
+    <h3 class="counter">Rubies: 0</h3>
+    <button class="close">X</button>
+  </div>
+  <div class="boardWrapper">
+    <div class="board"></div>
+    <div class="result"><button class="reset button alt">Reiniciar</button></div>
+  </div>
+</dialog>
 <img src="/images/vivorita.svg" class="snakeGif" />
 <script src="/js/app.js{{ cacheBust }}"></script>
 <script src="/js/snake.js{{ cacheBust }}"></script>
+<script src="/js/buscarubies.js{{ cacheBust }}"></script>
