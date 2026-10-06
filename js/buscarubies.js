@@ -325,7 +325,7 @@ class Cell {
     this.visibleContent = newVisibleContent;
     this.element.innerHTML = newVisibleContent;
     if (this.isNumber() && this.visibleContent === this.content) {
-      this.element.style = `grid-column: ${this.col}; grid-row: ${this.row}; color: ${colors[this.content]};`;
+      this.element.style = `grid-column: ${this.col}; grid-row: ${this.row}; color: ${colors[this.content]}; font-size: 1.2rem;`;
     }
   }
 
