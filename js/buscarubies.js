@@ -106,12 +106,12 @@ class Board {
     this.width = width;
     this.height = height;
     this.rubies = rubies;
-    this.cells = {};
     this.initialized = false;
     this.initElement();
   }
 
   initElement() {
+    this.cells = {};
     this.listenersAbortController = new AbortController();
     const el = document.querySelector(".buscarubies .board");
     el.style = `grid-template-rows: repeat(${this.height}, 1fr); grid-template-columns: repeat(${this.width}, 1fr);`;
@@ -284,14 +284,14 @@ class Board {
 
   reset() {
     this.removeEventListeners();
-    this.element.innerHTML = '';
+    this.element.innerHTML = "";
     this.element.classList.remove("won");
     this.element.classList.remove("lost");
+    this.initialized = false;
 
     setTimeout(() => {
       this.initElement();
-      this.initializeRubies();
-    }, 10)
+    }, 10);
   }
 }
 
