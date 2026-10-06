@@ -146,7 +146,7 @@ class Board {
           if (ev.target.cell.isClickable()) {
             ev.target.cell.onClick();
             this.processClicked(ev.target.cell);
-          } else if (dualClick) {
+          } else if (dualClick && ev.target.cell.isNumber()) {
             this.clickSurrounding(ev.target.cell);
           }
         }
