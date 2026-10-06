@@ -20,6 +20,20 @@ const colors = {
   8: "pink",
 };
 
+let rightButtonDown = false;
+
+document.addEventListener("mousedown", function (ev) {
+  if (ev.button === 2) {
+    rightButtonDown = true;
+  }
+});
+
+document.addEventListener("mouseup", function (ev) {
+  if (ev.button === 2) {
+    rightButtonDown = false;
+  }
+});
+
 class BuscaRubies {
   constructor(width, height, rubies) {
     this.dialog = document.querySelector("dialog.buscarubies");
@@ -120,12 +134,20 @@ class Board {
       "click",
       (ev) => {
         if (ev.target.classList.contains("cell")) {
+          let dualClick = false;
+          // se hizo click izquierdo mientras se apretaba el botón derecho
+          if (rightButtonDown) {
+            if (this.initialized) dualClick = true;
+            rightButtonDown = false;
+          }
           if (!this.initialized) this.initializeRubies(ev.target.cell);
           if (this.game.state !== "playing") return;
 
           if (ev.target.cell.isClickable()) {
             ev.target.cell.onClick();
             this.processClicked(ev.target.cell);
+          } else if (dualClick) {
+            this.clickSurrounding(ev.target.cell);
           }
         }
       },
@@ -263,6 +285,19 @@ class Board {
     });
   }
 
+  clickSurrounding(clickedCell) {
+    const surroundingCells = this.getSurroundingCells(clickedCell);
+    surroundingCells.forEach((cell) => {
+      if (!cell.isClickable()) return;
+      cell.onClick();
+      if (cell.isRuby()) {
+        this.game.lost();
+        this.element.classList.add("lost");
+      } else if (cell.isEmpty()) this.expandClicked(cell, []);
+    });
+    this.checkWinState();
+  }
+
   checkWinState() {
     let onlyHiddenRubies = true;
 
@@ -341,8 +376,8 @@ class Cell {
         break;
       case "revealed":
         if (this.isRuby()) this.element.classList.add("ruby");
+        else if (this.isEmpty()) this.element.classList.add("empty");
         else this.setVisibleContent(this.content);
-        this.element.disabled = true;
         break;
       case "hidden":
         this.setVisibleContent(" ");
