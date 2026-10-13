@@ -58,5 +58,11 @@
     "logo_filename": "howdy.svg",
     "logo_filename_dark_mode": "howdy-dark-mode.svg",
     "url": "https://www.howdy.com/"
+  },
+  {
+    "name": "FUDO",
+    "logo_filename": "fudo.svg",
+    "logo_filename_dark_mode": "fudo-dark-mode.svg",
+    "url": "https://fu.do/"
   }
 ]

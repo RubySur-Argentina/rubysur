@@ -106,17 +106,14 @@
     <span class="disclaimer">* Sólo las personas inscriptas podrán ingresar al evento</span>
     {% endif %}
 
-    {% if meetup.lightning_talks_form_link %}
+    {% if meetup.lightnings %}
       <div class="highlighted_talk lightning">
         <h4>Lightning Talks!<img src="../images/lightning.png" alt="rayo"><img src="../images/lightning.png" alt="rayo"></h4>
         <div class="description">
-          Sumate para dar una lightning talk de 5 minutos de cualquier tema (no necesariamente de programación).
+          Sumate para dar una lightning talk de 5 minutos de cualquier tema (no necesariamente de programación). El día del evento te vas a poder anotar cuando llegues.
           <br >
           <b>¡Queremos escucharte!</b>
         </div>
-        <a target="_blank" class="button alt" href="{{ meetup.lightning_talks_form_link }}">
-          Anotate para dar una lightning talk
-        </a>
       </div>
     {% endif %}
   </div>

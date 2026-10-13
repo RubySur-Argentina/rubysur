@@ -576,7 +576,7 @@ section.highlighted {
   & .host {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
     font-size: 1.7rem;
     justify-content: center;
     margin-block: 1.5rem;

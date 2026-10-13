@@ -207,6 +207,20 @@
     "title": "Ruby Developer SSR en Rootstrap",
     "social": []
   },
+  "ignacio_morales": {
+    "first_name": "Ignacio",
+    "last_name": "Morales",
+    "image_filename": "ignacio-morales.png",
+    "title": "Engineering Manager @ FUDO",
+    "social": [
+      {
+        "icon": "svg/linkedin-in.svg",
+        "url": "https://www.linkedin.com/in/ignacio-morales-15b612150/",
+        "title": "LinkedIn de Ignacio Morales",
+        "name": "LinkedIn"
+      }
+    ]
+  },
   "ivan_etchart": {
     "first_name": "Ivan",
     "last_name": "Etchart",
