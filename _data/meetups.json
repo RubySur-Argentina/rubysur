@@ -1,5 +1,45 @@
 [
   {
+    "meetup": "Octubre 2026",
+    "key": "2026_10",
+    "title": "Roundhouse y Lightnings",
+    "date": "2026-10-20",
+    "talks": [
+      {
+        "title": "Roundhouse y el futuro de Ruby",
+        "speaker": "ignacio_morales",
+        "description": "¿Pueden Spinel y Roundhouse ser la respuesta de la comunidad Ruby a las migraciones a otros lenguajes? En Fudo exploramos migrar una app interna e Ignacio Morales no va a contar cómo fue su experiencia.",
+        "youtube_id": "SSDiMmBJhus",
+        "youtube_timestamp": 1779,
+        "slides_link": "https://drive.google.com/file/d/1a4Fnw8aPUKaWejwVJ6VQfkCokkZnERYI/view"
+      },
+      {
+        "title": "Lightning talks",
+        "description": [
+          "1) Fernando Silva Jacquier: Cocineros Rubyistas",
+          "2) Ariel Juodziukynas: Life Hacks",
+          "3) Angel Szymczak: Zero-Downtime Migrations en Rails"
+        ],
+        "youtube_id": "SSDiMmBJhus",
+        "youtube_timestamp": 7294,
+        "slides_link_array": [
+          {
+            "title": "Cocineros Rubyisas",
+            "url": "https://fesilvajacquier.github.io/test-perf-talk/"
+          },
+          {
+            "title": "Life Hacks",
+            "url": "https://arielj.github.io/life-hacks/#/"
+          },
+          {
+            "title": "Zero-Downtime Migrations en Rails",
+            "url": "https://drive.google.com/file/d/1vBRzBO6jROnTlEzAkfjnjQ5f2dsc-YSe/view"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "meetup": "Septiembre 2026",
     "key": "2026_09",
     "title": "Mitup",
@@ -170,7 +210,14 @@
       },
       {
         "title": "Lightning talks",
-        "description": "1) Simón R. Murcia: ¿Rápido + Rápido = ...Lento? Peleando con el planner de SQL\n 2) Viktor Fonic: Tips sobre uso de IA\n 3) Fernando Silva Jaquier: Un bug my HDP\n 4) Enzo Fabbiani: Detalles que hacen historia\n 5) Santiago Merlo: Cómo hacer malabares\n 6) Ariel Juodziukynas: Cómo atarse los cordones",
+        "description": [
+          "1) Simón R. Murcia: ¿Rápido + Rápido = ...Lento? Peleando con el planner de SQL",
+          "2) Viktor Fonic: Tips sobre uso de IA",
+          "3) Fernando Silva Jaquier: Un bug my HDP",
+          "4) Enzo Fabbiani: Detalles que hacen historia",
+          "5) Santiago Merlo: Cómo hacer malabares",
+          "6) Ariel Juodziukynas: Cómo atarse los cordones"
+        ],
         "youtube_id": "IJRtU7XlZwM",
         "youtube_timestamp": 6442
       }
@@ -193,7 +240,15 @@
       },
       {
         "title": "Lightning talks",
-        "description": "1) Juan Vazquez: Immich (galería de fotos)\n 2) Santiago Diaz: Leaderboard\n 3) Nazareno Moresco: Calendario Maya\n 4) Gemma Falconi: Tortugas\n 5) Simón Murcia: Aprendizaje con IA\n 6) Joaquín Vicente: Anti-premios\n 7) Pablo Herrero: Pathway",
+        "description": [
+          "1) Juan Vazquez: Immich (galería de fotos)",
+          "2) Santiago Diaz: Leaderboard",
+          "3) Nazareno Moresco: Calendario Maya",
+          "4) Gemma Falconi: Tortugas",
+          "5) Simón Murcia: Aprendizaje con IA",
+          "6) Joaquín Vicente: Anti-premios",
+          "7) Pablo Herrero: Pathway"
+        ],
         "youtube_id": "rk4xLTUtNgc",
         "youtube_timestamp": 3772,
         "slides_link_array": [
