@@ -1,21 +1,26 @@
 {
-  "meetup": "Octubre 2026",
-  "title": "Roundhouse y Lightnings",
-  "date": "2026-10-20",
+  "meetup": "Noviembre 2026",
+  "title": "Meetup </2026>",
+  "date": "2026-11-26",
   "time": "19:00",
-  "youtube_link": "https://www.youtube.com/watch?v=SSDiMmBJhus",
-  "youtube_embed": "https://www.youtube.com/embed/SSDiMmBJhus",
+  "youtube_link": "https://www.youtube.com/watch?v=SI3mohKLSOs",
+  "youtube_embed": "https://www.youtube.com/embed/SI3mohKLSOs",
   "location": "Usina Coworking, Castillo 1366, CABA",
   "location_link": "https://maps.app.goo.gl/EKt3kakp7bVom4vc6",
-  "form_link": "https://forms.gle/ZeRx1ceWFZ7puqDDA",
-  "host": "FUDO",
-  "lightnings": true,
+  "form_link": "https://forms.gle/AezUwnYFzHQAxCqr8",
+  "host": "Rootstrap",
   "talks": [
     {
-      "title": "Roundhouse y el futuro de Ruby",
-      "speaker": "ignacio_morales",
-      "description": "¿Pueden Spinel y Roundhouse ser la respuesta de la comunidad Ruby a las migraciones a otros lenguajes? En Fudo exploramos migrar una app interna e Ignacio Morales no va a contar cómo fue su experiencia.",
-      "description_highlighted": "¿Pueden Spinel y Roundhouse ser la respuesta de la comunidad Ruby a las migraciones a otros lenguajes? En Fudo exploramos migrar una app interna e Ignacio Morales no va a contar cómo fue su experiencia."
+      "title": "QA en tiempos de IA: Devs como First Responders",
+      "speakers": ["oriana_lopez", "teodora_melo"],
+      "description": "Con herramientas como Claude Code y agentes autónomos, la velocidad para generar código se disparó, pero esto no siempre se traduce en software de calidad. Los agentes escupen código que “parece funcionar”, con bordes frágiles y flaky tests. En esta charla veremos cómo repensar la calidad.",
+      "description_highlighted": "Con herramientas como Claude Code y agentes autónomos, la velocidad para generar código se disparó, pero esto no siempre se traduce en software de calidad. Los agentes escupen código que “parece funcionar”, con bordes frágiles y flaky tests. En esta charla veremos cómo repensar la calidad."
+    },
+    {
+      "title": "Old Man Yelling To The Clouds",
+      "speakers": ["fernando_martinez"],
+      "description": "A un viejo lo hacen ante todo sus opiniones. Éste tiene opiniones sobre los agentes. Nadie se las pidió pero las va a compartir igual. Con más preguntas que respuestas, Fernando nos va a pintar su visión del panorama actual y qué estan haciendo en Sinaptia al respecto.",
+      "description_highlighted": "A un viejo lo hacen ante todo sus opiniones. Éste tiene opiniones sobre los agentes. Nadie se las pidió pero las va a compartir igual. Con más preguntas que respuestas, Fernando nos va a pintar su visión del panorama actual y qué estan haciendo en Sinaptia al respecto."
     }
   ]
 }

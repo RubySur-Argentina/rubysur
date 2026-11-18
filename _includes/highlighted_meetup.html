@@ -30,27 +30,32 @@
     </p>
     {% endif %}
 
-    {% for talk in meetup.talks %} {% assign speaker =
-    site.data.speakers[talk.speaker] %}
-    <div class="highlighted_talk">
-      <h4>{{ talk.title }}</h4>
-      <figure>
-        <img
-          src="images/speakers/{{ speaker.image_filename }}"
-          alt="{{ speaker.first_name }} {{ speaker.last_name }}"
->
-      </figure>
-      <span class="name">
-        {{- speaker.first_name }} {{ speaker.last_name -}}
-      </span>
-      <span class="role">{{ speaker.title | default: "Vos y otros rubistas!"}}</span>
-      {% if talk.description_highlighted %}
-      <div class="description">
-        <button>DESCRIPCIÓN</button>
-        <p class="textBox">{{ talk.description_highlighted | description_with_br }}</p>
+    {% for talk in meetup.talks %}
+      <div class="highlighted_talk">
+        <h4>{{ talk.title }}</h4>
+        <figure>
+          {% for speaker in talk.speakers %}
+            {% assign speaker_data = site.data.speakers[speaker] %}
+            <img
+              src="images/speakers/{{ speaker_data.image_filename }}"
+              alt="{{ speaker.first_name }} {{ speaker_data.last_name }}">
+          {% endfor %}
+        </figure>
+        <div class="speakers">
+          {% for speaker in talk.speakers %}
+            {% assign speaker_data = site.data.speakers[speaker] %}
+            <p class="speaker">
+              <span class="name">{{- speaker_data.first_name }} {{ speaker_data.last_name }}</span><br /><span class="role">{{ speaker_data.title -}}</span>
+            </p>
+          {% endfor %}
+        </div>
+        {% if talk.description_highlighted %}
+        <div class="description">
+          <button>DESCRIPCIÓN</button>
+          <p class="textBox">{{ talk.description_highlighted | description_with_br }}</p>
+        </div>
+        {% endif %}
       </div>
-      {% endif %}
-    </div>
     {% endfor %}
 
     {% if meetup.youtube_link %}
@@ -83,8 +88,7 @@
         target="_blank"
         href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=RubySur+Meetup:+{{ meetup.title | escape_once | replace: '+', '%2b' | replace: ' ', '+' }}&details={{ meetup.talks | descriptions_for_calendar_event }}+%0A%0A+{{ meetup.youtube_link }}&dates={{ meetup.date | replace: '-', '' }}T{{ meetup.time | replace: ':', '' }}00/{{ meetup.date | replace: '-', '' }}T230000&location={{ meetup.location | replace: ' ', '+' }}&ctz=America/Buenos_Aires"
       >
-        Agregá el evento a Google Calendar</a
-      >
+        Agregá el evento a Google Calendar</a>
     {% else %}
       <!-- calendar sin location -->
       <i>{% include svg/calendar.svg %}</i>
@@ -92,8 +96,7 @@
         target="_blank"
         href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=RubySur+Meetup:+{{ meetup.title | escape_once | replace: '+', '%2b' | replace: ' ', '+' }}&details={{ meetup.talks | descriptions_for_calendar_event }}+%0A%0A+{{ meetup.youtube_link }}&dates={{ meetup.date | replace: '-', '' }}T{{ meetup.time | replace: ':', '' }}00/{{ meetup.date | replace: '-', '' }}T230000&ctz=America/Buenos_Aires"
       >
-        Agregá el evento a Google Calendar</a
-      >
+        Agregá el evento a Google Calendar</a>
     {% endif %}
 
     {% if meetup.form_link %}
@@ -111,7 +114,7 @@
         <h4>Lightning Talks!<img src="../images/lightning.png" alt="rayo"><img src="../images/lightning.png" alt="rayo"></h4>
         <div class="description">
           Sumate para dar una lightning talk de 5 minutos de cualquier tema (no necesariamente de programación). El día del evento te vas a poder anotar cuando llegues.
-          <br >
+          <br>
           <b>¡Queremos escucharte!</b>
         </div>
       </div>

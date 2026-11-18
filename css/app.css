@@ -626,11 +626,11 @@ section.highlighted {
       padding-top: 5px;
       grid-area: talk;
     }
-    & > span.name {
+    & span.name {
       grid-area: name;
       font-size: 25px;
     }
-    & > span.role {
+    & span.role {
       grid-area: role;
       font-size: 19px;
       font-family: var(--alt-font);
@@ -639,6 +639,15 @@ section.highlighted {
       grid-area: image;
       margin-inline: 2rem 3rem;
       width: 200px;
+      display: flex;
+      gap: 0.5rem;
+      &:has(img + img) {
+        width: 300px;
+        img {
+          max-width: 150px;
+          max-height: 200px;
+        }
+      }
       @media screen and (max-width: 600px) {
         display: none;
       }
@@ -651,6 +660,9 @@ section.highlighted {
         height: 100%;
         border-radius: 50%;
         background-color: var(--box-shadow-blue);
+        & + img {
+          background-color: var(--box-shadow-red);
+        }
       }
 
       & figcaption {

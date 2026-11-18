@@ -408,6 +408,20 @@
       }
     ]
   },
+  "oriana_lopez": {
+    "first_name": "Oriana",
+    "last_name": "López",
+    "image_filename": "oriana-lopez.png",
+    "title": "QA/QC Analyst en Rootstrap",
+    "social": [
+      {
+        "icon": "svg/linkedin-in.svg",
+        "url": "https://www.linkedin.com/in/orianalópez/",
+        "title": "LinkedIn de Oriana López",
+        "name": "LinkedIn"
+      }
+    ]
+  },
   "patricio_mac_adden": {
     "first_name": "Patricio",
     "last_name": "Mac Adden",
@@ -504,6 +518,20 @@
         "icon": "svg/linkedin-in.svg",
         "url": "https://www.linkedin.com/in/simon-rm",
         "title": "LinkedIn de Simón R. Murcia",
+        "name": "LinkedIn"
+      }
+    ]
+  },
+  "teodora_melo": {
+    "first_name": "María Teodora",
+    "last_name": "Melo Marcano",
+    "image_filename": "teodora-melo.png",
+    "title": "Ssr. Software Quality Assurance en Rootstrap",
+    "social": [
+      {
+        "icon": "svg/linkedin-in.svg",
+        "url": "https://www.linkedin.com/in/maria-teodora-melo-marcano/",
+        "title": "LinkedIn de María Teodora Melo Marcano",
         "name": "LinkedIn"
       }
     ]
