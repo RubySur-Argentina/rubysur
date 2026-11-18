@@ -19,7 +19,7 @@ Setup:
 
 Requisitos:
 
-- Ruby 3.3.4
+- Ruby 3.4.12
 - bundler 2.5.17
 
 > Si se actualiza esto, actualizar los valores en `Dockerfile` y `.github/jekyll.yml` también

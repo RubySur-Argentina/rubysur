@@ -11,33 +11,8 @@ GEM
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
     ffi (1.17.0)
-    ffi (1.17.0-aarch64-linux-gnu)
-    ffi (1.17.0-aarch64-linux-musl)
-    ffi (1.17.0-arm-linux-gnu)
-    ffi (1.17.0-arm-linux-musl)
-    ffi (1.17.0-arm64-darwin)
-    ffi (1.17.0-x86-linux-gnu)
-    ffi (1.17.0-x86-linux-musl)
-    ffi (1.17.0-x86_64-darwin)
-    ffi (1.17.0-x86_64-linux-gnu)
-    ffi (1.17.0-x86_64-linux-musl)
     forwardable-extended (2.6.0)
     google-protobuf (4.27.3)
-      bigdecimal
-      rake (>= 13)
-    google-protobuf (4.27.3-aarch64-linux)
-      bigdecimal
-      rake (>= 13)
-    google-protobuf (4.27.3-arm64-darwin)
-      bigdecimal
-      rake (>= 13)
-    google-protobuf (4.27.3-x86-linux)
-      bigdecimal
-      rake (>= 13)
-    google-protobuf (4.27.3-x86_64-darwin)
-      bigdecimal
-      rake (>= 13)
-    google-protobuf (4.27.3-x86_64-linux)
       bigdecimal
       rake (>= 13)
     http_parser.rb (0.8.0)
@@ -169,7 +144,7 @@ DEPENDENCIES
   jekyll-sitemap
 
 RUBY VERSION
-   ruby 3.3.4p94
+   ruby 3.4.12p148
 
 BUNDLED WITH
-   2.5.17
+   4.0.12
